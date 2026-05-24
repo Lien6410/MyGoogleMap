@@ -1,0 +1,14 @@
+[project]
+name = "mygooglemap"
+version = "0.1.0"
+description = "Google Maps 儲存清單整理與美食抽籤工具"
+requires-python = ">=3.11"
+dependencies = [
+    "google-api-python-client>=2.196.0",
+    "google-auth-oauthlib>=1.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "isort>=8.0.1",
+]

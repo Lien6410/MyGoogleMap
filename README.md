@@ -1,63 +1,176 @@
-# Google Maps Saved Lists Exporter & Restaurant Lottery
+# MyGoogleMap — 儲存清單整理與美食抽籤工具
 
-一個將 Google Maps 的個人「儲存清單」整理成結構化表格，並結合 AI 估算消費與距離、提供精美互動式抽籤網頁的工具專案。
-
-## 🌟 專案特色
-
-1.  **清單合併與去重**：自動讀取 Google Takeout 匯出的「回訪」與「想去的地點」兩份清單，排除重複店家，並標記「是否曾去過」。
-2.  **AI 自動分類與消費估算**：透過 Gemini 2.5 Flash API 自動根據店名與地址判斷：
-    *   **餐飲類型**：複選分類（如 `中式,日式`、`美式`、`東南亞式`、`其他`）。
-    *   **人均消費**：預估台幣平均消费金額（如平價小吃 `150` 元，高檔餐飲 `1200` 元，非餐飲地標標記為 `0` ）。
-3.  **距離住家公里數計算**：支援輸入住家地址/地標，自動將地址經緯度定位並計算出各店家距離住家的直線公里數（使用 Haversine 公式）。
-4.  **互動式美食抽籤網頁**：生成 `lottery.html` 本地網頁，具備 HSL 暗色系毛玻璃感介面，支援回訪狀態、餐飲類型、距離區段、人均花費等篩選功能（支援一鍵全選/全不選），點選後有拉霸式隨機滾動與紙花慶祝特效。
-5.  **無任何外部套件依賴**：Python 腳本完全使用內建 Standard Library 撰寫，開箱即用，免安裝任何 `pip` 套件。
-6.  **Google Apps Script 雲端原生支援**：提供試算表備用腳本，可直接於 Google 雲端硬碟的試算表內執行，使用雲端原生 Maps 地理解析功能。
+將 Google Maps 個人儲存清單整理成結構化表格，結合 AI 估算消費與距離，並提供互動式抽籤網頁。
 
 ---
 
-## 📁 檔案結構
+## 專案特色
 
-*   `export_to_sheets.py`：本機執行的 Python 腳本。
-*   `lottery.html`：本地互動式抽籤網頁，可直接於瀏覽器雙擊開啟。
-*   `GoogleAppsScript.js`：Google 試算表擴充功能（Apps Script）的備用雲端腳本。
-*   `README.md`：專案說明文件（本檔案）。
-*   `walkthrough.md`：詳細的系統操作步驟指南。
+1. **多清單合併去重**：掃描 `input/` 資料夾內的所有 CSV，自動合併並去除重複地點，標記「是否曾去過」與「來源清單」。
+2. **AI 自動分類**：透過 Gemini 2.5 Flash API 批次判斷餐飲類型（支援複合類型，如 `中式,日式`）、預估人均消費、補足地址。
+3. **距離計算**：自動定位住家地址座標，用 Haversine 公式計算各地點與住家的直線距離（公里）。
+4. **自動上傳 Google Drive**：整理完成後自動將 CSV 上傳至你指定的 Google Drive 資料夾（需一次性授權設定）。
+5. **互動式抽籤網頁**：精美暗色毛玻璃風格，支援回訪狀態、餐飲類型、距離、消費多維篩選，拉霸式動畫與紙花特效。
+6. **uv 套件管理**：使用 [uv](https://docs.astral.sh/uv/) 管理 Python 版本與依賴套件，一行指令完成環境設定。
 
 ---
 
-## 🚀 使用指南
+## 檔案結構
 
-### 步驟 1: 下載您的 Google Maps 清單
-1. 前往 [Google Takeout](https://takeout.google.com)。
-2. 點選 **「取消全選」**，向下捲動並勾選 **「已儲存」**（儲存的連結清單）。
-3. 拉到最下方點選 **「下一步」** ➡️ **「建立匯出作業」**。
-4. 打包完成後，下載 ZIP 檔案並解壓縮，將您要整理的清單（例如 `回訪.csv` 與 `想去的地點.csv`）移動到此專案資料夾下。
-
-### 步驟 2: 執行 Python 整理腳本
-在終端機中切換至此資料夾，執行：
-```bash
-python export_to_sheets.py
 ```
-*   **住家設定**：執行時會提示您輸入住家地址以計算距離。若想跳過此功能，直接按 Enter 即可。
-*   **輸出結果**：
-    *   **`MyGoogleMap_Stores.csv`**：整理完成的店家總表，可直接拖曳上傳至 Google 雲端硬碟 `MyGoogleMap` 資料夾，並「使用 Google 試算表開啟」。
-    *   **`stores_data.js`**：抽籤網頁所需的本地資料庫，將會自動建立/更新。
-
-### 步驟 3: 開啟美食抽籤網頁
-在您的檔案總管中，直接**雙擊開啟 `lottery.html`**，即可使用左側篩選面板進行設定（支援餐飲類型、距離、花費之一鍵全選／全不選），點擊 **「✨ 開始抽籤」** 按鈕開始拉霸！
+MyGoogleMap/
+├── input/                    # 放置 Google Takeout 匯出的 CSV 清單
+│   ├── 回訪.csv              # 已去過的地點（檔名含「回訪」即標記為已去過）
+│   ├── 想去的地點.csv         # 尚未去過的地點
+│   └── （更多清單...）        # 未來可直接加入更多 CSV
+├── export_to_sheets.py       # 主要整理腳本
+├── lottery.html              # 互動式抽籤網頁（雙擊即可開啟）
+├── GoogleAppsScript.js       # Google Apps Script 雲端備用方案
+├── pyproject.toml            # uv 專案設定與依賴套件清單
+├── uv.lock                   # uv 鎖定檔（確保環境一致）
+├── .python-version           # Python 版本鎖定（3.11）
+├── MyGoogleMap_Stores.csv    # 【自動產生】整理結果
+├── stores_data.js            # 【自動產生】抽籤資料庫（供 lottery.html 使用）
+├── credentials.json          # 【選用】Google Drive API OAuth2 憑證
+├── token.json                # 【自動產生】Google Drive 授權 Token
+├── .env                      # 環境變數設定（API Key、住家地址等）
+├── GDRIVE_SETUP.md           # Google Drive 上傳詳細設定指南
+└── README.md                 # 本說明文件
+```
 
 ---
 
-## 🛠️ Google Apps Script (雲端方案)
-如果您希望不透過 Python 直接在雲端更新試算表：
-1. 在 Google 雲端硬碟根目錄建立名為 `MyGoogleMap` 的資料夾。
-2. 上傳 `回訪.csv` 與 `想去的地點.csv` 至該資料夾下。
-3. 建立一個全新的試算表，選擇 **「擴充功能」 -> 「Apps Script」**。
-4. 將 `GoogleAppsScript.js` 中的代碼完整貼入並儲存。
-5. 點擊 **「執行」** 函數 `main`，通過帳號驗證授權後，試算表將會自動完成整理與 AI 分類。
+## 快速開始
+
+### 步驟 1：安裝 uv（若尚未安裝）
+
+```bash
+# Windows（PowerShell）
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### 步驟 2：建立環境並安裝套件
+
+```bash
+# 進入專案資料夾後，uv 會自動讀取 pyproject.toml 建立 .venv 並安裝所有依賴
+uv sync
+```
+
+### 步驟 3：取得 Google Maps 清單
+
+1. 前往 [Google Takeout](https://takeout.google.com)。
+2. 點選「取消全選」，向下捲動勾選「**已儲存**」。
+3. 建立匯出作業，下載 ZIP 並解壓縮。
+4. 將要整理的 CSV 檔案移入此專案的 `input/` 資料夾。
+
+> **命名規則**：檔名含「回訪」的清單，其所有地點會被標記為「已去過」；其他 CSV 一律標記為「未去過」。可同時放入多份清單，腳本會自動合併。
+
+### 步驟 4：設定 .env 環境變數
+
+在專案根目錄建立（或編輯）`.env` 檔案：
+
+```env
+# 住家地址，用於計算各地點與住家的距離
+HOME_ADDRESS="新竹市北區光華一街18號"
+
+# Gemini API Key（用於 AI 分類與地址補全）
+# 取得方式：https://aistudio.google.com/app/apikey
+GEMINI_API_KEY="你的_GEMINI_API_KEY"
+
+# Google Drive 目標資料夾 ID（選用，用於自動上傳）
+# 取得方式：開啟 Google Drive 目標資料夾，複製網址中 /folders/ 後方的 ID 字串
+GDRIVE_FOLDER_ID=""
+```
+
+### 步驟 5：執行整理腳本
+
+```bash
+uv run export_to_sheets.py
+```
+
+腳本執行完成後會產生：
+
+- **`MyGoogleMap_Stores.csv`**：整理好的地點總表。
+- **`stores_data.js`**：抽籤網頁的本地資料庫。
+- 若已設定 Google Drive，CSV 會自動上傳至指定資料夾。
+
+**輸出 CSV 欄位說明：**
+
+| 欄位             | 說明                                       |
+| ---------------- | ------------------------------------------ |
+| 店名             | 地點名稱                                   |
+| 地址             | 地址（若原始資料無地址，由 AI 補全）       |
+| 網址             | Google Maps 連結                           |
+| 餐飲類型         | 複合分類，以半角逗號分隔，例如 `中式,日式` |
+| 來源清單         | 所屬的輸入 CSV 檔名（不含副檔名）          |
+| 是否曾去過       | 是 / 否                                    |
+| 距離住家(公里)   | 直線距離，未知時顯示「未知」               |
+| 人均消費預估(元) | 台幣預估，非餐飲或免費景點顯示「未知」     |
+| 備註             | 原始 CSV 中的筆記欄位                      |
+
+### 步驟 6：開啟抽籤網頁
+
+直接**雙擊 `lottery.html`** 在瀏覽器中開啟，即可：
+
+- 透過左側篩選面板設定回訪狀態、餐飲類型、距離、消費範圍。
+- 點擊「✨ 開始抽籤」進行拉霸式隨機抽取。
+- 抽到結果後可查看地點名稱、地址、來源清單、備註，並一鍵開啟 Google Maps。
 
 ---
 
-## 🔒 隱私與安全性
-*   所有的地址經緯度定位與消費估算皆透過安全的 Gemini API 完成。
-*   抽籤網頁 `lottery.html` 為純靜態網頁，資料存放在您本地的 `stores_data.js`，不會上傳至任何第三方伺服器，保證您的隱私安全。
+## Google Drive 自動上傳設定
+
+> 此步驟為**選用**功能，若不需要自動上傳可跳過。
+
+詳細的逐步設定說明請參閱 **[GDRIVE_SETUP.md](GDRIVE_SETUP.md)**，包含 Google Cloud Console 操作步驟、OAuth 設定流程、常見錯誤排解。
+
+快速摘要：
+
+1. 在 [Google Cloud Console](https://console.cloud.google.com/) 建立專案、啟用 Google Drive API、建立「**桌面應用程式**」類型的 OAuth 2.0 憑證，下載後重新命名為 `credentials.json` 放入專案根目錄。
+2. 套件已透過 `uv sync` 一併安裝，**無需額外執行** `pip install`。
+3. 開啟 Google Drive 目標資料夾，複製網址列 `/folders/` 後方的 ID，填入 `.env`：
+   ```env
+   GDRIVE_FOLDER_ID="你的資料夾ID"
+   ```
+4. 首次執行 `uv run export_to_sheets.py` 時，瀏覽器會自動開啟授權畫面；授權完成後產生 `token.json`，後續執行全自動，無需再次授權。
+
+---
+
+## Google Apps Script 雲端方案
+
+如果希望完全不依賴本機 Python，可改用 Google Apps Script 直接在雲端執行：
+
+1. 在 Google Drive 根目錄建立名為 `MyGoogleMap` 的資料夾。
+2. 上傳 `input/` 內的所有 CSV 至該資料夾。
+3. 建立新的 Google 試算表，選擇「**擴充功能 > Apps Script**」。
+4. 將 `GoogleAppsScript.js` 的完整內容貼入並儲存。
+5. 執行 `main` 函式，完成帳號授權後試算表將自動填入整理結果。
+
+---
+
+## 常見問題
+
+**Q：Gemini API 額度不足（429 錯誤）**  
+免費版 Gemini API 有每分鐘請求次數限制。稍等幾分鐘後重新執行即可。
+
+**Q：lottery.html 開啟後顯示「未偵測到 stores_data.js」**  
+請先執行 `uv run export_to_sheets.py` 產生 `stores_data.js`，再重新整理網頁。
+
+**Q：CSV 中大量地址或距離顯示「未知」**  
+請確認 `.env` 中的 `GEMINI_API_KEY` 已正確填寫，且 API 服務未受速率限制。
+
+**Q：如何新增更多清單？**  
+直接將新的 CSV 放入 `input/` 資料夾後重新執行腳本。檔名含「回訪」者標記為已去過，其他一律標記為未去過。
+
+**Q：換電腦或協作者如何快速還原環境？**  
+在專案資料夾執行 `uv sync`，uv 會依據 `uv.lock` 安裝完全一致的套件版本，並自動使用 `.python-version` 指定的 Python 3.11。
+
+---
+
+## 隱私說明
+
+- 抽籤網頁 `lottery.html` 為純靜態頁面，資料存放於本地 `stores_data.js`，不會上傳至任何第三方伺服器。
+- 地點資料透過 Gemini API 進行分析；如需上傳至 Google Drive，資料會傳輸至你自己的 Google 帳戶。
