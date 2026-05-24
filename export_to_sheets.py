@@ -13,6 +13,24 @@ MODEL_NAME = "gemini-2.5-flash"
 # 填寫後執行腳本時就不會每次都詢問。若留空，腳本會在啟動時詢問您。
 DEFAULT_HOME_ADDRESS = ""
 
+def load_env_home_address():
+    """
+    從 .env 檔案讀取 HOME_ADDRESS 設定值
+    """
+    if os.path.exists('.env'):
+        try:
+            with open('.env', 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        if '=' in line:
+                            key, val = line.split('=', 1)
+                            if key.strip() == 'HOME_ADDRESS':
+                                return val.strip().strip('"').strip("'")
+        except Exception as e:
+            print(f"讀取 .env 檔案時發生錯誤: {e}")
+    return ""
+
 def find_csv_file(keywords):
     """
     尋找檔名包含關鍵字的 CSV 檔案
@@ -276,6 +294,11 @@ def main():
         
     # 住家地址處理
     home_address = DEFAULT_HOME_ADDRESS
+    if not home_address:
+        home_address = load_env_home_address()
+        if home_address:
+            print(f"\n偵測到 .env 中的住家地址：{home_address}")
+            
     home_lat, home_lng = None, None
     if not home_address:
         try:
