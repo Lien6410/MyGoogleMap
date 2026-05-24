@@ -644,6 +644,7 @@
           <div class="result-header">
             <div class="result-title" id="winner-title">鼎泰豐</div>
             <div class="result-tags">
+              <span class="badge" id="winner-tag-fallback" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); display: none;">⚠️ 零符合項目 (已從全部抽選)</span>
               <span class="badge badge-cuisine" id="winner-tag-cuisine">中式</span>
               <span class="badge badge-distance" id="winner-tag-distance">1.2 km</span>
               <span class="badge badge-price" id="winner-tag-price">均消 450 元</span>
@@ -804,8 +805,14 @@
       });
 
       // Update counter UI
-      document.getElementById('matching-count').innerText = filteredStores.length;
-      document.getElementById('btn-start').disabled = filteredStores.length === 0;
+      const countEl = document.getElementById('matching-count');
+      if (filteredStores.length === 0) {
+        countEl.innerHTML = `0 <span style="color: var(--text-secondary); font-size: 0.85rem; font-weight: normal;">(無符合項目，抽籤將從「全部」中隨機抽取)</span>`;
+        document.getElementById('btn-start').disabled = stores.length === 0;
+      } else {
+        countEl.innerHTML = `<span class="counter-val">${filteredStores.length}</span>`;
+        document.getElementById('btn-start').disabled = false;
+      }
     }
 
     // Reset board back to initial draw button state
@@ -841,7 +848,13 @@
 
     // Trigger Slot Machine Draw Animation
     function drawLottery() {
-      if (filteredStores.length === 0) return;
+      let drawPool = filteredStores;
+      let isFallback = false;
+      if (drawPool.length === 0) {
+        drawPool = stores;
+        isFallback = true;
+      }
+      if (drawPool.length === 0) return;
 
       const board = document.getElementById('board');
       const initialState = document.getElementById('initial-state');
@@ -859,8 +872,8 @@
 
       // Cycle function that speeds up and then slows down
       function shuffle() {
-        // Randomly pick a candidate from filtered stores
-        const tempWinner = filteredStores[Math.floor(Math.random() * filteredStores.length)];
+        // Randomly pick a candidate from draw pool
+        const tempWinner = drawPool[Math.floor(Math.random() * drawPool.length)];
         shufflingText.innerText = tempWinner.title;
         shufflingText.classList.toggle('pulse');
 
@@ -876,7 +889,7 @@
           setTimeout(shuffle, interval);
         } else {
           // Show the final winner
-          displayWinner();
+          displayWinner(isFallback);
         }
       }
 
@@ -884,8 +897,9 @@
     }
 
     // Display final winning restaurant on board
-    function displayWinner() {
-      const winner = filteredStores[Math.floor(Math.random() * filteredStores.length)];
+    function displayWinner(isFallback) {
+      const pool = isFallback ? stores : filteredStores;
+      const winner = pool[Math.floor(Math.random() * pool.length)];
       
       document.getElementById('shuffling-text').style.display = 'none';
       document.getElementById('board').classList.remove('spinning');
@@ -894,6 +908,14 @@
       document.getElementById('winner-title').innerText = winner.title;
       document.getElementById('winner-tag-cuisine').innerText = winner.cuisine_type;
       
+      // Format Fallback Badge
+      const fallbackBadge = document.getElementById('winner-tag-fallback');
+      if (isFallback) {
+        fallbackBadge.style.display = 'inline-block';
+      } else {
+        fallbackBadge.style.display = 'none';
+      }
+
       // Format Distance Badge
       const distBadge = document.getElementById('winner-tag-distance');
       if (winner.distance_km !== null && winner.distance_km !== undefined) {
@@ -906,7 +928,7 @@
       // Format Price Badge
       const priceBadge = document.getElementById('winner-tag-price');
       if (winner.avg_spending && winner.avg_spending > 0) {
-        priceBadge.innerText = `人均 ₩${winner.avg_spending}元` ? `人均 NT$ ${winner.avg_spending}` : '';
+        priceBadge.innerText = `人均 NT$ ${winner.avg_spending}`;
         priceBadge.style.display = 'inline-block';
       } else {
         priceBadge.innerText = '未知/免費用餐';
@@ -917,7 +939,7 @@
       const visitBadge = document.getElementById('winner-tag-visit');
       if (winner.visited === '是') {
         visitBadge.innerText = '已去過 (回訪)';
-        visitBadge.style.background = 'rgba(236, 72, 1 pink, 0.15)';
+        visitBadge.style.background = 'rgba(236, 72, 153, 0.15)';
       } else {
         visitBadge.innerText = '未去過 (想去)';
         visitBadge.style.background = 'rgba(148, 163, 184, 0.15)';
