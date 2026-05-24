@@ -149,15 +149,20 @@ def geocode_address(address):
         print(f"解析住家地址座標失敗: {e}")
         return None, None
 
-def classify_cuisine_and_details(items):
+def classify_cuisine_and_details(items, home_address=""):
     """
-    使用 Gemini 2.5 Flash 批次判斷餐飲類型、預估人均消費，以及解析店家的經緯度座標
+    使用 Gemini 2.5 Flash 批次判斷餐飲類型、預估人均消費，補足店家的地址，以及解析經緯度座標
     """
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
     
     prompt = """
-分析以下店家的名稱和地址，判斷它們的「餐飲類型」、「預估人均消費（台幣）」，以及「預估經緯度座標」。
-
+分析以下店家的名稱和輸入地址（輸入地址若為空，請由店名幫忙補足預估的詳細中文地址）。
+請為每一筆店家判斷「餐飲類型」、「預估人均消費（台幣）」、「預估經緯度座標」以及「預估中文詳細地址」。
+"""
+    if home_address:
+        prompt += f"\n提示：這些店家多數位於「{home_address}」附近，請以此作為參考縣市來估算店家地址（例如：若您知道該店名，且該店在新竹市有分店，請優先定位於新竹市）。\n"
+        
+    prompt += """
 餐飲類型選項（可複選，符合多個時請以半角逗號隔開，例如：中式,日式）：
 - 中式
 - 日式
@@ -171,13 +176,14 @@ def classify_cuisine_and_details(items):
 1. 餐飲類型：請根據店名與地址判斷。若非餐飲場所（例如：景點、飯店、公園、商店等），請直接標記為「其他」。
 2. 人均消費：請預估該店家的台幣人均消費金額（整數，例如平價小吃預估 80 或 150，中價位餐廳 350 或 500，高檔餐廳 1200，若為非餐飲店或免費景點，請直接標記為 0）。
 3. 經緯度座標：請預估該店家最準確的 GPS 緯度 (lat) 與經度 (lng) 座標（用於計算距離）。
-4. 請依照提供的 index 對應填寫。
+4. 詳細地址：請估算寫出該店家的中文詳細地址（例如：'新竹市東區中央路229號'）。如果原本的地址已經不為空，請儘量使用它；若原本地址為空，請根據店名在資料庫中尋找並補齊詳細地址。若完全無法得知，請寫「未知地址」。
+5. 請依照提供的 index 對應填寫。
 
 請嚴格以下列 JSON 格式回傳，不要包含任何 Markdown 標記或說明文字：
 {
   "results": [
-    {"index": 0, "types": "中式", "avg_spending": 150, "lat": 25.033, "lng": 121.564},
-    {"index": 1, "types": "日式,東南亞式", "avg_spending": 680, "lat": 25.021, "lng": 121.531}
+    {"index": 0, "types": "中式", "avg_spending": 150, "lat": 25.033, "lng": 121.564, "address": "台北市大安區信義路二段194號"},
+    {"index": 1, "types": "日式,東南亞式", "avg_spending": 680, "lat": 25.021, "lng": 121.531, "address": "新竹市東區中央路229號"}
   ]
 }
 
@@ -206,9 +212,10 @@ def classify_cuisine_and_details(items):
                                 "types": { "type": "STRING" },
                                 "avg_spending": { "type": "INTEGER" },
                                 "lat": { "type": "NUMBER" },
-                                "lng": { "type": "NUMBER" }
+                                "lng": { "type": "NUMBER" },
+                                "address": { "type": "STRING" }
                             },
-                            "required": ["index", "types", "avg_spending", "lat", "lng"]
+                            "required": ["index", "types", "avg_spending", "lat", "lng", "address"]
                         }
                     }
                 },
@@ -237,7 +244,8 @@ def classify_cuisine_and_details(items):
                     'types': res_item.get("types", "其他"),
                     'avg_spending': res_item.get("avg_spending", 0),
                     'lat': res_item.get("lat"),
-                    'lng': res_item.get("lng")
+                    'lng': res_item.get("lng"),
+                    'address': res_item.get("address", "")
                 }
             
             final_results = []
@@ -246,7 +254,8 @@ def classify_cuisine_and_details(items):
                     'types': "其他",
                     'avg_spending': 0,
                     'lat': None,
-                    'lng': None
+                    'lng': None,
+                    'address': items[idx]["address"]
                 }))
             return final_results
             
@@ -261,8 +270,9 @@ def classify_cuisine_and_details(items):
             'types': "其他",
             'avg_spending': 0,
             'lat': None,
-            'lng': None
-        }] * len(items)
+            'lng': None,
+            'address': items[i]["address"]
+        } for i in range(len(items))]
 
 def haversine_distance(lat1, lon1, lat2, lon2):
     """
@@ -354,14 +364,18 @@ def main():
     for i in range(0, total_count, batch_size):
         batch = total_places[i:i+batch_size]
         print(f"正在處理第 {i+1} 至 {min(i+batch_size, total_count)} 筆...")
-        details = classify_cuisine_and_details(batch)
+        details = classify_cuisine_and_details(batch, home_address)
         
         for idx, det in enumerate(details):
-            # 填入餐飲類型與消費
+            # 填入餐飲類型、消費與座標
             batch[idx]['cuisine_type'] = det['types']
             batch[idx]['avg_spending'] = det['avg_spending']
             batch[idx]['lat'] = det['lat']
             batch[idx]['lng'] = det['lng']
+            
+            # 若原地址為空，將 Gemini 預估的地址填入
+            if not batch[idx]['address'] and det.get('address'):
+                batch[idx]['address'] = det['address']
             
             # 計算距離
             if home_lat and home_lng and det['lat'] and det['lng']:

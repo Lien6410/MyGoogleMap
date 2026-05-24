@@ -100,12 +100,16 @@ function main() {
   var batchSize = 20;
   for (var i = 0; i < places.length; i += batchSize) {
     var batch = places.slice(i, i + batchSize);
-    var details = classifyBatchDetails(batch);
+    var details = classifyBatchDetails(batch, homeAddress);
     
     for (var j = 0; j < batch.length; j++) {
-      var det = details[j] || { types: "其他", avg_spending: 0, lat: null, lng: null };
+      var det = details[j] || { types: "其他", avg_spending: 0, lat: null, lng: null, address: "" };
       batch[j].cuisineType = det.types;
       batch[j].avgSpending = det.avg_spending;
+      
+      if (!batch[j].address && det.address) {
+        batch[j].address = det.address;
+      }
       
       // 計算距離
       if (homeLat && homeLng && det.lat && det.lng) {
@@ -167,31 +171,38 @@ function parseCsvFile(file) {
   return places;
 }
 
-function classifyBatchDetails(items) {
+function classifyBatchDetails(items, homeAddress) {
   var url = "https://generativelanguage.googleapis.com/v1beta/models/" + MODEL_NAME + ":generateContent?key=" + API_KEY;
   
-  var prompt = "分析以下店家的名稱和地址，判斷它們的「餐飲類型」、「預估人均消費（台幣）」，以及「預估經緯度座標」。\n\n" +
-               "餐飲類型選項（可複選，符合多個時請以半角逗號隔開，例如：中式,日式）：\n" +
-               "- 中式\n" +
-               "- 日式\n" +
-               "- 義式\n" +
-               "- 美式\n" +
-               "- 韓式\n" +
-               "- 東南亞式\n" +
-               "- 其他\n\n" +
-               "說明：\n" +
-               "1. 餐飲類型：請根據店名與地址判斷。若非餐飲場所（例如：景點、飯店、公園、商店等），請直接標記為「其他」。\n" +
-               "2. 人均消費：請預估該店家的台幣人均消費金額（整數，例如平價小吃預估 80 或 150，中價位餐廳 350 或 500，高檔餐廳 1200，若為非餐飲店或免費景點，請直接標記為 0）。\n" +
-               "3. 經緯度座標：請預估該店家最準確的 GPS 緯度 (lat) 與經度 (lng) 座標（用於計算距離）。\n" +
-               "4. 請依照提供的 index 對應填寫。\n\n" +
-               "請嚴格以下列 JSON 格式回傳，不要包含任何 Markdown 標記或說明文字：\n" +
-               "{\n" +
-               "  \"results\": [\n" +
-               "    {\"index\": 0, \"types\": \"中式\", \"avg_spending\": 150, \"lat\": 25.033, \"lng\": 121.564},\n" +
-               "    {\"index\": 1, \"types\": \"日式,東南亞式\", \"avg_spending\": 680, \"lat\": 25.021, \"lng\": 121.531}\n" +
-               "  ]\n" +
-               "}\n\n" +
-               "待處理的店家列表：\n";
+  var prompt = "分析以下店家的名稱和輸入地址（輸入地址若為空，請由店名幫忙補足預估的詳細中文地址）。\n" +
+               "請為每一筆店家判斷「餐飲類型」、「預估人均消費（台幣）」、「預估經緯度座標」以及「預估中文詳細地址」。\n";
+               
+  if (homeAddress) {
+    prompt += "\n提示：這些店家多數位於「" + homeAddress + "」附近，請以此作為參考縣市來估算店家地址（例如：若您知道該店名，且該店在新竹市有分店，請優先定位於新竹市）。\n";
+  }
+  
+  prompt += "\n餐飲類型選項（可複選，符合多個時請以半角逗號隔開，例如：中式,日式）：\n" +
+            "- 中式\n" +
+            "- 日式\n" +
+            "- 義式\n" +
+            "- 美式\n" +
+            "- 韓式\n" +
+            "- 東南亞式\n" +
+            "- 其他\n\n" +
+            "說明：\n" +
+            "1. 餐飲類型：請根據店名與地址判斷。若非餐飲場所（例如：景點、飯店、公園、商店等），請直接標記為「其他」。\n" +
+            "2. 人均消費：請預估該店家的台幣人均消費金額（整數，例如平價小吃預估 80 或 150，中價位餐廳 350 或 500，高檔餐廳 1200，若為非餐飲店或免費景點，請直接標記為 0）。\n" +
+            "3. 經緯度座標：請預估該店家最準確的 GPS 緯度 (lat) 與經度 (lng) 座標（用於計算距離）。\n" +
+            "4. 詳細地址：請估算寫出該店家的中文詳細地址（例如：'新竹市東區中央路229號'）。如果原本的地址已經不為空，請儘量使用它；若原本地址為空，請根據店名在資料庫中尋找並補齊詳細地址。若完全無法得知，請寫「未知地址」。\n" +
+            "5. 請依照提供的 index 對應填寫。\n\n" +
+            "請嚴格以下列 JSON 格式回傳，不要包含任何 Markdown 標記或說明文字：\n" +
+            "{\n" +
+            "  \"results\": [\n" +
+            "    {\"index\": 0, \"types\": \"中式\", \"avg_spending\": 150, \"lat\": 25.033, \"lng\": 121.564, \"address\": \"台北市大安區信義路二段194號\"},\n" +
+            "    {\"index\": 1, \"types\": \"日式,東南亞式\", \"avg_spending\": 680, \"lat\": 25.021, \"lng\": 121.531, \"address\": \"新竹市東區中央路229號\"}\n" +
+            "  ]\n" +
+            "}\n\n" +
+            "待處理的店家列表：\n";
                
   for (var i = 0; i < items.length; i++) {
     prompt += "Index " + i + ": 店名=\"" + items[i].title + "\", 地址=\"" + items[i].address + "\"\n";
