@@ -1,0 +1,11 @@
+# Compiled python
+__pycache__/
+*.pyc
+
+# Local data files (Outputs)
+MyGoogleMap_Stores.csv
+stores_data.js
+
+# Google Takeout raw archives
+*.zip
+takeout-*/
