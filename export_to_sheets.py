@@ -5,8 +5,27 @@ import json
 import math
 import urllib.request
 
+def load_env_api_key():
+    """
+    從 .env 檔案讀取 GEMINI_API_KEY 設定值
+    """
+    if os.path.exists('.env'):
+        try:
+            with open('.env', 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        if '=' in line:
+                            key, val = line.split('=', 1)
+                            if key.strip() == 'GEMINI_API_KEY':
+                                return val.strip().strip('"').strip("'")
+        except:
+            pass
+    return ""
+
 # 設定 Gemini API Key 與模型
-API_KEY = "AIzaSyD2U8zFDMD6JBp7Bk6rxP7VRcJRsvabeX8"
+_env_key = load_env_api_key()
+API_KEY = _env_key if _env_key else "AIzaSyD2U8zFDMD6JBp7Bk6rxP7VRcJRsvabeX8"
 MODEL_NAME = "gemini-2.5-flash"
 
 # 您可以在此處填寫預設的住家地址（例如：台北市信義區信義路五段7號）
