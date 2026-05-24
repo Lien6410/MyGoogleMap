@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyGoogleMap 美食景點隨機抽籤</title>
+  <!-- 載入 Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* CSS Variables for Premium Dark/Glassmorphic Aesthetics */
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      --panel-bg: rgba(30, 41, 59, 0.45);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 255, 255, 0.18);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-color: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.4);
+      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+      --accent-secondary: #ec4899;
+      --card-bg: rgba(15, 23, 42, 0.6);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+    }
+
+    /* Background decorative glowing orbs */
+    .bg-orb {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(99,102,241,0) 70%);
+      z-index: -1;
+      filter: blur(40px);
+    }
+    .orb-1 { top: 10%; left: 5%; }
+    .orb-2 { bottom: 10%; right: 5%; background: radial-gradient(circle, rgba(236,72,153,0.15) 0%, rgba(236,72,153,0) 70%); }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 2rem;
+      z-index: 10;
+    }
+
+    @media (max-width: 900px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Glassmorphic Filters Sidebar */
+    .sidebar {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 1.75rem;
+      height: fit-content;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .filter-section {
+      margin-bottom: 1.75rem;
+    }
+
+    .filter-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .filter-actions {
+      font-size: 0.8rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .filter-actions a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .filter-actions a:hover {
+      color: #818cf8;
+      text-decoration: underline;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.2s ease;
+    }
+
+    .checkbox-label:hover {
+      color: var(--text-primary);
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid var(--border-color);
+      border-radius: 4px;
+      outline: none;
+      background: rgba(15, 23, 42, 0.4);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .checkbox-label input[type="checkbox"]:checked {
+      background: var(--accent-gradient);
+      border-color: transparent;
+    }
+
+    .checkbox-label input[type="checkbox"]:checked::before {
+      content: '✓';
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    /* Visited Select Radio Options */
+    .radio-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      background: rgba(15, 23, 42, 0.4);
+      padding: 0.25rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .radio-option input[type="radio"] {
+      display: none;
+    }
+
+    .radio-option label {
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .radio-option input[type="radio"]:checked + label {
+      background: var(--accent-color);
+      color: #fff;
+      font-weight: 500;
+    }
+
+    /* Main Lottery Area */
+    .draw-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* Counter card */
+    .counter-card {
+      background: rgba(30, 41, 59, 0.25);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .counter-val {
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    /* Draw Board */
+    .draw-board {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 450px;
+      position: relative;
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+      transition: border-color 0.3s ease;
+    }
+
+    .draw-board.spinning {
+      border-color: rgba(99, 102, 241, 0.4);
+    }
+
+    /* Large Draw Button */
+    .btn-draw {
+      background: var(--accent-gradient);
+      color: #fff;
+      border: none;
+      padding: 1.25rem 3rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4), 0 0 20px rgba(99, 102, 241, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-draw:hover:not(:disabled) {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px -5px rgba(99, 102, 241, 0.6), 0 0 30px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-draw:active:not(:disabled) {
+      transform: translateY(-1px);
+    }
+
+    .btn-draw:disabled {
+      background: #334155;
+      color: #64748b;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    /* Shuffling Card Display */
+    .shuffling-card {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #f8fafc;
+      text-align: center;
+      margin-bottom: 2rem;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 500px;
+      padding: 1rem;
+      transition: transform 0.1s ease;
+    }
+
+    .shuffling-card.pulse {
+      transform: scale(1.03);
+      color: var(--accent-secondary);
+    }
+
+    /* Result Card (Winner) */
+    .result-card {
+      width: 100%;
+      max-width: 550px;
+      background: var(--card-bg);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-lg);
+      transform: scale(0.9);
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: absolute;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .result-card.show {
+      transform: scale(1);
+      opacity: 1;
+      position: relative;
+      pointer-events: auto;
+    }
+
+    .result-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 1rem;
+    }
+
+    .result-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .result-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+    }
+
+    .badge-cuisine {
+      background: rgba(99, 102, 241, 0.15);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .badge-distance {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-price {
+      background: rgba(234, 179, 8, 0.15);
+      color: #facc15;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+
+    .badge-visit {
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+      border: 1px solid rgba(236, 72, 153, 0.3);
+    }
+
+    .result-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .detail-label {
+      color: var(--text-secondary);
+      min-width: 70px;
+      font-weight: 500;
+    }
+
+    .detail-value {
+      color: var(--text-primary);
+    }
+
+    .btn-maps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+    }
+
+    .btn-maps:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-draw-again {
+      background: transparent;
+      color: var(--text-secondary);
+      border: none;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      text-decoration: underline;
+    }
+
+    .btn-draw-again:hover {
+      color: #fff;
+    }
+
+    /* Confetti Particle CSS animation */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      animation: fall 3s ease-out forwards;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(400px) translateX(var(--x-offset)) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Helper styles for blank state */
+    .empty-state {
+      text-align: center;
+      color: var(--text-secondary);
+    }
+    
+    .empty-state h3 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header>
+    <h1>Lucky Draw Roulette</h1>
+    <p>篩選並抽出您的下一個美食地標</p>
+  </header>
+
+  <div class="main-container">
+    
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      
+      <!-- Visited Status Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>回訪狀態</span>
+        </div>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="visit-all" name="visit-status" value="all" checked>
+            <label for="visit-all">全部</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="visit-yes" name="visit-status" value="yes">
+            <label for="visit-yes">曾去過</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="visit-no" name="visit-status" value="no">
+            <label for="visit-no">未去過</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuisine Type Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>餐飲類型</span>
+          <div class="filter-actions">
+            <a onclick="selectAll('cuisine', true)">全選</a>
+            <span>|</span>
+            <a onclick="selectAll('cuisine', false)">全不選</a>
+          </div>
+        </div>
+        <div class="checkbox-group" id="cuisine-group">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Distance Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>距離住家</span>
+          <div class="filter-actions">
+            <a onclick="selectAll('distance', true)">全選</a>
+            <span>|</span>
+            <a onclick="selectAll('distance', false)">全不選</a>
+          </div>
+        </div>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="1" checked> 1公里內
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="3" checked> 1~3公里
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="5" checked> 3~5公里
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="10" checked> 5~10公里
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="far" checked> 10公里以上
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="distance" value="unknown" checked> 未知距離
+          </label>
+        </div>
+      </div>
+
+      <!-- Price Range Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>人均消費</span>
+          <div class="filter-actions">
+            <a onclick="selectAll('price', true)">全選</a>
+            <span>|</span>
+            <a onclick="selectAll('price', false)">全不選</a>
+          </div>
+        </div>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="price" value="200" checked> 200元內 (平價)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="price" value="500" checked> 200~500元 (中價位)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="price" value="1000" checked> 500~1000元 (中高檔)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="price" value="expensive" checked> 1000元以上 (奢華)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="price" value="free" checked> 未知/免費景點
+          </label>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Main Lottery Section -->
+    <main class="draw-area">
+      
+      <!-- Counter Status -->
+      <div class="counter-card">
+        <span>符合目前篩選條件的店家數量：</span>
+        <span class="counter-val" id="matching-count">0</span>
+      </div>
+
+      <!-- Draw Board Container -->
+      <div class="draw-board" id="board">
+        
+        <!-- Shuffling text (visible when drawing) -->
+        <div class="shuffling-card" id="shuffling-text" style="display: none;">
+          準備中...
+        </div>
+
+        <!-- Initial Blank State / Draw Button -->
+        <div class="empty-state" id="initial-state">
+          <h3>今天吃什麼？</h3>
+          <p style="margin-bottom: 2rem;">選擇左側篩選條件，然後點擊下方按鈕開始隨機抽籤</p>
+          <button class="btn-draw" id="btn-start" onclick="drawLottery()">
+            <span>✨ 開始抽籤</span>
+          </button>
+        </div>
+
+        <!-- Winner Result Card -->
+        <div class="result-card" id="result-card">
+          <div class="result-header">
+            <div class="result-title" id="winner-title">鼎泰豐</div>
+            <div class="result-tags">
+              <span class="badge badge-cuisine" id="winner-tag-cuisine">中式</span>
+              <span class="badge badge-distance" id="winner-tag-distance">1.2 km</span>
+              <span class="badge badge-price" id="winner-tag-price">均消 450 元</span>
+              <span class="badge badge-visit" id="winner-tag-visit">曾去過 (回訪)</span>
+            </div>
+          </div>
+
+          <div class="result-details">
+            <div class="detail-row">
+              <span class="detail-label">地址：</span>
+              <span class="detail-value" id="winner-address">-</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">備註：</span>
+              <span class="detail-value" id="winner-note">-</span>
+            </div>
+          </div>
+
+          <a href="#" target="_blank" class="btn-maps" id="winner-map-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            在 Google 地圖中開啟
+          </a>
+
+          <button class="btn-draw-again" onclick="resetDraw()">重新抽籤</button>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- 載入自動產生的店家資料檔 -->
+  <script src="stores_data.js"></script>
+
+  <script>
+    // Fallback in case stores_data.js is not loaded
+    if (typeof window.STORES_DATA === 'undefined') {
+      window.STORES_DATA = [];
+      alert("警告：未偵測到 'stores_data.js' 資料庫檔案！請先執行 'export_to_sheets.py' 以產生店家資料庫。");
+    }
+
+    const stores = window.STORES_DATA;
+    let filteredStores = [];
+
+    // Detect unique cuisines from stores database
+    function getCuisineTypes() {
+      const cuisineSet = new Set();
+      cuisineSet.add("中式");
+      cuisineSet.add("日式");
+      cuisineSet.add("義式");
+      cuisineSet.add("美式");
+      cuisineSet.add("韓式");
+      cuisineSet.add("東南亞式");
+      cuisineSet.add("其他");
+      
+      // Also grab any other custom classifications written by Gemini
+      stores.forEach(s => {
+        if (s.cuisine_type) {
+          s.cuisine_type.split(',').forEach(c => {
+            const clean = c.trim();
+            if (clean) cuisineSet.add(clean);
+          });
+        }
+      });
+      return Array.from(cuisineSet);
+    }
+
+    // Populate Cuisine Filter UI Checkboxes
+    function populateCuisineFilters() {
+      const cuisines = getCuisineTypes();
+      const container = document.getElementById('cuisine-group');
+      container.innerHTML = '';
+      
+      cuisines.forEach(c => {
+        const label = document.createElement('label');
+        label.className = 'checkbox-label';
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'cuisine';
+        checkbox.value = c;
+        checkbox.checked = true;
+        
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(' ' + c));
+        container.appendChild(label);
+      });
+    }
+
+    // Helper: Bulk Select / Deselect check groups
+    function selectAll(groupName, isChecked) {
+      const boxes = document.querySelectorAll(`input[name="${groupName}"]`);
+      boxes.forEach(box => box.checked = isChecked);
+      updateFilters();
+    }
+
+    // Apply active filters to stores array
+    function updateFilters() {
+      // 1. Visit Status filter
+      const visitVal = document.querySelector('input[name="visit-status"]:checked').value;
+      
+      // 2. Cuisine filter
+      const activeCuisines = Array.from(document.querySelectorAll('input[name="cuisine"]:checked')).map(box => box.value);
+      
+      // 3. Distance filter
+      const activeDistances = Array.from(document.querySelectorAll('input[name="distance"]:checked')).map(box => box.value);
+      
+      // 4. Price filter
+      const activePrices = Array.from(document.querySelectorAll('input[name="price"]:checked')).map(box => box.value);
+
+      filteredStores = stores.filter(s => {
+        // Match Visited
+        if (visitVal === 'yes' && s.visited !== '是') return false;
+        if (visitVal === 'no' && s.visited !== '否') return false;
+
+        // Match Cuisine (at least one overlaps)
+        if (!s.cuisine_type) return activeCuisines.includes('其他');
+        const sCuisines = s.cuisine_type.split(',').map(c => c.trim());
+        const hasCuisineMatch = sCuisines.some(c => activeCuisines.includes(c));
+        if (!hasCuisineMatch) return false;
+
+        // Match Distance
+        const km = s.distance_km;
+        let distMatch = false;
+        if (km === null || km === undefined) {
+          distMatch = activeDistances.includes('unknown');
+        } else if (km <= 1.0) {
+          distMatch = activeDistances.includes('1');
+        } else if (km <= 3.0) {
+          distMatch = activeDistances.includes('3');
+        } else if (km <= 5.0) {
+          distMatch = activeDistances.includes('5');
+        } else if (km <= 10.0) {
+          distMatch = activeDistances.includes('10');
+        } else {
+          distMatch = activeDistances.includes('far');
+        }
+        if (!distMatch) return false;
+
+        // Match Price Range
+        const spending = s.avg_spending;
+        let priceMatch = false;
+        if (!spending || spending <= 0) {
+          priceMatch = activePrices.includes('free');
+        } else if (spending <= 200) {
+          priceMatch = activePrices.includes('200');
+        } else if (spending <= 500) {
+          priceMatch = activePrices.includes('500');
+        } else if (spending <= 1000) {
+          priceMatch = activePrices.includes('1000');
+        } else {
+          priceMatch = activePrices.includes('expensive');
+        }
+        if (!priceMatch) return false;
+
+        return true;
+      });
+
+      // Update counter UI
+      document.getElementById('matching-count').innerText = filteredStores.length;
+      document.getElementById('btn-start').disabled = filteredStores.length === 0;
+    }
+
+    // Reset board back to initial draw button state
+    function resetDraw() {
+      document.getElementById('result-card').classList.remove('show');
+      document.getElementById('initial-state').style.display = 'block';
+      document.getElementById('shuffling-text').style.display = 'none';
+      document.getElementById('board').classList.remove('spinning');
+    }
+
+    // Confetti Effect for Winner
+    function createConfetti() {
+      const colors = ['#6366f1', '#a855f7', '#ec4899', '#38bdf8', '#facc15'];
+      const board = document.getElementById('board');
+      for (let i = 0; i < 40; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 90 + 5 + '%';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.setProperty('--x-offset', (Math.random() * 200 - 100) + 'px');
+        // Random dimensions
+        const size = Math.random() * 8 + 6 + 'px';
+        confetti.style.width = size;
+        confetti.style.height = size;
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        
+        board.appendChild(confetti);
+        
+        // Remove element after animation finishes
+        setTimeout(() => confetti.remove(), 3500);
+      }
+    }
+
+    // Trigger Slot Machine Draw Animation
+    function drawLottery() {
+      if (filteredStores.length === 0) return;
+
+      const board = document.getElementById('board');
+      const initialState = document.getElementById('initial-state');
+      const shufflingText = document.getElementById('shuffling-text');
+      const resultCard = document.getElementById('result-card');
+
+      // 1. Swap visibility to shuffling text
+      initialState.style.display = 'none';
+      shufflingText.style.display = 'flex';
+      board.classList.add('spinning');
+      
+      let duration = 2500; // total animation time in ms
+      let interval = 50;   // starting speed of card changes
+      let elapsedTime = 0;
+
+      // Cycle function that speeds up and then slows down
+      function shuffle() {
+        // Randomly pick a candidate from filtered stores
+        const tempWinner = filteredStores[Math.floor(Math.random() * filteredStores.length)];
+        shufflingText.innerText = tempWinner.title;
+        shufflingText.classList.toggle('pulse');
+
+        elapsedTime += interval;
+
+        if (elapsedTime < duration) {
+          // Slow down the cycles near the end
+          if (elapsedTime > duration * 0.75) {
+            interval = 200;
+          } else if (elapsedTime > duration * 0.5) {
+            interval = 120;
+          }
+          setTimeout(shuffle, interval);
+        } else {
+          // Show the final winner
+          displayWinner();
+        }
+      }
+
+      shuffle();
+    }
+
+    // Display final winning restaurant on board
+    function displayWinner() {
+      const winner = filteredStores[Math.floor(Math.random() * filteredStores.length)];
+      
+      document.getElementById('shuffling-text').style.display = 'none';
+      document.getElementById('board').classList.remove('spinning');
+
+      // Populate Winner Details
+      document.getElementById('winner-title').innerText = winner.title;
+      document.getElementById('winner-tag-cuisine').innerText = winner.cuisine_type;
+      
+      // Format Distance Badge
+      const distBadge = document.getElementById('winner-tag-distance');
+      if (winner.distance_km !== null && winner.distance_km !== undefined) {
+        distBadge.innerText = `距離住家 ${winner.distance_km} km`;
+        distBadge.style.display = 'inline-block';
+      } else {
+        distBadge.style.display = 'none';
+      }
+
+      // Format Price Badge
+      const priceBadge = document.getElementById('winner-tag-price');
+      if (winner.avg_spending && winner.avg_spending > 0) {
+        priceBadge.innerText = `人均 ₩${winner.avg_spending}元` ? `人均 NT$ ${winner.avg_spending}` : '';
+        priceBadge.style.display = 'inline-block';
+      } else {
+        priceBadge.innerText = '未知/免費用餐';
+        priceBadge.style.display = 'inline-block';
+      }
+
+      // Format Visited Badge
+      const visitBadge = document.getElementById('winner-tag-visit');
+      if (winner.visited === '是') {
+        visitBadge.innerText = '已去過 (回訪)';
+        visitBadge.style.background = 'rgba(236, 72, 1 pink, 0.15)';
+      } else {
+        visitBadge.innerText = '未去過 (想去)';
+        visitBadge.style.background = 'rgba(148, 163, 184, 0.15)';
+      }
+
+      document.getElementById('winner-address').innerText = winner.address || '無登記地址';
+      document.getElementById('winner-note').innerText = winner.note || '無填寫備註';
+
+      // Maps Button
+      const mapsBtn = document.getElementById('winner-map-link');
+      if (winner.url) {
+        mapsBtn.href = winner.url;
+        mapsBtn.style.display = 'flex';
+      } else {
+        mapsBtn.style.display = 'none';
+      }
+
+      // Show Result Card
+      document.getElementById('result-card').classList.add('show');
+      
+      // Throw confetti!
+      createConfetti();
+    }
+
+    // Initialize App Setup
+    populateCuisineFilters();
+    
+    // Add event listeners to filter elements
+    document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
+      el.addEventListener('change', updateFilters);
+    });
+
+    // Initial Filter Apply
+    updateFilters();
+  </script>
+</body>
+</html>
