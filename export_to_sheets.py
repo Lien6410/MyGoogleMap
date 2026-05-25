@@ -8,13 +8,13 @@ import urllib.error
 import urllib.request
 
 # === 設定常數 ===
-INPUT_FOLDER = "input"    # 存放來源 CSV 的資料夾
-OUTPUT_CSV   = "MyGoogleMap_Stores.csv"
-OUTPUT_JS    = "stores_data.js"
-CACHE_FILE   = "export_cache.json"   # 斷點續跑快取
-MODEL_NAME   = "gemini-2.5-flash"
-BATCH_DELAY  = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
-MAX_RETRIES  = 5          # 429 最大重試次數
+INPUT_FOLDER    = "input"    # 存放來源 CSV 的資料夾
+OUTPUT_CSV      = "MyGoogleMap_Stores.csv"
+OUTPUT_JS       = "stores_data.js"
+CACHE_FILE      = "export_cache.json"   # 斷點續跑快取
+DEFAULT_MODEL   = "gemini-2.5-flash"    # 可在 .env 設定 GEMINI_MODEL 覆寫
+BATCH_DELAY     = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
+MAX_RETRIES     = 5          # 429 最大重試次數
 
 
 # === 讀取 .env 設定 ===
@@ -184,7 +184,13 @@ def classify_cuisine_and_details(items, home_address, api_key):
         "請為每一筆判斷「餐飲類型」、「預估人均消費（台幣）」、「預估經緯度座標」及「預估中文詳細地址」。\n"
     )
     if home_address:
-        prompt += f"\n提示：這些店家多數位於「{home_address}」附近，請以此估算店家地址與縣市。\n"
+        prompt += (
+            f"\n參考資訊：使用者的住家位於「{home_address}」。"
+            "此資訊僅供後續距離計算使用，\n"
+            "請勿以住家城市強制推斷店家位置。"
+            "每筆店家請依照店名本身在台灣的實際位置給出正確座標與地址，\n"
+            "若一家店明確位於台中、台北、高雄等其他城市，請如實標記，不要改成住家所在縣市。\n"
+        )
     prompt += (
         "\n餐飲類型選項（可複選，以半角逗號隔開，例如：中式,日式）：\n"
         "  中式 / 日式 / 義式 / 美式 / 韓式 / 東南亞式 / 其他\n\n"
@@ -192,8 +198,8 @@ def classify_cuisine_and_details(items, home_address, api_key):
         "1. 餐飲類型：非餐飲場所（景點、飯店、公園、商店等）請標記「其他」。\n"
         "2. 人均消費：預估台幣整數（平價小吃約 80~150，中價位約 350~500，"
         "高檔約 1200；非餐飲或免費景點請填 0）。\n"
-        "3. 經緯度：預估最準確的 GPS 座標（lat/lng）。\n"
-        "4. 詳細地址：中文詳細地址，若完全不知請填「未知地址」。\n"
+        "3. 經緯度：根據店名判斷其在台灣的實際 GPS 座標（lat/lng），務必反映真實地理位置。\n"
+        "4. 詳細地址：店家的中文詳細地址（含正確的縣市），若完全不知請填「未知地址」。\n"
         "5. 請依照提供的 index 對應填寫。\n\n"
         "請嚴格以下列 JSON 格式回傳（不含 Markdown 或說明文字）：\n"
         '{"results": [{"index": 0, "types": "中式", "avg_spending": 150, '
@@ -258,10 +264,11 @@ def classify_cuisine_and_details(items, home_address, api_key):
                     for i in range(len(items))
                 ]
         except urllib.error.HTTPError as e:
-            if e.code == 429:
-                delay = _parse_retry_delay(e)
+            if e.code in (429, 500, 503):
+                delay = _parse_retry_delay(e) if e.code == 429 else 30
                 if attempt < MAX_RETRIES:
-                    print(f"    [429] 超過速率限制，等待 {delay} 秒後重試（第 {attempt + 1}/{MAX_RETRIES} 次）...")
+                    label = '超過速率限制' if e.code == 429 else f'服務暫時不可用 (HTTP {e.code})'
+                    print(f"    [{e.code}] {label}，等待 {delay} 秒後重試（第 {attempt + 1}/{MAX_RETRIES} 次）...")
                     time.sleep(delay)
                     continue
                 print(f"    [錯誤] 達到最大重試次數，跳過此批次。")
@@ -352,13 +359,17 @@ def upload_to_gdrive(filepath, folder_id):
     media = MediaFileUpload(filepath, mimetype='text/csv', resumable=True)
 
     try:
+        print(f"  正在上傳 {filename}...")
         if existing:
             service.files().update(fileId=existing[0]['id'], media_body=media).execute()
-            print(f"\n[成功] 已更新 Google Drive 上的檔案：{filename}")
+            print(f"[成功] 已更新 Google Drive 上的檔案：{filename}")
         else:
             file = service.files().create(body=file_meta, media_body=media, fields='id').execute()
-            print(f"\n[成功] 已上傳至 Google Drive（ID: {file.get('id')}）：{filename}")
+            print(f"[成功] 已上傳至 Google Drive（ID: {file.get('id')}）：{filename}")
         return True
+    except KeyboardInterrupt:
+        print("\n[中斷] Google Drive 上傳被取消。本地檔案已完整儲存。")
+        return False
     except Exception as e:
         print(f"\n[失敗] Google Drive 上傳時發生錯誤: {e}")
         return False
@@ -372,6 +383,11 @@ def main():
     api_key = env.get('GEMINI_API_KEY', '')
     if not api_key:
         print("[警告] .env 中未設定 GEMINI_API_KEY，AI 分類功能將無法使用。")
+
+    # 支援從 .env 覆寫模型（例如改用 gemini-2.0-flash 以獲得較寬鬆的免費配額）
+    global MODEL_NAME
+    MODEL_NAME = env.get('GEMINI_MODEL', DEFAULT_MODEL)
+    print(f"使用模型：{MODEL_NAME}")
 
     # --- 掃描 input/ 資料夾 ---
     input_csvs = find_all_input_csvs(INPUT_FOLDER)
@@ -400,12 +416,22 @@ def main():
             home_address = ''
 
     if home_address and api_key:
-        print(f"\n正在定位住家地址：{home_address} ...")
-        home_lat, home_lng = geocode_address(home_address, api_key)
-        if home_lat and home_lng:
-            print(f"住家定位成功：(緯度 {home_lat}, 經度 {home_lng})")
+        # 優先從快取讀取住家座標，避免每次都消耗 API 配額
+        _home_cache_key = f"__home_coords__{home_address}"
+        _pre_cache = load_cache()
+        if _home_cache_key in _pre_cache:
+            home_lat = _pre_cache[_home_cache_key].get('lat')
+            home_lng = _pre_cache[_home_cache_key].get('lng')
+            print(f"\n住家座標從快取讀取：(緯度 {home_lat}, 經度 {home_lng})")
         else:
-            print("無法定位住家地址，將跳過距離計算。")
+            print(f"\n正在定位住家地址：{home_address} ...")
+            home_lat, home_lng = geocode_address(home_address, api_key)
+            if home_lat and home_lng:
+                print(f"住家定位成功：(緯度 {home_lat}, 經度 {home_lng})")
+                _pre_cache[_home_cache_key] = {'lat': home_lat, 'lng': home_lng}
+                save_cache(_pre_cache)
+            else:
+                print("無法定位住家地址，將跳過距離計算。")
 
     # --- 合併所有清單 ---
     merged_places = {}
@@ -566,4 +592,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n[中斷] 程式已結束。")

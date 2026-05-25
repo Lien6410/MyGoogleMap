@@ -611,6 +611,21 @@
         </div>
       </div>
 
+      <!-- County Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>縣市</span>
+          <div class="filter-actions">
+            <a onclick="selectAll('county', true)">全選</a>
+            <span>|</span>
+            <a onclick="selectAll('county', false)">全不選</a>
+          </div>
+        </div>
+        <div class="checkbox-group" id="county-group">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
     </aside>
 
     <!-- Main Lottery Section -->
@@ -694,6 +709,63 @@
     const stores = window.STORES_DATA;
     let filteredStores = [];
 
+    // === 縣市工具 ===
+    const TAIWAN_COUNTIES = [
+      '台北市', '新北市', '桃園市', '台中市', '台南市', '高雄市',
+      '基隆市', '新竹市', '嘉義市',
+      '新竹縣', '苗栗縣', '彰化縣', '南投縣', '雲林縣', '嘉義縣',
+      '屏東縣', '宜蘭縣', '花蓮縣', '台東縣', '澎湖縣', '金門縣', '連江縣'
+    ];
+
+    function extractCounty(address) {
+      const addr = (address || '').replace(/臺/g, '台');
+      for (const c of TAIWAN_COUNTIES) {
+        if (addr.includes(c)) return c;
+      }
+      return null;
+    }
+
+    function populateCountyFilters() {
+      // 收集資料中實際出現的縣市
+      const found = new Set();
+      stores.forEach(s => {
+        const c = extractCounty(s.address);
+        if (c) found.add(c);
+      });
+
+      // 依 TAIWAN_COUNTIES 順序排列，確保顯示一致
+      const sorted = TAIWAN_COUNTIES.filter(c => found.has(c));
+      const container = document.getElementById('county-group');
+      container.innerHTML = '';
+
+      sorted.forEach(c => {
+        const label = document.createElement('label');
+        label.className = 'checkbox-label';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.name = 'county';
+        cb.value = c;
+        cb.checked = true;   // 台灣縣市預設全勾
+        cb.addEventListener('change', updateFilters);
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(' ' + c));
+        container.appendChild(label);
+      });
+
+      // 未知/非台灣 → 預設不勾（只抽台灣店家）
+      const labelUnknown = document.createElement('label');
+      labelUnknown.className = 'checkbox-label';
+      const cbUnknown = document.createElement('input');
+      cbUnknown.type = 'checkbox';
+      cbUnknown.name = 'county';
+      cbUnknown.value = 'unknown';
+      cbUnknown.checked = false;
+      cbUnknown.addEventListener('change', updateFilters);
+      labelUnknown.appendChild(cbUnknown);
+      labelUnknown.appendChild(document.createTextNode(' 未知/非台灣'));
+      container.appendChild(labelUnknown);
+    }
+
     // Detect unique cuisines from stores database
     function getCuisineTypes() {
       const cuisineSet = new Set();
@@ -760,6 +832,10 @@
       // 4. Price filter
       const activePrices = Array.from(document.querySelectorAll('input[name="price"]:checked')).map(box => box.value);
 
+      // 5. County filter
+      const activeCounties    = Array.from(document.querySelectorAll('input[name="county"]:checked')).map(b => b.value);
+      const includeUnknownLoc = activeCounties.includes('unknown');
+
       filteredStores = stores.filter(s => {
         // Match Visited
         if (visitVal === 'yes' && s.visited !== '是') return false;
@@ -804,6 +880,14 @@
           priceMatch = activePrices.includes('expensive');
         }
         if (!priceMatch) return false;
+
+        // Match County
+        const county = extractCounty(s.address);
+        if (county) {
+          if (!activeCounties.includes(county)) return false;
+        } else {
+          if (!includeUnknownLoc) return false;
+        }
 
         return true;
       });
@@ -971,7 +1055,8 @@
 
     // Initialize App Setup
     populateCuisineFilters();
-    
+    populateCountyFilters();
+
     // Add event listeners to filter elements
     document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
       el.addEventListener('change', updateFilters);
