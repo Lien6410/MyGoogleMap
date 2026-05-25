@@ -5,6 +5,7 @@ import json
 import math
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 # === 設定常數 ===
@@ -127,9 +128,32 @@ def read_csv(filename):
 
 
 # === 住家地址定位 ===
-def geocode_address(address, api_key):
+def geocode_with_maps_api(address, maps_api_key):
+    """使用 Google Maps Geocoding API 取得精確座標，回傳 (lat, lng) 或 (None, None)。"""
+    if not address or not maps_api_key:
+        return None, None
+    encoded = urllib.parse.quote(address)
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={encoded}&key={maps_api_key}"
+    try:
+        with urllib.request.urlopen(url, timeout=10) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            if data.get('status') == 'OK' and data.get('results'):
+                loc = data['results'][0]['geometry']['location']
+                return loc['lat'], loc['lng']
+    except Exception:
+        pass
+    return None, None
+
+
+def geocode_address(address, api_key, maps_api_key=None):
     if not address:
         return None, None
+    # 優先用 Google Maps Geocoding API（精確）
+    if maps_api_key:
+        lat, lng = geocode_with_maps_api(address, maps_api_key)
+        if lat is not None:
+            return lat, lng
+    # 退回 Gemini AI 估算
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={api_key}"
     prompt = (
         f"請提供台灣地址或著名地標的預估經緯度：'{address}'。\n"
@@ -384,6 +408,10 @@ def main():
     if not api_key:
         print("[警告] .env 中未設定 GEMINI_API_KEY，AI 分類功能將無法使用。")
 
+    maps_api_key = env.get('MAPS_API_KEY', '') or api_key
+    if maps_api_key:
+        print("[資訊] 將嘗試使用 Google Maps Geocoding API 取得精確座標（MAPS_API_KEY 或 GEMINI_API_KEY）。")
+
     # 支援從 .env 覆寫模型（例如改用 gemini-2.0-flash 以獲得較寬鬆的免費配額）
     global MODEL_NAME
     MODEL_NAME = env.get('GEMINI_MODEL', DEFAULT_MODEL)
@@ -416,10 +444,37 @@ def main():
             home_address = ''
 
     if home_address and api_key:
-        # 優先從快取讀取住家座標，避免每次都消耗 API 配額
-        _home_cache_key = f"__home_coords__{home_address}"
+        _home_cache_key      = f"__home_coords__{home_address}"
+        _home_maps_cache_key = f"__maps_geo__{home_address}"
         _pre_cache = load_cache()
-        if _home_cache_key in _pre_cache:
+
+        # 優先從 Maps API 快取取得精確住家座標
+        if _home_maps_cache_key in _pre_cache:
+            home_lat = _pre_cache[_home_maps_cache_key]['lat']
+            home_lng = _pre_cache[_home_maps_cache_key]['lng']
+            print(f"\n住家座標從 Maps API 快取讀取：(緯度 {home_lat}, 經度 {home_lng})")
+        elif maps_api_key:
+            print(f"\n正在用 Google Maps Geocoding API 定位住家地址：{home_address} ...")
+            home_lat, home_lng = geocode_with_maps_api(home_address, maps_api_key)
+            if home_lat and home_lng:
+                print(f"住家定位成功（Maps API）：(緯度 {home_lat}, 經度 {home_lng})")
+                _pre_cache[_home_maps_cache_key] = {'lat': home_lat, 'lng': home_lng}
+                save_cache(_pre_cache)
+            else:
+                # Maps API 失敗，退回舊快取或 Gemini
+                if _home_cache_key in _pre_cache:
+                    home_lat = _pre_cache[_home_cache_key].get('lat')
+                    home_lng = _pre_cache[_home_cache_key].get('lng')
+                    print(f"  Maps API 失敗，改用舊快取：(緯度 {home_lat}, 經度 {home_lng})")
+                else:
+                    home_lat, home_lng = geocode_address(home_address, api_key)
+                    if home_lat and home_lng:
+                        print(f"  改用 Gemini 估算：(緯度 {home_lat}, 經度 {home_lng})")
+                        _pre_cache[_home_cache_key] = {'lat': home_lat, 'lng': home_lng}
+                        save_cache(_pre_cache)
+                    else:
+                        print("無法定位住家地址，將跳過距離計算。")
+        elif _home_cache_key in _pre_cache:
             home_lat = _pre_cache[_home_cache_key].get('lat')
             home_lng = _pre_cache[_home_cache_key].get('lng')
             print(f"\n住家座標從快取讀取：(緯度 {home_lat}, 經度 {home_lng})")
@@ -506,8 +561,19 @@ def main():
                         if not batch[idx]['address'] and det.get('address'):
                             batch[idx]['address'] = det['address']
 
-                # 計算距離
+                # 計算距離（優先用 Maps API 取得精確座標）
                 for p in batch:
+                    addr = p.get('address', '')
+                    if maps_api_key and addr:
+                        geo_cache_key = f"__maps_geo__{addr}"
+                        if geo_cache_key in cache:
+                            p['lat'] = cache[geo_cache_key]['lat']
+                            p['lng'] = cache[geo_cache_key]['lng']
+                        else:
+                            mlat, mlng = geocode_with_maps_api(addr, maps_api_key)
+                            if mlat is not None:
+                                p['lat'], p['lng'] = mlat, mlng
+                                cache[geo_cache_key] = {'lat': mlat, 'lng': mlng}
                     if home_lat and home_lng:
                         p['distance_km'] = haversine_distance(home_lat, home_lng, p.get('lat'), p.get('lng'))
                     else:
