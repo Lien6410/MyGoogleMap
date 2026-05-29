@@ -1,4 +1,5 @@
 import os
+import re
 import csv
 import sys
 import json
@@ -198,6 +199,66 @@ def geocode_address(address, api_key, maps_api_key=None):
             print(f"定位住家地址失敗: {e}")
             return None, None
     return None, None
+
+
+# === 從 Google Maps URL 提取 CID，並用 Place Details API 查詢精確地址 ===
+def extract_cid_from_maps_url(url):
+    """從 Google Maps URL 的 data= 參數中提取 CID（格式：0xA:0xB）。"""
+    if not url:
+        return None
+    match = re.search(r'!1s(0x[0-9a-f]+:0x[0-9a-f]+)', url, re.IGNORECASE)
+    return match.group(1) if match else None
+
+
+def lookup_address_from_cid(cid_hex, maps_api_key):
+    """用 Google Maps URL 中的 CID 十六進位（0xA:0xB）呼叫 Place Details API 取得精確地址。
+    需要 MAPS_API_KEY 且已啟用 Places API。"""
+    if not cid_hex or not maps_api_key:
+        return ''
+    try:
+        params = urllib.parse.urlencode({
+            'place_id': cid_hex,          # Place Details API 接受原始 0x...:0x... 格式
+            'fields':   'formatted_address,name',
+            'language': 'zh-TW',
+            'key':      maps_api_key,
+        })
+        api_url = f"https://maps.googleapis.com/maps/api/place/details/json?{params}"
+        with urllib.request.urlopen(api_url, timeout=10) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            status = data.get('status', '')
+            if status == 'OK':
+                return data.get('result', {}).get('formatted_address', '')
+            if status == 'REQUEST_DENIED':
+                raise RuntimeError('Places API 未啟用，請在 Google Cloud Console 開啟 Places API')
+    except RuntimeError:
+        raise
+    except Exception as e:
+        print(f"  [CID 查詢] 失敗: {e}")
+    return ''
+
+
+# === Google Maps Find Place API：依店名查詢正確地址 ===
+def lookup_address_from_place_api(title, maps_api_key):
+    """使用 Find Place from Text API 取得店家的正式中文地址。"""
+    if not title or not maps_api_key:
+        return ''
+    params = urllib.parse.urlencode({
+        'input':        title,
+        'inputtype':    'textquery',
+        'fields':       'formatted_address,name',
+        'locationbias': 'rectangle:21.5,119.3|25.5,122.1',
+        'language':     'zh-TW',
+        'key':          maps_api_key,
+    })
+    url = f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?{params}"
+    try:
+        with urllib.request.urlopen(url, timeout=10) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            if data.get('status') == 'OK' and data.get('candidates'):
+                return data['candidates'][0].get('formatted_address', '')
+    except Exception as e:
+        print(f"  [Find Place] 查詢 '{title}' 失敗: {e}")
+    return ''
 
 
 # === 批次 AI 分類（餐飲類型、消費、座標、地址） ===
@@ -509,6 +570,63 @@ def main():
     if not total_places:
         print("沒有需要處理的資料。")
         sys.exit(0)
+
+    # --- 使用 Place Details / Find Place API 預先填入缺少地址的店家 ---
+    # 需要 MAPS_API_KEY（獨立的 Google Maps Platform key），且已啟用：
+    #   - Places API（CID 精確查詢）
+    #   - Geocoding API（住家座標定位）
+    # 若只有 GEMINI_API_KEY 而無 MAPS_API_KEY，此段會靜默跳過，地址改由 Gemini AI 補齊。
+    places_api_available = None   # None=未知, True=可用, False=不可用
+    if maps_api_key:
+        need_lookup = [p for p in total_places if not p.get('address')]
+        if need_lookup:
+            pre_cache = load_cache()
+            print(f"\n有 {len(need_lookup)} 筆地點缺少地址，嘗試使用 Google Maps API 查詢...")
+            filled = 0
+            for p in need_lookup:
+                if places_api_available is False:
+                    break   # API 不可用，跳過剩餘，交給 Gemini 補
+
+                addr = ''
+
+                # 1. 優先：從 URL 內嵌的 CID 精確查詢（需 Places API）
+                cid_hex = extract_cid_from_maps_url(p.get('url', ''))
+                if cid_hex:
+                    cid_ck = f"__cid_addr__{cid_hex}"
+                    if cid_ck in pre_cache:
+                        addr = pre_cache[cid_ck].get('address', '')
+                    else:
+                        try:
+                            addr = lookup_address_from_cid(cid_hex, maps_api_key)
+                            pre_cache[cid_ck] = {'address': addr}
+                            if places_api_available is None:
+                                places_api_available = True
+                                print("  [Places API] 已啟用，使用 CID 精確查詢地址。")
+                        except RuntimeError as e:
+                            print(f"\n  [警告] {e}")
+                            print("  → 後續地址將改由 Gemini AI 補齊（準確度較低，同名多店可能誤判）。")
+                            print("  → 若需精確地址，請在 .env 設定獨立的 MAPS_API_KEY 並啟用 Places API。")
+                            places_api_available = False
+                            break
+
+                # 2. 退回：以店名搜尋（需 Places API，同名多店可能誤判）
+                if not addr and places_api_available is not False:
+                    ck = f"__find_place__{p['title']}"
+                    if ck in pre_cache:
+                        addr = pre_cache[ck].get('address', '')
+                    else:
+                        addr = lookup_address_from_place_api(p['title'], maps_api_key)
+                        pre_cache[ck] = {'address': addr}
+
+                if addr:
+                    p['address'] = addr
+                    filled += 1
+
+            save_cache(pre_cache)
+            if places_api_available is not False:
+                print(f"  Google Maps API 成功取得 {filled} / {len(need_lookup)} 筆地址。")
+            else:
+                print(f"  Places API 不可用，{len(need_lookup)} 筆地址將由 Gemini AI 補齊。")
 
     # --- AI 批次分析（含進度快取與斷點續跑） ---
     if api_key:
