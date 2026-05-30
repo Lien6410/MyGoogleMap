@@ -568,16 +568,16 @@
             <input type="checkbox" name="distance" value="3" checked> 1~3公里
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="5" checked> 3~5公里
+            <input type="checkbox" name="distance" value="5"> 3~5公里
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="10" checked> 5~10公里
+            <input type="checkbox" name="distance" value="10"> 5~10公里
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="far" checked> 10公里以上
+            <input type="checkbox" name="distance" value="far"> 10公里以上
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="unknown" checked> 未知距離
+            <input type="checkbox" name="distance" value="unknown"> 未知距離
           </label>
         </div>
       </div>
@@ -600,13 +600,13 @@
             <input type="checkbox" name="price" value="500" checked> 200~500元 (中價位)
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="price" value="1000" checked> 500~1000元 (中高檔)
+            <input type="checkbox" name="price" value="1000"> 500~1000元 (中高檔)
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="price" value="expensive" checked> 1000元以上 (奢華)
+            <input type="checkbox" name="price" value="expensive"> 1000元以上 (奢華)
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="price" value="free" checked> 未知/免費景點
+            <input type="checkbox" name="price" value="free"> 未知/免費景點
           </label>
         </div>
       </div>
@@ -745,7 +745,7 @@
         cb.type = 'checkbox';
         cb.name = 'county';
         cb.value = c;
-        cb.checked = true;   // 台灣縣市預設全勾
+        cb.checked = (c === '新竹市');   // 預設只勾選新竹市
         cb.addEventListener('change', updateFilters);
         label.appendChild(cb);
         label.appendChild(document.createTextNode(' ' + c));
@@ -766,6 +766,16 @@
       container.appendChild(labelUnknown);
     }
 
+    // 別名映射：store 資料中的子分類 → 篩選器顯示的父分類
+    const CUISINE_ALIASES = {
+      '台式': '中式',
+    };
+
+    // 將 store 的原始類型正規化為篩選器使用的標準類型
+    function normalizeCuisine(raw) {
+      return CUISINE_ALIASES[raw] || raw;
+    }
+
     // Detect unique cuisines from stores database
     function getCuisineTypes() {
       const cuisineSet = new Set();
@@ -776,13 +786,13 @@
       cuisineSet.add("韓式");
       cuisineSet.add("東南亞式");
       cuisineSet.add("其他");
-      
+
       // Also grab any other custom classifications written by Gemini
       stores.forEach(s => {
         if (s.cuisine_type) {
           s.cuisine_type.split(',').forEach(c => {
-            const clean = c.trim();
-            if (clean) cuisineSet.add(clean);
+            const normalized = normalizeCuisine(c.trim());
+            if (normalized) cuisineSet.add(normalized);
           });
         }
       });
@@ -841,9 +851,9 @@
         if (visitVal === 'yes' && s.visited !== '是') return false;
         if (visitVal === 'no' && s.visited !== '否') return false;
 
-        // Match Cuisine (at least one overlaps)
+        // Match Cuisine (at least one overlaps, aliases normalized)
         if (!s.cuisine_type) return activeCuisines.includes('其他');
-        const sCuisines = s.cuisine_type.split(',').map(c => c.trim());
+        const sCuisines = s.cuisine_type.split(',').map(c => normalizeCuisine(c.trim()));
         const hasCuisineMatch = sCuisines.some(c => activeCuisines.includes(c));
         if (!hasCuisineMatch) return false;
 

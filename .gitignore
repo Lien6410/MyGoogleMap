@@ -1,0 +1,25 @@
+# Compiled python
+__pycache__/
+*.pyc
+
+# Environment variables (contains API keys)
+.env
+
+# Local data files (Outputs)
+MyGoogleMap_Stores.csv
+stores_data.js
+export_cache.json
+
+# Google Drive OAuth credentials (sensitive)
+credentials.json
+credentials_bk.json
+token.json
+
+# uv virtual environment
+.venv/
+
+# Google Takeout raw archives
+*.zip
+takeout-*/
+
+*.csv

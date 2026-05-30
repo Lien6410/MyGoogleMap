@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"d:\\\\code\\\\MyGoogleMap\" -Recurse -File | Select-Object FullName | ForEach-Object { $_.FullName })",
+      "PowerShell(New-Item -ItemType Directory -Path \"d:\\\\code\\\\MyGoogleMap\\\\input\" -Force)",
+      "PowerShell(Move-Item \"d:\\\\code\\\\MyGoogleMap\\\\�^�X.csv\" \"d:\\\\code\\\\MyGoogleMap\\\\input\\\\\" -Force)",
+      "PowerShell(Move-Item \"d:\\\\code\\\\MyGoogleMap\\\\�Q�h���a�I.csv\" \"d:\\\\code\\\\MyGoogleMap\\\\input\\\\\" -Force)",
+      "Bash(uv --version)",
+      "Bash(uv init *)",
+      "Bash(uv add *)",
+      "Bash(uv run *)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import json; c=json.load\\(open\\('d:/code/MyGoogleMap/export_cache.json','r',encoding='utf-8'\\)\\); keys=[k for k in c if '__home' in k]; print\\('Home cache entries:', keys\\); print\\('Total cache entries:', len\\(c\\)\\)\")",
+      "Bash(python -c \"import json; c=json.load\\(open\\('d:/code/MyGoogleMap/export_cache.json','r',encoding='utf-8'\\)\\); print\\(json.dumps\\(c, ensure_ascii=False, indent=2\\)\\)\")",
+      "Bash(Get-ChildItem d:\\\\code\\\\MyGoogleMap -Filter \"*.py\" -MaxDepth 1)",
+      "PowerShell(Get-ChildItem d:\\\\code\\\\MyGoogleMap | Where-Object {$_.PSIsContainer -eq $false} | Select-Object Name, Extension)",
+      "Bash(Remove-Item \"d:/code/MyGoogleMap/_verify.json\")"
+    ]
+  }
+}
