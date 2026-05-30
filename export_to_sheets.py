@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 
 # === 設定常數 ===
-INPUT_FOLDER    = "input"    # 存放來源 CSV 的資料夾
+INPUT_FOLDER    = os.environ.get('INPUT_FOLDER', "input")    # 存放來源 CSV 的資料夾
 OUTPUT_CSV      = "MyGoogleMap_Stores.csv"
 OUTPUT_JS       = "stores_data.js"
 CACHE_FILE      = "export_cache.json"   # 斷點續跑快取
@@ -261,8 +261,86 @@ def lookup_address_from_place_api(title, maps_api_key):
     return ''
 
 
+# === 本地啟發式分類器（作為 API 故障或無 Key 時的備援） ===
+def heuristic_classify(title, note):
+    title_lower = title.lower()
+    note_lower = note.lower() if note else ''
+    combined = title_lower + " " + note_lower
+
+    types = []
+    avg_spending = 150
+
+    # 1. 偵測非餐飲或免費景點
+    if any(x in combined for x in ['景點', '公園', '大學', '中心', '博物館', '廟', '古蹟', '紀念館', '影城', '戲院', '球場', '體育館', '圖書館', '車站', '機場', '飯店', '酒店', '旅店', '民宿', '商旅']):
+        return '其他', 0
+
+    is_dining = False
+    
+    # 義式
+    if any(x in combined for x in ['義大利麵', '披薩', '比薩', '義式', 'pasta', 'pizza', 'milano', 'banco']):
+        types.append('義式')
+        avg_spending = 350
+        is_dining = True
+    # 日式
+    elif any(x in combined for x in ['拉麵', '壽司', '居酒屋', '日式', '和食', '鰻魚', '刺身', '生魚片', '丼', '串燒', '天婦羅', '安兵衛', 'naniwa', 'sojibō', 'yagura', '吉塚']):
+        types.append('日式')
+        avg_spending = 300
+        if '拉麵' in combined or '麵' in combined:
+            avg_spending = 250
+        elif '居酒屋' in combined or '燒肉' in combined or '鰻' in combined:
+            avg_spending = 600
+        is_dining = True
+    # 美式
+    elif any(x in combined for x in ['漢堡', '美式', 'burger', '牛排', '薯條', 'steak', 'the lobbyof simple kaffa']):
+        types.append('美式')
+        avg_spending = 400
+        is_dining = True
+    # 韓式
+    elif any(x in combined for x in ['韓式', '韓國', '韓華園', '韓國美食', '烤冷麵', '部隊鍋', '韓餐']):
+        types.append('韓式')
+        avg_spending = 350
+        is_dining = True
+    # 東南亞式
+    elif any(x in combined for x in ['泰式', '東南亞', '越式', '星馬', '印尼', '甩餅', '咖哩', '印度']):
+        types.append('東南亞式')
+        avg_spending = 250
+        is_dining = True
+    # 中式
+    elif any(x in combined for x in ['麵', '飯', '餃', '包', '羹', '粥', '湯', '鵝肉', '鴨肉', '滷肉', '魯肉', '小吃', '滷味', '燒餅', '油條', '肉粥', '餛飩', '抄手', '臭豆腐', '涼麵', '炒麵', '火鍋', '涮牛肉', '海鮮', '熱炒', '燉鰻', '豬血', '肉圓', '米糕', '當歸', '食堂', '茶餐廳', '港式']):
+        types.append('中式')
+        avg_spending = 120
+        if '火鍋' in combined or '涮' in combined or '海鮮' in combined or '熱炒' in combined or '餐廳' in combined:
+            avg_spending = 450
+        is_dining = True
+
+    if not is_dining:
+        if any(x in combined for x in ['咖啡', 'cafe', '烘焙', '麵包', '茶', '甜點', '蛋糕', '冰', '豆花', '下午茶', '鬆餅', '雞蛋糕', '糖餅', '拿鐵', '焙茶', '手搖', '大茗', '果子', '飲料']):
+            types.append('其他')
+            avg_spending = 150
+        else:
+            types.append('其他')
+            avg_spending = 150
+
+    return ','.join(types), avg_spending
+
+
 # === 批次 AI 分類（餐飲類型、消費、座標、地址） ===
 def classify_cuisine_and_details(items, home_address, api_key):
+    # 建立啟發式分類備援資料
+    fallback = []
+    for item in items:
+        t, spending = heuristic_classify(item['title'], item.get('note', ''))
+        fallback.append({
+            'types':        t,
+            'avg_spending': spending,
+            'lat':          item.get('lat'),
+            'lng':          item.get('lng'),
+            'address':      item['address']
+        })
+
+    if not api_key:
+        return fallback
+
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={api_key}"
     prompt = (
         "分析以下店家的名稱和輸入地址（若地址為空，請由店名補足預估的詳細中文地址）。\n"
@@ -327,11 +405,6 @@ def classify_cuisine_and_details(items, home_address, api_key):
         headers={"Content-Type": "application/json"}
     )
 
-    fallback = [
-        {'types': '其他', 'avg_spending': 0, 'lat': None, 'lng': None, 'address': items[i]['address']}
-        for i in range(len(items))
-    ]
-
     for attempt in range(MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
@@ -356,12 +429,12 @@ def classify_cuisine_and_details(items, home_address, api_key):
                     print(f"    [{e.code}] {label}，等待 {delay} 秒後重試（第 {attempt + 1}/{MAX_RETRIES} 次）...")
                     time.sleep(delay)
                     continue
-                print(f"    [錯誤] 達到最大重試次數，跳過此批次。")
+                print(f"    [錯誤] 達到最大重試次數，將使用本地啟發式分類作為備援方案。")
             else:
-                print(f"    [錯誤] API 回傳 HTTP {e.code}，跳過此批次。")
+                print(f"    [錯誤] API 回傳 HTTP {e.code}，將使用本地啟發式分類作為備援方案。")
             return fallback
         except Exception as e:
-            print(f"    [錯誤] 呼叫 Gemini API 失敗: {e}")
+            print(f"    [錯誤] 呼叫 Gemini API 失敗: {e}，將使用本地啟發式分類作為備援方案。")
             return fallback
 
     return fallback
@@ -465,11 +538,11 @@ def main():
     print("====== MyGoogleMap 清單整理與抽籤資料產生工具 ======")
 
     env = load_env()
-    api_key = env.get('GEMINI_API_KEY', '')
+    api_key = env.get('GEMINI_API_KEY', '') or os.environ.get('GEMINI_API_KEY', '')
     if not api_key:
-        print("[警告] .env 中未設定 GEMINI_API_KEY，AI 分類功能將無法使用。")
+        print("[警告] 未偵測到 GEMINI_API_KEY，AI 分類功能將無法使用。")
 
-    maps_api_key = env.get('MAPS_API_KEY', '') or api_key
+    maps_api_key = env.get('MAPS_API_KEY', '') or os.environ.get('MAPS_API_KEY', '') or api_key
     if maps_api_key:
         print("[資訊] 將嘗試使用 Google Maps Geocoding API 取得精確座標（MAPS_API_KEY 或 GEMINI_API_KEY）。")
 
@@ -491,7 +564,7 @@ def main():
         print(f"  - {name}.csv {tag}")
 
     # --- 住家地址 ---
-    home_address = env.get('HOME_ADDRESS', '')
+    home_address = env.get('HOME_ADDRESS', '') or os.environ.get('HOME_ADDRESS', '')
     if home_address:
         print(f"\n偵測到 .env 中的住家地址：{home_address}")
 
@@ -629,88 +702,85 @@ def main():
                 print(f"  Places API 不可用，{len(need_lookup)} 筆地址將由 Gemini AI 補齊。")
 
     # --- AI 批次分析（含進度快取與斷點續跑） ---
+    cache      = load_cache()
+    batch_size = 20
+    total      = len(total_places)
+    cached_cnt = sum(1 for p in total_places if cache_key(p) in cache)
+
     if api_key:
-        cache      = load_cache()
-        batch_size = 20
-        total      = len(total_places)
-        cached_cnt = sum(1 for p in total_places if cache_key(p) in cache)
-
         print(f"\n開始使用 Gemini 2.5 Flash 進行 AI 分析（共 {total} 筆）...")
-        if cached_cnt:
-            print(f"  快取命中 {cached_cnt} 筆，跳過已處理項目。")
-
-        try:
-            for i in range(0, total, batch_size):
-                batch      = total_places[i:i + batch_size]
-                to_process = [(idx, p) for idx, p in enumerate(batch) if cache_key(p) not in cache]
-
-                if to_process:
-                    end = min(i + batch_size, total)
-                    print(f"  正在處理第 {i+1}～{end} 筆（本批需呼叫 API {len(to_process)} 項）...")
-                    sub_items  = [p for _, p in to_process]
-                    sub_result = classify_cuisine_and_details(sub_items, home_address, api_key)
-
-                    for (orig_idx, p), det in zip(to_process, sub_result):
-                        cache[cache_key(p)] = det
-                        batch[orig_idx].update({
-                            'cuisine_type': det['types'],
-                            'avg_spending': det['avg_spending'],
-                            'lat':          det['lat'],
-                            'lng':          det['lng'],
-                        })
-                        if not batch[orig_idx]['address'] and det.get('address'):
-                            batch[orig_idx]['address'] = det['address']
-
-                    save_cache(cache)
-
-                    # 批次間主動控速（非最後一批才等）
-                    if i + batch_size < total:
-                        time.sleep(BATCH_DELAY)
-
-                # 從快取補齊本批已命中的項目
-                for idx, p in enumerate(batch):
-                    ck = cache_key(p)
-                    if ck in cache:
-                        det = cache[ck]
-                        batch[idx].setdefault('cuisine_type', det['types'])
-                        batch[idx].setdefault('avg_spending', det['avg_spending'])
-                        batch[idx].setdefault('lat',          det['lat'])
-                        batch[idx].setdefault('lng',          det['lng'])
-                        if not batch[idx]['address'] and det.get('address'):
-                            batch[idx]['address'] = det['address']
-
-                # 計算距離（優先用 Maps API 取得精確座標）
-                for p in batch:
-                    addr = p.get('address', '')
-                    if maps_api_key and addr:
-                        geo_cache_key = f"__maps_geo__{addr}"
-                        if geo_cache_key in cache:
-                            p['lat'] = cache[geo_cache_key]['lat']
-                            p['lng'] = cache[geo_cache_key]['lng']
-                        else:
-                            mlat, mlng = geocode_with_maps_api(addr, maps_api_key)
-                            if mlat is not None:
-                                p['lat'], p['lng'] = mlat, mlng
-                                cache[geo_cache_key] = {'lat': mlat, 'lng': mlng}
-                    if home_lat and home_lng:
-                        p['distance_km'] = haversine_distance(home_lat, home_lng, p.get('lat'), p.get('lng'))
-                    else:
-                        p.setdefault('distance_km', None)
-
-        except KeyboardInterrupt:
-            print("\n\n[中斷] 使用者中止執行，已儲存目前進度至快取。")
-            print("重新執行腳本時將從中斷點繼續。")
-            save_cache(cache)
-            # 確保已處理的資料仍輸出至檔案
-            for p in total_places:
-                p.setdefault('cuisine_type', '其他')
-                p.setdefault('avg_spending', 0)
-                p.setdefault('lat', None)
-                p.setdefault('lng', None)
-                p.setdefault('distance_km', None)
-
     else:
-        print("\n[跳過] 未設定 GEMINI_API_KEY，跳過 AI 分析步驟。")
+        print(f"\n未偵測到 GEMINI_API_KEY，將啟用本地啟發式分類器進行分析（共 {total} 筆）...")
+
+    if cached_cnt:
+        print(f"  快取命中 {cached_cnt} 筆，跳過已處理項目。")
+
+    try:
+        for i in range(0, total, batch_size):
+            batch      = total_places[i:i + batch_size]
+            to_process = [(idx, p) for idx, p in enumerate(batch) if cache_key(p) not in cache]
+
+            if to_process:
+                end = min(i + batch_size, total)
+                if api_key:
+                    print(f"  正在處理第 {i+1}～{end} 筆（本批需呼叫 API {len(to_process)} 項）...")
+                else:
+                    print(f"  正在處理第 {i+1}～{end} 筆（本地分析中）...")
+                sub_items  = [p for _, p in to_process]
+                sub_result = classify_cuisine_and_details(sub_items, home_address, api_key)
+
+                for (orig_idx, p), det in zip(to_process, sub_result):
+                    cache[cache_key(p)] = det
+                    batch[orig_idx].update({
+                        'cuisine_type': det['types'],
+                        'avg_spending': det['avg_spending'],
+                        'lat':          det['lat'],
+                        'lng':          det['lng'],
+                    })
+                    if not batch[orig_idx]['address'] and det.get('address'):
+                        batch[orig_idx]['address'] = det['address']
+
+                save_cache(cache)
+
+                # 批次間主動控速（僅在調用 API 時控速）
+                if api_key and i + batch_size < total:
+                    time.sleep(BATCH_DELAY)
+
+            # 從快取補齊本批已命中的項目
+            for idx, p in enumerate(batch):
+                ck = cache_key(p)
+                if ck in cache:
+                    det = cache[ck]
+                    batch[idx].setdefault('cuisine_type', det['types'])
+                    batch[idx].setdefault('avg_spending', det['avg_spending'])
+                    batch[idx].setdefault('lat',          det['lat'])
+                    batch[idx].setdefault('lng',          det['lng'])
+                    if not batch[idx]['address'] and det.get('address'):
+                        batch[idx]['address'] = det['address']
+
+            # 計算距離（優先用 Maps API 取得精確座標）
+            for p in batch:
+                addr = p.get('address', '')
+                if maps_api_key and addr:
+                    geo_cache_key = f"__maps_geo__{addr}"
+                    if geo_cache_key in cache:
+                        p['lat'] = cache[geo_cache_key]['lat']
+                        p['lng'] = cache[geo_cache_key]['lng']
+                    else:
+                        mlat, mlng = geocode_with_maps_api(addr, maps_api_key)
+                        if mlat is not None:
+                            p['lat'], p['lng'] = mlat, mlng
+                            cache[geo_cache_key] = {'lat': mlat, 'lng': mlng}
+                if home_lat and home_lng:
+                    p['distance_km'] = haversine_distance(home_lat, home_lng, p.get('lat'), p.get('lng'))
+                else:
+                    p.setdefault('distance_km', None)
+
+    except KeyboardInterrupt:
+        print("\n\n[中斷] 使用者中止執行，已儲存目前進度至快取。")
+        print("重新執行腳本時將從中斷點繼續。")
+        save_cache(cache)
+        # 確保已處理的資料仍輸出至檔案
         for p in total_places:
             p.setdefault('cuisine_type', '其他')
             p.setdefault('avg_spending', 0)
