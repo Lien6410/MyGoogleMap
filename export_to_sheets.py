@@ -18,6 +18,9 @@ DEFAULT_MODEL   = "gemini-2.5-flash"    # 可在 .env 設定 GEMINI_MODEL 覆寫
 BATCH_DELAY     = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
 MAX_RETRIES     = 5          # 429 最大重試次數
 
+# 只有這個清單的店家標記為「未去過」，其餘所有清單一律標為「已去過」
+UNVISITED_LIST_NAME = '想去的地點'
+
 
 # === 讀取 .env 設定 ===
 def load_env():
@@ -62,15 +65,15 @@ def cache_key(place):
 def find_all_input_csvs(input_folder):
     """
     回傳 (filepath, list_name, is_visited) 清單。
-    檔名含「回訪」的清單標記為已去過，其餘標記為未去過。
+    只有 UNVISITED_LIST_NAME（「想去的地點」）標記為未去過，其餘一律已去過。
     """
     if not os.path.isdir(input_folder):
         return []
     results = []
     for f in sorted(os.listdir(input_folder)):
         if f.lower().endswith('.csv'):
-            is_visited = '回訪' in f
-            list_name  = f[:-4]  # 去除 .csv 副檔名
+            list_name  = f[:-4]
+            is_visited = list_name != UNVISITED_LIST_NAME
             results.append((os.path.join(input_folder, f), list_name, is_visited))
     return results
 

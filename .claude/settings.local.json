@@ -22,7 +22,9 @@
       "PowerShell(if \\(Test-Path \"d:\\\\code\\\\MyGoogleMap\\\\.env\"\\) { Get-Content \"d:\\\\code\\\\MyGoogleMap\\\\.env\" | ForEach-Object { if \\($_ -match '^\\([A-Z_]+\\)='\\) { $matches[1] } } } else { \"No .env file\" })",
       "PowerShell(Get-ChildItem \"d:\\\\code\\\\MyGoogleMap\" -File | Where-Object { $_.Extension -ne '.csv' -and $_.Name -notmatch '^\\\\.' } | Select-Object Name)",
       "PowerShell($env:PYTHONIOENCODING='utf-8'; Set-Location \"d:\\\\code\\\\MyGoogleMap\"; python -c \"import ast; ast.parse\\(open\\('verify_stores.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")",
-      "PowerShell($env:PYTHONIOENCODING='utf-8'; python -c \"import ast; ast.parse\\(open\\('d:/code/MyGoogleMap/verify_stores.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")"
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; python -c \"import ast; ast.parse\\(open\\('d:/code/MyGoogleMap/verify_stores.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; Set-Location \"d:\\\\code\\\\MyGoogleMap\"; python _fix_overlap.py 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; python -c \"import ast; ast.parse\\(open\\('d:/code/MyGoogleMap/export_to_sheets.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")"
     ]
   }
 }
