@@ -14,7 +14,15 @@
       "Bash(python -c \"import json; c=json.load\\(open\\('d:/code/MyGoogleMap/export_cache.json','r',encoding='utf-8'\\)\\); print\\(json.dumps\\(c, ensure_ascii=False, indent=2\\)\\)\")",
       "Bash(Get-ChildItem d:\\\\code\\\\MyGoogleMap -Filter \"*.py\" -MaxDepth 1)",
       "PowerShell(Get-ChildItem d:\\\\code\\\\MyGoogleMap | Where-Object {$_.PSIsContainer -eq $false} | Select-Object Name, Extension)",
-      "Bash(Remove-Item \"d:/code/MyGoogleMap/_verify.json\")"
+      "Bash(Remove-Item \"d:/code/MyGoogleMap/_verify.json\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(chcp 65001)",
+      "PowerShell(Get-Content \"d:\\\\code\\\\MyGoogleMap\\\\.env\" -ErrorAction SilentlyContinue | Where-Object { $_ -match '^[A-Z_]+=' } | ForEach-Object { \\($_ -split '='\\)[0] })",
+      "PowerShell(if \\(Test-Path \"d:\\\\code\\\\MyGoogleMap\\\\.env\"\\) { Get-Content \"d:\\\\code\\\\MyGoogleMap\\\\.env\" | ForEach-Object { if \\($_ -match '^\\([A-Z_]+\\)='\\) { $matches[1] } } } else { \"No .env file\" })",
+      "PowerShell(Get-ChildItem \"d:\\\\code\\\\MyGoogleMap\" -File | Where-Object { $_.Extension -ne '.csv' -and $_.Name -notmatch '^\\\\.' } | Select-Object Name)",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; Set-Location \"d:\\\\code\\\\MyGoogleMap\"; python -c \"import ast; ast.parse\\(open\\('verify_stores.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; python -c \"import ast; ast.parse\\(open\\('d:/code/MyGoogleMap/verify_stores.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")"
     ]
   }
 }

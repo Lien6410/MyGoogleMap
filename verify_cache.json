@@ -1,0 +1,4853 @@
+{
+  "0x3442a9a8056bcd4f:0x8f4c4821513d97e8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442af054308f6d3:0xfe251322e90b7662": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442af6826976b51:0x76a362ae1bbdc090": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a7d80725d609:0x5c28ba69a8a26dab": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836c26fc44681:0xbd5b1a01ddf242d4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b288b1445b:0x7629b4da846ce808": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468372d38e83579:0xc4cc424f29bed38": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835005b53c5ff:0xac779dbfc7485ee4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683a407d359755:0x130a8bb00df1c4a0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683766d881cfbf:0x91dfd6e77bfeeb8e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357f639e354b:0x27a600d11400474a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e768067800ecb:0x58a1c6513ff4abae": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34689f9ea966570d:0x48717f4c2db48308": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e047de299933d:0xa11b81fdb3980b6e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05d5a0d45001:0x8c548925a35758ac": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c59d6c4f3d279:0x337ae58e6ea397aa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5af2c99a9f43:0x4b123e317b4a00a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5aee0f72a46b:0x125bde65d011541d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5af21b23bb35:0x53ff1fa84fef2ebe": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5aed61f5ac3f:0xd861331323472948": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5af33b2cae41:0xf43fe89df7099d7e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c5bdb13004287:0x149df2c23533ea12": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469176bb85c3047:0xc29da6abb45d197b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d0dd6117f99:0xe420452c2efaf0e1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684dadd67d8db9:0x632301e1bb33945b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b322f1b45d1d:0x2de06e89e0b2d906": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3629871aeb7:0xe201c674a220eea2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b33ca7236bc9:0x435f7856cb5f0759": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684bd093bdd717:0x33b674a36b4c83f4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d02de8e8b1f:0x55b5980a7e262a3c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683537fae1b247:0x9756f8949cefeb81": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835709211d907:0xcaa413920699e42d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683599bc5821f9:0x2535cec9801f8028": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3471e185863ce389:0xea08ec7b1dfa864b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e7c068cb8db3:0xbf295b7009e37caa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e71a23415555:0x60b3835c1d9a8a5d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e704a2e2719f:0x64504cba1ee4b720": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e774747c83e9:0xe765c48d38776c3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000b9fb834803f9:0x7822775a98d5d1d0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac05971371f5:0xda64e7b130009573": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a95dec299d8f:0x9a3740ecab3f2e0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e5690014c62069:0x1216b11b9cbd52a0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e5699d261e67d9:0xbb3a59536b299581": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e56bd0dab11e8d:0x6d3bff0ebc417127": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e56bd1272f5da3:0xc2cf61dc3d9a4c49": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e567ef6e492943:0x3bb19ce8a46b64e2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e059e682c6089:0x51b20dab3021bda5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e059c0574df29:0x39d4e0676acf0cf5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e059eb6a0f4c7:0x28c429445c827e8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05a2e6679a3d:0xcb9acce8253148be": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05a140bf1e6b:0x22fbf7e032da9bc1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05a28cf64d31:0x78379da41a30631b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05a2090e9edb:0x5fbd783fc2f91161": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x35419195186bd411:0xfde6a1ce650943d4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x35419195285fb90b:0xb73e55b3559bab18": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191869e1b1895:0xd8dc18632ecb9acf": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x35419193dbe0b793:0xde0bd15c9081b8fc": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3541916ef6cef5ed:0xdda3cd6a5815350f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3541910068b27c97:0x9783b8a1477dd65d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e794d34c011d:0x86caa4374bc449e8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3541918713dabcc7:0xc1e91a5c0e1cdb9e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a94710ed14b5:0xbbcc94aa5968e53a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a88864f5679b:0xeb022c0ac28cd256": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a8c84eea6445:0x6677fe7a2791f4d7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96b3562a21d:0xfa204556c2df00ce": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96b53d1c9b5:0x6942d152898b5419": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9471c3a485d:0xb48de9febd757320": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a947dcd32999:0x14f72d848cf5ffc6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191844ef1e58b:0xa6e4ac1a473fdd95": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191c09efc8041:0x28225e7c546db9cd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191b6c660c81f:0x3a06517eb6968b8f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191909d9a387d:0x65a3200fc323f276": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191865aed585f:0xb308de0555f12ac0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x35419185c5b81855:0x192298f2b40408e8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3541918640345837:0xff3f78d25372271e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x60188d29c40e3255:0x148f6cd600a5a08": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a79ab4596a37:0xebb2d69f5eac2a7d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468370dc47607e9:0x5200971c5769bf34": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9aae4e8de3f:0xc3cd70bd8cf8769c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc6e3b30fef:0x1314ab0bce79752a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346801f6205f6f85:0x23b160dd8e2473a4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9608d96d6fd:0xd1786f188d71b6d3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d536997d0a889:0x262dc6bf6333745e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9095bff7177:0xe415d63d8809c468": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c86703d67:0x4ae2d92f2c28c9fa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8d7e2cc53f:0x8b6c67745e571827": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8bb849de47:0xf7a7d3d23616a297": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8ebb3f4a81:0xe34566d6e2d4e54e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c85ba5a93:0x51d2902a96f94c9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab43ed58331d:0x4efe10a987ba2996": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e765cd55c1eef:0xd09387207cc38f08": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e77eee3eaf95b:0x5240c2ef2e10aeb0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e761b470a599d:0x8c05a32a240e0d40": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e761cb3e6bf37:0x1a0bc418666af6f0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e767b1c4b4df5:0x459a0d2a6889c3c2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e774f1d09cbc1:0x54759898bd10bf89": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e772b753bb631:0x51cd263ccc43496b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aa00bd111c53:0x19ca2810f9165d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aa00a29523fd:0x5deb005525eb3722": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90c9a9a0b27:0x3c2d5764f39b64d8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9733f97838b:0x152398e3702dc196": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9731b2c95bf:0x654fb183da334e33": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9132699e471:0x3bd3af4cd015fd89": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96daf92404f:0x626b0e69dd385bb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e0461296541b3:0x1e664bd8c86a857d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e04613499d847:0xc56b9d44e78d3b7d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e92c98116f73:0xd65aad8aedd121a2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e9ad7061d489:0x4131fd307a89abf4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683743ca8e7bdb:0x6d6a7c1cbe2409eb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837c95056d2fb:0x67f7efe359ce2b09": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1bc49645ed41:0x6193d63759b2caa7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b46e431c211:0x16e6e20f21668d13": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b3816523d8d:0xf30f1533703a67b6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b7c8dbe1601:0x618990a1b5ad1999": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b3f4d149013:0x320a9fa3c0a0d16a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b3f5a71d879:0xbf22a2db2af10c1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b00612a62bf:0x983c325bdcd3390b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e1b3f790e2ff3:0xb81edd0b0258dc0a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a921a0035587:0x5d31ed59ead258b0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a925f2c915df:0x3b131a8ed2233ea5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9e0311989cb:0x2a2353eb301f8361": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a970a8b4aa93:0x5e590f7ab063cfe6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9029fe911fb:0x125184e8f1d3b9ff": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a8ba6918ff8d:0x7134f0baf8467aae": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d9ad94cc0c9:0x884350086af1220b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d9c68ba0a8d:0x26f326c77439caa1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d9c165a0739:0x3cef33239b1f894e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d55db05d155:0x9b9b31a2c9a308f3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d5fda791845:0xfd6609c779e1a346": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693dc699c031af:0xfaf30723805ca934": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe44a9e3321:0x71940b5a60df59da": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abeeea8a6a51:0xf33add11c1c9eb45": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe8f6ab1537:0x59624775029f1279": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837a165b92625:0xf6b479876906741b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc22f42bd9f:0xe5a345ae0d04f99": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468418ed6c005ab:0x9a9ec9229786979b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96c759596f1:0x84ee3c6e79fd8f83": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442af78612138df:0x3f96c9125a8f3a74": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aea537f6a5a3:0x70f0141713344a6c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebabd5a33cd:0x9638b326968530a1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebabcbdcf19:0xac312329e09023dd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebaa4c8e1ed:0xbccb5fce7599bf03": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442afb25025f49b:0x6802fd3eb12264bb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebaad30b26b:0xb081e0513ba8b0c1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aeb0156aa64d:0x9ea7e1921b439c8f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aeaff8686545:0xa23c4c90d4ce1cec": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837006b923b1f:0x76512cbbb44842e4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683700209f23f9:0x7f9a4304a2a90fb2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468379341a1726d:0xa0d57d7031b9bac8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837f8ab322095:0x2292d6d6d2543c0e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683671f3de4c2f:0x4b243d344dda703f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835971918cdef:0xe2bdc4db63d74fdd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468377d4d807ecf:0x4916f2f0925a2f7d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346847004623cc55:0xd4c175903966f826": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837007a71cd3d:0x5a95d541d36393f2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683563e9c41885:0xdcf7f89b9786c020": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835dcbb3c6385:0x1761d9858ae55576": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e265589313:0x31f13b098f69e73f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683672206425d7:0x57c0bd295ba9b787": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683738fe2ab141:0x23ddcf4ae6a8411c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837d3c1d08929:0x5f8e9316a1f8a28f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468373ef4791df7:0x1d92ec0351099c0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468370c2e2f885b:0x7c51f45ce770d42f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468378cb9ae950b:0xb22391abccd0ec0a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837358ea752c1:0x2728f8e6424dc2be": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683672f3d0e161:0x9b889ed03b0adfb3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468363c48ca7fbd:0x2f9624c6ba2f5f6d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837f6ee1a22fd:0xb69100052880c99b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468363994ae7eb5:0x82f64177bf216c6a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837a2150a51ff:0x72772f476a61631f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835daf212fbb3:0x65325cf40ffe9b00": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cfae0ab6cf:0x2c4ce117c4b882ba": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835fb54b8be3d:0x7666b272680c3d2e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468356f88c34ce9:0xade61e20697c5c6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346915024217940d:0x8f3754b8a7965660": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34691531e8c345b7:0xcae39e0bc5e52fb1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469151c2962160f:0x36f0ee1b398ad3da": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469147f00d4cc6d:0xe2ddbb16bd680073": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469157db1515755:0xb55f572deb8e851b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469147ff4525f9b:0x56afc8da156c9f9c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469147f78bbdb95:0x7c36b08a6b2f3bf3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469147e10cad041:0x11a6da11bcc8c076": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34691480c88c07db:0x5103e675c9e93074": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90e656a081f:0x713c3942e872dca2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90e8737b2f7:0x6b6ee112e9e7c58b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac6ed1ee09a1:0xb74bbe9d296cafa4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442adab8c980a9b:0xc8ddf366daef8942": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abd2e34bdfe3:0xc6af47184dcb5410": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90e87e6d60b:0x2a5448854fda3233": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468350065c33605:0xc56e2c0f6a7dab5f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346848952542933b:0xf7ba61d722850629": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bd3587d5a5:0x3511f4090f4076a8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ad93138add:0xbb8cc60c4f0674c0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683500608edfd9:0x128edb0662e9c163": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835db19e86ea5:0x36c6482f3eec663": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b87c4d8513:0xc7a9de40da1cf3bd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357322c6104d:0x7f47235016521de0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835a0a47170e5:0x36ef1d0666e58069": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835006b60203b:0x3a9964cfa07ed634": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c994786743:0xb0127b72c25f8c3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835003633a62f:0x3585ef85785848a3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cbb547fc95:0x5c6352ae488dce68": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835478b78523d:0x1acfb47f97dde1e3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357d71c26299:0xed44a31a0159e059": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835007d014085:0xb859cbd994546689": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468369332eef439:0x55c28916400635fa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468352a0215de95:0x9d4ae47ae71488ce": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bb02abb1d9:0xd417d09e4380bd1b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835005e927763:0x60101e03a724a0f2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d48a0b2fd1:0x85ed692acd3d2757": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693deaffffffff:0x840b460170493f30": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c21037de1d:0xc9b387f23d09e4e7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e766183dbda91:0x51dc80df1f151903": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7661856c2763:0xcb8fb97eb0df7545": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ba6f7d6713:0x68314ef1f04356e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ec841dcc8b:0x3151f3c44b4407fb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468358d318dd36f:0xc2848e22c240f3ca": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468359ff69b5f93:0x2c88ad1c86189230": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c020f58ed5:0x65367efb5aca2b3b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9484e9f6421:0x2db720ae76aa617": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d19e2a318ad:0xb8e3ce870396c203": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835004a364a63:0x4a10ce7ec1697bd4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cd0f600f33:0xe4fc0e21a292880": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835da886acfdd:0x1c7195dd7cbf2998": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c77709f465:0x79bcbad7fde13614": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae80a4a48849:0x8ad7584679e8ea5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468366b15d28db1:0x2f3195d44821951e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e6a2b58643:0x938c4a93ab25e3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c6795711f1:0x7370cf1bc32c7590": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b68e1f7b55:0x4d3d66f3bd0e7825": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835660b0dfe69:0xa8994af1baf61de5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468359634d3a8f3:0xefb52dfdaad6ce02": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835349fa8dac7:0x2738cc6978aed132": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34681f89123fa4d5:0x9dae3acc5ec64b4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346803c837b28261:0x9f8b8badf1f237c6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c2ab2eaa47:0x7f0192d8c2235aa2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d05bb7b6ad:0xac90526e110d8605": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ce0efbf5ef:0x14dc96e69fcb0913": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468226678450bad:0xa8ba31c48491a90d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bfad60d10d:0x5188fb90d2e5d91": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c371cbef0b:0xa3e090ffca7d090a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d123092ff3:0x3782f0506d341ecc": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c9318aba3f:0x2c29ee9020525373": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346834eec86dafa3:0xea221d3a6fe91878": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684b2fbf4921c3:0xd33156ccffda7b11": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835954d1390f7:0x5c76abf6ed241ab0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c18dba90a9:0x795d9afc9629d6e9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d5463b1babd:0x83e3d0d28d1cbbc4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469ae63ef4eb69f:0xd3956a9eb629dead": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683642fc759b2d:0x20707815aac790dd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c08818832b:0xa5fb10d1409335b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835978cc04335:0x3f02af28e58b07ef": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835059406cd9f:0xbe6cc81fa9d7c2ed": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468359ee5ddf543:0x5dbeafbf1ea2ef55": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a912f207e4ab:0x2f4044544bdfe32e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836ebd5ff745b:0x61a7d77a87187147": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ddca1e71fb:0xc2ae6fcecb44d062": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468355be590cd1d:0x68911f14f30a43d7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835fb5382d56d:0x4c3e2aa90a1f62e4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c178ef976b:0x1d80d39d4e7f3c1d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c7549f9ffd:0x7f40116d2a44784f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d0ae30c5cf:0x6479b21467349518": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cea7b351f5:0x235a814ddd7afc22": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ce9ee718c3:0xba244872de87330f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ce9a245a65:0x18b76e80c58e26ed": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c8ffffffff:0xc9d5b14f69126067": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cf0fcf35a5:0xde564be0cae75bf9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c7632b82e3:0x65b62046d8974a34": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bf35d906f9:0xfa693890c48b92f4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bf558c226b:0xae23a5374c62405": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bf132ae4b1:0xdfc426723d4255c7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c07b3dcf2d:0xec9b3ee9fb2b3d76": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ebb04bb871:0x1a4b91fdc09ae708": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ea4d3f95bd:0x70011f60c897026f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ea4db1d651:0xd4ea7ef386c9d08e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835eaf1c670e1:0xb9c32be2fbcbe0df": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c4b80b8633:0x6b7fb7c1b75d6784": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468355f89fd2461:0xce36cb2b9fb0339a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835006d3d0941:0xc6d5c722df9250cf": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468363d4e919e79:0x6049d0819acb9440": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bee3bfe2ed:0xe489a1405a68b1bb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836fce5d16a9b:0x371cd207d505ccd3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837681fab4ee5:0x6d5e2a1502db8750": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835f26a716ea7:0x86b5cbd184a49063": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835dac2ba3635:0x246fa0693668ec38": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835f36e1b6401:0x1f1e0e271dd3675a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683551164e0d93:0xc9175da66ec4c63": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683764ef2def7b:0x535726fe8efe1a39": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468373de564a457:0x816af18197262b43": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c539c1ce23:0xff1153f65f6f6163": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683539e8e66a1f:0xcf0718902198584": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c61351cd81:0xe1438bb517e449ed": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468376d28260b05:0x6b3736d7cc385f1f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e8c663d62d:0xe30a138059218b7a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835005f9cb4d3:0xd643094ff3222887": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468375a7e752865:0x1575da903938693": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468351166a0bb8b:0x56b473eab7c6672b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c0999b0ac5:0xcf3ad07cb70d78bf": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c3e6a1dfed:0x75f41fe42530e5de": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c06784d855:0xa9da2b3129f7aa06": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468358a570f4419:0xca94adf5ee46e963": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835998dd1797f:0x64539a452fcf231f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835006cca853d:0x7300ea7bef5ef110": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683790dc6e1557:0xccc76f960a4f28b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e71320193e709:0x4cb417bb97a4e288": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683594dba8f66b:0xdbf02e743eca5f6c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468350025eb6967:0xdde51dd5c5535463": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837ab24ed14c3:0xd3252515dc2ccd29": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468373ab93d507b:0x2848c4678bff4eb6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d8fcf71d869:0xb491b43caeb0cea3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ff4b0a188d:0x5a26d24f2e0b83fa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468372ae0457005:0xdcf18416d3a0adc3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835eecd300abf:0x87fd196bd2806146": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835981a9c518d:0xd20ec76300af8ef5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e05eb4914d:0xfd9c8ff9144e656": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c19531b5bf:0x5a55fec553eee5e3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d06732d37bf:0x777f4b687aae0ec0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468356427caa433:0xb66ca26ff99472df": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835097eb22705:0x3dd90906db8dfbd4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468353e8c0c42fb:0xce7cb74249887e35": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e05baa2671:0xb8398ae101d6085": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684e0396c6854b:0x5df64ddf82a78f39": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837791acd51d9:0xe9b678d4d3681322": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468370d87114421:0x3d42d837a04ce12": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837d76687a1f9:0x8b6e6fca29f3d862": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683673c1b550f7:0x63464829b37d7521": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c0481ced9b:0x44bf8a583c99bb8c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683616318a27d1:0xe3c07d06a0ae4db2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837001bfdf949:0x4a91655aa0d51ea2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d939e87143:0x45b22755ab25768f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837c14be60025:0x299d7edaeb7a2ad": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cc17c478c3:0x6562ea9a6a4b06f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c86a44cad9:0x7561f67cd8f21459": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684be70584f125:0xe60de0a431d0610a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683513ef15217d:0x6b3b695eb04496ad": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468356f48fb7c03:0xc492f45610d7f88c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468355f27bb3d11:0x1a1edae93302f6bc": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835a29d7c2e1f:0xfc9235f43f945092": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835092d60cae3:0x594271d19ef2699b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835db1ef38495:0x94b83a974700bebb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835001d5f3155:0xdf32db11d4939bf5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835da5a7b693d:0x6becc5563169e289": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835da79513af7:0x6cc62a61c3e92e53": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cfb4791401:0xdbd18f2b58c02cdc": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abb3780b3cb5:0xf382cf0081d3e981": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abcc96586839:0x698b2a2e01a24f4b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a91391ac8be7:0xae44a2cf44fa5da5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9147ee9d47f:0x94e41e5cf24bfbe2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a913880d53b5:0x2889d540101195ec": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a913890b7179:0x3de26de9acb7f42d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a913880d53b5:0xd286ca4f37b73753": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90bfdf48b2b:0x34c8d5f4a49b0e67": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abbbd49806b5:0x6505e784294c8e13": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a93e17f677f7:0x436a32785a5bfc9b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a93e529d2fe9:0x97b098936bc7baf2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96c7f213745:0xf87b55be5f35131f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a93fac43e0dd:0x390fb8e4044ff5b0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a998fbe65f61:0xd9b06c0c092ed225": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc8eed38787:0xa07ad8a807ac0c36": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe8e5383533:0x7e7a83a63541962c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835002c6af6d7:0xd746fa3ffe3ea3eb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c501b741b1:0xc746a1715ae33ab": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835d110904d83:0xeae875ba81915bcd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346915e4a63e2b11:0xb3cea5c7ded334ff": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837004658f8d3:0x94c9bc2a7445e937": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468370320e0019f:0x6a51fbf990f09399": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a949c4c78fe1:0x448b414b7582b95e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683528a0009671:0xe078e6edd580136e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b1685eaf07:0x17b9592fd9310023": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a97ca0f744ab:0x8673faa071b6a5c9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e506cbbe2741:0xfd0c89844a2140b0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683778547b0de7:0xf1dc91b1141b1e3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837c033db89f5:0x41a3b1a47fccd51d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468359a3b56f57f:0x43b205eb8467f203": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683537c676f7a9:0x61c9c4c239c55d53": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e767cbabb6291:0xd667be72f2238988": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835df94bc30b5:0x876fdd96780d660d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683702329d1955:0xce6e29cb48d5a5eb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9bb3aa961e7:0xd3b7b58a43d64245": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693da88827b0ef:0x7e561dec6b753fcd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837ec455e1cbf:0xd24f41c76fe5ad23": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683657f97fb64f:0x5879c6796d1cef70": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab11fba1b1a9:0xda8c58618ce2a8aa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693dd4bfe6c9ef:0x4f8a630bb3b9adfe": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693961e9d1b8fd:0xfbaaeffcc5b8d747": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a967dff20577:0x68c4d8dc6313a844": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a93ed634cd47:0x3a4001a982bec955": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aec8e60ef099:0x57c7fa035afaa853": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96a11391b2b:0xf14198f38b3a86e5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a943c0e47157:0x61627474cc06645d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96a67c9be13:0xba1ef70fcd5a52bc": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468386c006dec1d:0xd55b69f30b18a784": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7661706ecac7:0x8b61cd5f7180e3eb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7661ffdf83e7:0x46c60109efec100": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abeeb8cfa39d:0x29ae480e77529935": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b9c97adb6d:0xbd491e4b8eab9e8e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae518a600afb:0xd646fcc1f6a07149": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e75dbac4a6a15:0x25f38baa606adaab": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837fa4fa76a9f:0x790da2e4099d16b7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9089154ab69:0xd3b752ee0728503b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d42c93eef81:0x3bec4c882826f5ce": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bda9e7c04b:0xd9fd8a92cfadc47e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d96ffffffff:0x9ca4b5a8ac869869": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ed18ab6d49:0x9e1957ee27533924": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346f7172b19c5711:0xe14b8b3b9e0803e6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e767a58c7b235:0x20b4544152ebca6b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7761c31d00d7:0xba762c11ad186dbd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e767a059d39cb:0xa396e5d3dd1f8587": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836fa6b3e298b:0xf485944087bcadbb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aa0a54c8d991:0x2cc70b571efc49e6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc5fc2c903f:0xac6fc6a39b604db2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a925115d13cf:0x5e806f3067dbf4dd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bdbf2401eb:0xc84395f7373b6b11": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837cb8b7dfbeb:0x3766e4f2391dd69b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d99d274375d:0xa2c9c1cf2967520b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684b2cbbbbcec5:0x61fb3a244fccfc1a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346917d45f2dba1f:0x352664a86b1fce24": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abdb9330cb57:0x2d4a362908bfe7d5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d9fd853d585:0xe8bda14b167d7c0d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d79b089f187:0xbe7ee5b6dbb5a21b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34691778850044f1:0x14d8a2e2bdf02e00": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d17563e28d9:0xdbba881b71dabc5b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d3cda751c6f:0xb51f0d7c3c91d417": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6002dbb5e6ff18bb:0xd3353d1087ca7ce5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e0300a5c50587:0x93ef1d0d7b87a1d8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e03af7fa2d71d:0xb732399f0fd291f0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e03a94ed6ee2d:0x80f4b9dcada40297": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c469970ceb:0xa9ef7ba53467f1f0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e569f875571127:0xb406f718f9d433ee": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e569f193058a99:0x5666138dd98def36": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e4574895bc491f:0x733e31440ad76470": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e50fd44679c851:0x2e60c3d6f5218ed7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a28000332b:0x511b4817fbd2276": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684db1ea853c7f:0x8ee8ff16b6b8de0e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837a88cedbe9f:0x6ddc1bf18133bc96": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357b5f98cd41:0xf830dd095177f647": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835037f9d2411:0x90fcc91a16a7ad6d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468370510db5a55:0x9b62a0c3e05caa2d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468377f2c317ae1:0x37eb2195fdd3a7d8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abdc4d95636d:0xe8a78f5ffeec5ee8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e5697a716e84b1:0x10883597ca4b1cb7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e5c87aa54669:0x29a90919b7584451": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683735701d3175:0x6b62143ae0691a2a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x60188f002ad0ce1b:0x39927de3d98ec013": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835a84d4c7db5:0x18515ca501384fb7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b33c882811eb:0x1bef8e87def3797c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683744358788fb:0x83a413fb0a6913f7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837328dddd3b5:0x363be8df2a348cfb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a6e6f9de0ad7:0x89492a347d15d74": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e83554930b3d:0x9a927f387c288482": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x354191b03cc9cfbb:0x25a139f8f49e191e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c68f65b5b:0x3a729a2bd323b0f2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e5697896ac9231:0x9aafb42507f9b3cf": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683ecc2382a21b:0x42b94563b52f2f4b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683694b6c239eb:0xd7e006dc7d5c3031": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684de4fa8e069f:0xcc12db4c8a90c668": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x6000e78ec59711a1:0xbf4353e0044fd101": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9bdfec3c8d9:0x5d4d165c09029c8a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e07dc2a68f:0x873c71c3647e3d8f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d82d9447d99:0x585221edac225d93": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468350011fc60b5:0xd54697b45044a02e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abcf0b943a1b:0xa355aaa445fdef1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683700163cc0bf:0x473a22c0af148eca": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc7d162c2b9:0x4fd9d539b2ed4916": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34691700107b6343:0x65a7f4efb855097a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abb4c4c123cb:0xa8b0a144b809e6c4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90a4d542297:0x4709fd8c83c8d91d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836c06fc307e5:0xd35d1c99c35f1232": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693da596b9104f:0xf87186ae861eaa99": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d05a0945373:0x3514777aba6b24a2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d1767a08207:0xfd69db564145d7a3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d19fc4d203b:0xef7eb469eaf6a96": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d19f9a52299:0xb190529191f36019": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d19feea1e53:0x7f3f83333a77084c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d1a43c9ce0d:0x3ee287c31d8ae056": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d1a43f7bd83:0xebdd9493aa93859c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d1a410a84bb:0x2db387cc6e60a587": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d1a69e1e18d:0xb011f7f9b9f7764": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468376eea16836d:0xc01b12e9108e81f7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467fafd8f4b493d:0x20e5f904d64c7296": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3006d8cb461:0xa5f0c95387062a06": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3555aca1e05:0xadfbd82d3825685a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3f73ff0005b:0x501e0158188b89fd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836eb957b3305:0xb1f79a6ea26ba667": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684b74b192f37b:0x2eaf4eb8f470a2b5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684a9d9e908409:0x34dc4c87f633ce14": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684a97e30e7389:0xc146a2af515173a5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a9339f82c9:0xd4f85d1877edbb92": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8a59c290d:0xd9f0187933bdeb2f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8b4327c3f:0x4af147a563719f63": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9846c394a85:0x19204f8432522e62": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8a952e63b:0x91584adb79a8f6e6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8b26c2581:0x62e13cd5299ad355": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8b215c521:0x4e1780b02a95c25c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a8aeefb3df:0x2cbff4a6a6eb4c2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab44487a8369:0xaf8a6d8342d3765c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9003a29d653:0x4e24f70e15bd4560": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ad597033a179:0x789a36f1dd24dec2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9ad2d419d61:0xfbc596f661042c32": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abea9d391e0b:0x844e828b591c837e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34681ef86b2f3f55:0x5784acd18adeb8b9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468356137e29df5:0xafdf85c37e3e51f8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34690458453064dd:0xb6f96e117fcffb43": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae50b0f7d16b:0x4692c3de637fd2ab": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae507d11e66b:0xce804fe2905d7c56": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae509e108da7:0xf3f63b033fde6794": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae5409120f15:0x98c5f7ef9aca31af": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae53ee3e6d7b:0xd1d7c19705b1f2cd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e05cd81de787b:0x184fc9670d5137bd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346c27984877e6a3:0x2b32771cf58d476e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357a33401483:0xa3f5d29dd4b32d3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683594d7ea1f11:0xb5d2f1367289dcb7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34680277309c5363:0xd7e8432988a81e4f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3732d7586ff:0x3dd9efe3b8e0b537": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468351a8a64b0e3:0xf20db30d840a9b28": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346834fa7919f5ed:0xe992357e57959b9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468355c098346d5:0x4597e4af0d860953": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e77a086fed823:0x48934be9d05fd47": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c2b4baff99:0xbe1e17ae111a3638": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469157baa8f6df3:0x2a17ae3b1d5b3d67": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469133d6afd1483:0xa7679c62e96ebfff": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34681efe2f619f23:0x824c230f88e24697": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34681e4cbc4fe281:0x53da2c87e8e4d689": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebb93260be3:0x238f093e01c3f654": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab5fd0f69779:0xa58505627d023241": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468378ce5653b57:0x2dac57a620cc495a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836fec4217c75:0xdeff87439fb4db7b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683578ee505681:0x4e13274a182c364c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683774dd9bd11f:0x8136e62f2b6dc1a1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab8421b594b7:0x312994ba5ab4c6bd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abb903676b8b:0x591fa610d920ea28": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a909a7dcb325:0xc2acc82bf84a21c4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9091cbe96fd:0x7254f34721492a6d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9091cbc20b1:0x1c0da73bcf8de0ee": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96940f95abd:0xa546ee4a24cb10fa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a8cd1ee5ffbf:0x142fed59668a76d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a949f1cbd53d:0x82d33c5d6552191": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a949f2d167d9:0xcbda0ae540ab01ce": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835cae00e3483:0xcef65ab0515f267e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835f7160e7ea1:0xafe27745843438d0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684cc86548d917:0x538e4022dac1e590": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684b3096cfe8f5:0xb163143f750bc46e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34690afe2427b6f9:0x38f4a95623f69a48": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469ae253772bc91:0x968db20042e96aef": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34690f1b02bda81b:0x3471daa2878b0ad": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9337a1cdf11:0x10c98e45c03aec63": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc07f95ce05:0x51e201b6a237e242": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a840816891e5:0xd8cdf7100d77d89d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346946074d7b00a7:0x7f15e0df554e291e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346946075c024c1f:0xbb65fc7adaa7ba8b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346945fe0f8961c5:0xcf20d40287561990": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d4fc224a0f41d:0x56cc07de47e6f63a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8338f5a2bd:0x1653f4c539b0afca": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346939c122aa6e77:0x7f3b3d22c347b196": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34e51aca5afb013f:0xc95a3ce3a65b341e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468352c4ac640c1:0xecae2f3912596528": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683700457c3755:0x5b9dd81dd737376e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468352dda57339b:0xc5e67bbaeb0bc058": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e99244ecbde7:0x7bb33637aaf89076": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d5ff9859a3d7b:0xbe874fae253f7f5d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a944dc7cf511:0xa66c2a3f83f5f9de": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346847e61d56c36b:0xd0967e199cd822f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a901e2f04c3f:0x7d3e8ef2ed3e4a38": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90c117e1efd:0xf42f3022e0051bfa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683692fa2741a7:0xd0144c3d80facd28": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837213cab3f75:0x4bbbc4e8b4035c3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469389737452aa9:0xc3e8af61aaaa31a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469389638ee0feb:0xfe4657b14b513b28": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9c2deb23c99:0x689d21ea10590909": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab73f9a78123:0x2f3059a28cab0ed3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468357e35546be5:0x2786704185d1f75": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c758dcb5c5:0x2c320e0d983b2fd5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693d4624ba751d:0x255bab29ed482066": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d4fd5553fc1f9:0x1bfb7c5025dff73c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d4fe10fb4515d:0x867f90b9b04c5902": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835797fea0c23:0xad7a8117e9f8f39b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835acfea2a043:0xada92a57f26c9c10": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346847fd07a10931:0x5ba8c2244337afa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837cfffffffff:0x7f446944664b598b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346847e455555555:0x2eba591822ce32e2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346847e33e7c9cfb:0x7f2e7f4fbfb17764": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468476b822683e3:0x5d5dd7f2bf606dd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abd39d167a5b:0x6b662c798df04cf0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e4ea904401ed:0xbf071e5db43d212c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e67e5a474e7f:0x38dd72145d897fe2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835b8bda329e1:0x4fa660681d986877": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9092609d397:0xa8da6f98aafe0d4b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9727e33867f:0x1d4371b37ee7bd96": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a913394b75ad:0xe6755206e4f007a5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abc933f7f339:0xcf78c6ce5fe4ddb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebc92acad93:0x37344bfd8b170af9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442afcbd0056635:0xe3a36817b3eceaa3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442afa36a20f56b:0xc8c098224efc0007": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aeb1c01ca653:0x1bccc6cbffd72f4b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c84ce22ff:0x6e76658ce1595c8b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c93692865:0x31ad896e40e87b9a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ae8c7c31e4e5:0x409699f5387a5f90": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9829e289783:0xd60c7be95f909072": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468351897b42539:0xca6218ee2b1549fd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90c5d084873:0x1100bf99d89ef9c6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346834f004fc0f39:0xe9fc995d26d70806": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aa31ca335509:0x6778a4cf73f9e7e3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe7d84659fb:0x2649930ca6987148": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96d2ecfd72b:0x21c4c5b2853cd189": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a90f48a94c65:0xa9915567cc2e32a5": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96d10e2f4ab:0x1c1999a5c0a09224": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346836c0923cdda7:0x4ab0c401492d111": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34429f6c0f51fa2f:0xd572e5c71510ed72": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a97b68c2f0f3:0xdca439be3051e900": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c4c035c913:0xf7d70f99146db316": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e764458b4a04f:0x97b5c2b3fb2bbc88": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468355459f4a43d:0x9f1c2c92abeb9ab7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835eee97a8af5:0xf74721e51885e600": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac7b78a5ecd9:0x8a5e9972a0572cd7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ad1068f676e5:0x1c2e08b7e5c0aba3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x345d4e405e2e3bc3:0x9749d75cc86dab7e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a84402969d03:0x4abef407a4e9c018": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693db90c147f61:0xae694d0f2e175f3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346837f7cc22665f:0xd33210559796cc8a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34681b60062b0e5d:0x9ad3e97ce3256c72": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abbbd49807b9:0x5bea25cbb9ae71ae": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d9673dfe399:0xb7c8f9b53330aa": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34690346261e15f7:0x75731a49da3a8036": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34690337e87b0935:0xd6fd68cc7dcb5acf": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346827050ff0f54d:0xbf39a41adc2fbd57": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468264c7b8cb0b9:0x8207f951945a87cd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab8c82378ceb:0x1dc92c2cf7cb01f3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9870b37d50f:0xf6027252416f27ee": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9bd6f8a8175:0xebcb6e980dcb3bcb": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a99774c55c13:0xe6e9b86314c89638": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e72d77eafcc17:0x7bfe2ba564d5d58f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac067f9a3579:0x538b2887f144253b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835ce62958d33:0x7faa70a7054411ca": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a874ecbf9ba7:0x55f2244fcd2ef5b7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684d681bdf72ab:0x575c98a11dbefde": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b4adcbb86b39:0x1b7792ecdf8522ea": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34684ddb1616a75b:0x741b962b3cb9f169": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469b3292a484371:0x6be3329a3865fe4d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a934a9a3e25f:0x2e969f59f5fc9b3a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a6b7668e21:0x8b5fcd648b9a5f9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a731467967:0xf251188d2d91cc6b": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468237973bcbd61:0x71ce769cf6b50f0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac617c454577:0x7d1ad4f0afe9aaad": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468228740b8e437:0x57afddcfc79e7127": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468230034e58693:0xbc79f5ed70770f3f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468351c9a7cfc45:0x5fb528a7d0f4fd4e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468230071d9bf51:0x9e3f983b0c109a3d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3468224ba9bd69a3:0x77a25ef921d3835d": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe922e0b88d:0x7307251b3351acd4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442acfc2becb07b:0xd96b3b24aa42b4c9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442acf97b3f740b:0x1309b487db374c80": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ad8c71d8cb2d:0x7be5c4285489790a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ad92e528c16d:0xa3e2eb8c153b6a2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac63bbf119d5:0x2daea7ed80ed7bb6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac63bd91ff93:0x1927755fe916fe20": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ac63c72b17dd:0xbf356255b03abecd": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3469521703395c99:0x3b575e93fb291dd9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34693743aabb3c03:0x3386925bda50a207": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346952ebe7bd937d:0x28da801109ad93f1": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7663d5b3bac9:0x992fea426d702df0": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e7663d5a343f5:0xe1bc9f88c35fba": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e76618109e70d:0x1361ef9f81330c2e": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e765d484e12bb:0x90d05828f2160ca6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e76959f4ce97d:0x26698cb03b68afd3": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346e74697afd4303:0xe76eda38e5955400": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467e56cd3a97eb9:0xf615c0b25e3773c7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3467ef554a116ed3:0x475d5189ca48fbf7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34680a8103a4e1b5:0x39fc2ab37557a8e6": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835e49b887f6d:0x88594d3d605c72b8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835bfb82616bf:0x68b20674380eef59": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab0004d737b3:0xf2139dfbccdce738": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442ab575f123b03:0x705db101c8773a27": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9b1e1f2b033:0xbd0681d9818060d7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9bcbf5b49c5:0x566a8ddad8c0e2b2": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a962975b4901:0x2a6b9fe22ab1761c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442aebd02e52353:0x3e7fa821f3804e97": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9771d878b1f:0x44b618c0a48b20e8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a912c6a83993:0xd09cf07bddcbeb2a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a94075a5d1d9:0xc788b9d88ee1ba5a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a9a9447409fd:0xfc35379ade834209": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x346835c46b204f45:0x5ee9cd90836774b4": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683ecea17eef57:0xc4be44b2a692b69c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683ecea8f97635:0x50c0563eb417f0d9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683f48c887dc2f:0x9e69e532d019863a": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683fa2b3637035:0x5c61c31de03fb3b8": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683f01d39a0659:0xf85d95a113189a6f": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683ec66d9b4b11:0x27fb43a41bd66ba": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683eb8caa0caf9:0x9480f250b3f147e7": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x34683ecc1a99e48f:0xa62aab1c513401c9": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abddbaccd7d5:0x1f6ac074ca937074": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a96ac201a925:0x60c17d7623069c74": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442abe7cc65d1c3:0x8545435398ef633c": {
+    "source": "gemini",
+    "status": "UNCERTAIN",
+    "address": "",
+    "price_level": null,
+    "price_tw": null
+  },
+  "0x3442a7d19b3a9a1d:0x43997e62ad33da86": {
+    "source": "maps",
+    "status": "CLOSED_PERMANENTLY",
+    "address": "244新北市林口區仁愛里文化二路一段358號",
+    "price_level": null,
+    "match": "EXACT"
+  }
+}
