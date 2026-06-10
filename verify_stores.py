@@ -23,17 +23,25 @@ verify_stores.py — 驗證 MyGoogleMap_Stores.csv
   uv run verify_stores.py
 """
 
-import os, re, csv, json, time, sys, urllib.parse, urllib.request, urllib.error
+import os
+import re
+import csv
+import json
+import time
+import sys
+import urllib.parse
+import urllib.request
+import urllib.error
 
 # ── 設定 ─────────────────────────────────────────────────────────────────────
-INPUT_CSV     = "MyGoogleMap_Stores.csv"
-OUTPUT_CSV    = "MyGoogleMap_Stores_verified.csv"
-CLOSED_CSV    = "MyGoogleMap_Stores_closed.csv"
-CACHE_FILE    = "verify_cache.json"
+INPUT_CSV = "MyGoogleMap_Stores.csv"
+OUTPUT_CSV = "MyGoogleMap_Stores_verified.csv"
+CLOSED_CSV = "MyGoogleMap_Stores_closed.csv"
+CACHE_FILE = "verify_cache.json"
 DEFAULT_MODEL = "gemini-2.5-flash"
-BATCH_SIZE    = 5       # Gemini 模式：每批筆數（搜尋時不宜太多）
-BATCH_DELAY   = 10      # 批次間等待秒數（控制速率）
-MAX_RETRIES   = 4
+BATCH_SIZE = 5       # Gemini 模式：每批筆數（搜尋時不宜太多）
+BATCH_DELAY = 10      # 批次間等待秒數（控制速率）
+MAX_RETRIES = 4
 
 # price_level（0-4）→ 台幣人均估算
 PRICE_MAP = {0: 0, 1: 120, 2: 350, 3: 800, 4: 1500}
@@ -86,7 +94,8 @@ def name_similarity(orig, returned):
     計算原始店名與 Find Place 返回店名的相似度（0~1）。
     去除括號、空格、特殊符號後，以字元重疊率判斷。
     """
-    clean = lambda s: re.sub(r'[（）()\s/,、\-．·　【】『』「」{}｛｝\[\]]', '', s)
+    def clean(s):
+        return re.sub(r'[（）()\s/,、\-．·　【】『』「」{}｛｝\[\]]', '', s)
     a = clean(orig)[:10]   # 取前 10 個有效字元（店名頭部最具代表性）
     b = clean(returned)
     if not a:
@@ -186,7 +195,7 @@ def extract_json_from_text(text):
         pass
     # 找第一個 { … } 區塊
     start = text.find('{')
-    end   = text.rfind('}')
+    end = text.rfind('}')
     if start != -1 and end != -1:
         try:
             return json.loads(text[start:end + 1])
@@ -239,12 +248,12 @@ def query_gemini_batch(stores_batch, model_name, gemini_key):
     for attempt in range(MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=90) as resp:
-                res  = json.loads(resp.read().decode('utf-8'))
+                res = json.loads(resp.read().decode('utf-8'))
                 parts = res.get('candidates', [{}])[0].get('content', {}).get('parts', [])
                 text = next((p.get('text', '') for p in parts if 'text' in p), '')
                 data = extract_json_from_text(text)
                 if not data:
-                    print(f"    [Gemini] 無法解析 JSON 回應，該批標記 UNCERTAIN")
+                    print("    [Gemini] 無法解析 JSON 回應，該批標記 UNCERTAIN")
                     return uncertain
                 results_map = {r['index']: r for r in data.get('results', [])}
                 return [
@@ -273,12 +282,12 @@ def main():
     print("====== MyGoogleMap 店家狀態驗證工具 ======\n")
 
     env = load_env()
-    maps_key   = env.get('MAPS_API_KEY', '')   or os.environ.get('MAPS_API_KEY', '')
+    maps_key = env.get('MAPS_API_KEY', '') or os.environ.get('MAPS_API_KEY', '')
     gemini_key = env.get('GEMINI_API_KEY', '') or os.environ.get('GEMINI_API_KEY', '')
     model_name = env.get('GEMINI_MODEL', DEFAULT_MODEL)
 
     if maps_key:
-        print(f"[主要模式] Google Maps Find Place from Text API")
+        print("[主要模式] Google Maps Find Place from Text API")
     if gemini_key:
         print(f"[備援模式] Gemini Search Grounding（{model_name}）")
     if not maps_key and not gemini_key:
@@ -318,7 +327,7 @@ def main():
         print(f"\n[Maps API] 需查詢 {len(need_maps)} 筆（已快取 {len(stores) - len(need_maps)} 筆）")
 
         for idx, store in enumerate(need_maps):
-            ck     = store_cache_key(store)
+            ck = store_cache_key(store)
             result = query_find_place(store['店名'], store.get('地址', ''), maps_key)
             cache[ck] = {'source': 'maps', **result}
 
@@ -328,7 +337,7 @@ def main():
             time.sleep(0.15)   # ~6-7 QPS，Find Place 預設上限約 10 QPS
 
         save_cache(cache)
-        print(f"[Maps API] 查詢完成。")
+        print("[Maps API] 查詢完成。")
 
     # ── 第二階段：Gemini 備援 ──────────────────────────────────────────────────
     # 觸發條件：Maps API 返回 UNKNOWN/ERROR，或 NO_MATCH 需要二次確認
@@ -343,7 +352,7 @@ def main():
             print(f"\n[Gemini] 需補查 {len(need_gemini)} 筆（Maps 無法確認）...")
             for batch_start in range(0, len(need_gemini), BATCH_SIZE):
                 batch = need_gemini[batch_start:batch_start + BATCH_SIZE]
-                end   = min(batch_start + BATCH_SIZE, len(need_gemini))
+                end = min(batch_start + BATCH_SIZE, len(need_gemini))
                 print(f"  處理第 {batch_start+1}～{end} 筆...")
                 results = query_gemini_batch(batch, model_name, gemini_key)
                 for store, result in zip(batch, results):
@@ -375,18 +384,17 @@ def main():
                 save_cache(cache)
                 if batch_start + BATCH_SIZE < len(need_gemini):
                     time.sleep(BATCH_DELAY)
-            print(f"[Gemini] 補查完成。")
+            print("[Gemini] 補查完成。")
 
     # ── 第三階段：整理結果 ─────────────────────────────────────────────────────
-    open_stores   = []
+    open_stores = []
     closed_stores = []
 
     for store in stores:
-        ck     = store_cache_key(store)
+        ck = store_cache_key(store)
         result = cache.get(ck, {})
         status = result.get('status', 'UNCERTAIN')
         source = result.get('source', '')
-        match  = result.get('match', '')
 
         # 判斷是否停業
         # NOT_FOUND（Maps 找不到此店）→ 移除（店已從 Google Maps 消失＝強烈暗示停業）
@@ -460,7 +468,7 @@ def main():
         print("已移除的店家：")
         for s in closed_stores:
             status_label = s.get('停業狀態', s.get('_close_status', ''))
-            print(f"  ✗  {s['店名']}  [{status_label}]  {s.get('地址','')[:30]}")
+            print(f"  ✗  {s['店名']}  [{status_label}]  {s.get('地址', '')[:30]}")
 
     print("\n下一步：確認無誤後，可將 MyGoogleMap_Stores_verified.csv 重新命名為 MyGoogleMap_Stores.csv，")
     print("        然後執行 export_to_sheets.py 重新產生 stores_data.js 供抽籤頁使用。")

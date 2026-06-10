@@ -2,6 +2,7 @@ import os
 import csv
 import random
 
+
 def main():
     input_folder = "input"
     output_folder = "input_test"
@@ -84,7 +85,9 @@ def main():
         except Exception as e:
             print(f"Error writing {fname} to {output_folder}: {e}")
 
-    print(f"Extraction complete. Sampled {written_records} records across {written_files} files into '{output_folder}/'.")
+    print(f"Extraction complete. Sampled {written_records} records across "
+          f"{written_files} files into '{output_folder}/'.")
+
 
 if __name__ == '__main__':
     main()

@@ -10,13 +10,13 @@ import urllib.parse
 import urllib.request
 
 # === 設定常數 ===
-INPUT_FOLDER    = os.environ.get('INPUT_FOLDER', "input")    # 存放來源 CSV 的資料夾
-OUTPUT_CSV      = "MyGoogleMap_Stores.csv"
-OUTPUT_JS       = "stores_data.js"
-CACHE_FILE      = "export_cache.json"   # 斷點續跑快取
-DEFAULT_MODEL   = "gemini-2.5-flash"    # 可在 .env 設定 GEMINI_MODEL 覆寫
-BATCH_DELAY     = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
-MAX_RETRIES     = 5          # 429 最大重試次數
+INPUT_FOLDER = os.environ.get('INPUT_FOLDER', "input")    # 存放來源 CSV 的資料夾
+OUTPUT_CSV = "MyGoogleMap_Stores.csv"
+OUTPUT_JS = "stores_data.js"
+CACHE_FILE = "export_cache.json"   # 斷點續跑快取
+DEFAULT_MODEL = "gemini-2.5-flash"    # 可在 .env 設定 GEMINI_MODEL 覆寫
+BATCH_DELAY = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
+MAX_RETRIES = 5          # 429 最大重試次數
 
 # 只有這個清單的店家標記為「未去過」，其餘所有清單一律標為「已去過」
 UNVISITED_LIST_NAME = '想去的地點'
@@ -72,7 +72,7 @@ def find_all_input_csvs(input_folder):
     results = []
     for f in sorted(os.listdir(input_folder)):
         if f.lower().endswith('.csv'):
-            list_name  = f[:-4]
+            list_name = f[:-4]
             is_visited = list_name != UNVISITED_LIST_NAME
             results.append((os.path.join(input_folder, f), list_name, is_visited))
     return results
@@ -119,10 +119,13 @@ def read_csv(filename):
             for row in reader:
                 if not row or len(row) <= max_idx:
                     continue
-                title   = row[mapping['title']].strip()   if mapping['title']   is not None else ''
-                note    = row[mapping['note']].strip()    if mapping['note']    is not None and mapping['note'] < len(row) else ''
-                url     = row[mapping['url']].strip()     if mapping['url']     is not None and mapping['url'] < len(row) else ''
-                address = row[mapping['address']].strip() if mapping['address'] is not None and mapping['address'] < len(row) else ''
+                title = row[mapping['title']].strip() if mapping['title'] is not None else ''
+                note = (row[mapping['note']].strip()
+                        if mapping['note'] is not None and mapping['note'] < len(row) else '')
+                url = (row[mapping['url']].strip()
+                       if mapping['url'] is not None and mapping['url'] < len(row) else '')
+                address = (row[mapping['address']].strip()
+                           if mapping['address'] is not None and mapping['address'] < len(row) else '')
 
                 if title:
                     places.append({'title': title, 'address': address, 'url': url, 'note': note})
@@ -186,7 +189,7 @@ def geocode_address(address, api_key, maps_api_key=None):
     for attempt in range(MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=20) as resp:
-                res  = json.loads(resp.read().decode('utf-8'))
+                res = json.loads(resp.read().decode('utf-8'))
                 data = json.loads(res['candidates'][0]['content']['parts'][0]['text'])
                 return data.get('lat'), data.get('lng')
         except urllib.error.HTTPError as e:
@@ -274,18 +277,25 @@ def heuristic_classify(title, note):
     avg_spending = 150
 
     # 1. 偵測非餐飲或免費景點
-    if any(x in combined for x in ['景點', '公園', '大學', '中心', '博物館', '廟', '古蹟', '紀念館', '影城', '戲院', '球場', '體育館', '圖書館', '車站', '機場', '飯店', '酒店', '旅店', '民宿', '商旅']):
+    if any(x in combined for x in [
+        '景點', '公園', '大學', '中心', '博物館', '廟', '古蹟', '紀念館',
+        '影城', '戲院', '球場', '體育館', '圖書館', '車站', '機場',
+        '飯店', '酒店', '旅店', '民宿', '商旅'
+    ]):
         return '其他', 0
 
     is_dining = False
-    
+
     # 義式
     if any(x in combined for x in ['義大利麵', '披薩', '比薩', '義式', 'pasta', 'pizza', 'milano', 'banco']):
         types.append('義式')
         avg_spending = 350
         is_dining = True
     # 日式
-    elif any(x in combined for x in ['拉麵', '壽司', '居酒屋', '日式', '和食', '鰻魚', '刺身', '生魚片', '丼', '串燒', '天婦羅', '安兵衛', 'naniwa', 'sojibō', 'yagura', '吉塚']):
+    elif any(x in combined for x in [
+        '拉麵', '壽司', '居酒屋', '日式', '和食', '鰻魚', '刺身', '生魚片',
+        '丼', '串燒', '天婦羅', '安兵衛', 'naniwa', 'sojibō', 'yagura', '吉塚'
+    ]):
         types.append('日式')
         avg_spending = 300
         if '拉麵' in combined or '麵' in combined:
@@ -309,15 +319,24 @@ def heuristic_classify(title, note):
         avg_spending = 250
         is_dining = True
     # 中式
-    elif any(x in combined for x in ['麵', '飯', '餃', '包', '羹', '粥', '湯', '鵝肉', '鴨肉', '滷肉', '魯肉', '小吃', '滷味', '燒餅', '油條', '肉粥', '餛飩', '抄手', '臭豆腐', '涼麵', '炒麵', '火鍋', '涮牛肉', '海鮮', '熱炒', '燉鰻', '豬血', '肉圓', '米糕', '當歸', '食堂', '茶餐廳', '港式']):
+    elif any(x in combined for x in [
+        '麵', '飯', '餃', '包', '羹', '粥', '湯', '鵝肉', '鴨肉', '滷肉', '魯肉',
+        '小吃', '滷味', '燒餅', '油條', '肉粥', '餛飩', '抄手', '臭豆腐', '涼麵',
+        '炒麵', '火鍋', '涮牛肉', '海鮮', '熱炒', '燉鰻', '豬血', '肉圓', '米糕',
+        '當歸', '食堂', '茶餐廳', '港式'
+    ]):
         types.append('中式')
         avg_spending = 120
-        if '火鍋' in combined or '涮' in combined or '海鮮' in combined or '熱炒' in combined or '餐廳' in combined:
+        if ('火鍋' in combined or '涮' in combined or '海鮮' in combined
+                or '熱炒' in combined or '餐廳' in combined):
             avg_spending = 450
         is_dining = True
 
     if not is_dining:
-        if any(x in combined for x in ['咖啡', 'cafe', '烘焙', '麵包', '茶', '甜點', '蛋糕', '冰', '豆花', '下午茶', '鬆餅', '雞蛋糕', '糖餅', '拿鐵', '焙茶', '手搖', '大茗', '果子', '飲料']):
+        if any(x in combined for x in [
+            '咖啡', 'cafe', '烘焙', '麵包', '茶', '甜點', '蛋糕', '冰', '豆花',
+            '下午茶', '鬆餅', '雞蛋糕', '糖餅', '拿鐵', '焙茶', '手搖', '大茗', '果子', '飲料'
+        ]):
             types.append('其他')
             avg_spending = 150
         else:
@@ -387,12 +406,12 @@ def classify_cuisine_and_details(items, home_address, api_key):
                         "items": {
                             "type": "OBJECT",
                             "properties": {
-                                "index":       {"type": "INTEGER"},
-                                "types":       {"type": "STRING"},
-                                "avg_spending":{"type": "INTEGER"},
-                                "lat":         {"type": "NUMBER"},
-                                "lng":         {"type": "NUMBER"},
-                                "address":     {"type": "STRING"}
+                                "index": {"type": "INTEGER"},
+                                "types": {"type": "STRING"},
+                                "avg_spending": {"type": "INTEGER"},
+                                "lat": {"type": "NUMBER"},
+                                "lng": {"type": "NUMBER"},
+                                "address": {"type": "STRING"}
                             },
                             "required": ["index", "types", "avg_spending", "lat", "lng", "address"]
                         }
@@ -411,16 +430,16 @@ def classify_cuisine_and_details(items, home_address, api_key):
     for attempt in range(MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
-                res  = json.loads(resp.read().decode('utf-8'))
+                res = json.loads(resp.read().decode('utf-8'))
                 data = json.loads(res['candidates'][0]['content']['parts'][0]['text'])
                 results_map = {r['index']: r for r in data.get('results', [])}
                 return [
                     {
-                        'types':        results_map[i]['types']           if i in results_map else '其他',
-                        'avg_spending': results_map[i]['avg_spending']    if i in results_map else 0,
-                        'lat':          results_map[i].get('lat')         if i in results_map else None,
-                        'lng':          results_map[i].get('lng')         if i in results_map else None,
-                        'address':      results_map[i].get('address', '') if i in results_map else ''
+                        'types': results_map[i]['types'] if i in results_map else '其他',
+                        'avg_spending': results_map[i]['avg_spending'] if i in results_map else 0,
+                        'lat': results_map[i].get('lat') if i in results_map else None,
+                        'lng': results_map[i].get('lng') if i in results_map else None,
+                        'address': results_map[i].get('address', '') if i in results_map else ''
                     }
                     for i in range(len(items))
                 ]
@@ -432,7 +451,7 @@ def classify_cuisine_and_details(items, home_address, api_key):
                     print(f"    [{e.code}] {label}，等待 {delay} 秒後重試（第 {attempt + 1}/{MAX_RETRIES} 次）...")
                     time.sleep(delay)
                     continue
-                print(f"    [錯誤] 達到最大重試次數，將使用本地啟發式分類作為備援方案。")
+                print("    [錯誤] 達到最大重試次數，將使用本地啟發式分類作為備援方案。")
             else:
                 print(f"    [錯誤] API 回傳 HTTP {e.code}，將使用本地啟發式分類作為備援方案。")
             return fallback
@@ -461,10 +480,11 @@ def haversine_distance(lat1, lon1, lat2, lon2):
     if None in (lat1, lon1, lat2, lon2):
         return None
     try:
-        R    = 6371.0
+        R = 6371.0
         dlat = math.radians(lat2 - lat1)
         dlon = math.radians(lon2 - lon1)
-        a    = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
+        a = (math.sin(dlat / 2) ** 2
+             + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2)
         return round(R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a)), 2)
     except Exception:
         return None
@@ -483,7 +503,7 @@ def upload_to_gdrive(filepath, folder_id):
         print("若要啟用，請執行：pip install google-api-python-client google-auth-oauthlib")
         return False
 
-    SCOPES     = ['https://www.googleapis.com/auth/drive.file']
+    SCOPES = ['https://www.googleapis.com/auth/drive.file']
     CREDS_FILE = 'credentials.json'
     TOKEN_FILE = 'token.json'
 
@@ -500,12 +520,12 @@ def upload_to_gdrive(filepath, folder_id):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow  = InstalledAppFlow.from_client_secrets_file(CREDS_FILE, SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file(CREDS_FILE, SCOPES)
             creds = flow.run_local_server(port=0)
         with open(TOKEN_FILE, 'w') as token:
             token.write(creds.to_json())
 
-    service  = build('drive', 'v3', credentials=creds)
+    service = build('drive', 'v3', credentials=creds)
     filename = os.path.basename(filepath)
 
     # 若同名檔案已存在則更新，否則新建
@@ -581,7 +601,7 @@ def main():
             home_address = ''
 
     if home_address and api_key:
-        _home_cache_key      = f"__home_coords__{home_address}"
+        _home_cache_key = f"__home_coords__{home_address}"
         _home_maps_cache_key = f"__maps_geo__{home_address}"
         _pre_cache = load_cache()
 
@@ -637,7 +657,7 @@ def main():
                 if is_visited:
                     merged_places[key]['visited'] = '是'
             else:
-                p['visited']     = '是' if is_visited else '否'
+                p['visited'] = '是' if is_visited else '否'
                 p['source_list'] = list_name
                 merged_places[key] = p
 
@@ -705,9 +725,9 @@ def main():
                 print(f"  Places API 不可用，{len(need_lookup)} 筆地址將由 Gemini AI 補齊。")
 
     # --- AI 批次分析（含進度快取與斷點續跑） ---
-    cache      = load_cache()
+    cache = load_cache()
     batch_size = 20
-    total      = len(total_places)
+    total = len(total_places)
     cached_cnt = sum(1 for p in total_places if cache_key(p) in cache)
 
     if api_key:
@@ -720,7 +740,7 @@ def main():
 
     try:
         for i in range(0, total, batch_size):
-            batch      = total_places[i:i + batch_size]
+            batch = total_places[i:i + batch_size]
             to_process = [(idx, p) for idx, p in enumerate(batch) if cache_key(p) not in cache]
 
             if to_process:
@@ -729,7 +749,7 @@ def main():
                     print(f"  正在處理第 {i+1}～{end} 筆（本批需呼叫 API {len(to_process)} 項）...")
                 else:
                     print(f"  正在處理第 {i+1}～{end} 筆（本地分析中）...")
-                sub_items  = [p for _, p in to_process]
+                sub_items = [p for _, p in to_process]
                 sub_result = classify_cuisine_and_details(sub_items, home_address, api_key)
 
                 for (orig_idx, p), det in zip(to_process, sub_result):
@@ -737,8 +757,8 @@ def main():
                     batch[orig_idx].update({
                         'cuisine_type': det['types'],
                         'avg_spending': det['avg_spending'],
-                        'lat':          det['lat'],
-                        'lng':          det['lng'],
+                        'lat': det['lat'],
+                        'lng': det['lng'],
                     })
                     if not batch[orig_idx]['address'] and det.get('address'):
                         batch[orig_idx]['address'] = det['address']
