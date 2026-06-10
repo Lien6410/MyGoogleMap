@@ -18,6 +18,9 @@ token.json
 # uv virtual environment
 .venv/
 
+# Claude Code worktrees (temporary agent sandboxes)
+.claude/worktrees/
+
 # Google Takeout raw archives
 *.zip
 takeout-*/
