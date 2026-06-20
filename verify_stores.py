@@ -34,10 +34,12 @@ import urllib.request
 import urllib.error
 
 # ── 設定 ─────────────────────────────────────────────────────────────────────
-INPUT_CSV = "MyGoogleMap_Stores.csv"
-OUTPUT_CSV = "MyGoogleMap_Stores_verified.csv"
-CLOSED_CSV = "MyGoogleMap_Stores_closed.csv"
-CACHE_FILE = "verify_cache.json"
+INPUT_CSV = "data/output/MyGoogleMap_Stores.csv"
+OUTPUT_CSV = "data/output/MyGoogleMap_Stores_verified.csv"
+CLOSED_CSV = "data/output/MyGoogleMap_Stores_closed.csv"
+CACHE_FILE = "data/cache/verify_cache.json"
+os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
 DEFAULT_MODEL = "gemini-2.5-flash"
 BATCH_SIZE = 5       # Gemini 模式：每批筆數（搜尋時不宜太多）
 BATCH_DELAY = 10      # 批次間等待秒數（控制速率）

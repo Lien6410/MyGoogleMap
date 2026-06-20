@@ -5,10 +5,10 @@ __pycache__/
 # Environment variables (contains API keys)
 .env
 
-# Local data files (Outputs)
-MyGoogleMap_Stores.csv
-stores_data.js
-export_cache.json
+# Data directory — ignore all contents, keep folder skeleton (.gitkeep) only
+/data/**
+!/data/**/
+!/data/**/.gitkeep
 
 # Google Drive OAuth credentials (sensitive)
 credentials.json
@@ -26,3 +26,5 @@ token.json
 takeout-*/
 
 *.csv
+# Playwright MCP session artifacts
+.playwright-mcp/

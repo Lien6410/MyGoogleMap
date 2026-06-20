@@ -10,10 +10,14 @@ import urllib.parse
 import urllib.request
 
 # === 設定常數 ===
-INPUT_FOLDER = os.environ.get('INPUT_FOLDER', "input")    # 存放來源 CSV 的資料夾
-OUTPUT_CSV = "MyGoogleMap_Stores.csv"
-OUTPUT_JS = "stores_data.js"
-CACHE_FILE = "export_cache.json"   # 斷點續跑快取
+INPUT_FOLDER = os.environ.get('INPUT_FOLDER', "data/input")    # 存放來源 CSV 的資料夾
+OUTPUT_CSV = "data/output/MyGoogleMap_Stores.csv"
+OUTPUT_JS = "data/output/stores_data.js"
+CACHE_FILE = "data/cache/export_cache.json"   # 斷點續跑快取
+
+# 確保輸出 / 快取目錄存在
+os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
 DEFAULT_MODEL = "gemini-2.5-flash"    # 可在 .env 設定 GEMINI_MODEL 覆寫
 BATCH_DELAY = 7          # 批次間隔秒數（控速，避免超過 10 RPM）
 MAX_RETRIES = 5          # 429 最大重試次數

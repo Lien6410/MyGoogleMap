@@ -1,7 +1,7 @@
 import os
 import json
 
-CACHE_FILE = "export_cache.json"
+CACHE_FILE = "data/cache/export_cache.json"
 
 
 def show_stats(cache):

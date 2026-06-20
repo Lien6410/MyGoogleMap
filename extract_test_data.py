@@ -4,8 +4,8 @@ import random
 
 
 def main():
-    input_folder = "input"
-    output_folder = "input_test"
+    input_folder = "data/input"
+    output_folder = "data/test_sample"
     target_count = 50
 
     if not os.path.exists(input_folder):

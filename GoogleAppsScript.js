@@ -1,6 +1,8 @@
 // Google Apps Script - 可直接貼入 Google 試算表內執行 (擴充功能 -> Apps Script)
 
-const API_KEY = "AIzaSyD2U8zFDMD6JBp7Bk6rxP7VRcJRsvabeX8";
+// API key 改由「指令碼屬性」安全讀取，請勿硬編碼於程式碼（會隨 git/GitHub Pages 外洩）。
+// 設定方式：Apps Script 編輯器 → 專案設定(齒輪) → 指令碼屬性 → 新增 GEMINI_API_KEY
+const API_KEY = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
 const MODEL_NAME = "gemini-2.5-flash";
 
 function main() {
