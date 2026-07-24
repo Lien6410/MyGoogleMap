@@ -535,6 +535,41 @@
         </div>
       </div>
 
+      <!-- Business Hours Filter -->
+      <div class="filter-section">
+        <div class="filter-title">
+          <span>營業時間</span>
+          <div class="filter-actions">
+            <a onclick="selectAll('hours', true)">全選</a>
+            <span>|</span>
+            <a onclick="selectAll('hours', false)">全不選</a>
+          </div>
+        </div>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="open-now" checked> 營業中（依現在時間）
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="breakfast"> 早餐 (05:00–10:30)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="lunch"> 中餐 (10:30–14:00)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="tea"> 下午茶 (14:00–17:00)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="dinner"> 晚餐 (17:00–21:00)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="latenight"> 消夜 (21:00–05:00)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="hours" value="unknown"> 未知（無營業時間資料）
+          </label>
+        </div>
+      </div>
+
       <!-- Cuisine Type Filter -->
       <div class="filter-section">
         <div class="filter-title">
@@ -664,6 +699,7 @@
               <span class="badge badge-distance" id="winner-tag-distance">1.2 km</span>
               <span class="badge badge-price" id="winner-tag-price">均消 450 元</span>
               <span class="badge badge-visit" id="winner-tag-visit">曾去過 (回訪)</span>
+              <span class="badge" id="winner-tag-hours" style="display: none;"></span>
             </div>
           </div>
 
@@ -698,6 +734,9 @@
 
   <!-- 載入自動產生的店家資料檔 -->
   <script src="data/output/stores_data.js"></script>
+
+  <!-- 營業時間判斷純函式（供瀏覽器與 Node 共用） -->
+  <script src="hours_logic.js"></script>
 
   <script>
     // Fallback in case stores_data.js is not loaded
@@ -846,6 +885,12 @@
       const activeCounties    = Array.from(document.querySelectorAll('input[name="county"]:checked')).map(b => b.value);
       const includeUnknownLoc = activeCounties.includes('unknown');
 
+      // 6. Business Hours filter
+      const activeHours = new Set(
+        Array.from(document.querySelectorAll('input[name="hours"]:checked')).map(b => b.value)
+      );
+      const now = new Date();
+
       filteredStores = stores.filter(s => {
         // Match Visited
         if (visitVal === 'yes' && s.visited !== '是') return false;
@@ -898,6 +943,9 @@
         } else {
           if (!includeUnknownLoc) return false;
         }
+
+        // Match Business Hours
+        if (!window.HoursLogic.matchesHoursFilter(s, now, activeHours)) return false;
 
         return true;
       });
@@ -1042,6 +1090,26 @@
         visitBadge.innerText = '未去過 (想去)';
         visitBadge.style.background = 'rgba(148, 163, 184, 0.15)';
       }
+
+      // Business Hours Badge
+      const hoursBadge = document.getElementById('winner-tag-hours');
+      if (!winner.hours || winner.hours.length === 0) {
+        hoursBadge.innerText = '營業時間未知';
+        hoursBadge.style.background = 'rgba(148, 163, 184, 0.15)';
+        hoursBadge.style.color = '#94a3b8';
+        hoursBadge.style.border = '1px solid rgba(148, 163, 184, 0.3)';
+      } else if (window.HoursLogic.isOpenNow(winner.hours, new Date())) {
+        hoursBadge.innerText = '營業中';
+        hoursBadge.style.background = 'rgba(34, 197, 94, 0.15)';
+        hoursBadge.style.color = '#4ade80';
+        hoursBadge.style.border = '1px solid rgba(34, 197, 94, 0.3)';
+      } else {
+        hoursBadge.innerText = '已打烊';
+        hoursBadge.style.background = 'rgba(148, 163, 184, 0.15)';
+        hoursBadge.style.color = '#94a3b8';
+        hoursBadge.style.border = '1px solid rgba(148, 163, 184, 0.3)';
+      }
+      hoursBadge.style.display = 'inline-block';
 
       document.getElementById('winner-address').innerText = winner.address || '無登記地址';
       document.getElementById('winner-source').innerText  = winner.source_list || '-';
