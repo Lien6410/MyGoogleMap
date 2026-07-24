@@ -9,6 +9,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from hours_normalize import parse_place_details_response
+
 # === 設定常數 ===
 INPUT_FOLDER = os.environ.get('INPUT_FOLDER', "data/input")    # 存放來源 CSV 的資料夾
 OUTPUT_CSV = "data/output/MyGoogleMap_Stores.csv"
@@ -245,6 +247,35 @@ def lookup_address_from_cid(cid_hex, maps_api_key):
     except Exception as e:
         print(f"  [CID 查詢] 失敗: {e}")
     return ''
+
+
+def lookup_place_details_from_cid(cid_hex, maps_api_key):
+    """用 CID（0xA:0xB）呼叫 Place Details API，取回地址與營業時間。
+    需要 MAPS_API_KEY 且已啟用 Places API。
+    回傳 {"address": str, "hours": list|None, "hours_text": str}。"""
+    empty = {"address": "", "hours": None, "hours_text": ""}
+    if not cid_hex or not maps_api_key:
+        return empty
+    try:
+        params = urllib.parse.urlencode({
+            'place_id': cid_hex,
+            'fields':   'formatted_address,name,opening_hours',
+            'language': 'zh-TW',
+            'key':      maps_api_key,
+        })
+        api_url = f"https://maps.googleapis.com/maps/api/place/details/json?{params}"
+        with urllib.request.urlopen(api_url, timeout=10) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+        status = data.get('status', '')
+        if status == 'OK':
+            return parse_place_details_response(data)
+        if status == 'REQUEST_DENIED':
+            raise RuntimeError('Places API 未啟用，請在 Google Cloud Console 開啟 Places API')
+    except RuntimeError:
+        raise
+    except Exception as e:
+        print(f"  [Place Details] 查詢失敗: {e}")
+    return empty
 
 
 # === Google Maps Find Place API：依店名查詢正確地址 ===
@@ -728,6 +759,42 @@ def main():
             else:
                 print(f"  Places API 不可用，{len(need_lookup)} 筆地址將由 Gemini AI 補齊。")
 
+    # --- 抓取營業時間（所有含 CID 的店家；快取避免重複計費）---
+    if maps_api_key and places_api_available is not False:
+        hours_cache = load_cache()
+        hours_denied = False
+        looked = 0
+        for p in total_places:
+            cid_hex = extract_cid_from_maps_url(p.get('url', ''))
+            if not cid_hex:
+                p['hours'] = None
+                continue
+            ck = f"__cid_hours__{cid_hex}"
+            if ck in hours_cache:
+                p['hours'] = hours_cache[ck].get('hours')
+                p['hours_text'] = hours_cache[ck].get('hours_text', '')
+                continue
+            if hours_denied:
+                p['hours'] = None
+                continue
+            try:
+                details = lookup_place_details_from_cid(cid_hex, maps_api_key)
+            except RuntimeError as e:
+                print(f"\n  [警告] {e}；營業時間將全部標記為未知。")
+                hours_denied = True
+                p['hours'] = None
+                continue
+            p['hours'] = details['hours']
+            p['hours_text'] = details['hours_text']
+            hours_cache[ck] = {'hours': details['hours'], 'hours_text': details['hours_text']}
+            save_cache(hours_cache)
+            looked += 1
+        if looked:
+            print(f"\n營業時間查詢完成，本次新查 {looked} 筆（其餘來自快取）。")
+    else:
+        for p in total_places:
+            p['hours'] = None
+
     # --- AI 批次分析（含進度快取與斷點續跑） ---
     cache = load_cache()
     batch_size = 20
@@ -814,12 +881,13 @@ def main():
             p.setdefault('lat', None)
             p.setdefault('lng', None)
             p.setdefault('distance_km', None)
+            p.setdefault('hours', None)
 
     # --- 輸出 CSV ---
     try:
         with open(OUTPUT_CSV, 'w', encoding='utf-8-sig', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['店名', '地址', '網址', '餐飲類型', '來源清單', '是否曾去過', '距離住家(公里)', '人均消費預估(元)', '備註'])
+            writer.writerow(['店名', '地址', '網址', '餐飲類型', '來源清單', '是否曾去過', '距離住家(公里)', '人均消費預估(元)', '備註', '營業時間'])
             for p in total_places:
                 writer.writerow([
                     p['title'],
@@ -830,7 +898,8 @@ def main():
                     p['visited'],
                     p['distance_km'] if p.get('distance_km') is not None else '未知',
                     p.get('avg_spending', 0) if p.get('avg_spending', 0) > 0 else '未知',
-                    p['note']
+                    p['note'],
+                    p.get('hours_text', ''),
                 ])
         print(f"\n[成功] CSV 整理完成：{OUTPUT_CSV}")
     except Exception as e:
@@ -848,7 +917,8 @@ def main():
                 'visited':      p['visited'],
                 'distance_km':  p.get('distance_km'),
                 'avg_spending': p.get('avg_spending', 0),
-                'note':         p['note']
+                'note':         p['note'],
+                'hours':        p.get('hours'),
             }
             for p in total_places
         ]
