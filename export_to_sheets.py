@@ -899,7 +899,7 @@ def main():
                     p['distance_km'] if p.get('distance_km') is not None else '未知',
                     p.get('avg_spending', 0) if p.get('avg_spending', 0) > 0 else '未知',
                     p['note'],
-                    p.get('hours_text', ''),
+                    p.get('hours_text') or '未知',
                 ])
         print(f"\n[成功] CSV 整理完成：{OUTPUT_CSV}")
     except Exception as e:

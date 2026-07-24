@@ -20,6 +20,8 @@ def normalize_opening_hours(periods):
             return [{"d": i, "o": "0000", "c": "2400"} for i in range(7)]
         return None
 
+    # 已知限制：單一時段若跨越 2 個以上午夜（罕見）只保留起始日與 close 時間，
+    # 前端僅以 c<=o 判斷單次跨夜；此資料集以一般午/晚餐時段為主，影響極小。
     out = []
     for p in periods:
         op = p.get("open") or {}
