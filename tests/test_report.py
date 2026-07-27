@@ -50,3 +50,30 @@ def test_write_report_creates_file(conn, tmp_path):
     assert path.endswith('changes_2026-07-25.md')
     with open(path, encoding='utf-8') as f:
         assert '新增店家' in f.read()
+
+
+def test_first_import_notes_initial_snapshot(conn):
+    curr = ingest_entries(conn, [
+        _e('A店', '想去的地點', url='x/data=!1s0x1:0x1', visited=False),
+    ], source_zip='t1.zip')
+    prev, latest = report.latest_two_imports(conn)
+    assert prev is None and latest == curr
+    assert report.removed_places(conn, prev, curr) == []
+    assert report.list_changes(conn, prev, curr) == []
+    assert report.closure_changes(conn, prev, curr) == []
+    md = report.render_markdown(conn, prev, curr, '2026-07-25')
+    assert '初始快照' in md
+    assert {p['title'] for p in report.added_places(conn, prev, curr)} == {'A店'}
+
+
+def test_write_report_csv_is_readable(conn, tmp_path):
+    import os
+    _two_imports(conn)
+    md_path = report.write_report(conn, out_dir=str(tmp_path), date_str='2026-07-25')
+    csv_path = md_path[:-3] + '.csv'
+    assert os.path.exists(csv_path)
+    with open(csv_path, encoding='utf-8-sig') as f:
+        content = f.read()
+    assert '[' not in content              # no raw python list repr
+    assert '加入 想去的地點' in content
+    assert '移出 台北牛肉麵' in content

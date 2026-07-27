@@ -153,8 +153,12 @@ def write_report(conn, out_dir='data/output', date_str=None):
         for p in removed_places(conn, prev, curr):
             w.writerow(['消失', p['title'], ', '.join(p['lists']), p['url']])
         for c in list_changes(conn, prev, curr):
-            detail = f"+{c['added_lists']} -{c['removed_lists']}"
-            w.writerow(['清單變化', c['title'], detail, ''])
+            parts = []
+            if c['added_lists']:
+                parts.append('加入 ' + ', '.join(c['added_lists']))
+            if c['removed_lists']:
+                parts.append('移出 ' + ', '.join(c['removed_lists']))
+            w.writerow(['清單變化', c['title'], '；'.join(parts), ''])
         for c in closure_changes(conn, prev, curr):
             w.writerow(['歇業變化', c['title'], f"{c['old_status']}→{c['new_status']}", ''])
     return md_path
