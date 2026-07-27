@@ -12,6 +12,17 @@
 4. **自動上傳 Google Drive**：整理完成後自動將 CSV 上傳至你指定的 Google Drive 資料夾（需一次性授權設定）。
 5. **互動式抽籤網頁**：精美暗色毛玻璃風格，支援回訪狀態、餐飲類型、距離、消費多維篩選，拉霸式動畫與紙花特效。
 6. **uv 套件管理**：使用 [uv](https://docs.astral.sh/uv/) 管理 Python 版本與依賴套件，一行指令完成環境設定。
+7. **PostgreSQL 變化追蹤**：把每次 Takeout 匯入存成快照，自動產生「新增／消失店家、所屬清單變化」報告，了解已儲存清單跨時間的變化。
+
+---
+
+## PostgreSQL 變化追蹤（Plan 1）
+
+除了 CSV／抽籤流程，本專案可用本機 PostgreSQL 追蹤「已儲存清單跨時間的變化」。
+
+- 執行：`uv run python -m mygmap.cli`（讀 `data/takeout/` 內 mtime 最新的 zip → 存入快照 → 產生報告）
+- 報告：`data/output/changes_<日期>.md` 與 `.csv`（可拿去 Google Maps 手動整理）
+- 前置、資料表、查詢範例與尚未涵蓋的範圍（Plan 2）詳見 **[docs/postgres-pipeline.md](docs/postgres-pipeline.md)**
 
 ---
 
