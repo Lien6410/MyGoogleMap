@@ -18,3 +18,13 @@ def test_conninfo_contains_password_but_repr_hides_it():
     assert 'password=s3cret' in cfg.conninfo()
     assert 's3cret' not in repr(cfg)
     assert 's3cret' not in str(cfg.safe_dict())
+
+
+def test_conninfo_escapes_special_chars_in_password():
+    import psycopg.conninfo
+    cfg = DbConfig.from_env(env={'PGDATABASE': 'd', 'PGUSER': 'u',
+                                 'PGPASSWORD': 'a b\\c'})
+    parsed = psycopg.conninfo.conninfo_to_dict(cfg.conninfo())
+    assert parsed['password'] == 'a b\\c'
+    assert parsed['dbname'] == 'd'
+    assert parsed['user'] == 'u'

@@ -1,5 +1,7 @@
 import os
 
+from psycopg.conninfo import make_conninfo
+
 
 def load_env(path='.env'):
     env = {}
@@ -34,8 +36,10 @@ class DbConfig:
         )
 
     def conninfo(self):
-        return (f"host={self.host} port={self.port} dbname={self.dbname} "
-                f"user={self.user} password={self._password}")
+        return make_conninfo(
+            host=self.host, port=self.port, dbname=self.dbname,
+            user=self.user, password=self._password,
+        )
 
     def safe_dict(self):
         return {'host': self.host, 'port': self.port,
