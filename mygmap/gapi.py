@@ -496,3 +496,28 @@ def gemini_verify_batch(items, model_name, gemini_key):
             return uncertain
 
     return uncertain
+
+
+# === Factory helpers（把金鑰/模型綁定成 enrich/verify 需要的注入介面） ===
+
+def make_classifier(api_key, model_name, home_address=''):
+    """回傳 enrich_pending 需要的 classify(items)->list。無 api_key 時退回本地啟發式。"""
+    def classify(items):
+        if not api_key:
+            out = []
+            for it in items:
+                types, spend = heuristic_classify(it['title'], '')
+                out.append({'types': types, 'avg_spending': spend,
+                            'lat': None, 'lng': None, 'address': it.get('address', '')})
+            return out
+        return classify_batch(items, home_address, api_key, model_name)
+    return classify
+
+
+def make_find_place(maps_api_key):
+    """回傳 verify_import 需要的 find_place(name,address)->dict；無金鑰回傳 ERROR。"""
+    def find_place(name, address):
+        if not maps_api_key:
+            return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP'}
+        return find_place_status(name, address, maps_api_key)
+    return find_place

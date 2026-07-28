@@ -1,3 +1,5 @@
+import pytest
+
 from mygmap.ingest import ingest_entries
 
 
@@ -40,3 +42,16 @@ def test_ingest_second_import_updates_last_seen(conn):
         first_seen, last_seen = cur.fetchone()
         assert first_seen != last_seen
         assert last_seen == second
+
+
+def test_ingest_rolls_back_on_error(conn):
+    bad = [{'title': '好店', 'list_name': 'A', 'url': 'x/data=!1s0x1:0x1',
+            'address': '', 'note': '', 'tags': '', 'is_visited': True},
+           {'title': None, 'list_name': 'A', 'url': '', 'address': '',
+            'note': '', 'tags': '', 'is_visited': True}]   # title=None violates NOT NULL
+    with pytest.raises(Exception):
+        ingest_entries(conn, bad, source_zip='t.zip')
+    # connection must be usable again (rolled back, not aborted)
+    with conn.cursor() as cur:
+        cur.execute("SELECT count(*) FROM imports")
+        assert cur.fetchone()[0] == 0
