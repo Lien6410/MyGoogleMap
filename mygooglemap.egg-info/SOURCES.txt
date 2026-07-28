@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mygmap/__init__.py
+mygmap/config.py
+mygooglemap.egg-info/PKG-INFO
+mygooglemap.egg-info/SOURCES.txt
+mygooglemap.egg-info/dependency_links.txt
+mygooglemap.egg-info/requires.txt
+mygooglemap.egg-info/top_level.txt
+tests/test_config.py
