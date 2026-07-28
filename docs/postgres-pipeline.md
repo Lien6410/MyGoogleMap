@@ -26,7 +26,10 @@
    ```bash
    uv run python -m mygmap.cli
    ```
-3. 流程：建立/確認 schema → 取 `data/takeout/` 內 **mtime 最新** 的 zip → 解壓讀清單 → 寫入一次匯入快照 → 產生變化報告。
+3. 流程：建立/確認 schema → 取 `data/takeout/` 內 **mtime 最新** 的 zip → 解壓讀清單 → 寫入一次匯入快照 → **enrichment（Gemini 分類 / Maps 座標·地址·營業時間，寫入 `places`）** → **歇業驗證（寫入 `closure_checks`）** → 產生變化報告。
+   - 執行輸出會顯示 `enriched=<N> verified=<M>`。
+   - **無 API 金鑰時優雅降級**：enrichment 只做本地啟發式分類（無座標/營業時間），歇業驗證整個跳過。金鑰放 `.env`（`GEMINI_API_KEY` / `MAPS_API_KEY`），程式只讀取、絕不印出。
+   - enrichment 只補「尚未 enrich」（`enriched_at IS NULL`）的店家；API 結果進 `api_cache` 避免重複計費。
 4. 報告輸出：
    - `data/output/changes_<日期>.md`（可讀）
    - `data/output/changes_<日期>.csv`（可用 Excel 開，規劃 Google Maps 手動整理）
@@ -41,8 +44,8 @@
 | `imports` | 每次匯入一列（來源 zip、時間、店家數） |
 | `places` | 每家店一列（穩定身分 `place_key` = Google CID 或正規化名稱＋地址） |
 | `list_memberships` | 每次匯入的清單歸屬快照（含該清單條目的筆記／標籤） |
-| `closure_checks` | 歇業驗證結果（Plan 1 尚未填入，見下方「尚未涵蓋」） |
-| `api_cache` | API 呼叫快取（Plan 2 使用） |
+| `closure_checks` | 歇業驗證結果（Plan 2 起每次匯入填入；報告的「歇業狀態變化」自第二次匯入起有資料） |
+| `api_cache` | API 呼叫快取（enrichment/歇業驗證使用；`UNCERTAIN`/`ERROR` 不長期快取） |
 | `schema_meta` | schema 版本 |
 
 ## 用 DBeaver / psql 查詢範例
@@ -67,14 +70,17 @@ WHERE p.place_key IN (
         SELECT place_key FROM list_memberships WHERE import_id = (SELECT max(id) FROM ids));
 ```
 
-## 尚未涵蓋（Plan 2：M4–M7）
+## 已支援（Plan 2：M4–M5）
 
-Plan 1 專注於「匯入快照 + 變化報告」。以下屬後續 Plan 2：
+- **enrichment**：Gemini 分類 + Maps 座標／地址／營業時間寫入 `places`（DB 取代 `export_cache.json` 的快取角色）。
+- **歇業驗證**：Maps `find_place` + Gemini 備援寫入 `closure_checks`；`UNCERTAIN`/`ERROR` 不長期快取，避免污染後永遠吃快取。
+- 兩者皆以可注入的 API callable 實作，單元測試不打真實網路；真實 API 只在你手動跑 `uv run python -m mygmap.cli` 時呼叫。
 
-- enrichment（Gemini 分類、Maps 地址／座標／營業時間）寫入 `places`，取代 `export_cache.json`。
-- 歇業驗證寫入 `closure_checks`（屆時「歇業狀態變化」才會有資料）。
-- 從 DB 產生抽籤用的 `data/output/stores_data.js`（保留 `lottery.html` 契約），讓 DB 成為唯一資料主體。
+## 尚未涵蓋（Plan 3：M6–M7）
+
+- 從 DB 產生抽籤用的 `data/output/stores_data.js`（保留 `lottery.html` 契約），讓 DB 成為**唯一資料主體**、退役舊 `export_to_sheets.py` 的「CSV 當來源」路徑。
 - 自動 backfill `data/archive/` 內較早的快照。
+- 目前 enrichment/驗證的 Google API 函式在 `mygmap/gapi.py` 與舊腳本（`export_to_sheets.py`/`verify_stores.py`）**暫時並存**；Plan 3 退役舊腳本時消除重複。
 
 ## 備註
 
