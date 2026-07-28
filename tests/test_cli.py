@@ -50,9 +50,33 @@ def test_run_calls_enrich_and_verify(conn, tmp_path, monkeypatch):
 
     monkeypatch.setattr(climod, 'enrich_pending', fake_enrich)
     monkeypatch.setattr(climod, 'verify_import', fake_verify)
+    monkeypatch.setattr(climod.config, 'load_env', lambda *a, **k: {'MAPS_API_KEY': 'x'})
 
     takeout_dir = _make_zip(tmp_path)
     result = climod.run(conn, takeout_dir=takeout_dir, out_dir=str(tmp_path / 'out'))
     assert result['import_id'] is not None
     assert calls['enrich'] == 1 and calls['verify'] == 1
     assert 'enriched' in result and 'verified' in result
+
+
+def test_run_no_keys_skips_verify(conn, tmp_path, monkeypatch):
+    import mygmap.cli as climod
+    calls = {'enrich': 0, 'verify': 0}
+
+    def fake_enrich(conn_, classify, **kw):
+        calls['enrich'] += 1
+        return 0
+
+    def fake_verify(conn_, import_id, find_place, **kw):
+        calls['verify'] += 1
+        return 0
+
+    monkeypatch.setattr(climod, 'enrich_pending', fake_enrich)
+    monkeypatch.setattr(climod, 'verify_import', fake_verify)
+    monkeypatch.setattr(climod.config, 'load_env', lambda *a, **k: {})
+
+    takeout_dir = _make_zip(tmp_path)
+    result = climod.run(conn, takeout_dir=takeout_dir, out_dir=str(tmp_path / 'out'))
+    assert calls['enrich'] == 1          # enrich always runs (heuristic when no key)
+    assert calls['verify'] == 0          # no key -> verify skipped
+    assert result['verified'] == 0
