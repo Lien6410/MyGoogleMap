@@ -67,3 +67,17 @@ def test_verify_none_status_does_not_crash(conn):
         status, is_closed = cur.fetchone()
     assert status == 'UNKNOWN' and is_closed is False
     assert cache.cache_get(conn, '__closure__0x5:0x5') is None   # unsure -> not cached
+
+
+def test_verify_reverifies_when_cache_stale(conn):
+    iid = ingest_entries(conn, [_e('易變店', 'x/data=!1s0xab:0xcd')], source_zip='t.zip')
+    calls = []
+
+    def fake_find(name, address):
+        calls.append(name)
+        return {'status': 'OPERATIONAL', 'address': '', 'price_level': None, 'match': 'EXACT'}
+
+    verify_import(conn, iid, fake_find)                                  # caches (fresh)
+    iid2 = ingest_entries(conn, [_e('易變店', 'x/data=!1s0xab:0xcd')], source_zip='t2.zip')
+    verify_import(conn, iid2, fake_find, cache_max_age_days=0)           # stale -> re-verify
+    assert len(calls) == 2

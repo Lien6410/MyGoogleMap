@@ -31,11 +31,13 @@ def _write_closure(conn, import_id, place_key, status, is_closed, source):
         )
 
 
-def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None):
+def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None,
+                  cache_max_age_days=1):
+    max_age = cache_max_age_days * 86400 if cache_max_age_days is not None else None
     written = 0
     for p in _places_in_import(conn, import_id, limit):
         ck = f"__closure__{p['place_key']}"
-        cached = cache.cache_get(conn, ck)
+        cached = cache.cache_get(conn, ck, max_age_seconds=max_age)
         if cached and cached.get('status') not in _UNSURE:
             status, source = cached['status'], cached.get('source', 'cache')
         else:

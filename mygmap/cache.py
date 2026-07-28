@@ -1,9 +1,16 @@
 from psycopg.types.json import Json
 
 
-def cache_get(conn, key):
+def cache_get(conn, key, max_age_seconds=None):
     with conn.cursor() as cur:
-        cur.execute("SELECT value FROM api_cache WHERE cache_key=%s", (key,))
+        if max_age_seconds is None:
+            cur.execute("SELECT value FROM api_cache WHERE cache_key=%s", (key,))
+        else:
+            cur.execute(
+                "SELECT value FROM api_cache WHERE cache_key=%s "
+                "AND fetched_at >= now() - (%s * interval '1 second')",
+                (key, max_age_seconds),
+            )
         row = cur.fetchone()
     return row[0] if row else None
 
