@@ -53,3 +53,17 @@ def test_verify_uncertain_not_cached(conn):
     with conn.cursor() as cur:
         cur.execute("SELECT is_closed FROM closure_checks")
         assert cur.fetchone()[0] is False        # UNKNOWN is not 'closed'
+
+
+def test_verify_none_status_does_not_crash(conn):
+    iid = ingest_entries(conn, [_e('空狀態店', 'x/data=!1s0x5:0x5')], source_zip='t.zip')
+
+    def fake_find(name, address):
+        return {'status': None, 'address': '', 'price_level': None, 'match': 'X'}
+
+    verify_import(conn, iid, fake_find)   # must not raise
+    with conn.cursor() as cur:
+        cur.execute("SELECT status, is_closed FROM closure_checks")
+        status, is_closed = cur.fetchone()
+    assert status == 'UNKNOWN' and is_closed is False
+    assert cache.cache_get(conn, '__closure__0x5:0x5') is None   # unsure -> not cached

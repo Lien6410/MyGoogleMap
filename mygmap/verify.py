@@ -40,7 +40,8 @@ def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None
             status, source = cached['status'], cached.get('source', 'cache')
         else:
             res = find_place(p['title'], p['address'] or '')
-            status, source = res.get('status', 'UNKNOWN'), 'maps'
+            status = res.get('status') or 'UNKNOWN'
+            source = 'maps'
             if status not in _UNSURE:
                 cache.cache_set(conn, ck, {'status': status, 'source': source})
         is_closed = status in CLOSED_STATUSES
