@@ -10,22 +10,12 @@
 import json
 import math
 import re
-import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from pathlib import Path
 
-try:
-    from hours_normalize import parse_place_details_response
-except ImportError:
-    # hours_normalize.py 位於 repo 根層（非 mygmap 套件內模組，未安裝為套件）。
-    # 以 `python -c` / `python -m` 直接執行時，cwd 會自動加入 sys.path，可正常匯入；
-    # 但 pytest 以檔案路徑載入測試模組時不會自動把 repo 根層加入 sys.path，
-    # 故僅在一般匯入失敗時才補上此保底路徑，不影響正常執行情境的行為。
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-    from hours_normalize import parse_place_details_response
+from hours_normalize import parse_place_details_response
 
 # 注意：兩個原始模組各自定義了同名但數值不同的 MAX_RETRIES 全域常數
 # （export_to_sheets.py = 5，供 classify_cuisine_and_details 使用；

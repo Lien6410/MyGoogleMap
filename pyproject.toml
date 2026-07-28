@@ -17,3 +17,6 @@ dev = [
 
 [tool.setuptools]
 packages = ["mygmap"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
