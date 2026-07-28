@@ -47,3 +47,18 @@ def test_enrich_uses_place_details_for_address_and_hours(conn):
     assert addr == '精確地址'
     assert htext == '週一 11-14'
     assert hours == [{'d': 1, 'o': '1100', 'c': '1400'}]
+
+
+def test_enrich_heuristic_run_does_not_mark_enriched(conn):
+    ingest_entries(conn, [_e('待補店', url='x/data=!1s0xe:0xf')], source_zip='t.zip')
+    # heuristic/no-key run: fills fields but leaves enriched_at NULL
+    enrich_pending(conn, _fake_classify, mark_enriched=False)
+    with conn.cursor() as cur:
+        cur.execute("SELECT cuisine_type, enriched_at FROM places WHERE title='待補店'")
+        cuisine, enriched_at = cur.fetchone()
+    assert cuisine == '日式' and enriched_at is None
+    # a later keyed run still finds it pending and marks it
+    assert enrich_pending(conn, _fake_classify, mark_enriched=True) == 1
+    with conn.cursor() as cur:
+        cur.execute("SELECT enriched_at FROM places WHERE title='待補店'")
+        assert cur.fetchone()[0] is not None

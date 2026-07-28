@@ -27,7 +27,7 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     home = env.get('HOME_ADDRESS', '')
 
     classify = gapi.make_classifier(api_key, model, home_address=home)
-    enriched = enrich_pending(conn, classify)
+    enriched = enrich_pending(conn, classify, mark_enriched=bool(api_key))
 
     verified = 0
     if maps_key:

@@ -26,7 +26,7 @@
    ```bash
    uv run python -m mygmap.cli
    ```
-3. 流程：建立/確認 schema → 取 `data/takeout/` 內 **mtime 最新** 的 zip → 解壓讀清單 → 寫入一次匯入快照 → **enrichment（Gemini 分類 / Maps 座標·地址·營業時間，寫入 `places`）** → **歇業驗證（寫入 `closure_checks`）** → 產生變化報告。
+3. 流程：建立/確認 schema → 取 `data/takeout/` 內 **mtime 最新** 的 zip → 解壓讀清單 → 寫入一次匯入快照 → **enrichment（Gemini 分類與估算座標/地址，寫入 `places`；營業時間與住家距離尚未在此流程接上，Plan 3 併入）** → **歇業驗證（寫入 `closure_checks`）** → 產生變化報告。
    - 執行輸出會顯示 `enriched=<N> verified=<M>`。
    - **無 API 金鑰時優雅降級**：enrichment 只做本地啟發式分類（無座標/營業時間），歇業驗證整個跳過。金鑰放 `.env`（`GEMINI_API_KEY` / `MAPS_API_KEY`），程式只讀取、絕不印出。
    - enrichment 只補「尚未 enrich」（`enriched_at IS NULL`）的店家；API 結果進 `api_cache` 避免重複計費。
@@ -72,7 +72,7 @@ WHERE p.place_key IN (
 
 ## 已支援（Plan 2：M4–M5）
 
-- **enrichment**：Gemini 分類 + Maps 座標／地址／營業時間寫入 `places`（DB 取代 `export_cache.json` 的快取角色）。
+- **enrichment**：Gemini 分類與估算座標/地址寫入 `places`（DB 取代 `export_cache.json` 的快取角色）；營業時間（Maps place_details）與住家距離的接線留待 Plan 3 併入 export。
 - **歇業驗證**：Maps `find_place` + Gemini 備援寫入 `closure_checks`；`UNCERTAIN`/`ERROR` 不長期快取，避免污染後永遠吃快取。
 - 兩者皆以可注入的 API callable 實作，單元測試不打真實網路；真實 API 只在你手動跑 `uv run python -m mygmap.cli` 時呼叫。
 

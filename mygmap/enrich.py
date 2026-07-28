@@ -17,28 +17,24 @@ def _pending_places(conn, limit=None):
                 for r in cur.fetchall()]
 
 
-def _update_place(conn, place_key, det, address, lat, lng, hours, hours_text, distance_km):
+def _update_place(conn, place_key, det, address, lat, lng, hours, hours_text, distance_km, mark_enriched):
     with conn.cursor() as cur:
+        set_enriched = ", enriched_at = now()" if mark_enriched else ""
         cur.execute(
-            """
-            UPDATE places SET
-                cuisine_type = %s,
-                avg_spending = %s,
-                lat = %s, lng = %s,
-                address = COALESCE(NULLIF(%s, ''), address),
-                hours = %s, hours_text = %s,
-                distance_km = %s,
-                enriched_at = now(), updated_at = now()
-            WHERE place_key = %s
-            """,
-            (det.get('types'), det.get('avg_spending'), lat, lng,
-             address, Json(hours) if hours is not None else None, hours_text,
+            "UPDATE places SET "
+            "cuisine_type = %s, avg_spending = %s, lat = %s, lng = %s, "
+            "address = COALESCE(NULLIF(%s, ''), address), "
+            "hours = %s, hours_text = %s, distance_km = %s, updated_at = now()"
+            + set_enriched +
+            " WHERE place_key = %s",
+            (det.get('types'), det.get('avg_spending'), lat, lng, address,
+             Json(hours) if hours is not None else None, hours_text,
              distance_km, place_key),
         )
 
 
 def enrich_pending(conn, classify, *, place_details=None,
-                   home_lat=None, home_lng=None, batch_size=20, limit=None):
+                   home_lat=None, home_lng=None, batch_size=20, limit=None, mark_enriched=True):
     pending = _pending_places(conn, limit)
     done = 0
     for i in range(0, len(pending), batch_size):
@@ -59,7 +55,7 @@ def enrich_pending(conn, classify, *, place_details=None,
             distance_km = (haversine_distance(home_lat, home_lng, lat, lng)
                            if home_lat is not None and home_lng is not None else None)
             _update_place(conn, p['place_key'], det, address, lat, lng,
-                          hours, hours_text, distance_km)
+                          hours, hours_text, distance_km, mark_enriched)
             done += 1
     conn.commit()
     return done
