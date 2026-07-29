@@ -22,7 +22,8 @@
 
 - 執行：`uv run python -m mygmap.cli`（讀 `data/takeout/` 內 mtime 最新的 zip → 存入快照 → 產生報告）
 - 報告：`data/output/changes_<日期>.md` 與 `.csv`（可拿去 Google Maps 手動整理）
-- 前置、資料表、查詢範例與尚未涵蓋的範圍（Plan 2）詳見 **[docs/postgres-pipeline.md](docs/postgres-pipeline.md)**
+- 抽籤資料：同一指令也會由 DB 產生 `data/output/stores_data.js`（供 `lottery.html`）與 active/closed CSV——**DB 已是抽籤資料的唯一來源**。
+- 前置、資料表、查詢範例、enrichment／歇業驗證與 backfill 詳見 **[docs/postgres-pipeline.md](docs/postgres-pipeline.md)**
 
 ---
 

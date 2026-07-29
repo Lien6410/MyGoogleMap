@@ -76,11 +76,17 @@ WHERE p.place_key IN (
 - **歇業驗證**：Maps `find_place` + Gemini 備援寫入 `closure_checks`；`UNCERTAIN`/`ERROR` 不長期快取，避免污染後永遠吃快取。
 - 兩者皆以可注入的 API callable 實作，單元測試不打真實網路；真實 API 只在你手動跑 `uv run python -m mygmap.cli` 時呼叫。
 
-## 尚未涵蓋（Plan 3：M6–M7）
+## 已支援（Plan 3：M6–M7）
 
-- 從 DB 產生抽籤用的 `data/output/stores_data.js`（保留 `lottery.html` 契約），讓 DB 成為**唯一資料主體**、退役舊 `export_to_sheets.py` 的「CSV 當來源」路徑。
-- 自動 backfill `data/archive/` 內較早的快照。
-- 目前 enrichment/驗證的 Google API 函式在 `mygmap/gapi.py` 與舊腳本（`export_to_sheets.py`/`verify_stores.py`）**暫時並存**；Plan 3 退役舊腳本時消除重複。
+- **從 DB 產出 `stores_data.js`**：`uv run python -m mygmap.cli` 末端會由最新匯入的 `places`/`list_memberships`/`closure_checks` 產生 `data/output/stores_data.js`（保留 `lottery.html` 的 `window.STORES_DATA` 契約）與 `MyGoogleMap_Stores_active.csv` / `_closed.csv`。**DB 已成為抽籤資料的唯一來源。**
+  - Active 定義：在最新匯入存在、且該匯入 `closure_checks.status` 不在 `CLOSED_PERMANENTLY`/`CLOSED`（`CLOSED_TEMPORARILY`/`NOT_FOUND`/未驗證 一律保留）。
+  - gh-pages 部署沿用既有流程（`git add -f data/output/stores_data.js` → commit → push），差別只在**來源檔改由 DB 產生**。
+- **archive backfill**：`mygmap.backfill.backfill_archive(conn, 'data/archive')` 會把 `data/archive/` 內每個 `已儲存/` 快照依序回填為較早的匯入，讓歷史更完整。
+
+## 未涵蓋（未來選用清理）
+
+- 完全刪除舊 `export_to_sheets.py`/`verify_stores.py` 並消除其與 `mygmap/gapi.py` 的函式重複（本階段僅標記退役、保留 Google Drive 上傳等獨有功能）。
+- 把 `hours_normalize` 移入 `mygmap` 套件；「同一 zip 不重複匯入」防呆。
 
 ## 備註
 

@@ -1,3 +1,6 @@
+# [退役中] 抽籤資料主體已改為 PostgreSQL 管線（mygmap 套件，見 docs/postgres-pipeline.md）。
+# 本腳本保留供：Google Drive 上傳，以及不使用 DB 的手動 CSV 流程；
+# stores_data.js 請改由 `uv run python -m mygmap.cli` 從 DB 產生。
 import os
 import re
 import csv

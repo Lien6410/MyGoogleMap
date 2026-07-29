@@ -1,3 +1,5 @@
+# [退役中] 歇業驗證已改由 PostgreSQL 管線（mygmap/verify.py，見 docs/postgres-pipeline.md）。
+# 本腳本保留供不使用 DB 的手動 CSV 流程；新流程請用 `uv run python -m mygmap.cli`。
 """
 verify_stores.py — 驗證 MyGoogleMap_Stores.csv
 
