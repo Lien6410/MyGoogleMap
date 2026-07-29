@@ -9,7 +9,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 26.71,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "水仙宮粽葉米糕",
@@ -20,7 +21,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.13,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "七誠米粿",
@@ -31,7 +33,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.22,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台南一味品碗粿魚羹",
@@ -42,7 +45,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.0,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "佰九海產粥",
@@ -53,7 +57,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.77,
     "avg_spending": 200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鴻公公越南河粉專賣店",
@@ -64,7 +69,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 218.68,
     "avg_spending": 200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台南‧林家白糖粿 Since 1960",
@@ -75,7 +81,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.69,
     "avg_spending": 60,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "宣福居",
@@ -86,7 +93,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.34,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "（原上牛村）四季溫體牛肉鍋",
@@ -97,7 +105,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.35,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿棠牛肉湯",
@@ -108,7 +117,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.84,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台灣番薯丸-手作地瓜球",
@@ -119,7 +129,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.4,
     "avg_spending": 70,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "誠江號麵線",
@@ -130,7 +141,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.54,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "泰成水果店",
@@ -141,7 +153,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "双生綠豆沙牛奶 Shuànsên beverages （無預訂、無外送、售完會提早休息，最新資訊、休假請依IG、FB為主）",
@@ -152,7 +165,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.96,
     "avg_spending": 60,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿興虱目魚",
@@ -163,7 +177,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.28,
     "avg_spending": 180,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "下大道蘭米糕",
@@ -174,7 +189,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.98,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "輝哥本產牛肉爐",
@@ -185,7 +201,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.48,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "四草綠色隧道",
@@ -196,7 +213,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.15,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "U.I.J Hotel & Hostel - 友愛街旅館",
@@ -207,7 +225,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.66,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台糖長榮酒店 台南",
@@ -218,7 +237,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 218.61,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蕃薯厝肉粿仔",
@@ -229,7 +249,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 211.77,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "莉莉水果店 (外帶自取請用LINE點餐)",
@@ -240,7 +261,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.7,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "博仁堂(PO-JEN STORE)",
@@ -251,7 +273,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.03,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "矮仔成蝦仁飯",
@@ -262,7 +285,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 218.03,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "西羅殿牛肉湯",
@@ -273,7 +297,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.28,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "文章牛肉湯 安平總店",
@@ -284,7 +309,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.68,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "助仔牛肉湯",
@@ -295,7 +321,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.99,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "李記紅茶冰 台南永樂店",
@@ -306,7 +333,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.97,
     "avg_spending": 50,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "羊城小食店",
@@ -317,7 +345,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台南晶英酒店",
@@ -328,7 +357,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.97,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "八曜和茶 台中精誠門市",
@@ -339,7 +369,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.28,
     "avg_spending": 50,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富鼎旺豬腳-中正店",
@@ -350,7 +381,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.42,
     "avg_spending": 200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "孔雀咖啡 PEACOCKS COFFEE",
@@ -361,7 +393,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.47,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鳳凰食號",
@@ -372,7 +405,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.86,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "烘牛炭燒大牛排.現炒",
@@ -383,7 +417,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.78,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "法大炸雞 Fukdup Fried Chicken - 精誠總店",
@@ -394,7 +429,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.11,
     "avg_spending": 200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "MINIMAL",
@@ -405,7 +441,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.3,
     "avg_spending": 200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台中鳳凰酒店",
@@ -416,7 +453,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.86,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Song Fa Bak Kut Teh HarbourFront Centre",
@@ -427,7 +465,32 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3202.04,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "Ya Kun Kaya Toast",
+    "address": "18 China St, #01-01, 新加坡 049560",
+    "url": "https://www.google.com/maps/place/Ya+Kun+Kaya+Toast/data=!4m2!3m1!1s0x31da19588f876865:0xd03857ac1ca44bb7",
+    "cuisine_type": "東南亞式",
+    "source_list": "2024-新加坡",
+    "visited": "是",
+    "distance_km": 3198.54,
+    "avg_spending": 160,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "Ya Kun Kaya Toast",
+    "address": "18 China St, #01-01, 新加坡 049560",
+    "url": "https://www.google.com/maps/place/Ya+Kun+Kaya+Toast/data=!4m2!3m1!1s0x31da1be2677c3765:0x796546c6f1f48792",
+    "cuisine_type": "東南亞式",
+    "source_list": "2024-新加坡",
+    "visited": "是",
+    "distance_km": 3198.54,
+    "avg_spending": 150,
+    "note": "",
+    "hours": null
   },
   {
     "title": "Victor's Kitchen (Sunshine Plaza)",
@@ -438,7 +501,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3196.81,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Zhong Yu Yuan Wei Wanton Noodle (忠于原味雲吞麵)",
@@ -449,7 +513,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3199.41,
     "avg_spending": 180,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大華豬肉粿條麵",
@@ -460,7 +525,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3195.65,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "JUMBO Seafood - The Riverwalk",
@@ -471,7 +537,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3198.0,
     "avg_spending": 1500,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "珍寶海鮮",
@@ -482,7 +549,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3198.24,
     "avg_spending": 1500,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "30 Bencoolen",
@@ -493,7 +561,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3197.01,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Shake Shack VivoCity",
@@ -504,7 +573,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3201.82,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雄記蔥抓餅",
@@ -515,7 +585,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.76,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蒸好吃佛跳牆",
@@ -526,7 +597,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.42,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "麵鄉 安徽淮南牛肉湯",
@@ -537,7 +609,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.42,
     "avg_spending": 180,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "八棟圓仔湯",
@@ -548,7 +621,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.67,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "廣州街夜市營養三明治",
@@ -559,7 +633,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.53,
     "avg_spending": 90,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "李掌伯（原里長伯麻辣臭豆腐鴨血蚵仔麵線）",
@@ -570,7 +645,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.72,
     "avg_spending": 180,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鴻記鐵板燒蔥餅捲",
@@ -581,7 +657,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.91,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "魏祥記純糖麻糬",
@@ -592,7 +669,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.8,
     "avg_spending": 90,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "冠魚蛋小屋 士林基河路分店（麻辣魚蛋）",
@@ -603,7 +681,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.19,
     "avg_spending": 90,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "郭鵝肉海產店",
@@ -614,7 +693,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 19.72,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "甲鳥園",
@@ -625,7 +705,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 78.4,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "巧宴蒜香肉羹",
@@ -636,7 +717,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 78.96,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "30年老店檸檬愛玉 - 叁拾 (老字號 天然手作飲料)",
@@ -647,7 +729,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 79.0,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蘇澳冷泉公園",
@@ -658,7 +741,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 91.88,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "麻古茶坊 宜蘭礁溪店",
@@ -669,7 +753,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.54,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "迷客夏Milksha 宜蘭礁溪店",
@@ -680,7 +765,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.71,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "白水豆花",
@@ -691,7 +777,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.43,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "宜蘭傳藝園區",
@@ -702,7 +789,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 87.09,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "藏甜手作坊",
@@ -713,7 +801,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 83.19,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "呷七碗宜蘭傳藝店",
@@ -724,7 +813,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 87.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "正好鮮肉小籠包-礁溪店",
@@ -735,7 +825,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.19,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "拾松辦桌小吃_礁溪",
@@ -746,7 +837,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.01,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "礁溪麒麟酒店 Kilin Hotel, JiaoXi",
@@ -757,7 +849,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.61,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "四海居小吃部",
@@ -768,7 +861,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 78.98,
     "avg_spending": 150,
-    "note": "黑白切"
+    "note": "黑白切",
+    "hours": null
   },
   {
     "title": "一香飲食店 麻醬麵",
@@ -779,7 +873,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 78.97,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "礁溪站",
@@ -790,7 +885,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.95,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "德記土地公黑糖糕",
@@ -801,7 +897,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 114.0,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "紫南宮阿玲蕃薯店（老店）",
@@ -812,7 +909,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 113.99,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "久味大姐手工麻糬中山店",
@@ -823,7 +921,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 97.7,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福伯黃金雞",
@@ -834,7 +933,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 115.09,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "35甕缸雞紫南宫店",
@@ -845,7 +945,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 113.92,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "百年廟口肉圓-竹山鎮",
@@ -856,7 +957,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 121.46,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "竹山煎餃",
@@ -867,7 +969,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 121.44,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "淑芬小吃豆皮包鹹菜",
@@ -878,7 +981,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 121.33,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "竹山三十年代蕃薯竹筍包",
@@ -889,7 +993,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 121.46,
     "avg_spending": 80,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "羅家美食",
@@ -900,7 +1005,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 114.06,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Yumeya",
@@ -911,7 +1017,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2520.03,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Noroshi",
@@ -922,7 +1029,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 689.9,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "水炊料亭 博多華味鳥 天神店",
@@ -933,7 +1041,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.8,
     "avg_spending": 1200,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Toriboshi Daimyo",
@@ -944,7 +1053,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.42,
     "avg_spending": 500,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "もつ焼き狼煙(のろし)博多上川端本陣1・2F",
@@ -955,7 +1065,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.99,
     "avg_spending": 500,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "元祖牛腸鍋 樂天地 天神本店",
@@ -966,7 +1077,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.42,
     "avg_spending": 700,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "DAIMYOぶたまぶし",
@@ -977,7 +1089,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.61,
     "avg_spending": 500,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鰻のエイト キャナルシティ博多店",
@@ -988,7 +1101,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.87,
     "avg_spending": 800,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Gyukatsu Motomura Fukuoka Tenjin Nishi Dori Branch",
@@ -999,7 +1113,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.73,
     "avg_spending": 600,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "一甲子餐飲",
@@ -1010,7 +1125,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.84,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大狗麵線（石牌店）",
@@ -1021,7 +1137,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.07,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大狗麵線（芝山店）",
@@ -1032,7 +1149,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.95,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "懷舊中卷麵線",
@@ -1043,7 +1161,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 47.73,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "無名麵線糊豆花",
@@ -1054,7 +1173,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.98,
     "avg_spending": 120,
-    "note": "智明"
+    "note": "智明",
+    "hours": null
   },
   {
     "title": "打鋼貴倪 創意食堂",
@@ -1065,7 +1185,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.24,
     "avg_spending": 350,
-    "note": "智明\n三杯雞義大利麵"
+    "note": "智明\n三杯雞義大利麵",
+    "hours": null
   },
   {
     "title": "Seed Bakery 麵包籽 新竹光埔店",
@@ -1076,7 +1197,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.94,
     "avg_spending": 120,
-    "note": "智明\n海鹽奶油卷"
+    "note": "智明\n海鹽奶油卷",
+    "hours": null
   },
   {
     "title": "劉家莊燜雞",
@@ -1087,7 +1209,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 14.0,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "永晝手工義大利麵",
@@ -1098,7 +1221,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.48,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "好日紫日式咖哩",
@@ -1109,7 +1233,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.38,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "8818 Pizza Restaurant 比薩屋",
@@ -1120,7 +1245,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 218.41,
     "avg_spending": 350,
-    "note": "夢多 MondoTV\n志明/炸雞"
+    "note": "夢多 MondoTV\n志明/炸雞",
+    "hours": null
   },
   {
     "title": "銘師父餐廳",
@@ -1131,7 +1257,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 108.64,
     "avg_spending": 150,
-    "note": "賴爸/台式套餐"
+    "note": "賴爸/台式套餐",
+    "hours": null
   },
   {
     "title": "牛老大涮牛肉-高雄總店 /高雄必吃美食/火鍋/必比登推介",
@@ -1142,7 +1269,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 253.49,
     "avg_spending": 450,
-    "note": "ricky&nina 要預訂牛舌"
+    "note": "ricky&nina 要預訂牛舌",
+    "hours": null
   },
   {
     "title": "助壽司丼 (原文山店團隊)",
@@ -1153,7 +1281,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 248.73,
     "avg_spending": 300,
-    "note": "ricky&nina 平價"
+    "note": "ricky&nina 平價",
+    "hours": null
   },
   {
     "title": "阿男的店牛雜湯",
@@ -1164,7 +1293,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 200.11,
     "avg_spending": 120,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "阿華漁村海鮮料理",
@@ -1175,7 +1305,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 199.26,
     "avg_spending": 450,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "來福海鮮餐廳",
@@ -1186,7 +1317,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 198.69,
     "avg_spending": 450,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "龍星餐廳",
@@ -1197,7 +1329,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 198.85,
     "avg_spending": 150,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "合苑餐廳（人氣餐廳、澎湖必吃美食、在地人推薦、特色料理）",
@@ -1208,7 +1341,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 198.07,
     "avg_spending": 150,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "澎湖三哥雞排三多店",
@@ -1219,7 +1353,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 197.74,
     "avg_spending": 150,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "拾貳鮮 鮮魚湯專賣店",
@@ -1230,7 +1365,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 199.18,
     "avg_spending": 120,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "八吃蝦-台中流水蝦吃到飽餐廳",
@@ -1241,7 +1377,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 77.85,
     "avg_spending": 150,
-    "note": "蝦土豆"
+    "note": "蝦土豆",
+    "hours": null
   },
   {
     "title": "價值設計 VALUE DESIGN",
@@ -1252,7 +1389,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.39,
     "avg_spending": 150,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "佐佐ぎょうざ日式煎餃專賣店(無訂位）",
@@ -1263,7 +1401,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 14.46,
     "avg_spending": 300,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "阿枝烤肉",
@@ -1274,7 +1413,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 17.81,
     "avg_spending": 150,
-    "note": "波妞 雞腿排"
+    "note": "波妞 雞腿排",
+    "hours": null
   },
   {
     "title": "海味羹",
@@ -1285,7 +1425,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 17.36,
     "avg_spending": 120,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "竹南福州包",
@@ -1296,7 +1437,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 17.36,
     "avg_spending": 120,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "伴 Life partner（下午時段只供應甜點及飲品）",
@@ -1307,7 +1449,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 13.53,
     "avg_spending": 150,
-    "note": "波妞 提拉米蘇"
+    "note": "波妞 提拉米蘇",
+    "hours": null
   },
   {
     "title": "阿瑩斤餅專門店",
@@ -1318,7 +1461,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 14.4,
     "avg_spending": 150,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "汪家魚丸湯、包餡魚丸零售",
@@ -1329,7 +1473,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.68,
     "avg_spending": 120,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "漁郎生魚片",
@@ -1340,7 +1485,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 266.62,
     "avg_spending": 300,
-    "note": "賴爸"
+    "note": "賴爸",
+    "hours": null
   },
   {
     "title": "二の丸安兵衛",
@@ -1351,7 +1497,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1774.66,
     "avg_spending": 300,
-    "note": "騏哥蛇丸"
+    "note": "騏哥蛇丸",
+    "hours": null
   },
   {
     "title": "Naniwa Omuraisu",
@@ -1362,7 +1509,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1776.79,
     "avg_spending": 300,
-    "note": "騏哥蛇丸"
+    "note": "騏哥蛇丸",
+    "hours": null
   },
   {
     "title": "Mel Coffee Roasters",
@@ -1373,7 +1521,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1776.41,
     "avg_spending": 150,
-    "note": "騏哥蛇丸"
+    "note": "騏哥蛇丸",
+    "hours": null
   },
   {
     "title": "大阪難波凱悅嘉薈酒店",
@@ -1384,7 +1533,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1776.34,
     "avg_spending": 0,
-    "note": "騏哥蛇丸"
+    "note": "騏哥蛇丸",
+    "hours": null
   },
   {
     "title": "Sojibō, Shinshu Soba Restaurant",
@@ -1395,7 +1545,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1741.48,
     "avg_spending": 300,
-    "note": "騏哥蛇丸"
+    "note": "騏哥蛇丸",
+    "hours": null
   },
   {
     "title": "大直小館",
@@ -1406,7 +1557,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.86,
     "avg_spending": 150,
-    "note": "貝姬 蘿蔔糕"
+    "note": "貝姬 蘿蔔糕",
+    "hours": null
   },
   {
     "title": "阿城鵝肉",
@@ -1417,7 +1569,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 62.17,
     "avg_spending": 120,
-    "note": "貝姬"
+    "note": "貝姬",
+    "hours": null
   },
   {
     "title": "Ryukyusushi Tsukijiaozorasandaime Makishishitamachiyataimura",
@@ -1428,7 +1581,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 691.52,
     "avg_spending": 150,
-    "note": "館長"
+    "note": "館長",
+    "hours": null
   },
   {
     "title": "牧志下町屋台村",
@@ -1439,7 +1593,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 691.5,
     "avg_spending": 150,
-    "note": "館長 11號青空三代目"
+    "note": "館長 11號青空三代目",
+    "hours": null
   },
   {
     "title": "天久琉貿樂市",
@@ -1450,7 +1605,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 691.96,
     "avg_spending": 150,
-    "note": "館長"
+    "note": "館長",
+    "hours": null
   },
   {
     "title": "Sports Depo Ameku",
@@ -1461,7 +1617,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 691.94,
     "avg_spending": 150,
-    "note": "館長"
+    "note": "館長",
+    "hours": null
   },
   {
     "title": "まぐろ屋みーかがん 道の駅いとまん店",
@@ -1472,7 +1629,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 687.14,
     "avg_spending": 150,
-    "note": "館長"
+    "note": "館長",
+    "hours": null
   },
   {
     "title": "希ラーメン拉麵",
@@ -1483,7 +1641,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 246.74,
     "avg_spending": 250,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "余足古早味豆花",
@@ -1494,7 +1653,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 246.56,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "老牌牛乳大王",
@@ -1505,7 +1665,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 246.74,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "今年貴焿左營大路店",
@@ -1516,7 +1677,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 247.38,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "三牛牛肉麵",
@@ -1527,7 +1689,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 247.62,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "汾陽餛飩",
@@ -1538,7 +1701,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 247.31,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "舊城傳統美食",
@@ -1549,7 +1713,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 247.23,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "博多名代 吉塚鰻魚屋",
@@ -1560,7 +1725,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.94,
     "avg_spending": 600,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "元祖拉麵 長濱家",
@@ -1571,7 +1737,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.98,
     "avg_spending": 250,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "Kisekinotebasaki Sararimanyokochodaimyouten",
@@ -1582,7 +1749,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": null,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "Ganso Hakata Mentaiju Nishinakasu",
@@ -1593,7 +1761,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1336.58,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "10 COFFEE BREWERS 大名店",
@@ -1604,7 +1773,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1388.45,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "JACK IN THE DONUTS 福岡天神店",
@@ -1615,7 +1785,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.82,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "新宿焼肉 牛たんの檸檬大阪本店",
@@ -1626,7 +1797,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1776.48,
     "avg_spending": 150,
-    "note": "黑木太太"
+    "note": "黑木太太",
+    "hours": null
   },
   {
     "title": "稚加榮 福岡店",
@@ -1637,7 +1809,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.46,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "娥嬤炖鰻 （原昌吉紅燒鰻）",
@@ -1648,7 +1821,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 61.36,
     "avg_spending": 150,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "圓環龍鳳滷肉飯",
@@ -1659,7 +1833,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 55.51,
     "avg_spending": 120,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "圓環龍鳳號",
@@ -1670,7 +1845,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.2,
     "avg_spending": 150,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "三元號魯肉飯",
@@ -1681,7 +1857,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.63,
     "avg_spending": 120,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "紅昌吉豬血湯",
@@ -1692,7 +1869,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 61.39,
     "avg_spending": 120,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "簡家大龍峒肉圓",
@@ -1703,7 +1881,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 61.47,
     "avg_spending": 120,
-    "note": "Fred"
+    "note": "Fred",
+    "hours": null
   },
   {
     "title": "元祖 牛腸鍋 樂天地天神 今泉總本店",
@@ -1714,7 +1893,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.69,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "Yagura",
@@ -1725,7 +1905,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1337.24,
     "avg_spending": 250,
-    "note": "蛇丸 豬排丼飯 烏龍麵"
+    "note": "蛇丸 豬排丼飯 烏龍麵",
+    "hours": null
   },
   {
     "title": "葉隱烏龍麵",
@@ -1736,7 +1917,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1337.32,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "元祖番茄拉麵 三味 博多車站東店",
@@ -1747,7 +1929,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1337.6,
     "avg_spending": 0,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "手工漢堡排 牛丸 大名店",
@@ -1758,7 +1941,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.62,
     "avg_spending": 400,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "Gyukatsu Motomura",
@@ -1769,7 +1953,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 48.62,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "天麩羅処ひらお 大名店",
@@ -1780,7 +1965,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1335.68,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "新宿燒肉 牛舌の檸檬",
@@ -1791,7 +1977,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2161.23,
     "avg_spending": 150,
-    "note": "黑木太太"
+    "note": "黑木太太",
+    "hours": null
   },
   {
     "title": "特 ‧ 好喝 toptiertea 特好喝 林口一號店",
@@ -1802,7 +1989,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 48.19,
     "avg_spending": 150,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "孫太太。私料。慢火鍋",
@@ -1813,7 +2001,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 38.23,
     "avg_spending": 450,
-    "note": "jack"
+    "note": "jack",
+    "hours": null
   },
   {
     "title": "月夜岩 蟹懷石",
@@ -1824,7 +2013,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 62.17,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "蝦老爹美式海鮮",
@@ -1835,7 +2025,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.96,
     "avg_spending": 400,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "超人鱸魚",
@@ -1846,7 +2037,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.78,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "義大利米蘭手工窯烤披薩 台北中山店",
@@ -1857,7 +2049,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 62.32,
     "avg_spending": 350,
-    "note": "Ken\n披薩、炸雞"
+    "note": "Ken\n披薩、炸雞",
+    "hours": null
   },
   {
     "title": "味留 熟成魚專門",
@@ -1868,7 +2061,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 73.79,
     "avg_spending": 150,
-    "note": "打魚翔哥"
+    "note": "打魚翔哥",
+    "hours": null
   },
   {
     "title": "玉林佶饗宴雞腿大王",
@@ -1879,7 +2073,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.55,
     "avg_spending": 150,
-    "note": "九面"
+    "note": "九面",
+    "hours": null
   },
   {
     "title": "豪記東山鴨頭",
@@ -1890,7 +2085,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.14,
     "avg_spending": 150,
-    "note": "痛風老饕：雞皮/鴨皮"
+    "note": "痛風老饕：雞皮/鴨皮",
+    "hours": null
   },
   {
     "title": "西安街涼麵臭豆腐",
@@ -1901,7 +2097,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.88,
     "avg_spending": 120,
-    "note": "痛風老饕：蛋捲臭豆腐"
+    "note": "痛風老饕：蛋捲臭豆腐",
+    "hours": null
   },
   {
     "title": "慧昭牛舌餅",
@@ -1912,7 +2109,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.39,
     "avg_spending": 150,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "313鵝肉擔（晚上開始營業，中午不休息）",
@@ -1923,7 +2121,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": null,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "陳季炸雞 石牌店",
@@ -1934,7 +2133,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.12,
     "avg_spending": 150,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "洋石岩燒牛排 忠孝店",
@@ -1945,7 +2145,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.61,
     "avg_spending": 400,
-    "note": "國棟"
+    "note": "國棟",
+    "hours": null
   },
   {
     "title": "文賢米糕肉燥飯",
@@ -1956,7 +2157,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.33,
     "avg_spending": 120,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "60+ Tea Shop城中店",
@@ -1967,7 +2169,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.47,
     "avg_spending": 150,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "安平路65號鍋燒意麵",
@@ -1978,7 +2181,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 218.06,
     "avg_spending": 120,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "安平薛家擔仔麵",
@@ -1989,7 +2193,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.84,
     "avg_spending": 120,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "蔡三毛豬血攤 府城王宮口支攤",
@@ -2000,7 +2205,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.83,
     "avg_spending": 120,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "黃胖妞豬心",
@@ -2011,7 +2217,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.58,
     "avg_spending": 150,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "44Bit四四拍唱片行 無訂位服務/早午餐/DJ教學/活動企劃",
@@ -2022,7 +2229,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.59,
     "avg_spending": 150,
-    "note": "痛風老饕-飲料"
+    "note": "痛風老饕-飲料",
+    "hours": null
   },
   {
     "title": "阿枝米粉湯",
@@ -2033,7 +2241,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.44,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "巷仔內米粉湯",
@@ -2044,7 +2253,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.43,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "果果香",
@@ -2055,7 +2265,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.25,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "北北車魯肉飯",
@@ -2066,7 +2277,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.36,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "黑點雞肉",
@@ -2077,7 +2289,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.43,
     "avg_spending": 150,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "69年老店麵攤（米粉湯）",
@@ -2088,7 +2301,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.37,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "鴨肉和",
@@ -2099,7 +2313,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 252.11,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿萬意麵",
@@ -2110,7 +2325,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 252.2,
     "avg_spending": 120,
-    "note": "天菜娘娘-鹽水意麵"
+    "note": "天菜娘娘-鹽水意麵",
+    "hours": null
   },
   {
     "title": "南方澳眼鏡．生魚片活海鮮",
@@ -2121,7 +2337,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 94.06,
     "avg_spending": 300,
-    "note": "阿達ADA"
+    "note": "阿達ADA",
+    "hours": null
   },
   {
     "title": "曾氏福建炒麵-關新店｜十年老字號｜臺灣第一福建炒麵品牌｜新竹快炒｜光復路美食｜熱炒｜竹科美食｜新竹美食｜炒飯",
@@ -2132,7 +2349,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.57,
     "avg_spending": 450,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "曾氏福建炒麵-中正東店｜十年老字號｜臺灣第一福建炒麵品牌｜竹北中正東路美食｜快炒｜熱炒｜小吃｜炒飯",
@@ -2143,7 +2361,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.99,
     "avg_spending": 450,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "曾氏福建炒麵-鳳山店｜十年老字號｜臺灣第一福建炒麵品牌｜中山路美食｜鳳山美食｜小吃｜麵店",
@@ -2154,7 +2373,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.88,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "鳳山中山路港都牛肉麵",
@@ -2165,7 +2385,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.83,
     "avg_spending": 120,
-    "note": "蛇丸\n半筋半肉"
+    "note": "蛇丸\n半筋半肉",
+    "hours": null
   },
   {
     "title": "老張愛玉冰",
@@ -2176,7 +2397,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.38,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "橫油條創意美食-鳳山美食推薦|素食小吃|銅板小吃|創意料理|鮮奶麻糬|特色小吃|小吃推薦|首創料理",
@@ -2187,7 +2409,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.4,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "倆伯羊肉",
@@ -2198,7 +2421,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.41,
     "avg_spending": 120,
-    "note": "蛇丸\n三杯排骨/羊肉湯/沙茶羊肉/涼拌牛雜"
+    "note": "蛇丸\n三杯排骨/羊肉湯/沙茶羊肉/涼拌牛雜",
+    "hours": null
   },
   {
     "title": "廣招英溫州餛飩 鳳山店",
@@ -2209,7 +2433,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.43,
     "avg_spending": 120,
-    "note": "蛇丸\n餛飩湯/木瓜牛奶/肉圓"
+    "note": "蛇丸\n餛飩湯/木瓜牛奶/肉圓",
+    "hours": null
   },
   {
     "title": "樂法Le Phare - 大東店",
@@ -2220,7 +2445,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.43,
     "avg_spending": 150,
-    "note": "蛇丸\n蘋果柳橙(老饕三倍蘋果)"
+    "note": "蛇丸\n蘋果柳橙(老饕三倍蘋果)",
+    "hours": null
   },
   {
     "title": "大東文化藝術中心",
@@ -2231,7 +2457,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 251.48,
     "avg_spending": 0,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "許 天橋下當歸鴨",
@@ -2242,7 +2469,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.51,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "正義台灣牛肉",
@@ -2253,7 +2481,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.13,
     "avg_spending": 120,
-    "note": "蛇丸\n番茄炒牛肉/牛雜湯"
+    "note": "蛇丸\n番茄炒牛肉/牛雜湯",
+    "hours": null
   },
   {
     "title": "高家肉粥",
@@ -2264,7 +2493,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.5,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "忠義廟口清粥小菜",
@@ -2275,7 +2505,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 57.39,
     "avg_spending": 0,
-    "note": "蛇丸\n討論區推薦"
+    "note": "蛇丸\n討論區推薦",
+    "hours": null
   },
   {
     "title": "三重 正土味傳統手工豆花（勿電話訂餐，請加line@554htoih 線上點餐",
@@ -2286,7 +2517,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.47,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "蘆洲忠義廟",
@@ -2297,7 +2529,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 57.31,
     "avg_spending": 0,
-    "note": "蛇丸\n晚上熱炒店"
+    "note": "蛇丸\n晚上熱炒店",
+    "hours": null
   },
   {
     "title": "台東老林記滷味麵食館",
@@ -2308,7 +2541,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.01,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "美村路魚市米糕",
@@ -2319,7 +2553,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.3,
     "avg_spending": 120,
-    "note": "米糕/小腸豬血湯\n蛇丸"
+    "note": "米糕/小腸豬血湯\n蛇丸",
+    "hours": null
   },
   {
     "title": "激旨燒鳥 美村加盟店",
@@ -2330,7 +2565,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.3,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "法大炸雞 Fukdup Fried Chicken - 精誠總店",
@@ -2341,7 +2577,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.11,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "幻覺博物館-台中",
@@ -2352,7 +2589,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 80.1,
     "avg_spending": 0,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "一穗禾心製麵",
@@ -2363,7 +2601,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 79.97,
     "avg_spending": 120,
-    "note": "滷排伴麵/炸餛飩/紫薯薄撐/鮮肉生煎包\n蛇丸"
+    "note": "滷排伴麵/炸餛飩/紫薯薄撐/鮮肉生煎包\n蛇丸",
+    "hours": null
   },
   {
     "title": "GG吉季韓國美食餐飲房",
@@ -2374,7 +2613,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.65,
     "avg_spending": 350,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉"
+    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
+    "hours": null
   },
   {
     "title": "季吉GG韓國餐館",
@@ -2385,7 +2625,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.23,
     "avg_spending": 350,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉"
+    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
+    "hours": null
   },
   {
     "title": "GG 季吉韓國美食餐飲房",
@@ -2396,7 +2637,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.81,
     "avg_spending": 350,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉"
+    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
+    "hours": null
   },
   {
     "title": "BANCO 窯烤 Pizza 八德門市",
@@ -2407,7 +2649,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.93,
     "avg_spending": 350,
-    "note": "義大利麵、燉飯\n徐海莉"
+    "note": "義大利麵、燉飯\n徐海莉",
+    "hours": null
   },
   {
     "title": "內灣圓樓人文客家餐廳",
@@ -2418,7 +2661,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 24.15,
     "avg_spending": 150,
-    "note": "賴爸"
+    "note": "賴爸",
+    "hours": null
   },
   {
     "title": "【腹響圓上海食府】亞太十大名廚｜頂級江浙料理｜上海名菜 (推薦 公館商圈 台大附近 捷運站美食 餐廳)",
@@ -2429,7 +2673,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.76,
     "avg_spending": 150,
-    "note": "東坡肉\n徐海莉"
+    "note": "東坡肉\n徐海莉",
+    "hours": null
   },
   {
     "title": "怪獸起司火雞烤冷麵",
@@ -2440,7 +2685,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 58.67,
     "avg_spending": 350,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "花藏雪 手作雪氷",
@@ -2451,7 +2697,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.48,
     "avg_spending": 150,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "燒烤杏鮑菇",
@@ -2462,7 +2709,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.29,
     "avg_spending": 150,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "簡記木瓜牛奶",
@@ -2473,7 +2721,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.32,
     "avg_spending": 150,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "士林廟口阿輝麵線",
@@ -2484,7 +2733,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.34,
     "avg_spending": 0,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "好朋友涼麵",
@@ -2495,7 +2745,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.38,
     "avg_spending": 120,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "家鄉碳烤香雞排 士林店",
@@ -2506,7 +2757,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.18,
     "avg_spending": 150,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "王子起司馬鈴薯",
@@ -2517,7 +2769,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.18,
     "avg_spending": 150,
-    "note": "拿拿摳"
+    "note": "拿拿摳",
+    "hours": null
   },
   {
     "title": "菓糖 糖葫蘆",
@@ -2528,7 +2781,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.95,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大王茶迷竹科店《推薦手搖》鮮奶茶專賣店｜茶飲推薦｜手搖外送｜團購飲料｜人氣手搖｜檸檬冰沙專賣店｜冰淇淋專賣店",
@@ -2539,7 +2793,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.2,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "果子家 | 煎餅果子（新竹園區店）點餐請用下面系統點餐",
@@ -2550,7 +2805,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Louisiana Famous Fried Chicken",
@@ -2561,7 +2817,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.29,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "舊是經典",
@@ -2572,7 +2829,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.9,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "寶地花生醬 新竹伴手禮 冬季限量湯圓上市",
@@ -2583,7 +2841,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.18,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "嗨嗨雞蛋糕｜人生嗨嗨（提早售完即打烊）",
@@ -2594,7 +2853,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.42,
     "avg_spending": 150,
-    "note": "ig"
+    "note": "ig",
+    "hours": null
   },
   {
     "title": "男子漢雞排（竹東店）",
@@ -2605,7 +2865,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 14.11,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大茗本位製茶堂-新竹金山店",
@@ -2616,7 +2877,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "(戲棚下Under Six Pound炸雞)新竹市北區",
@@ -2627,7 +2889,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "爆Q美式炸雞（新竹中華店）",
@@ -2638,7 +2901,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.21,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鬆餅巷（營業時間以FB公告為主）",
@@ -2649,7 +2913,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.9,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "奉家 方糰本舖｜園區下午茶外送｜團體大量訂單｜活動餐盒客製",
@@ -2660,7 +2925,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.42,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "思茶MissingTea手作飲品 新竹新莊店",
@@ -2671,7 +2937,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.41,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Crazy Pizza",
@@ -2682,7 +2949,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.64,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "珍豐大骨手工湯包",
@@ -2693,7 +2961,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.6,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "皇阿瑪臭豆腐(竹科店)",
@@ -2704,18 +2973,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.87,
     "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "再睡5分鐘 - 新竹光復店",
-    "address": "300台灣新竹市東區金山里光復路一段173號",
-    "url": "https://www.google.com/maps/place/%E5%86%8D%E7%9D%A15%E5%88%86%E9%90%98+-+%E6%96%B0%E7%AB%B9%E5%85%89%E5%BE%A9%E5%BA%97/data=!4m2!3m1!1s0x346837358ea752c1:0x2728f8e6424dc2be",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": 6.23,
-    "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雞雞叫脆皮雞排",
@@ -2726,7 +2985,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老豆花 プリプリ 建中店",
@@ -2737,7 +2997,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.7,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "軒韻茶飲新竹店",
@@ -2748,7 +3009,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.42,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "吳家甜不辣麵線",
@@ -2759,7 +3021,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.35,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老瀋陽酸菜白肉鍋",
@@ -2770,7 +3033,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.83,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "火鍋世家新竹光華東店",
@@ -2781,7 +3045,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.15,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老店薑母雞 八德旗艦店 全臺首創薑母雞-推薦在地必吃平價美食 火鍋(新竹東區)夜間宵夜 露營必備美食菜單 薑母鴨 薑母雞 狀元雞 首烏雞 淮蔘雞 \n烏骨雞肉 溫體雞 火鍋 中藥燉煮 PTT",
@@ -2792,7 +3057,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.78,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "漢王薑母鴨 新竹東大店",
@@ -2803,7 +3069,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.96,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "哈柔廚房 早午餐",
@@ -2814,7 +3081,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.11,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "早安勇士(最後點餐16點整前、假日無訂位)",
@@ -2825,7 +3093,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.97,
     "avg_spending": 280,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "矮仔財滷肉飯",
@@ -2836,7 +3105,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.96,
     "avg_spending": 100,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿輝伯蘿蔔絲餅",
@@ -2847,7 +3117,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.76,
     "avg_spending": 60,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小金魚奶茶咖啡館",
@@ -2858,7 +3129,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.95,
     "avg_spending": 180,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "傑理歐法小館 since2004 ｜營業中不方便接聽電話｜不是親子餐廳｜請善用LINE和線上預約系統｜",
@@ -2869,7 +3141,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 76.77,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "炯炯特炙牛排",
@@ -2880,7 +3153,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 76.57,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "H.YEN",
@@ -2891,7 +3165,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 75.17,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小赫霜淇淋",
@@ -2902,7 +3177,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 72.66,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "清水白燒炸粿",
@@ -2913,7 +3189,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 72.94,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿財米糕店",
@@ -2924,7 +3201,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 72.7,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "王塔米糕店",
@@ -2935,7 +3213,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 72.65,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "華得來(清水店)",
@@ -2946,7 +3225,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 73.1,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老士官擀麵",
@@ -2957,7 +3237,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 73.2,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "采宏牛肉麵-原建宏牛肉麵",
@@ -2968,7 +3249,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.66,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小吳牛肉麵",
@@ -2979,7 +3261,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.71,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "牛耳精緻麵館",
@@ -2990,7 +3273,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 66.88,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "山西刀削麵 （大直店）",
@@ -3001,7 +3285,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 64.95,
     "avg_spending": 120,
-    "note": "紅燒牛肉麵"
+    "note": "紅燒牛肉麵",
+    "hours": null
   },
   {
     "title": "江蘇老趙刀切麵",
@@ -3012,7 +3297,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 62.51,
     "avg_spending": 120,
-    "note": "紅燒牛肉麵"
+    "note": "紅燒牛肉麵",
+    "hours": null
   },
   {
     "title": "富宏牛肉麵",
@@ -3023,7 +3309,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.69,
     "avg_spending": 120,
-    "note": "紅燒牛肉麵"
+    "note": "紅燒牛肉麵",
+    "hours": null
   },
   {
     "title": "2U Gelato 義式手工冰淇淋 新竹店",
@@ -3034,7 +3321,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.3,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "聞家餚快炒店",
@@ -3045,7 +3333,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.24,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三盛｜刺身 • 握壽司 • 壽司",
@@ -3056,7 +3345,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.2,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小馬客",
@@ -3067,7 +3357,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.36,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "貓的堅持（新竹店）創意輕藥膳養生料理",
@@ -3078,7 +3369,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.29,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "慶咖哩",
@@ -3089,7 +3381,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.52,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "彭家粄糕",
@@ -3100,7 +3393,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 15.45,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "皿富器食 minfood",
@@ -3111,7 +3405,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.72,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "PASTA de SHOW/CURRY de SHOW義大利生麵廚房北大店",
@@ -3122,7 +3417,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.35,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Jim’s Food",
@@ -3133,7 +3429,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.82,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "客園麵食館",
@@ -3144,7 +3441,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.95,
     "avg_spending": 120,
-    "note": "番茄蛋花麵"
+    "note": "番茄蛋花麵",
+    "hours": null
   },
   {
     "title": "好食味 藥燉排骨／ 滷肉飯／赤肉羹蚵仔麵線／芋頭鹹粥",
@@ -3155,7 +3453,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.6,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "凱迪比薩",
@@ -3166,7 +3465,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.49,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "白日夢pasta-新竹美食",
@@ -3177,7 +3477,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.71,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福氣中卷麵線",
@@ -3188,7 +3489,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.38,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "瑪咭廚房",
@@ -3199,7 +3501,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.78,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "靜岡勝政日式豬排-新竹巨城店",
@@ -3210,7 +3513,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.75,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "荷竹園",
@@ -3221,7 +3525,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.93,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "成大器烤肉飯 北大店",
@@ -3232,7 +3537,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.35,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大無敵烤肉飯-新竹東門店",
@@ -3243,7 +3549,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.27,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "吉瓦黑輪 tsi̍t uánn oden (無提供洗手間)忙碌時無接聽電話",
@@ -3254,7 +3561,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "慕特牛排竹北店",
@@ -3265,7 +3573,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.99,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大嶼四國烏龍麵 竹蓮市場",
@@ -3276,7 +3585,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.15,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "噴火美式炭烤牛排",
@@ -3287,7 +3597,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.95,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "泰蝦小棧活蝦料理（售完會提早打烊，建議來電詢問）",
@@ -3298,7 +3609,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.24,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "山下食堂",
@@ -3309,7 +3621,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.04,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "PINOCOCO 皮諾可可",
@@ -3320,7 +3633,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 81.83,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新竹喜食廚房",
@@ -3331,7 +3645,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.6,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蔡三毛豬血攤",
@@ -3342,7 +3657,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.83,
     "avg_spending": 120,
-    "note": "痛風老饕-"
+    "note": "痛風老饕-",
+    "hours": null
   },
   {
     "title": "松村煙燻滷味 赤崁店",
@@ -3353,7 +3669,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 216.96,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "哈囉炸醬麵",
@@ -3364,7 +3681,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.7,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "石家魚丸",
@@ -3375,7 +3693,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.12,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "波諾義大利料理 新竹",
@@ -3386,7 +3705,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.84,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福林港式燒腊",
@@ -3397,7 +3717,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.92,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老陳家中央市場糯米水餃",
@@ -3408,7 +3729,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.59,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "第一土鵝肉",
@@ -3419,7 +3741,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 61.65,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "木木食堂 新竹店",
@@ -3430,7 +3753,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.89,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小屋頂早午餐",
@@ -3441,7 +3765,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.52,
     "avg_spending": 150,
-    "note": "蛋餅"
+    "note": "蛋餅",
+    "hours": null
   },
   {
     "title": "光復小籠包",
@@ -3452,7 +3777,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.81,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "義樂蒂義式麵坊",
@@ -3463,7 +3789,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.96,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "溢香園 天母店",
@@ -3474,7 +3801,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 65.58,
     "avg_spending": 120,
-    "note": "清蒸臭豆腐"
+    "note": "清蒸臭豆腐",
+    "hours": null
   },
   {
     "title": "老四川麵食館",
@@ -3485,7 +3813,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.01,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿婆早餐麵店",
@@ -3496,7 +3825,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.37,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "俄羅斯茯苓糕",
@@ -3507,7 +3837,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.64,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "樹林頭麵店",
@@ -3518,7 +3849,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.33,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "泰食屋thaicuisine（7/20，下午17:00開始，中午店休）",
@@ -3529,7 +3861,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": null,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三廠炸醬麵",
@@ -3540,7 +3873,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.18,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小蔡炒飯食堂",
@@ -3551,7 +3885,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.45,
     "avg_spending": 120,
-    "note": "好吃"
+    "note": "好吃",
+    "hours": null
   },
   {
     "title": "饗厚牛排-桃園店",
@@ -3562,7 +3897,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 38.05,
     "avg_spending": 400,
-    "note": "自助吧cp"
+    "note": "自助吧cp",
+    "hours": null
   },
   {
     "title": "全家便利商店-板橋宜居店",
@@ -3573,7 +3909,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 51.7,
     "avg_spending": 150,
-    "note": "Om"
+    "note": "Om",
+    "hours": null
   },
   {
     "title": "大眾小館",
@@ -3584,7 +3921,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.65,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福砌阿華什錦麵",
@@ -3595,7 +3933,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.59,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "傻瓜麵創意料理",
@@ -3606,7 +3945,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.11,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "現炸脆皮肉圓",
@@ -3617,7 +3957,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 30.66,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鬍鬚李小吃店",
@@ -3628,7 +3969,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.59,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "馥億餐坊-新竹市",
@@ -3639,7 +3981,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.08,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "吳生ごさん鍋処小料理請訊息預約·僅接受FB、IG訊息預約",
@@ -3650,7 +3993,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.12,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "景冬香雲緬小吃-巨城擺夷料理(不接受訂位)",
@@ -3661,7 +4005,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.37,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新竹南寮漁港",
@@ -3672,7 +4017,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.12,
     "avg_spending": 150,
-    "note": "蝦媽的店，海沙蝦普通尺寸"
+    "note": "蝦媽的店，海沙蝦普通尺寸",
+    "hours": null
   },
   {
     "title": "長興釣蝦場",
@@ -3683,7 +4029,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 10.43,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三億小吃店",
@@ -3694,7 +4041,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.7,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "東門文昌雞飯(僅供外帶)",
@@ -3705,7 +4053,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.37,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "龍來小館",
@@ -3716,7 +4065,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 15.08,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿水飯店",
@@ -3727,7 +4077,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 29.31,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "薪石窯柴燒窯烤麵包",
@@ -3738,7 +4089,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.29,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "CURRY WU日式熟成濃咖哩專賣店",
@@ -3749,7 +4101,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.93,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "延平大飯店",
@@ -3760,7 +4113,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.34,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "玩點名",
@@ -3771,7 +4125,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.32,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "吾點拌食（原欣園早點）-新竹美食-早餐-豆漿-蛋餅-蔥抓餅",
@@ -3782,7 +4137,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.35,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小熊媽媽DIY",
@@ -3793,7 +4149,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "橙家餐廳",
@@ -3804,7 +4161,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.62,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "公園黑乾麵",
@@ -3815,7 +4173,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.65,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "京座燒肉 新竹店",
@@ -3826,7 +4185,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.69,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蔣好的味道 台越特色小館",
@@ -3837,7 +4197,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.98,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新竹利利號 肉鬆/肉乾",
@@ -3848,7 +4209,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.23,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "禾日香古早味魯肉飯",
@@ -3859,7 +4221,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.94,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "安利麵線",
@@ -3870,7 +4233,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.94,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雞腳王滷味",
@@ -3881,18 +4245,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.34,
     "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "阿明滷肉飯",
-    "address": "300台灣新竹市北區光華里光華街110-1號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E6%98%8E%E6%BB%B7%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x346835ce9ee718c3:0xba244872de87330f",
-    "cuisine_type": "中式",
-    "source_list": "回訪",
-    "visited": "是",
-    "distance_km": 0.32,
-    "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蚵仔麵線、甜不辣",
@@ -3903,7 +4257,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 29.51,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "曾記餡餅",
@@ -3914,7 +4269,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.21,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豪果複合式餐廳",
@@ -3925,7 +4281,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.18,
     "avg_spending": 400,
-    "note": "牛排飯"
+    "note": "牛排飯",
+    "hours": null
   },
   {
     "title": "源味燉品屋",
@@ -3936,7 +4293,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.04,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "御廚雲泰美食",
@@ -3947,7 +4305,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.21,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "北門炸粿",
@@ -3958,7 +4317,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.2,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "戽斗魯肉飯",
@@ -3969,7 +4329,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.78,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "和味清粥",
@@ -3980,7 +4341,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.41,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "刀削麵",
@@ -3991,7 +4353,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 57.67,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "原味鴨肉麵",
@@ -4002,7 +4365,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.81,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "楊家意麵",
@@ -4013,7 +4377,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.2,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老港陳",
@@ -4024,7 +4389,56 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.75,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "哈哈哈哈超好笑",
+    "address": "801台灣高雄市前金區長城里中華三路208號",
+    "url": "https://lookaside.fbsbx.com/lookaside/crawler/threads/DISK8qKTmLv/0/image.jpg",
+    "cuisine_type": "其他",
+    "source_list": "圖片",
+    "visited": "是",
+    "distance_km": 252.37,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "周星馳】那是什麼聲音？畜牲的聲音，畜牲不要吵。《唐伯虎點秋香 ...",
+    "address": "未知地址",
+    "url": "https://i.ytimg.com/vi/4DETbR6CFUU/hqdefault.jpg",
+    "cuisine_type": "其他",
+    "source_list": "圖片",
+    "visited": "是",
+    "distance_km": 13104.05,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "怎麼這麼好啦！！？？ - ACG 迷因板 | Dcard",
+    "address": "600台灣嘉义市西区湖内里健康二路120號",
+    "url": "https://megapx-assets.dcard.tw/images/5520069e-1799-407f-9f31-72be003c45f2/1280.jpeg",
+    "cuisine_type": "其他",
+    "source_list": "圖片",
+    "visited": "是",
+    "distance_km": 161.46,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "三味食堂~巨無霸鮭魚握壽司不容錯過 - Bernice的隨手筆記 - 新浪部落",
+    "address": "108台灣臺北市萬華區貴陽街二段116號",
+    "url": "http://blog.sina.com.tw/myimages/106/37226/images/15023735738459.jpg",
+    "cuisine_type": "日式",
+    "source_list": "圖片",
+    "visited": "是",
+    "distance_km": 58.86,
+    "avg_spending": 400,
+    "note": "",
+    "hours": null
   },
   {
     "title": "Oaf coffee stand",
@@ -4035,7 +4449,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.8,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "肉 Sando",
@@ -4046,7 +4461,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.88,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大新竹永和豆漿店",
@@ -4057,7 +4473,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.06,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "無名早餐飯糰攤",
@@ -4068,7 +4485,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.15,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "紫米飯糰",
@@ -4079,7 +4497,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 240.27,
     "avg_spending": 120,
-    "note": "老婆推薦"
+    "note": "老婆推薦",
+    "hours": null
   },
   {
     "title": "早安美芝城新竹光華概念店",
@@ -4090,7 +4509,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.28,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "挑嘴貓早午餐（最後點餐時間14:00，每週四固定公休）",
@@ -4101,7 +4521,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.25,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豐色宴小籠湯包店",
@@ -4112,7 +4533,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.31,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿川水素煎包",
@@ -4123,7 +4545,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.54,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Kurashi 暮らし 《 蛋餅 · 鹹粥 ·飯糰 》",
@@ -4134,7 +4557,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.7,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小藜ㄇㄞˋ本丸",
@@ -4145,7 +4569,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 7.37,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "熒熒商行",
@@ -4156,7 +4581,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.88,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "水哥笠禾",
@@ -4167,7 +4593,44 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.95,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "市井蠔門 漁夫廚房 海鮮燒烤",
+    "address": "300台灣新竹市東區文華里北大路40巷25號",
+    "url": "https://www.google.com/maps/place/%E5%B8%82%E4%BA%95%E8%A0%94%E9%96%80+%E6%BC%81%E5%A4%AB%E5%BB%9A%E6%88%BF+%E6%B5%B7%E9%AE%AE%E7%87%92%E7%83%A4/data=!4m2!3m1!1s0x3468350011fc60b5:0xd54697b45044a02e",
+    "cuisine_type": "中式",
+    "source_list": "常用晚餐",
+    "visited": "是",
+    "distance_km": 0.33,
+    "avg_spending": 600,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "原夜市鴨肉麵",
+    "address": "300台灣新竹市東區東門里中央路30號",
+    "url": "https://www.google.com/maps/place/%E5%8E%9F%E5%A4%9C%E5%B8%82%E9%B4%A8%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x346835b87a49b4f9:0x4394f0ed057c7724",
+    "cuisine_type": "中式",
+    "source_list": "常用晚餐",
+    "visited": "是",
+    "distance_km": 1.43,
+    "avg_spending": 120,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "李美樂鹹水雞專賣店-新竹鹹水雞首選|巨城/湳雅/光華商圈鹹水雞專賣店|街邊美食|外帶美食|鹹水雞推薦|舒肥餐|必吃鹹水雞|人氣鹹水雞",
+    "address": "300台灣新竹市北區光華里湳雅街38號",
+    "url": "https://www.google.com/maps/place/%E6%9D%8E%E7%BE%8E%E6%A8%82%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97-%E6%96%B0%E7%AB%B9%E9%B9%B9%E6%B0%B4%E9%9B%9E%E9%A6%96%E9%81%B8%7C%E5%B7%A8%E5%9F%8E%2F%E6%B9%B3%E9%9B%85%2F%E5%85%89%E8%8F%AF%E5%95%86%E5%9C%88%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97%7C%E8%A1%97%E9%82%8A%E7%BE%8E%E9%A3%9F%7C%E5%A4%96%E5%B8%B6%E7%BE%8E%E9%A3%9F%7C%E9%B9%B9%E6%B0%B4%E9%9B%9E%E6%8E%A8%E8%96%A6%7C%E8%88%92%E8%82%A5%E9%A4%90%7C%E5%BF%85%E5%90%83%E9%B9%B9%E6%B0%B4%E9%9B%9E%7C%E4%BA%BA%E6%B0%A3%E9%B9%B9%E6%B0%B4%E9%9B%9E/data=!4m2!3m1!1s0x346835d110904d83:0xeae875ba81915bcd",
+    "cuisine_type": "其他",
+    "source_list": "常用晚餐",
+    "visited": "是",
+    "distance_km": 0.34,
+    "avg_spending": 150,
+    "note": "",
+    "hours": null
   },
   {
     "title": "嘉味火雞肉飯",
@@ -4178,18 +4641,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.15,
     "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "旭山丼飯",
-    "address": "300台灣新竹市東區關帝里西門街5號",
-    "url": "https://www.google.com/maps/place/%E6%97%AD%E5%B1%B1%E4%B8%BC%E9%A3%AF/data=!4m2!3m1!1s0x34683551164e0d93:0xc9175da66ec4c63",
-    "cuisine_type": "日式",
-    "source_list": "常用晚餐",
-    "visited": "是",
-    "distance_km": 1.61,
-    "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "（預約制））來點不一樣｜私廚料理｜一人廚房",
@@ -4200,7 +4653,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.84,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "和樂洋食巧烹",
@@ -4211,7 +4665,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 7.18,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "香聚小廚",
@@ -4222,7 +4677,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.95,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "探吉飯包",
@@ -4233,7 +4689,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.56,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福來麵食館",
@@ -4244,7 +4701,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.5,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "PASTA de SHOW パスタでしょう義大利生麵廚房",
@@ -4255,7 +4713,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.51,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "家味園-新竹美食 新竹小吃 新竹雞肉飯 東區美食 東區小吃 清大美食",
@@ -4266,7 +4725,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.29,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "極鮮香小饌",
@@ -4277,7 +4737,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.87,
     "avg_spending": 120,
-    "note": "ig, 炒飯、鴨血、蛤蠣湯"
+    "note": "ig, 炒飯、鴨血、蛤蠣湯",
+    "hours": null
   },
   {
     "title": "久食渡食堂",
@@ -4288,7 +4749,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.44,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "徠食堂",
@@ -4299,7 +4761,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.27,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "The Park",
@@ -4310,7 +4773,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "北門來呷・燒米研製所",
@@ -4321,7 +4785,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.32,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "牛市-小火鍋",
@@ -4332,7 +4797,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.33,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鴨韻坊",
@@ -4343,7 +4809,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.52,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三十米路",
@@ -4354,7 +4821,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.79,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "享廚鐵板燒 Enjoy Teppanyaki",
@@ -4365,7 +4833,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.33,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "正樽當歸鴨",
@@ -4376,7 +4845,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 214.6,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "六家一路大腸紅麵線",
@@ -4387,7 +4857,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 6.24,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "燉鋪1號店",
@@ -4398,7 +4869,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.8,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "好小子擔仔麵",
@@ -4409,18 +4881,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 79.91,
     "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "Musha Musha 熟成咖哩 竹北店（無訂位）",
-    "address": "302台灣新竹縣竹北市鹿場里成功十街112號",
-    "url": "https://www.google.com/maps/place/Musha+Musha+%E7%86%9F%E6%88%90%E5%92%96%E5%93%A9+%E7%AB%B9%E5%8C%97%E5%BA%97%EF%BC%88%E7%84%A1%E8%A8%82%E4%BD%8D%EF%BC%89/data=!4m2!3m1!1s0x3468372ae0457005:0xdcf18416d3a0adc3",
-    "cuisine_type": "東南亞式",
-    "source_list": "常用晚餐",
-    "visited": "是",
-    "distance_km": 4.94,
-    "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "禾家麵店",
@@ -4431,7 +4893,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.06,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三廠麵店",
@@ -4442,7 +4905,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.41,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "如意麵食館 牛肉麵（1/7起至2/11止，因故公休）",
@@ -4453,7 +4917,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.28,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "東寧宮轉角意麵",
@@ -4464,7 +4929,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.39,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Wooli印先生韓式料理",
@@ -4475,7 +4941,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 15.14,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富鴻燒鴨飯",
@@ -4486,7 +4953,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.25,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "螞蟻食鍋anT.hoT.poT｜無訂位，僅提供現場候位，謝謝！",
@@ -4497,7 +4965,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.03,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富珍鄉豬腳專賣店",
@@ -4508,7 +4977,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.4,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "璽子牛肉麵/新竹美食/新竹牛肉麵/新竹小吃/新竹推薦餐廳/新竹東區美食/新竹好吃",
@@ -4519,7 +4989,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.39,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "樂樂ENJOY PASTA",
@@ -4530,7 +5001,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.68,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "厚醍牛肉麵 新竹忠孝店",
@@ -4541,7 +5013,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.34,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "鳳荷三鮮",
@@ -4552,7 +5025,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 3.44,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "毅爾膳空廚-新竹健康餐盒|商務便當|午餐首選|舒肥餐|會議餐盒|外帶餐盒/私廚客制料理",
@@ -4563,7 +5037,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 5.48,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "喜憨兒創作料理新竹建中店(電話訂位)",
@@ -4574,7 +5049,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.7,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Oya Pizzeria 無訂位服務 周日、一店休",
@@ -4585,7 +5061,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.66,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "儷舍坊",
@@ -4596,7 +5073,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.97,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "山也餐盒 竹科店",
@@ -4607,7 +5085,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 4.94,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豚將日本拉麵",
@@ -4618,7 +5097,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 210.99,
     "avg_spending": 250,
-    "note": "平價"
+    "note": "平價",
+    "hours": null
   },
   {
     "title": "羅記牛肉貓耳麵",
@@ -4629,7 +5109,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.56,
     "avg_spending": 120,
-    "note": "麻婆豆腐"
+    "note": "麻婆豆腐",
+    "hours": null
   },
   {
     "title": "周記小廚",
@@ -4640,7 +5121,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "德壹牛肉麵",
@@ -4651,18 +5133,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.72,
     "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "剛剛好食",
-    "address": "300台灣新竹市東區金山里金山十七街26號1樓",
-    "url": "https://www.google.com/maps/place/%E5%89%9B%E5%89%9B%E5%A5%BD%E9%A3%9F/data=!4m2!3m1!1s0x34684be70584f125:0xe60de0a431d0610a",
-    "cuisine_type": "其他",
-    "source_list": "常用晚餐",
-    "visited": "是",
-    "distance_km": 6.72,
-    "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雞肉男雞肉飯",
@@ -4673,7 +5145,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 2.25,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "拉麵家 長安店",
@@ -4684,7 +5157,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.43,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豐味美食坊-新竹快炒店",
@@ -4695,7 +5169,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.73,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "樂客Rock’s Cooking(店休11/12-13",
@@ -4706,7 +5181,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 1.14,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "珍悅 香港大排檔",
@@ -4717,7 +5193,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.93,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "TNT美式炭烤牛排-新竹店",
@@ -4728,7 +5205,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.63,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿吉海鮮",
@@ -4739,7 +5217,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.82,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "玉山自助餐",
@@ -4750,7 +5229,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 0.16,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "The Slice Shop",
@@ -4761,7 +5241,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "佐佧義式窯烤披薩屋",
@@ -4772,7 +5253,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.09,
     "avg_spending": 350,
-    "note": "純正義式薄皮"
+    "note": "純正義式薄皮",
+    "hours": null
   },
   {
     "title": "蔡 迪化街古早味蚵嗲",
@@ -4783,7 +5265,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.34,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "姚德和 青草號",
@@ -4794,7 +5277,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.35,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老竹子三發包子",
@@ -4805,7 +5289,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.29,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "林合發油飯店",
@@ -4816,7 +5301,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.29,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "永樂車輪餅 | 古早味車輪餅",
@@ -4827,7 +5313,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.36,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "陳家糧舍",
@@ -4838,7 +5325,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.44,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "夏樹甜品",
@@ -4849,7 +5337,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.43,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "賣麵炎仔",
@@ -4860,7 +5349,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.54,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大橋頭胡椒餅",
@@ -4871,7 +5361,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.65,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "滋養和菓子",
@@ -4882,7 +5373,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.47,
     "avg_spending": 150,
-    "note": "草莓大福"
+    "note": "草莓大福",
+    "hours": null
   },
   {
     "title": "阿角紅燒肉劉美麗",
@@ -4893,7 +5385,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 60.75,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "黄龍莊",
@@ -4904,7 +5397,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.7,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "餓菱居",
@@ -4915,7 +5409,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 62.41,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "京鼎小館",
@@ -4926,7 +5421,116 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.92,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "月酵 Lune & Levain – Artisan Sourdough Bakery",
+    "address": "300台灣新竹市北區仁德里長安街83號",
+    "url": "https://www.google.com/maps/place/%E6%9C%88%E9%85%B5+Lune+%26+Levain+%E2%80%93+Artisan+Sourdough+Bakery/data=!4m2!3m1!1s0x346835bbc094aea7:0x616c9c9966694eba",
+    "cuisine_type": "其他",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.34,
+    "avg_spending": 250,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "哈堡堡輕食早午餐新竹光華店",
+    "address": "300台灣新竹市北區光華里光華北街63之2號一樓",
+    "url": "https://www.google.com/maps/place/%E5%93%88%E5%A0%A1%E5%A0%A1%E8%BC%95%E9%A3%9F%E6%97%A9%E5%8D%88%E9%A4%90%E6%96%B0%E7%AB%B9%E5%85%89%E8%8F%AF%E5%BA%97/data=!4m2!3m1!1s0x3468350078e4faaf:0xb26ac6f692dfb0ec",
+    "cuisine_type": "美式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.22,
+    "avg_spending": 250,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "竹塹風炒飯",
+    "address": "300台灣新竹市東區南門里林森路92號",
+    "url": "https://www.google.com/maps/place/%E7%AB%B9%E5%A1%B9%E9%A2%A8%E7%82%92%E9%A3%AF/data=!4m2!3m1!1s0x346835cf3f8347bf:0xb312f7bb4ab44419",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.82,
+    "avg_spending": 120,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "永和炒飯",
+    "address": "300台灣新竹市北區光華里湳雅街46-3號",
+    "url": "https://www.google.com/maps/place/%E6%B0%B8%E5%92%8C%E7%82%92%E9%A3%AF/data=!4m2!3m1!1s0x346835ceae693a17:0x6fe90038e7fad075",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.35,
+    "avg_spending": 120,
+    "note": "蝦仁炒飯",
+    "hours": null
+  },
+  {
+    "title": "竹風快炒",
+    "address": "300台灣新竹市東區南門里西大路324-1號",
+    "url": "https://www.google.com/maps/place/%E7%AB%B9%E9%A2%A8%E5%BF%AB%E7%82%92/data=!4m2!3m1!1s0x34683500490238cb:0x3dc6fd1f4e1764ba",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.82,
+    "avg_spending": 200,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "香卿鍋燒 HIONGTSHIN",
+    "address": "30041台灣新竹市東區中南街45號",
+    "url": "https://www.google.com/maps/place/%E9%A6%99%E5%8D%BF%E9%8D%8B%E7%87%92+HIONGTSHIN/data=!4m2!3m1!1s0x34683536764de0c9:0x30cc71e5e7fd77cc",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.79,
+    "avg_spending": 150,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "吾料町",
+    "address": "302052台灣新竹縣竹北市東平里高鐵二路89號",
+    "url": "https://www.google.com/maps/place/%E5%90%BE%E6%96%99%E7%94%BA/data=!4m2!3m1!1s0x34683718321d01b9:0x62aef5ead391bc56",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 6.5,
+    "avg_spending": 400,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "凱帝快餐",
+    "address": "300台灣新竹市東區三民里民族路171號",
+    "url": "https://www.google.com/maps/place/%E5%87%B1%E5%B8%9D%E5%BF%AB%E9%A4%90/data=!4m2!3m1!1s0x346835da57934565:0x9cc443d60aaea5c1",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.94,
+    "avg_spending": 100,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "七先生早午餐",
+    "address": "300台灣新竹市北區磐石里竹光路221號",
+    "url": "https://www.google.com/maps/place/%E4%B8%83%E5%85%88%E7%94%9F%E6%97%A9%E5%8D%88%E9%A4%90/data=!4m2!3m1!1s0x346835462e7fd419:0xcbb6fd6944467e79",
+    "cuisine_type": "美式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.74,
+    "avg_spending": 250,
+    "note": "",
+    "hours": null
   },
   {
     "title": "竹北謝家記肉乾肉鬆伴手禮名產",
@@ -4937,7 +5541,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 3.86,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "權域物理治療所",
@@ -4948,7 +5553,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.01,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三廠姜店",
@@ -4959,7 +5565,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.3,
     "avg_spending": 150,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "統一姜滷味",
@@ -4970,7 +5577,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.95,
     "avg_spending": 120,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "南門小政便當",
@@ -4981,18 +5589,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.76,
     "avg_spending": 150,
-    "note": "痛風老饕"
-  },
-  {
-    "title": "南門小政",
-    "address": "300台灣新竹市東區南門里南門街43號",
-    "url": "https://www.google.com/maps/place/%E5%8D%97%E9%96%80%E5%B0%8F%E6%94%BF/data=!4m2!3m1!1s0x346835eaf9c37833:0xc6af3c8ccddf853e",
-    "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 1.79,
-    "avg_spending": 150,
-    "note": "痛風老饕"
+    "note": "痛風老饕",
+    "hours": null
   },
   {
     "title": "邱家鴨肉麵",
@@ -5003,7 +5601,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.35,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "未然 日風鐵板料理",
@@ -5014,7 +5613,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 6.14,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Jiumu Coffee Roasters九慕咖啡",
@@ -5025,7 +5625,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.29,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "醇萃咖啡",
@@ -5036,7 +5637,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 190.75,
     "avg_spending": 150,
-    "note": "早上"
+    "note": "早上",
+    "hours": null
   },
   {
     "title": "恆星咖啡 EDS Coffee Roaster",
@@ -5047,7 +5649,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.5,
     "avg_spending": 150,
-    "note": "早餐"
+    "note": "早餐",
+    "hours": null
   },
   {
     "title": "福圓北方風味館",
@@ -5058,7 +5661,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 85.45,
     "avg_spending": 150,
-    "note": "民眾黨推薦"
+    "note": "民眾黨推薦",
+    "hours": null
   },
   {
     "title": "花娘小館（創始店）",
@@ -5069,7 +5673,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 63.94,
     "avg_spending": 150,
-    "note": "黃仁勳"
+    "note": "黃仁勳",
+    "hours": null
   },
   {
     "title": "嗨蝦蝦",
@@ -5080,7 +5685,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.71,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "民權咔啦炸雞",
@@ -5091,18 +5697,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.68,
     "avg_spending": 150,
-    "note": "thread/甩油"
-  },
-  {
-    "title": "李美樂鹹水雞專賣店-新竹鹹水雞首選|巨城/湳雅/光華商圈鹹水雞專賣店|街邊美食|外帶美食|鹹水雞推薦|舒肥餐|必吃鹹水雞|人氣鹹水雞",
-    "address": "300台灣新竹市北區光華里湳雅街38號",
-    "url": "https://www.google.com/maps/place/%E6%9D%8E%E7%BE%8E%E6%A8%82%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97-%E6%96%B0%E7%AB%B9%E9%B9%B9%E6%B0%B4%E9%9B%9E%E9%A6%96%E9%81%B8%7C%E5%B7%A8%E5%9F%8E%2F%E6%B9%B3%E9%9B%85%2F%E5%85%89%E8%8F%AF%E5%95%86%E5%9C%88%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97%7C%E8%A1%97%E9%82%8A%E7%BE%8E%E9%A3%9F%7C%E5%A4%96%E5%B8%B6%E7%BE%8E%E9%A3%9F%7C%E9%B9%B9%E6%B0%B4%E9%9B%9E%E6%8E%A8%E8%96%A6%7C%E8%88%92%E8%82%A5%E9%A4%90%7C%E5%BF%85%E5%90%83%E9%B9%B9%E6%B0%B4%E9%9B%9E%7C%E4%BA%BA%E6%B0%A3%E9%B9%B9%E6%B0%B4%E9%9B%9E/data=!4m2!3m1!1s0x346835d110904d83:0xeae875ba81915bcd",
-    "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 0.34,
-    "avg_spending": 150,
-    "note": ""
+    "note": "thread/甩油",
+    "hours": null
   },
   {
     "title": "唐人街茶餐廳",
@@ -5113,7 +5709,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.21,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雙月食品社 竹北店",
@@ -5124,7 +5721,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.33,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "HOYA燒肉",
@@ -5135,7 +5733,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.2,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小里子海鮮",
@@ -5146,7 +5745,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.57,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豪食",
@@ -5157,7 +5757,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.43,
     "avg_spending": 120,
-    "note": "蒸蛋飯"
+    "note": "蒸蛋飯",
+    "hours": null
   },
   {
     "title": "銀記手擀刀切牛肉麵",
@@ -5168,7 +5769,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.67,
     "avg_spending": 120,
-    "note": "大碗"
+    "note": "大碗",
+    "hours": null
   },
   {
     "title": "福哥石窯雞羅東店",
@@ -5179,7 +5781,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 83.72,
     "avg_spending": 150,
-    "note": "走著走著"
+    "note": "走著走著",
+    "hours": null
   },
   {
     "title": "榅燻Comfort Table Smoke BBQ(線上菜單已更新)",
@@ -5190,7 +5793,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.54,
     "avg_spending": 150,
-    "note": "煙燻牛胸/起司通心粉"
+    "note": "煙燻牛胸/起司通心粉",
+    "hours": null
   },
   {
     "title": "甘蔗王鳳梨王桶仔雞",
@@ -5201,18 +5805,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 3.62,
     "avg_spending": 150,
-    "note": ""
-  },
-  {
-    "title": "煙癮Smoked BBQ",
-    "address": "300台灣新竹市北區文華里田美三街26號",
-    "url": "https://www.google.com/maps/place/%E7%85%99%E7%99%AESmoked+BBQ/data=!4m2!3m1!1s0x3468359a3b56f57f:0x43b205eb8467f203",
-    "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 0.35,
-    "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "八田 手作油飯·豆花（國定假日公休）",
@@ -5223,7 +5817,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.24,
     "avg_spending": 120,
-    "note": "波妞"
+    "note": "波妞",
+    "hours": null
   },
   {
     "title": "鰻丼作（公休日請見臉書動態）寵物友善餐廳",
@@ -5234,7 +5829,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 217.67,
     "avg_spending": 600,
-    "note": "鐵牛"
+    "note": "鐵牛",
+    "hours": null
   },
   {
     "title": "野叔主廚私房料理",
@@ -5245,7 +5841,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.18,
     "avg_spending": 150,
-    "note": "薄羽，刺蔥"
+    "note": "薄羽，刺蔥",
+    "hours": null
   },
   {
     "title": "山口六家食堂",
@@ -5256,7 +5853,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.41,
     "avg_spending": 120,
-    "note": "小葉"
+    "note": "小葉",
+    "hours": null
   },
   {
     "title": "阿男麻油雞",
@@ -5267,7 +5865,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.73,
     "avg_spending": 150,
-    "note": "丁特"
+    "note": "丁特",
+    "hours": null
   },
   {
     "title": "瘋蝦吃到飽",
@@ -5278,7 +5877,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 82.04,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小曾擔舖",
@@ -5289,7 +5889,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 3.85,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "六家橋頭早餐",
@@ -5300,7 +5901,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.97,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富士豬排 とんかつ富士 熟成豬排 小巨蛋店",
@@ -5311,7 +5913,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.09,
     "avg_spending": 150,
-    "note": "萊斯"
+    "note": "萊斯",
+    "hours": null
   },
   {
     "title": "IKIGAI 燒肉專門店-台中新朝富店",
@@ -5322,7 +5925,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.95,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "九蝦行製蝦專門所",
@@ -5333,7 +5937,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 93.09,
     "avg_spending": 150,
-    "note": "民眾台8線"
+    "note": "民眾台8線",
+    "hours": null
   },
   {
     "title": "高家莊米苔目",
@@ -5344,7 +5949,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.69,
     "avg_spending": 150,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "大橋頭米糕",
@@ -5355,7 +5961,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.86,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "林江牛肉麵",
@@ -5366,7 +5973,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 62.09,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "雙連圓仔湯",
@@ -5377,7 +5985,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.18,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "麵線傳奇",
@@ -5388,7 +5997,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.59,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "阿桐阿寶四神湯",
@@ -5399,7 +6009,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.06,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "阿東窯烤雞 新竹店",
@@ -5410,7 +6021,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 13.18,
     "avg_spending": 150,
-    "note": "吊車大王推薦"
+    "note": "吊車大王推薦",
+    "hours": null
   },
   {
     "title": "福泰飯桌",
@@ -5421,7 +6033,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 216.94,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福泰飯桌 第三代",
@@ -5432,7 +6045,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 216.96,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富錦樹台菜香檳 敦北店",
@@ -5443,7 +6057,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.23,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "粟家牛肉麵 總店",
@@ -5454,7 +6069,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.94,
     "avg_spending": 120,
-    "note": "Eli"
+    "note": "Eli",
+    "hours": null
   },
   {
     "title": "美鮮牛肉湯",
@@ -5465,7 +6081,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 219.65,
     "avg_spending": 120,
-    "note": "好味小姐環島"
+    "note": "好味小姐環島",
+    "hours": null
   },
   {
     "title": "隱焱匠｜日式燒肉",
@@ -5476,7 +6093,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.8,
     "avg_spending": 600,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "黔園川菜餐廳",
@@ -5487,7 +6105,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.16,
     "avg_spending": 150,
-    "note": "ig"
+    "note": "ig",
+    "hours": null
   },
   {
     "title": "新光黃昏市場 逸香閣 ｜鵝肉｜烤鴨｜概念館",
@@ -5498,7 +6117,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.31,
     "avg_spending": 120,
-    "note": "ig"
+    "note": "ig",
+    "hours": null
   },
   {
     "title": "EILONG宜龍 新竹東門｜高質感茶具·咖啡器具｜商務送禮｜節慶送禮首選｜泡茶·手沖咖啡體驗",
@@ -5509,7 +6129,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.31,
     "avg_spending": 150,
-    "note": "內人推薦"
+    "note": "內人推薦",
+    "hours": null
   },
   {
     "title": "太初麵食",
@@ -5520,7 +6141,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 80.95,
     "avg_spending": 120,
-    "note": "司機推薦"
+    "note": "司機推薦",
+    "hours": null
   },
   {
     "title": "阿亮海產店",
@@ -5531,7 +6153,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 193.86,
     "avg_spending": 150,
-    "note": "賴爸/海豬腳/本港旭蟹/本港龍蝦/這個魚/蚵仔"
+    "note": "賴爸/海豬腳/本港旭蟹/本港龍蝦/這個魚/蚵仔",
+    "hours": null
   },
   {
     "title": "台南福生小食店",
@@ -5542,7 +6165,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 217.96,
     "avg_spending": 120,
-    "note": "志明/鱔魚意麵"
+    "note": "志明/鱔魚意麵",
+    "hours": null
   },
   {
     "title": "溫爸鵝肉（數量有限 完售即收）",
@@ -5553,7 +6177,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 216.05,
     "avg_spending": 120,
-    "note": "志明/鵝肉飯"
+    "note": "志明/鵝肉飯",
+    "hours": null
   },
   {
     "title": "台南市牛家莊牛肉湯",
@@ -5564,7 +6189,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 217.99,
     "avg_spending": 120,
-    "note": "志明/牛肉蛋花湯"
+    "note": "志明/牛肉蛋花湯",
+    "hours": null
   },
   {
     "title": "有飯開炒飯",
@@ -5575,7 +6201,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.02,
     "avg_spending": 120,
-    "note": "薄羽"
+    "note": "薄羽",
+    "hours": null
   },
   {
     "title": "大碗公牛肉麵",
@@ -5586,7 +6213,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.85,
     "avg_spending": 120,
-    "note": "月希"
+    "note": "月希",
+    "hours": null
   },
   {
     "title": "牛爸爸牛肉麵",
@@ -5597,7 +6225,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 68.63,
     "avg_spending": 120,
-    "note": "月希"
+    "note": "月希",
+    "hours": null
   },
   {
     "title": "江牛樓",
@@ -5608,7 +6237,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.36,
     "avg_spending": 150,
-    "note": "月希"
+    "note": "月希",
+    "hours": null
   },
   {
     "title": "楊廚師",
@@ -5619,7 +6249,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.93,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Baboş 土耳其炭火烤肉 (Halal)",
@@ -5630,7 +6261,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.76,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "夜間部爌肉飯",
@@ -5641,7 +6273,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 80.73,
     "avg_spending": 120,
-    "note": "denq"
+    "note": "denq",
+    "hours": null
   },
   {
     "title": "慢漫桶仔雞",
@@ -5652,7 +6285,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.51,
     "avg_spending": 150,
-    "note": "老婆推薦"
+    "note": "老婆推薦",
+    "hours": null
   },
   {
     "title": "厝秘 功夫菜 手路湯（甘肅店）",
@@ -5663,7 +6297,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 78.39,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "真的好海鮮餐廳",
@@ -5674,7 +6309,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 62.59,
     "avg_spending": 450,
-    "note": "過橋鮑魚"
+    "note": "過橋鮑魚",
+    "hours": null
   },
   {
     "title": "Smoker煙燻",
@@ -5685,7 +6321,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 80.65,
     "avg_spending": 150,
-    "note": "thread"
+    "note": "thread",
+    "hours": null
   },
   {
     "title": "慕泥灰咖啡向上店",
@@ -5696,7 +6333,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 80.77,
     "avg_spending": 150,
-    "note": "thread"
+    "note": "thread",
+    "hours": null
   },
   {
     "title": "洄味牛肉麵崇德店",
@@ -5707,7 +6345,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 78.12,
     "avg_spending": 120,
-    "note": "thread"
+    "note": "thread",
+    "hours": null
   },
   {
     "title": "合榭HOSIC精緻鐵板料理-忠孝店",
@@ -5718,7 +6357,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.68,
     "avg_spending": 150,
-    "note": "thread"
+    "note": "thread",
+    "hours": null
   },
   {
     "title": "頭份｜燒肉政宗 YAKINIKU MASAMUNE",
@@ -5729,7 +6369,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 16.0,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "下呂溫泉 懷石旅館 水鳳園",
@@ -5740,7 +6381,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1978.79,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "海味-海鮮鍋燒海鮮粥",
@@ -5751,7 +6393,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 256.32,
     "avg_spending": 450,
-    "note": "仲生推薦"
+    "note": "仲生推薦",
+    "hours": null
   },
   {
     "title": "萬二小吃店",
@@ -5762,7 +6405,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 257.06,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "萬三小吃部",
@@ -5773,7 +6417,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 258.0,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "品芫麵食館",
@@ -5784,7 +6429,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.21,
     "avg_spending": 120,
-    "note": "排骨炒飯"
+    "note": "排骨炒飯",
+    "hours": null
   },
   {
     "title": "Sushi Yuraku",
@@ -5795,7 +6441,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2143.07,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Naochan Ramen",
@@ -5806,7 +6453,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 690.12,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Kurumaebi Kitchen TAMAYA",
@@ -5817,7 +6465,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 733.71,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "うるま市民食堂（うるマルシェ）",
@@ -5828,7 +6477,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 709.8,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "林家乾麵",
@@ -5839,7 +6489,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.48,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三灣鵝肉(無接受訂位、公休日公告.粉專為主)",
@@ -5850,7 +6501,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 18.51,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "父山白俠粥品專賣店 竹北門市",
@@ -5861,7 +6513,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.12,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "ago義大利麵",
@@ -5872,7 +6525,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.63,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "上允生魚片·丼飯·握壽司·關東煮外帶專門（南寮店）",
@@ -5883,7 +6537,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.17,
     "avg_spending": 300,
-    "note": "ig，平日，外帶"
+    "note": "ig，平日，外帶",
+    "hours": null
   },
   {
     "title": "新予小館 GIVE",
@@ -5894,7 +6549,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.32,
     "avg_spending": 150,
-    "note": "鴨胸、肋排、魚排"
+    "note": "鴨胸、肋排、魚排",
+    "hours": null
   },
   {
     "title": "Coffee&Egg 竹北分舖",
@@ -5905,7 +6561,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.91,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三六食府(原36美食)",
@@ -5916,7 +6573,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.39,
     "avg_spending": 120,
-    "note": "黃仁勳 椒麻拌麵"
+    "note": "黃仁勳 椒麻拌麵",
+    "hours": null
   },
   {
     "title": "肉屋 ししや",
@@ -5927,7 +6585,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 691.47,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "燒肉吉室",
@@ -5938,7 +6597,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.99,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "川炁 飯麵館(每月公休請看粉專)",
@@ -5949,7 +6609,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.64,
     "avg_spending": 120,
-    "note": "菁菁"
+    "note": "菁菁",
+    "hours": null
   },
   {
     "title": "Gyutan no Lemon",
@@ -5960,7 +6621,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2169.76,
     "avg_spending": 150,
-    "note": "牛舌"
+    "note": "牛舌",
+    "hours": null
   },
   {
     "title": "夯臭豆腐 南寮連鎖店",
@@ -5971,7 +6633,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.28,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "陳記台南碗粿",
@@ -5982,7 +6645,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 17.24,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "豪軒",
@@ -5993,7 +6657,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.24,
     "avg_spending": 150,
-    "note": "Heng"
+    "note": "Heng",
+    "hours": null
   },
   {
     "title": "鰻軒",
@@ -6004,7 +6669,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.66,
     "avg_spending": 150,
-    "note": "Heng"
+    "note": "Heng",
+    "hours": null
   },
   {
     "title": "龍抄手涼麵",
@@ -6015,7 +6681,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 51.28,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "永豐活海鮮餐廳-宜蘭 人氣美食 平價特色生猛海鮮餐廳 必吃中式料理 公司家庭聚餐 團體合菜 桌菜 活物料理 喜慶宴會 春酒尾牙場地 雜誌熱門首選推薦",
@@ -6026,7 +6693,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 92.41,
     "avg_spending": 450,
-    "note": "yt猩弟，打魚翔哥，賴爸"
+    "note": "yt猩弟，打魚翔哥，賴爸",
+    "hours": null
   },
   {
     "title": "Kobe Beef HAKATANOOUKA honten",
@@ -6037,7 +6705,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1336.99,
     "avg_spending": 150,
-    "note": "om推薦"
+    "note": "om推薦",
+    "hours": null
   },
   {
     "title": "蕭記大餛飩",
@@ -6048,7 +6717,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.18,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "島牛燒肉",
@@ -6059,7 +6729,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 690.96,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "玉山麵",
@@ -6070,7 +6741,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 20.64,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "文化城牛肉麵",
@@ -6081,7 +6753,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.09,
     "avg_spending": 120,
-    "note": "ig"
+    "note": "ig",
+    "hours": null
   },
   {
     "title": "三漫食義SANMAN PASTA",
@@ -6092,7 +6765,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 13.83,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Yakiniku KITAN Minamisenba main store",
@@ -6103,7 +6777,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1776.59,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "川業肉圓(Chuan-yeh)",
@@ -6114,7 +6789,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.6,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "漢王薑母鴨 新竹林森路（九尾雞.薑母雞.菜脯雞）",
@@ -6125,7 +6801,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.34,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "高林鐵板燒-健行店",
@@ -6136,18 +6813,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.69,
     "avg_spending": 150,
-    "note": ""
-  },
-  {
-    "title": "市井蠔門 漁夫廚房",
-    "address": "300台灣新竹市東區文華里北大路40巷25號",
-    "url": "https://www.google.com/maps/place/%E5%B8%82%E4%BA%95%E8%A0%94%E9%96%80+%E6%BC%81%E5%A4%AB%E5%BB%9A%E6%88%BF/data=!4m2!3m1!1s0x3468350011fc60b5:0xd54697b45044a02e",
-    "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 0.33,
-    "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "雅室牛排 仁愛圓環店",
@@ -6158,7 +6825,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.15,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "伍柒吉鴨魯雞飯11月公休日17, 24",
@@ -6169,7 +6837,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.52,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蘇阿姨比薩屋",
@@ -6180,7 +6849,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.88,
     "avg_spending": 350,
-    "note": "加量起司\nHeng"
+    "note": "加量起司\nHeng",
+    "hours": null
   },
   {
     "title": "船艙せんしつ《無菜單料理》北屯區懷石料理｜高級｜高檔｜頂級｜創意日料｜板前料理｜約會餐廳",
@@ -6191,7 +6861,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 76.38,
     "avg_spending": 150,
-    "note": "賴爸\n正宗懷石料理"
+    "note": "賴爸\n正宗懷石料理",
+    "hours": null
   },
   {
     "title": "穆記牛肉麵",
@@ -6202,7 +6873,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.96,
     "avg_spending": 120,
-    "note": "綿羊"
+    "note": "綿羊",
+    "hours": null
   },
   {
     "title": "桃源街老王記牛肉麵店",
@@ -6213,7 +6885,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.67,
     "avg_spending": 120,
-    "note": "綿羊料理"
+    "note": "綿羊料理",
+    "hours": null
   },
   {
     "title": "温(溫）師傅炸雞",
@@ -6224,7 +6897,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.52,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "地坊餐廳",
@@ -6235,7 +6909,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.21,
     "avg_spending": 150,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "台中肉員",
@@ -6246,7 +6921,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.32,
     "avg_spending": 120,
-    "note": "超認真少年\n肉圓+綜合湯，肉圓吃完醬拌冬粉"
+    "note": "超認真少年\n肉圓+綜合湯，肉圓吃完醬拌冬粉",
+    "hours": null
   },
   {
     "title": "清心木瓜牛乳",
@@ -6257,7 +6933,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.65,
     "avg_spending": 150,
-    "note": "超認真少年\n烤土司"
+    "note": "超認真少年\n烤土司",
+    "hours": null
   },
   {
     "title": "怪獸披薩 MONSTER PIZZA (Slice N’ Dice)",
@@ -6268,7 +6945,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.71,
     "avg_spending": 350,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "炎伯紅茶冰",
@@ -6279,7 +6957,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.74,
     "avg_spending": 150,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "徐大姊炸香香",
@@ -6290,7 +6969,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.71,
     "avg_spending": 150,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "味泉米糕",
@@ -6301,7 +6981,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.88,
     "avg_spending": 120,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "茗陽甘蔗牛奶大王",
@@ -6312,7 +6993,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.88,
     "avg_spending": 150,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "真好味東山鴨頭",
@@ -6323,7 +7005,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.88,
     "avg_spending": 150,
-    "note": "超認真少年\n鴨舌鴨腸米血"
+    "note": "超認真少年\n鴨舌鴨腸米血",
+    "hours": null
   },
   {
     "title": "正老牌臭豆腐麵線糊",
@@ -6334,7 +7017,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.87,
     "avg_spending": 120,
-    "note": "超認真少年"
+    "note": "超認真少年",
+    "hours": null
   },
   {
     "title": "歡聚堂串燒 ｜精釀啤酒",
@@ -6345,7 +7029,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.63,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "天下第一窯烤雞",
@@ -6356,7 +7041,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.94,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "萱吉夫婦-公休日請查看ig",
@@ -6367,7 +7053,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 17.37,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "瑞盛客家米食 | 苗栗伴手禮 頭份美食 頭份名產 頭份甜點 苗栗麻糬苗栗客家米食 附近美食 苗栗美食推薦",
@@ -6378,7 +7065,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 15.72,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "朋穀麵包",
@@ -6389,7 +7077,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 17.89,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "NS cucina（BISTRO by Nelson）",
@@ -6400,7 +7089,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.42,
     "avg_spending": 120,
-    "note": "千層麵"
+    "note": "千層麵",
+    "hours": null
   },
   {
     "title": "北方味牛肉麵",
@@ -6411,7 +7101,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 8.52,
     "avg_spending": 120,
-    "note": "電車吃漢"
+    "note": "電車吃漢",
+    "hours": null
   },
   {
     "title": "三輪車小吃",
@@ -6422,7 +7113,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.51,
     "avg_spending": 120,
-    "note": "電車吃漢"
+    "note": "電車吃漢",
+    "hours": null
   },
   {
     "title": "蚵舉壯元",
@@ -6433,7 +7125,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 6.72,
     "avg_spending": 150,
-    "note": "電車吃漢"
+    "note": "電車吃漢",
+    "hours": null
   },
   {
     "title": "龍都冰菓專業家",
@@ -6444,7 +7137,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.16,
     "avg_spending": 150,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "周記肉粥店",
@@ -6455,7 +7149,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.67,
     "avg_spending": 120,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "竹圍土雞(東三水市場)",
@@ -6466,7 +7161,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.71,
     "avg_spending": 150,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "艋舺大豐魚丸店",
@@ -6477,7 +7173,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.66,
     "avg_spending": 150,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "多餃舍-多餃工坊",
@@ -6488,7 +7185,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.61,
     "avg_spending": 120,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "阿婆油飯",
@@ -6499,7 +7197,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.98,
     "avg_spending": 120,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "丸合生魚號",
@@ -6510,7 +7209,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.65,
     "avg_spending": 150,
-    "note": "口貝"
+    "note": "口貝",
+    "hours": null
   },
   {
     "title": "鎖睡時間～零重力按摩舒眠館",
@@ -6521,7 +7221,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.33,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Coppii Lumii living coffee 冉冉生活(東門咖啡門市)",
@@ -6532,7 +7233,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.09,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Coppii Lumii living coffee 冉冉生活(經貿)",
@@ -6543,7 +7245,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 70.1,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Coppii Lumii living coffee 冉冉生活(城中)",
@@ -6554,7 +7257,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.78,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "麗華行電競旗艦館",
@@ -6565,7 +7269,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.34,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老油條小館",
@@ -6576,7 +7281,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 40.22,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "一私麵宅新竹店",
@@ -6587,7 +7293,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.27,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "樹也Villa",
@@ -6598,7 +7305,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 53.15,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蔡元益紅茶",
@@ -6609,7 +7317,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.77,
     "avg_spending": 150,
-    "note": "國會台8線"
+    "note": "國會台8線",
+    "hours": null
   },
   {
     "title": "北投本土味明泉紅茶",
@@ -6620,7 +7329,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.11,
     "avg_spending": 150,
-    "note": "國會台8線"
+    "note": "國會台8線",
+    "hours": null
   },
   {
     "title": "高記茶莊",
@@ -6631,7 +7341,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.56,
     "avg_spending": 150,
-    "note": "國會台8線"
+    "note": "國會台8線",
+    "hours": null
   },
   {
     "title": "喬園二店/北投美食/北投餐廳/北投合菜/北投熱炒/北投小吃/北投Restaurants",
@@ -6642,7 +7353,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.32,
     "avg_spending": 450,
-    "note": "國會台8線"
+    "note": "國會台8線",
+    "hours": null
   },
   {
     "title": "喬園海鮮料理餐廳",
@@ -6653,7 +7365,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.38,
     "avg_spending": 450,
-    "note": "國會台8線"
+    "note": "國會台8線",
+    "hours": null
   },
   {
     "title": "牛博肆溫體牛火鍋",
@@ -6664,7 +7377,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 250.34,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "東石漁人碼頭",
@@ -6675,7 +7389,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 174.22,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "李克承博士故居 a-moom(新竹市)",
@@ -6686,7 +7401,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.9,
     "avg_spending": 150,
-    "note": "甜點/拍照"
+    "note": "甜點/拍照",
+    "hours": null
   },
   {
     "title": "景安活蝦之家（請line預訂）2001年創立。中和美食",
@@ -6697,7 +7413,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 57.53,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "順吉海鮮快炒",
@@ -6708,7 +7425,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 17.39,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "天香海鮮",
@@ -6719,7 +7437,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.76,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新南興海鮮合菜餐廳",
@@ -6730,7 +7449,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.68,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "花花世界鍋物",
@@ -6741,7 +7461,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 215.96,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "原天橋下臭豆腐",
@@ -6752,7 +7473,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.44,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "春風稻鐵板燒丼飯-沙鹿鎮南店",
@@ -6763,7 +7485,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 77.3,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "相演無煙燒肉（中正店）",
@@ -6774,7 +7497,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 39.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "相演無煙燒肉（大興店）",
@@ -6785,7 +7509,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 40.57,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "金馥記脆皮烤鴨 士林店",
@@ -6796,7 +7521,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.28,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小小樹食 敦南店",
@@ -6807,7 +7533,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 62.79,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "富來小館Food Life",
@@ -6818,7 +7545,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.69,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "揚新麵食館",
@@ -6829,7 +7557,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.55,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蝸居 (日式/居酒屋/串燒/食堂)",
@@ -6840,7 +7569,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.25,
     "avg_spending": 600,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Dambino丹比諾 手工義大利麵.披薩 竹北店",
@@ -6851,7 +7581,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.56,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "美福乾式熟成牛排館 Fresh & Aged Italian steak house",
@@ -6862,7 +7593,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 66.47,
     "avg_spending": 400,
-    "note": "肋眼/poter house/龍蝦"
+    "note": "肋眼/poter house/龍蝦",
+    "hours": null
   },
   {
     "title": "十二籃 粥火鍋 逸仙店",
@@ -6873,7 +7605,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.46,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蜂大咖啡",
@@ -6884,7 +7617,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.33,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "萬聯甜不辣",
@@ -6895,7 +7629,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.33,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "老山東牛肉麺 (萬祥號麵莊)",
@@ -6906,7 +7641,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.33,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "三重大頭豬腸冬粉",
@@ -6917,7 +7653,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.47,
     "avg_spending": 150,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "（葉）蘆洲手工小籠包",
@@ -6928,7 +7665,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.1,
     "avg_spending": 120,
-    "note": "蛇丸"
+    "note": "蛇丸",
+    "hours": null
   },
   {
     "title": "重慶豆漿炸蛋餅",
@@ -6939,7 +7677,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.69,
     "avg_spending": 150,
-    "note": "菜譜炸蛋餅，蛇丸"
+    "note": "菜譜炸蛋餅，蛇丸",
+    "hours": null
   },
   {
     "title": "紅茶屋",
@@ -6950,7 +7689,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.73,
     "avg_spending": 150,
-    "note": "古早味，蛇丸"
+    "note": "古早味，蛇丸",
+    "hours": null
   },
   {
     "title": "張家滷味",
@@ -6961,7 +7701,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.01,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "全珍水煎包",
@@ -6972,7 +7713,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.92,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "曾記餡餅",
@@ -6983,7 +7725,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.21,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "祥賀芒果牛奶冰",
@@ -6994,7 +7737,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 10.96,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "原豆粹食 GOOD SOYFOODS",
@@ -7005,7 +7749,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 52.82,
     "avg_spending": 150,
-    "note": "豆花"
+    "note": "豆花",
+    "hours": null
   },
   {
     "title": "太興活海鮮餐廳",
@@ -7016,7 +7761,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 28.51,
     "avg_spending": 450,
-    "note": "外帶鮮蝦三明治"
+    "note": "外帶鮮蝦三明治",
+    "hours": null
   },
   {
     "title": "灣麗手工窯烤披薩",
@@ -7027,7 +7773,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 55.82,
     "avg_spending": 350,
-    "note": "披薩"
+    "note": "披薩",
+    "hours": null
   },
   {
     "title": "熊越岳",
@@ -7038,7 +7785,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 54.39,
     "avg_spending": 150,
-    "note": "世軒推薦"
+    "note": "世軒推薦",
+    "hours": null
   },
   {
     "title": "劉媽媽涼麵",
@@ -7049,7 +7797,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.4,
     "avg_spending": 120,
-    "note": "朝聖"
+    "note": "朝聖",
+    "hours": null
   },
   {
     "title": "草地人蚵仔麵線",
@@ -7060,7 +7809,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 55.43,
     "avg_spending": 120,
-    "note": "世軒推薦"
+    "note": "世軒推薦",
+    "hours": null
   },
   {
     "title": "老龍師肉包 三民本店",
@@ -7071,7 +7821,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 101.04,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿振肉包",
@@ -7082,7 +7833,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 100.89,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老龍師肉包 中山二店",
@@ -7093,7 +7845,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 100.95,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "巷仔內小卷米粉",
@@ -7104,7 +7857,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 90.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "越富越南法國麵包",
@@ -7115,7 +7869,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.45,
     "avg_spending": 120,
-    "note": "保哥推薦"
+    "note": "保哥推薦",
+    "hours": null
   },
   {
     "title": "清寶鹹油條彰化直營店",
@@ -7126,7 +7881,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 91.92,
     "avg_spending": 120,
-    "note": "蚊子推薦"
+    "note": "蚊子推薦",
+    "hours": null
   },
   {
     "title": "燒肉 琉球の牛 恩納店",
@@ -7137,7 +7893,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 708.54,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "El Mundo墨多（無訂位服務）不定期公休請查看IG粉專",
@@ -7148,7 +7905,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.02,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Pho. Xǔ河煦私廚越南河粉",
@@ -7159,7 +7917,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.24,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "壹吉炸豬排專門店（不定休，請參閱IG、FB)",
@@ -7170,7 +7929,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.28,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大溪秀梅現撈海鮮",
@@ -7181,7 +7941,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 94.56,
     "avg_spending": 450,
-    "note": "電車吃漢"
+    "note": "電車吃漢",
+    "hours": null
   },
   {
     "title": "大里海堤海鮮",
@@ -7192,7 +7953,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 97.08,
     "avg_spending": 450,
-    "note": "電車吃漢"
+    "note": "電車吃漢",
+    "hours": null
   },
   {
     "title": "黃記魯肉飯",
@@ -7203,7 +7965,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.96,
     "avg_spending": 120,
-    "note": "白菜滷、蹄膀"
+    "note": "白菜滷、蹄膀",
+    "hours": null
   },
   {
     "title": "竹東阿英鮮肉湯包（本店全年無休）",
@@ -7214,7 +7977,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 14.73,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "魅麗海 中庭餐廳(德立莊店)",
@@ -7225,7 +7989,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.61,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台糖台北會館-甜心餐廳",
@@ -7236,7 +8001,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.75,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "全家福客家菜館",
@@ -7247,7 +8013,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 3.73,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "JE German Cuisine 德國美食",
@@ -7258,7 +8025,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.08,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "北門口肉圓",
@@ -7269,7 +8037,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 92.59,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿三肉圓",
@@ -7280,7 +8049,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 92.21,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "甲林鐵板燒",
@@ -7291,7 +8061,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.3,
     "avg_spending": 150,
-    "note": "便宜附餐吃到飽/金針菇肉片/塔香蛤蜊"
+    "note": "便宜附餐吃到飽/金針菇肉片/塔香蛤蜊",
+    "hours": null
   },
   {
     "title": "阿嬤的米粉湯",
@@ -7302,7 +8073,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 67.11,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "斑馬豆花",
@@ -7313,7 +8085,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.46,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "越好飯館｜越式料理｜道地越南美食｜牛肉河粉｜生春捲炸春捲｜法國麵包",
@@ -7324,7 +8097,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.13,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "臭霸王臭豆腐",
@@ -7335,7 +8109,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.99,
     "avg_spending": 120,
-    "note": "臭豆腐茶碗蒸"
+    "note": "臭豆腐茶碗蒸",
+    "hours": null
   },
   {
     "title": "咖喱狼(咖哩狼)港西店",
@@ -7346,7 +8121,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 89.77,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "咖喱狼(咖哩狼)新豐店",
@@ -7357,7 +8133,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 89.77,
     "avg_spending": 250,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "淳和食 無菜單料理恕不接受當天訂位",
@@ -7368,7 +8145,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.86,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "南寮『老吃雞』鹹水雞",
@@ -7379,7 +8157,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.29,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Baxter義式手工冰淇淋",
@@ -7390,7 +8169,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 13.29,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老徐蒸餃",
@@ -7401,7 +8181,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 14.72,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Sandro pizza",
@@ -7412,7 +8193,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 14.32,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "泰味居燒烤店",
@@ -7423,7 +8205,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 14.74,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "T.grace法式鐵板燒",
@@ -7434,7 +8217,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 13.67,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Fa Burger",
@@ -7445,7 +8229,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 62.7,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "猿燒さる宜蘭店",
@@ -7456,7 +8241,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 79.08,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "猿燒 季節料理-羅東店",
@@ -7467,7 +8253,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "梅之屋",
@@ -7478,7 +8265,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.15,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "金園排骨萬年店",
@@ -7489,7 +8277,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.33,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台北東一排骨總店",
@@ -7500,7 +8289,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.79,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "金春發牛肉百年老店天水路總店",
@@ -7511,18 +8301,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.43,
     "avg_spending": 150,
-    "note": ""
-  },
-  {
-    "title": "善菓堂 SHAN GUO TANG",
-    "address": "1樓, No. 188號莊敬南路鹿場里竹北市新竹縣台灣 302",
-    "url": "https://www.google.com/maps/place/%E5%96%84%E8%8F%93%E5%A0%82+SHAN+GUO+TANG/data=!4m2!3m1!1s0x3442abc933f7f339:0xcf78c6ce5fe4ddb",
-    "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 4.61,
-    "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "光輝肉羹",
@@ -7533,7 +8313,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.57,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "士林大香腸鼻祖龍飛牌",
@@ -7544,7 +8325,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.52,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "玄珠 SʏᴜᴀɴDʀᴇᴡ 自烘咖啡 & 自製抹醬 Coffee Roast & Spread",
@@ -7555,7 +8337,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.74,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "以利泡泡冰-士林總店",
@@ -7566,7 +8349,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.57,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "ㄚ川水煎包",
@@ -7577,7 +8361,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.2,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "洪記上海生煎包",
@@ -7588,7 +8373,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.04,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "生煎包",
@@ -7599,7 +8385,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 76.99,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "東門興記手工水餃港式點心",
@@ -7610,7 +8397,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.9,
     "avg_spending": 120,
-    "note": "林青霞最愛的水餃"
+    "note": "林青霞最愛的水餃",
+    "hours": null
   },
   {
     "title": "清真黃牛肉麵館",
@@ -7621,7 +8409,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.87,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新竹南寮龍興本港海鮮快炒",
@@ -7632,7 +8421,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 5.33,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "亞廬義大利窯烤吃到飽餐廳",
@@ -7643,7 +8433,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 62.45,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "漢來名人坊 世貿店",
@@ -7654,7 +8445,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.03,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大稻埕魯肉飯",
@@ -7665,7 +8457,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 60.48,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "施福建好吃雞肉",
@@ -7676,7 +8469,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.29,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "萬華小米蛋餅",
@@ -7687,7 +8481,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.83,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小飛俠手工麵線糊 & 花生米血糕［一人作業不外送，預訂餐點需提早30分鐘，十碗以上提早一小時訂餐，電話沒接就是我很忙］",
@@ -7698,7 +8493,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 4.33,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "賜福船長的店",
@@ -7709,7 +8505,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 43.3,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "格拉斯麗台北飯店",
@@ -7720,7 +8517,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.58,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "TABLE JOE 喬桌子廚房",
@@ -7731,7 +8529,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 0.84,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "八旗皇族香酥鴨",
@@ -7742,7 +8541,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 218.16,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "柒伍無煙燒肉",
@@ -7753,7 +8553,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 1.49,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "竹蓮什錦麵",
@@ -7764,7 +8565,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.05,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "三元花園韓式餐廳 瑞光店",
@@ -7775,7 +8577,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 67.19,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "陞豪鍋物 霑泊餐飲開發",
@@ -7786,7 +8589,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 85.38,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "陞豪火鍋",
@@ -7797,7 +8601,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 85.38,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小喬新疆羊肉串",
@@ -7808,7 +8613,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 53.28,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "清真恩德元餃子館",
@@ -7819,7 +8625,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 81.96,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "築路 JULU",
@@ -7830,7 +8637,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 2.27,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "村 日式料理",
@@ -7841,7 +8649,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 42.43,
     "avg_spending": 300,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "泰市場 Spice Market",
@@ -7852,7 +8661,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 66.16,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "天食餐廳",
@@ -7863,7 +8673,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 14.07,
     "avg_spending": 150,
-    "note": "林介文推薦"
+    "note": "林介文推薦",
+    "hours": null
   },
   {
     "title": "鵝肉擔",
@@ -7874,7 +8685,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 57.95,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "口福鵝肉店",
@@ -7885,7 +8697,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 58.08,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "安可土雞城",
@@ -7896,7 +8709,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 32.73,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "來來牛家莊",
@@ -7907,7 +8721,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 27.95,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "料韓男1號店(復興店)-韓國熟成烤五花肉",
@@ -7918,7 +8733,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 63.54,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "沾美藝術庭苑 Jimmy’s Garden",
@@ -7929,7 +8745,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 61.26,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "黃家香腸",
@@ -7940,7 +8757,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.22,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "王記排骨酥湯",
@@ -7951,7 +8769,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 59.56,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "坐看雲起時人文空間",
@@ -7962,7 +8781,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 227.66,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台發切仔麵",
@@ -7973,7 +8793,8 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 64.64,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "桐聚 鍋物 TUNG JU．SHABU",
@@ -7984,7 +8805,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 27.39,
     "avg_spending": 400,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "會來尖石溫泉渡假村",
@@ -7995,7 +8817,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 25.09,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "上山喝咖啡",
@@ -8006,18 +8829,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 22.3,
     "avg_spending": 200,
-    "note": ""
-  },
-  {
-    "title": "天狗舞居酒屋",
-    "address": "300台灣新竹市北區金華里光華一街50之1號1樓",
-    "url": "https://www.google.com/maps/place/%E5%A4%A9%E7%8B%97%E8%88%9E%E5%B1%85%E9%85%92%E5%B1%8B/data=!4m2!3m1!1s0x346835ce62958d33:0x7faa70a7054411ca",
-    "cuisine_type": "日式",
-    "source_list": "日式居酒屋",
-    "visited": "是",
-    "distance_km": 0.12,
-    "avg_spending": 600,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "新泰路米苔目",
@@ -8028,7 +8841,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 53.77,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "Café32 |頭份咖啡廳|咖啡|手沖|咖啡廳|易經|寵物友善|店狗|英式鹹派|薄皮披薩|問事咖啡廳",
@@ -8039,7 +8853,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 16.71,
     "avg_spending": 350,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "四方鮮乳牧場",
@@ -8050,7 +8865,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 17.56,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "揪享食（炒飯麵熱炒）",
@@ -8061,7 +8877,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 15.89,
     "avg_spending": 450,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蘆竹湳古厝 | 團體(旅行社)參觀請預約❗❗",
@@ -8072,7 +8889,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 18.48,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "福州乾拌麵",
@@ -8083,7 +8901,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 36.54,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "小南門福州傻瓜乾麵 延平總店",
@@ -8094,7 +8913,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.13,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "樺林乾麵",
@@ -8105,7 +8925,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 59.26,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "忠貞新村文化園區",
@@ -8116,7 +8937,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 30.93,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "居和熹湯包",
@@ -8127,7 +8949,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 67.82,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿美米干 旗艦店",
@@ -8138,7 +8961,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 31.03,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿美米干 中壢店",
@@ -8149,7 +8973,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 28.99,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老巷小館",
@@ -8160,7 +8985,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 29.25,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "臺北流行音樂中心文化館",
@@ -8171,7 +8997,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 68.14,
     "avg_spending": 0,
-    "note": "常設展"
+    "note": "常設展",
+    "hours": null
   },
   {
     "title": "莓圃草莓園",
@@ -8182,7 +9009,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 69.7,
     "avg_spending": 350,
-    "note": "冬天採草莓/偷偷醬/酸辣甜草莓醬\n草莓冰沙/草莓披薩"
+    "note": "冬天採草莓/偷偷醬/酸辣甜草莓醬\n草莓冰沙/草莓披薩",
+    "hours": null
   },
   {
     "title": "內湖 碧山巖",
@@ -8193,7 +9021,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 69.34,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "碧山巖藝文休閒中心",
@@ -8204,7 +9033,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 69.34,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "老家餡餅 內湖737店",
@@ -8215,7 +9045,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 67.65,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "大陳記古早味麵店",
@@ -8226,7 +9057,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 67.65,
     "avg_spending": 120,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "壺茶車 Pot Tea King",
@@ -8237,7 +9069,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 67.72,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "芳苑燈塔",
@@ -8248,7 +9081,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 114.67,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "榕樹下煎餅",
@@ -8259,7 +9093,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 103.48,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "西海峽灣",
@@ -8270,7 +9105,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 119.32,
     "avg_spending": 150,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "台南武廟肉圓",
@@ -8281,7 +9117,8 @@ window.STORES_DATA = [
     "visited": "是",
     "distance_km": 217.04,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "武廟 碳烤三明治",
@@ -8290,9 +9127,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 217.03,
+    "distance_km": null,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "義豐阿川冬瓜茶",
@@ -8301,9 +9139,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 217.05,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿興虱目魚",
@@ -8312,20 +9151,22 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 216.28,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "阿美綠豆湯",
     "address": "700台灣臺南市中西區五條港里西門路二段395號",
     "url": "https://www.google.com/maps/place/%E9%98%BF%E7%BE%8E%E7%B6%A0%E8%B1%86%E6%B9%AF/data=!4m2!3m1!1s0x346e76959f4ce97d:0x26698cb03b68afd3",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 216.82,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "十鼓文創園區",
@@ -8334,20 +9175,22 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 221.93,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "BOBO PIZZA 法式披薩專賣店",
     "address": "260台灣宜蘭縣宜蘭市神農里中山路二段426號",
     "url": "https://www.google.com/maps/place/BOBO+PIZZA+%E6%B3%95%E5%BC%8F%E6%8A%AB%E8%96%A9%E5%B0%88%E8%B3%A3%E5%BA%97/data=!4m2!3m1!1s0x3467e56cd3a97eb9:0xf615c0b25e3773c7",
-    "cuisine_type": "義式",
+    "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 79.08,
-    "avg_spending": 350,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "冬山河親水公園",
@@ -8356,9 +9199,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 86.18,
+    "distance_km": null,
     "avg_spending": 0,
-    "note": ""
+    "note": "",
+    "hours": null
   },
   {
     "title": "蔥仔寮體驗農場",
@@ -8367,141 +9211,130 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 67.78,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "嘉福食堂",
     "address": "300台灣新竹市北區南寮里南寮街207號",
     "url": "https://www.google.com/maps/place/%E5%98%89%E7%A6%8F%E9%A3%9F%E5%A0%82/data=!4m2!3m1!1s0x346835e49b887f6d:0x88594d3d605c72b8",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "民眾台八線",
     "visited": "是",
-    "distance_km": 5.75,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "切仔麵攤車",
     "address": "300台灣新竹市北區潛園里西大路507號",
     "url": "https://www.google.com/maps/place/%E5%88%87%E4%BB%94%E9%BA%B5%E6%94%A4%E8%BB%8A/data=!4m2!3m1!1s0x346835bfb82616bf:0x68b20674380eef59",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "消夜",
     "visited": "是",
-    "distance_km": 1.6,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
+  },
+  {
+    "title": "廖記米粉湯（無固定公休日，請來電確認）",
+    "address": "401台灣臺中市東區振興里大智路81號",
+    "url": "https://www.google.com/maps/place/%E5%BB%96%E8%A8%98%E7%B1%B3%E7%B2%89%E6%B9%AF%EF%BC%88%E7%84%A1%E5%9B%BA%E5%AE%9A%E5%85%AC%E4%BC%91%E6%97%A5%EF%BC%8C%E8%AB%8B%E4%BE%86%E9%9B%BB%E7%A2%BA%E8%AA%8D%EF%BC%89/data=!4m2!3m1!1s0x34693d4aabb08b51:0xf22c170f68f1e713",
+    "cuisine_type": "其他",
+    "source_list": "米粉湯",
+    "visited": "是",
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "大安米粉湯",
     "address": "106台灣臺北市大安區龍淵里復興南路二段316號",
     "url": "https://www.google.com/maps/place/%E5%A4%A7%E5%AE%89%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442ab0004d737b3:0xf2139dfbccdce738",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 61.89,
-    "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "合發米粉湯",
-    "address": "115台灣臺北市南港區新富里富康街80號",
-    "url": "https://www.google.com/maps/place/%E5%90%88%E7%99%BC%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442ab575f123b03:0x705db101c8773a27",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 69.99,
-    "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "葫蘆仔米粉湯",
-    "address": "300台灣新竹市北區金華里經國路一段454巷90號",
-    "url": "https://www.google.com/maps/place/%E8%91%AB%E8%98%86%E4%BB%94%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9b1e1f2b033:0xbd0681d9818060d7",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 0.48,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "龍口米苔目米粉湯",
     "address": "100台灣臺北市中正區永昌里汀州路一段224號",
     "url": "https://www.google.com/maps/place/%E9%BE%8D%E5%8F%A3%E7%B1%B3%E8%8B%94%E7%9B%AE%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9bcbf5b49c5:0x566a8ddad8c0e2b2",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 58.97,
-    "avg_spending": 120,
-    "note": ""
-  },
-  {
-    "title": "胡饕米粉湯55年老店(昆明店)台北美食 台北小吃 萬華美食 萬華小吃 西門美食 西門小吃",
-    "address": "108台灣臺北市萬華區西門里昆明街85之1號",
-    "url": "https://www.google.com/maps/place/%E8%83%A1%E9%A5%95%E7%B1%B3%E7%B2%89%E6%B9%AF55%E5%B9%B4%E8%80%81%E5%BA%97(%E6%98%86%E6%98%8E%E5%BA%97)%E5%8F%B0%E5%8C%97%E7%BE%8E%E9%A3%9F+%E5%8F%B0%E5%8C%97%E5%B0%8F%E5%90%83+%E8%90%AC%E8%8F%AF%E7%BE%8E%E9%A3%9F+%E8%90%AC%E8%8F%AF%E5%B0%8F%E5%90%83+%E8%A5%BF%E9%96%80%E7%BE%8E%E9%A3%9F+%E8%A5%BF%E9%96%80%E5%B0%8F%E5%90%83/data=!4m2!3m1!1s0x3442a962975b4901:0x2a6b9fe22ab1761c",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 59.2,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "華榮街市場米粉湯",
     "address": "111台灣臺北市士林區福佳里福佳里美崙街21號",
     "url": "https://www.google.com/maps/place/%E8%8F%AF%E6%A6%AE%E8%A1%97%E5%B8%82%E5%A0%B4%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442aebd02e52353:0x3e7fa821f3804e97",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 62.82,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "三禾米粉湯",
     "address": "100台灣臺北市中正區東門里林森南路61巷3號",
     "url": "https://www.google.com/maps/place/%E4%B8%89%E7%A6%BE%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9771d878b1f:0x44b618c0a48b20e8",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 60.67,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "大稻埕米粉湯 （每日定量｜售完為止）",
     "address": "103台灣臺北市大同區建功里重慶北路一段26巷15號",
     "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%A8%BB%E5%9F%95%E7%B1%B3%E7%B2%89%E6%B9%AF+%EF%BC%88%E6%AF%8F%E6%97%A5%E5%AE%9A%E9%87%8F%EF%BD%9C%E5%94%AE%E5%AE%8C%E7%82%BA%E6%AD%A2%EF%BC%89/data=!4m2!3m1!1s0x3442a912c6a83993:0xd09cf07bddcbeb2a",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 60.33,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "涼州街無名涼麵",
     "address": "103台灣臺北市大同區民權里民權西路144巷15之1號",
     "url": "https://www.google.com/maps/place/%E6%B6%BC%E5%B7%9E%E8%A1%97%E7%84%A1%E5%90%8D%E6%B6%BC%E9%BA%B5/data=!4m2!3m1!1s0x3442a94075a5d1d9:0xc788b9d88ee1ba5a",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 61.13,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "好款姨米粉湯",
     "address": "108台灣臺北市萬華區青山里青山里華西街30巷10弄",
     "url": "https://www.google.com/maps/place/%E5%A5%BD%E6%AC%BE%E5%A7%A8%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9a9447409fd:0xfc35379ade834209",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "米粉湯",
     "visited": "是",
-    "distance_km": 58.42,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "菜園上海餐廳",
@@ -8510,9 +9343,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "走著走著",
     "visited": "是",
-    "distance_km": 0.86,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "關西囍冰室（公休請搜尋臉書）",
@@ -8521,9 +9355,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.72,
-    "avg_spending": 150,
-    "note": "仙草凍"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "仙草凍",
+    "hours": null
   },
   {
     "title": "關西牛肉捲餅",
@@ -8532,20 +9367,22 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.73,
-    "avg_spending": 150,
-    "note": "牛肉捲餅"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "牛肉捲餅",
+    "hours": null
   },
   {
     "title": "關西無名麵攤",
     "address": "306台灣新竹縣關西鎮惠愛路一號",
     "url": "https://www.google.com/maps/place/%E9%97%9C%E8%A5%BF%E7%84%A1%E5%90%8D%E9%BA%B5%E6%94%A4/data=!4m2!3m1!1s0x34683f48c887dc2f:0x9e69e532d019863a",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.57,
-    "avg_spending": 120,
-    "note": "紅油餛飩"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "紅油餛飩",
+    "hours": null
   },
   {
     "title": "日禾六一四",
@@ -8554,9 +9391,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.66,
-    "avg_spending": 150,
-    "note": "客家菜、客家麻糬"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "客家菜、客家麻糬",
+    "hours": null
   },
   {
     "title": "關西楊媽媽客家美食",
@@ -8565,31 +9403,34 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.72,
-    "avg_spending": 150,
-    "note": "蘿蔔糕"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "蘿蔔糕",
+    "hours": null
   },
   {
     "title": "欣園客家美食坊-客家菜包 （欣客園客家菜包）",
     "address": "306台灣新竹縣關西鎮東安里中豐新路135號",
     "url": "https://www.google.com/maps/place/%E6%AC%A3%E5%9C%92%E5%AE%A2%E5%AE%B6%E7%BE%8E%E9%A3%9F%E5%9D%8A-%E5%AE%A2%E5%AE%B6%E8%8F%9C%E5%8C%85+%EF%BC%88%E6%AC%A3%E5%AE%A2%E5%9C%92%E5%AE%A2%E5%AE%B6%E8%8F%9C%E5%8C%85%EF%BC%89/data=!4m2!3m1!1s0x34683ec66d9b4b11:0x27fb43a41bd66ba",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 21.43,
-    "avg_spending": 120,
-    "note": "菜包"
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "菜包",
+    "hours": null
   },
   {
     "title": "中華菜包",
     "address": "306台灣新竹縣關西鎮中豐新路",
     "url": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E8%8F%9C%E5%8C%85/data=!4m2!3m1!1s0x34683eb8caa0caf9:0x9480f250b3f147e7",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 21.57,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "源式仙草",
@@ -8598,31 +9439,34 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "關西-波妞",
     "visited": "是",
-    "distance_km": 20.66,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "品鱻海鮮熱炒店",
     "address": "106台灣臺北市大安區全安里樂利路68號",
     "url": "https://www.google.com/maps/place/%E5%93%81%E9%B1%BB%E6%B5%B7%E9%AE%AE%E7%86%B1%E7%82%92%E5%BA%97/data=!4m2!3m1!1s0x3442aa33ae3cb6d9:0xb00ebcdd06ec7fa4",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "黃仁勳來台",
     "visited": "是",
-    "distance_km": 62.8,
-    "avg_spending": 450,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "犂園湯包館",
     "address": "10550台灣臺北市松山區中正里南京東路三段256巷24號",
     "url": "https://www.google.com/maps/place/%E7%8A%82%E5%9C%92%E6%B9%AF%E5%8C%85%E9%A4%A8/data=!4m2!3m1!1s0x3442abddbaccd7d5:0x1f6ac074ca937074",
-    "cuisine_type": "中式",
+    "cuisine_type": "其他",
     "source_list": "黃仁勳來台",
     "visited": "是",
-    "distance_km": 63.21,
-    "avg_spending": 120,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "豆花莊",
@@ -8631,9 +9475,10 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "黃仁勳來台",
     "visited": "是",
-    "distance_km": 60.87,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   },
   {
     "title": "廚房客家美食",
@@ -8642,8 +9487,9 @@ window.STORES_DATA = [
     "cuisine_type": "其他",
     "source_list": "黃仁勳來台",
     "visited": "是",
-    "distance_km": 63.62,
-    "avg_spending": 150,
-    "note": ""
+    "distance_km": null,
+    "avg_spending": 0,
+    "note": "",
+    "hours": null
   }
 ];
