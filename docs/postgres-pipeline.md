@@ -82,6 +82,7 @@ WHERE p.place_key IN (
   - Active 定義：在最新匯入存在、且該匯入 `closure_checks.status` 不在 `CLOSED_PERMANENTLY`/`CLOSED`（`CLOSED_TEMPORARILY`/`NOT_FOUND`/未驗證 一律保留）。
   - gh-pages 部署沿用既有流程（`git add -f data/output/stores_data.js` → commit → push），差別只在**來源檔改由 DB 產生**。
 - **archive backfill**：`mygmap.backfill.backfill_archive(conn, 'data/archive')` 會把 `data/archive/` 內每個 `已儲存/` 快照依序回填為較早的匯入，讓歷史更完整。
+  - ⚠️ **請在乾淨的 DB、於任何真實匯入之前執行 backfill。** 目前「最新匯入」以 `imports.id`（= 匯入先後順序）判定，不是以 Takeout 匯出日期。若在已有真實匯入之後才 backfill，較舊的 archive 快照會被當成「最新」，導致 `stores_data.js` 與報告誤用舊資料。
 
 ## 未涵蓋（未來選用清理）
 
