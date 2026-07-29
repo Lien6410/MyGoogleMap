@@ -80,3 +80,25 @@ def test_run_no_keys_skips_verify(conn, tmp_path, monkeypatch):
     assert calls['enrich'] == 1          # enrich always runs (heuristic when no key)
     assert calls['verify'] == 0          # no key -> verify skipped
     assert result['verified'] == 0
+
+
+def test_run_passes_place_details_and_home_to_enrich(conn, tmp_path, monkeypatch):
+    import mygmap.cli as climod
+    captured = {}
+
+    def fake_enrich(conn_, classify, *, place_details=None, home_lat=None,
+                    home_lng=None, mark_enriched=True, **kw):
+        captured['has_place_details'] = place_details is not None
+        captured['home_lat'] = home_lat
+        return 0
+
+    monkeypatch.setattr(climod, 'enrich_pending', fake_enrich)
+    monkeypatch.setattr(climod, 'verify_import', lambda *a, **k: 0)
+    monkeypatch.setattr(climod.config, 'load_env',
+                        lambda *a, **k: {'MAPS_API_KEY': 'x', 'HOME_ADDRESS': '新竹'})
+    monkeypatch.setattr(climod.gapi, 'geocode', lambda addr, key: (24.8, 120.97))
+
+    takeout_dir = _make_zip(tmp_path)
+    climod.run(conn, takeout_dir=takeout_dir, out_dir=str(tmp_path / 'out'))
+    assert captured['has_place_details'] is True
+    assert captured['home_lat'] == 24.8

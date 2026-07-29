@@ -521,3 +521,12 @@ def make_find_place(maps_api_key):
             return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP'}
         return find_place_status(name, address, maps_api_key)
     return find_place
+
+
+def make_place_details(maps_api_key):
+    """回傳 enrich_pending 需要的 place_details(cid)->dict；無金鑰回空結果。"""
+    def _place_details(cid_hex):
+        if not maps_api_key:
+            return {'address': '', 'hours': None, 'hours_text': ''}
+        return place_details(cid_hex, maps_api_key)
+    return _place_details

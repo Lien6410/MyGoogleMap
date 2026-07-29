@@ -1,5 +1,6 @@
 from mygmap.gapi import (heuristic_classify, haversine_distance,
-                         name_similarity, extract_json_from_text)
+                         name_similarity, extract_json_from_text,
+                         make_place_details)
 
 
 def test_heuristic_classify_detects_japanese():
@@ -31,3 +32,8 @@ def test_name_similarity_exact_and_mismatch():
 def test_extract_json_from_text_handles_wrapping():
     assert extract_json_from_text('前綴 {"a": 1} 後綴') == {"a": 1}
     assert extract_json_from_text("no json") is None
+
+
+def test_make_place_details_no_key_returns_empty():
+    pd = make_place_details('')
+    assert pd('0x1:0x2') == {'address': '', 'hours': None, 'hours_text': ''}

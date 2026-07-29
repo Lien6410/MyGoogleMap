@@ -26,8 +26,17 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     model = env.get('GEMINI_MODEL', 'gemini-2.5-flash')
     home = env.get('HOME_ADDRESS', '')
 
+    home_lat = home_lng = None
+    place_details = None
+    if maps_key:
+        if home:
+            home_lat, home_lng = gapi.geocode(home, maps_key)
+        place_details = gapi.make_place_details(maps_key)
+
     classify = gapi.make_classifier(api_key, model, home_address=home)
-    enriched = enrich_pending(conn, classify, mark_enriched=bool(api_key))
+    enriched = enrich_pending(conn, classify, place_details=place_details,
+                              home_lat=home_lat, home_lng=home_lng,
+                              mark_enriched=bool(api_key))
 
     verified = 0
     if maps_key:
