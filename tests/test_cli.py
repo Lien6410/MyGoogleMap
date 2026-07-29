@@ -102,3 +102,16 @@ def test_run_passes_place_details_and_home_to_enrich(conn, tmp_path, monkeypatch
     climod.run(conn, takeout_dir=takeout_dir, out_dir=str(tmp_path / 'out'))
     assert captured['has_place_details'] is True
     assert captured['home_lat'] == 24.8
+
+
+def test_run_writes_stores_js(conn, tmp_path, monkeypatch):
+    import mygmap.cli as climod
+    monkeypatch.setattr(climod, 'enrich_pending', lambda *a, **k: 0)
+    monkeypatch.setattr(climod, 'verify_import', lambda *a, **k: 0)
+    monkeypatch.setattr(climod.config, 'load_env', lambda *a, **k: {})
+    out_dir = str(tmp_path / 'out')
+    result = climod.run(conn, takeout_dir=_make_zip(tmp_path), out_dir=out_dir)
+    import os
+    assert result['stores_js'] is not None
+    assert os.path.exists(result['stores_js'])
+    assert os.path.basename(result['stores_js']) == 'stores_data.js'
