@@ -1,9 +1,13 @@
+import csv as _csv
 import json
 import os
 
 _PERM_CLOSED = ('CLOSED_PERMANENTLY', 'CLOSED')
 _FIELD_ORDER = ['title', 'address', 'url', 'cuisine_type', 'source_list',
                 'visited', 'distance_km', 'avg_spending', 'note', 'hours']
+
+_CSV_HEADER = ['店名', '地址', '網址', '餐飲類型', '來源清單',
+               '是否曾去過', '距離住家(公里)', '人均消費預估(元)', '備註', '營業時間']
 
 
 def latest_import_id(conn):
@@ -78,6 +82,51 @@ def active_stores(conn, import_id=None):
         })
     stores.sort(key=lambda s: s['title'])
     return stores
+
+
+def closed_stores(conn, import_id=None):
+    if import_id is None:
+        import_id = latest_import_id(conn)
+    if import_id is None:
+        return []
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT DISTINCT p.title, p.address, p.url, p.cuisine_type,
+                   p.avg_spending, c.status
+            FROM closure_checks c JOIN places p ON p.place_key = c.place_key
+            WHERE c.import_id = %s AND c.status = ANY(%s)
+            ORDER BY p.title
+            """,
+            (import_id, list(_PERM_CLOSED)),
+        )
+        return [{'店名': t, '地址': a or '', '網址': u or '',
+                 '餐飲類型': cu or '其他',
+                 '人均消費預估(元)': av if av else '未知', '停業狀態': st}
+                for (t, a, u, cu, av, st) in cur.fetchall()]
+
+
+def _hours_text(hours):
+    return '' if not hours else ';'.join(f"{h.get('d')}:{h.get('o')}-{h.get('c')}" for h in hours)
+
+
+def write_stores_csv(conn, active_path, closed_path, import_id=None):
+    os.makedirs(os.path.dirname(active_path) or '.', exist_ok=True)
+    with open(active_path, 'w', encoding='utf-8-sig', newline='') as f:
+        w = _csv.writer(f)
+        w.writerow(_CSV_HEADER)
+        for s in active_stores(conn, import_id):
+            w.writerow([s['title'], s['address'], s['url'], s['cuisine_type'],
+                        s['source_list'], s['visited'],
+                        s['distance_km'] if s['distance_km'] is not None else '未知',
+                        s['avg_spending'] if s['avg_spending'] else '未知',
+                        s['note'], _hours_text(s['hours'])])
+    with open(closed_path, 'w', encoding='utf-8-sig', newline='') as f:
+        w = _csv.DictWriter(f, fieldnames=['店名', '地址', '網址', '餐飲類型',
+                                           '人均消費預估(元)', '停業狀態'])
+        w.writeheader()
+        w.writerows(closed_stores(conn, import_id))
+    return active_path, closed_path
 
 
 def write_stores_js(conn, path='data/output/stores_data.js', import_id=None):

@@ -1,3 +1,4 @@
+import csv
 import json
 
 from mygmap.ingest import ingest_entries
@@ -58,3 +59,19 @@ def test_write_stores_js_matches_contract(conn, tmp_path):
     keys = list(data[0].keys())
     assert keys == ['title', 'address', 'url', 'cuisine_type', 'source_list',
                     'visited', 'distance_km', 'avg_spending', 'note', 'hours']
+
+
+def test_write_stores_csv_active_and_closed(conn, tmp_path):
+    _seed(conn)
+    ap = str(tmp_path / 'active.csv')
+    cp = str(tmp_path / 'closed.csv')
+    export.write_stores_csv(conn, ap, cp)
+    with open(ap, encoding='utf-8-sig', newline='') as f:
+        active = list(csv.DictReader(f))
+    with open(cp, encoding='utf-8-sig', newline='') as f:
+        closed = list(csv.DictReader(f))
+    active_names = {r['店名'] for r in active}
+    assert active_names == {'營業店', '只想去店'}
+    assert active[0].__contains__('餐飲類型') and active[0].__contains__('是否曾去過')
+    assert {r['店名'] for r in closed} == {'歇業店'}
+    assert closed[0]['停業狀態'] == 'CLOSED_PERMANENTLY'
