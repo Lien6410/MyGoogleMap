@@ -1,7 +1,11 @@
+import logging
+
 from . import cache
 
 CLOSED_STATUSES = {'CLOSED_PERMANENTLY', 'CLOSED_TEMPORARILY', 'CLOSED', 'NOT_FOUND'}
 _UNSURE = {'UNCERTAIN', 'ERROR', 'UNKNOWN', None}
+
+log = logging.getLogger(__name__)
 
 
 def _places_in_import(conn, import_id, limit=None):
@@ -34,8 +38,11 @@ def _write_closure(conn, import_id, place_key, status, is_closed, source):
 def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None,
                   cache_max_age_days=1):
     max_age = cache_max_age_days * 86400 if cache_max_age_days is not None else None
+    places = _places_in_import(conn, import_id, limit)
+    total = len(places)
+    log.info("歇業驗證：%d 家（快取內的近期結果會略過查詢）", total)
     written = 0
-    for p in _places_in_import(conn, import_id, limit):
+    for p in places:
         ck = f"__closure__{p['place_key']}"
         cached = cache.cache_get(conn, ck, max_age_seconds=max_age)
         if cached and cached.get('status') not in _UNSURE:
@@ -49,5 +56,7 @@ def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None
         is_closed = status in CLOSED_STATUSES
         _write_closure(conn, import_id, p['place_key'], status, is_closed, source)
         written += 1
+        if total and (written % 25 == 0 or written == total):
+            log.info("  verify %d/%d", written, total)
     conn.commit()
     return written

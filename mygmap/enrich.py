@@ -1,7 +1,11 @@
+import logging
+
 from psycopg.types.json import Json
 
 from .gapi import haversine_distance
 from .places import extract_cid
+
+log = logging.getLogger(__name__)
 
 
 def _pending_places(conn, limit=None):
@@ -36,8 +40,10 @@ def _update_place(conn, place_key, det, address, lat, lng, hours, hours_text, di
 def enrich_pending(conn, classify, *, place_details=None,
                    home_lat=None, home_lng=None, batch_size=20, limit=None, mark_enriched=True):
     pending = _pending_places(conn, limit)
+    total = len(pending)
+    log.info("enrichment：待補齊 %d 家", total)
     done = 0
-    for i in range(0, len(pending), batch_size):
+    for i in range(0, total, batch_size):
         batch = pending[i:i + batch_size]
         items = [{'title': p['title'], 'address': p['address'] or ''} for p in batch]
         results = classify(items)
@@ -57,5 +63,7 @@ def enrich_pending(conn, classify, *, place_details=None,
             _update_place(conn, p['place_key'], det, address, lat, lng,
                           hours, hours_text, distance_km, mark_enriched)
             done += 1
+        if total:
+            log.info("  enrich %d/%d", done, total)
     conn.commit()
     return done

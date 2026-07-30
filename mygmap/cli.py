@@ -1,3 +1,4 @@
+import logging
 import os
 
 from . import config, db, export, gapi, report
@@ -6,31 +7,40 @@ from .ingest import ingest_entries
 from .takeout import extract_and_read, find_latest_zip, parse_export_time
 from .verify import verify_import
 
+log = logging.getLogger(__name__)
+
 
 def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
+    log.info("初始化資料庫 schema…")
     db.init_schema(conn)
     zip_path = find_latest_zip(takeout_dir)
     entries = extract_and_read(zip_path) if zip_path else []
     source_zip = os.path.basename(zip_path) if zip_path else None
     if not entries:
+        log.info("data/takeout/ 找不到可匯入的 zip 或清單，未進行匯入。")
         return {'import_id': None, 'report_path': None, 'place_count': 0,
                 'enriched': 0, 'verified': 0, 'zip': source_zip,
                 'stores_js': None}
 
+    log.info("匯入 %s（%d 筆條目）…", source_zip, len(entries))
     exported_at = parse_export_time(source_zip) if source_zip else None
     import_id = ingest_entries(conn, entries, source_zip=source_zip,
                                takeout_exported_at=exported_at)
+    log.info("匯入完成 import_id=%s", import_id)
 
     env = config.load_env()
     api_key = env.get('GEMINI_API_KEY', '')
     maps_key = env.get('MAPS_API_KEY', '') or api_key
     model = env.get('GEMINI_MODEL', 'gemini-2.5-flash')
     home = env.get('HOME_ADDRESS', '')
+    if not api_key and not maps_key:
+        log.info("未偵測到 API 金鑰：enrichment 走本地啟發式、跳過歇業驗證。")
 
     home_lat = home_lng = None
     place_details = None
     if maps_key:
         if home:
+            log.info("定位住家地址…")
             home_lat, home_lng = gapi.geocode(home, maps_key)
         place_details = gapi.make_place_details(maps_key)
 
@@ -43,7 +53,9 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     if maps_key:
         verified = verify_import(conn, import_id, gapi.make_find_place(maps_key))
 
+    log.info("產生變化報告…")
     report_path = report.write_report(conn, out_dir=out_dir)
+    log.info("從 DB 產出 stores_data.js 與 CSV…")
     stores_js = export.write_stores_js(conn, path=os.path.join(out_dir, 'stores_data.js'))
     export.write_stores_csv(
         conn,
@@ -53,6 +65,7 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     with conn.cursor() as cur:
         cur.execute("SELECT place_count FROM imports WHERE id=%s", (import_id,))
         place_count = cur.fetchone()[0]
+    log.info("完成。")
     return {'import_id': import_id, 'report_path': report_path,
             'place_count': place_count, 'enriched': enriched,
             'verified': verified, 'zip': source_zip,
@@ -60,6 +73,8 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
 
 
 def main():
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(message)s",
+                        datefmt="%H:%M:%S")
     conn = db.connect()
     try:
         result = run(conn)

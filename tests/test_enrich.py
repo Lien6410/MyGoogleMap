@@ -62,3 +62,13 @@ def test_enrich_heuristic_run_does_not_mark_enriched(conn):
     with conn.cursor() as cur:
         cur.execute("SELECT enriched_at FROM places WHERE title='待補店'")
         assert cur.fetchone()[0] is not None
+
+
+def test_enrich_logs_progress(conn, caplog):
+    import logging
+    ingest_entries(conn, [_e('進度店', url='x/data=!1s0x9:0xa')], source_zip='t.zip')
+    with caplog.at_level(logging.INFO, logger='mygmap.enrich'):
+        enrich_pending(conn, _fake_classify)
+    msgs = [r.getMessage() for r in caplog.records]
+    assert any('待補齊 1' in m for m in msgs)     # header line
+    assert any('enrich 1/1' in m for m in msgs)    # per-batch progress
