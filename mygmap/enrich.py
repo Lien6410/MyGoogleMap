@@ -55,7 +55,9 @@ def enrich_pending(conn, classify, *, place_details=None,
             hours, hours_text = None, ''
             cid = extract_cid(p['url'] or '')
             if place_details and cid:
-                pd = place_details(cid)
+                # hex CID 無法直接查 Place Details，place_details 內部改以
+                # Find Place(店名+地址) 解析正規 place_id 再查營業時間。
+                pd = place_details(p['title'], address)
                 if pd.get('address'):
                     address = pd['address']
                 hours = pd.get('hours')

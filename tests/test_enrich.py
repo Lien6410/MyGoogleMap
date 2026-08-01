@@ -36,7 +36,7 @@ def test_enrich_skips_already_enriched(conn):
 def test_enrich_uses_place_details_for_address_and_hours(conn):
     ingest_entries(conn, [_e('有CID店', url='x/data=!1s0xaa:0xbb')], source_zip='t.zip')
 
-    def fake_details(cid):
+    def fake_details(name, address):
         return {'address': '精確地址', 'hours': [{'d': 1, 'o': '1100', 'c': '1400'}],
                 'hours_text': '週一 11-14'}
 

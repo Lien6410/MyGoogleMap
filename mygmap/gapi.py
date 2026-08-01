@@ -198,21 +198,22 @@ def geocode(address, maps_api_key):
     return None, None
 
 
-def place_details(cid_hex, maps_api_key):
-    """同 export_to_sheets.lookup_place_details_from_cid（export_to_sheets.py:252-278），
-    改名為 place_details；對 parse_place_details_response 的依賴改為
-    from hours_normalize import parse_place_details_response（本 repo 根層模組）。
+def place_details(place_id, maps_api_key):
+    """用**正規 place_id（ChIJ…）**呼叫 Place Details API，取回地址與營業時間。
 
-    用 CID（0xA:0xB）呼叫 Place Details API，取回地址與營業時間。
+    ⚠️ Google Maps URL 內的 hex CID（`0xA:0xB`）**不是**合法 place_id，
+    直接傳入會得到 `INVALID_REQUEST`（實測 error_message="Invalid 'placeid' parameter"）。
+    故 enrich 流程須先以 find_place_id() 由店名+地址解析出 ChIJ… 再呼叫本函式。
+    對 parse_place_details_response 的依賴：from hours_normalize import …（repo 根層模組）。
     需要 MAPS_API_KEY 且已啟用 Places API。
     回傳 {"address": str, "hours": list|None, "hours_text": str}。
     """
     empty = {"address": "", "hours": None, "hours_text": ""}
-    if not cid_hex or not maps_api_key:
+    if not place_id or not maps_api_key:
         return empty
     try:
         params = urllib.parse.urlencode({
-            'place_id': cid_hex,
+            'place_id': place_id,
             'fields':   'formatted_address,name,opening_hours',
             'language': 'zh-TW',
             'key':      maps_api_key,
@@ -230,6 +231,46 @@ def place_details(cid_hex, maps_api_key):
     except Exception as e:
         print(f"  [Place Details] 查詢失敗: {e}")
     return empty
+
+
+def _pick_place_id(candidates, name, min_similarity=0.4):
+    """從 Find Place 候選中挑第一筆；名稱相似度低於門檻視為找錯店，回 None。
+    純函式（無網路），與 find_place_status 的相似度判斷一致。"""
+    if not candidates:
+        return None
+    top = candidates[0]
+    if name_similarity(name, top.get('name', '')) >= min_similarity:
+        return top.get('place_id')
+    return None
+
+
+def find_place_id(name, address, maps_api_key):
+    """以店名(+地址前 15 字)呼叫 Find Place from Text，解析出正規 place_id（ChIJ…）。
+
+    存在理由：Google Maps URL 內的 hex CID 無法直接查 Place Details（見 place_details），
+    故 enrich 需先用店名+地址換得 place_id 再查營業時間。名稱相似度不足→回 None（避免補錯店）。
+    """
+    if not name or not maps_api_key:
+        return None
+    addr_short = address[:15] if address else ''
+    query = f"{name} {addr_short}".strip()
+    params = urllib.parse.urlencode({
+        'input':     query,
+        'inputtype': 'textquery',
+        'fields':    'place_id,name',
+        'language':  'zh-TW',
+        'key':       maps_api_key,
+    })
+    url = f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?{params}"
+    try:
+        with urllib.request.urlopen(url, timeout=12) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+        if data.get('status') != 'OK':
+            return None
+        return _pick_place_id(data.get('candidates', []), name)
+    except Exception as e:
+        print(f"  [Find Place ID] 查詢失敗: {e}")
+        return None
 
 
 def find_place_status(name, address, maps_api_key):
@@ -524,9 +565,16 @@ def make_find_place(maps_api_key):
 
 
 def make_place_details(maps_api_key):
-    """回傳 enrich_pending 需要的 place_details(cid)->dict；無金鑰回空結果。"""
-    def _place_details(cid_hex):
+    """回傳 enrich_pending 需要的 place_details(name, address)->dict。
+
+    先用 find_place_id() 由店名+地址解析正規 place_id（hex CID 不能直接查 details），
+    再呼叫 place_details() 取地址+營業時間。無金鑰、找不到店或相似度不足 → 回空結果。
+    """
+    def _resolve(name, address):
         if not maps_api_key:
             return {'address': '', 'hours': None, 'hours_text': ''}
-        return place_details(cid_hex, maps_api_key)
-    return _place_details
+        pid = find_place_id(name, address, maps_api_key)
+        if not pid:
+            return {'address': '', 'hours': None, 'hours_text': ''}
+        return place_details(pid, maps_api_key)
+    return _resolve

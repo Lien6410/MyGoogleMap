@@ -1,6 +1,6 @@
 from mygmap.gapi import (heuristic_classify, haversine_distance,
                          name_similarity, extract_json_from_text,
-                         make_place_details)
+                         make_place_details, _pick_place_id)
 
 
 def test_heuristic_classify_detects_japanese():
@@ -36,4 +36,16 @@ def test_extract_json_from_text_handles_wrapping():
 
 def test_make_place_details_no_key_returns_empty():
     pd = make_place_details('')
-    assert pd('0x1:0x2') == {'address': '', 'hours': None, 'hours_text': ''}
+    # 新介面：以（店名, 地址）呼叫（內部走 Find Place 取 place_id 再查 details）
+    assert pd('某店', '新竹市') == {'address': '', 'hours': None, 'hours_text': ''}
+
+
+def test_pick_place_id_similarity_guard():
+    # 名稱相符 → 取其 place_id
+    match = [{'place_id': 'ChIJ_ok', 'name': '小吳牛肉麵'}]
+    assert _pick_place_id(match, '小吳牛肉麵') == 'ChIJ_ok'
+    # 名稱不符（Find Place 找錯店）→ 回 None，避免補到別家的營業時間
+    wrong = [{'place_id': 'ChIJ_wrong', 'name': '麥當勞'}]
+    assert _pick_place_id(wrong, '小吳牛肉麵') is None
+    # 無候選 → None
+    assert _pick_place_id([], '任何店') is None
