@@ -859,6 +859,8 @@
     function selectAll(groupName, isChecked) {
       const boxes = document.querySelectorAll(`input[name="${groupName}"]`);
       boxes.forEach(box => box.checked = isChecked);
+      activePreset = null;
+      highlightPreset();
       updateFilters();
     }
 
