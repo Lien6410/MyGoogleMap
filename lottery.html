@@ -515,13 +515,13 @@
 
     <!-- 情境快捷列（chips 由 Task 7 JS 填入） -->
     <div id="preset-bar" class="preset-bar">
-      <!-- chips 由 JS 依 LotteryLogic.PRESET_NAMES 產生；此處僅容器 -->
+      <span id="custom-flag" class="preset-chip custom" hidden>✎ 自訂</span>
+      <!-- chips 由 JS 依 LotteryLogic.PRESET_NAMES 產生 -->
     </div>
 
     <!-- 可收合進階篩選面板 -->
     <div class="advanced">
-      <button type="button" id="advanced-toggle" class="advanced-toggle" aria-expanded="false"
-        onclick="(function(btn){var panel=document.getElementById('advanced-panel');var expanded=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!expanded));if(expanded){panel.setAttribute('hidden','');}else{panel.removeAttribute('hidden');}})(this)">
+      <button type="button" id="advanced-toggle" class="advanced-toggle" aria-expanded="false">
         <span>⚙ 進階篩選</span><span class="chev">▾</span>
       </button>
       <div id="advanced-panel" class="advanced-panel" hidden>
@@ -769,32 +769,18 @@
     const stores = window.STORES_DATA;
     let filteredStores = [];
 
-    // === 縣市工具 ===
-    const TAIWAN_COUNTIES = [
-      '台北市', '新北市', '桃園市', '台中市', '台南市', '高雄市',
-      '基隆市', '新竹市', '嘉義市',
-      '新竹縣', '苗栗縣', '彰化縣', '南投縣', '雲林縣', '嘉義縣',
-      '屏東縣', '宜蘭縣', '花蓮縣', '台東縣', '澎湖縣', '金門縣', '連江縣'
-    ];
-
-    function extractCounty(address) {
-      const addr = (address || '').replace(/臺/g, '台');
-      for (const c of TAIWAN_COUNTIES) {
-        if (addr.includes(c)) return c;
-      }
-      return null;
-    }
+    // === Step 1: 改用模組 + 計算覆蓋率/縣市 ===
+    const LL = window.LotteryLogic;
+    window.APP_COVERAGE = LL.computeCoverage(stores);
+    const DATA_COUNTIES = Array.from(new Set(
+      stores.map(s => LL.extractCounty(s.address)).filter(Boolean)
+    ));
+    window.DATA_COUNTIES = DATA_COUNTIES;
 
     function populateCountyFilters() {
-      // 收集資料中實際出現的縣市
-      const found = new Set();
-      stores.forEach(s => {
-        const c = extractCounty(s.address);
-        if (c) found.add(c);
-      });
-
-      // 依 TAIWAN_COUNTIES 順序排列，確保顯示一致
-      const sorted = TAIWAN_COUNTIES.filter(c => found.has(c));
+      // 收集資料中實際出現的縣市（依 TAIWAN_COUNTIES 順序）
+      const found = new Set(DATA_COUNTIES);
+      const sorted = LL.TAIWAN_COUNTIES.filter(c => found.has(c));
       const container = document.getElementById('county-group');
       container.innerHTML = '';
 
@@ -806,13 +792,12 @@
         cb.name = 'county';
         cb.value = c;
         cb.checked = (c === '新竹市');   // 預設只勾選新竹市
-        cb.addEventListener('change', updateFilters);
         label.appendChild(cb);
         label.appendChild(document.createTextNode(' ' + c));
         container.appendChild(label);
       });
 
-      // 未知/非台灣 → 預設不勾（只抽台灣店家）
+      // 未知/非台灣 → 預設不勾
       const labelUnknown = document.createElement('label');
       labelUnknown.className = 'checkbox-label';
       const cbUnknown = document.createElement('input');
@@ -820,20 +805,9 @@
       cbUnknown.name = 'county';
       cbUnknown.value = 'unknown';
       cbUnknown.checked = false;
-      cbUnknown.addEventListener('change', updateFilters);
       labelUnknown.appendChild(cbUnknown);
       labelUnknown.appendChild(document.createTextNode(' 未知/非台灣'));
       container.appendChild(labelUnknown);
-    }
-
-    // 別名映射：store 資料中的子分類 → 篩選器顯示的父分類
-    const CUISINE_ALIASES = {
-      '台式': '中式',
-    };
-
-    // 將 store 的原始類型正規化為篩選器使用的標準類型
-    function normalizeCuisine(raw) {
-      return CUISINE_ALIASES[raw] || raw;
     }
 
     // Detect unique cuisines from stores database
@@ -851,7 +825,7 @@
       stores.forEach(s => {
         if (s.cuisine_type) {
           s.cuisine_type.split(',').forEach(c => {
-            const normalized = normalizeCuisine(c.trim());
+            const normalized = LL.normalizeCuisine(c.trim());
             if (normalized) cuisineSet.add(normalized);
           });
         }
@@ -864,17 +838,17 @@
       const cuisines = getCuisineTypes();
       const container = document.getElementById('cuisine-group');
       container.innerHTML = '';
-      
+
       cuisines.forEach(c => {
         const label = document.createElement('label');
         label.className = 'checkbox-label';
-        
+
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.name = 'cuisine';
         checkbox.value = c;
         checkbox.checked = true;
-        
+
         label.appendChild(checkbox);
         label.appendChild(document.createTextNode(' ' + c));
         container.appendChild(label);
@@ -888,97 +862,92 @@
       updateFilters();
     }
 
-    // Apply active filters to stores array
+    // === Step 2: getCurrentFilters ===
+    function getCurrentFilters() {
+      const visit = document.querySelector('input[name="visit-status"]:checked').value;
+      const cuisineBoxes = Array.from(document.querySelectorAll('input[name="cuisine"]'));
+      const allCuisineChecked = cuisineBoxes.every(b => b.checked);
+      const cuisines = allCuisineChecked ? null
+        : new Set(cuisineBoxes.filter(b => b.checked).map(b => b.value));
+      const setOf = name => new Set(
+        Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(b => b.value));
+      return {
+        visit,
+        cuisines,
+        distances: setOf('distance'),
+        prices: setOf('price'),
+        counties: setOf('county'),
+        hours: setOf('hours'),
+      };
+    }
+
+    // === Step 3: updateFilters 用 LL.storeMatches ===
     function updateFilters() {
-      // 1. Visit Status filter
-      const visitVal = document.querySelector('input[name="visit-status"]:checked').value;
-      
-      // 2. Cuisine filter
-      const activeCuisines = Array.from(document.querySelectorAll('input[name="cuisine"]:checked')).map(box => box.value);
-      
-      // 3. Distance filter
-      const activeDistances = Array.from(document.querySelectorAll('input[name="distance"]:checked')).map(box => box.value);
-      
-      // 4. Price filter
-      const activePrices = Array.from(document.querySelectorAll('input[name="price"]:checked')).map(box => box.value);
-
-      // 5. County filter
-      const activeCounties    = Array.from(document.querySelectorAll('input[name="county"]:checked')).map(b => b.value);
-      const includeUnknownLoc = activeCounties.includes('unknown');
-
-      // 6. Business Hours filter
-      const activeHours = new Set(
-        Array.from(document.querySelectorAll('input[name="hours"]:checked')).map(b => b.value)
-      );
+      const filters = getCurrentFilters();
       const now = new Date();
-
-      filteredStores = stores.filter(s => {
-        // Match Visited
-        if (visitVal === 'yes' && s.visited !== '是') return false;
-        if (visitVal === 'no' && s.visited !== '否') return false;
-
-        // Match Cuisine (at least one overlaps, aliases normalized)
-        if (!s.cuisine_type) return activeCuisines.includes('其他');
-        const sCuisines = s.cuisine_type.split(',').map(c => normalizeCuisine(c.trim()));
-        const hasCuisineMatch = sCuisines.some(c => activeCuisines.includes(c));
-        if (!hasCuisineMatch) return false;
-
-        // Match Distance
-        const km = s.distance_km;
-        let distMatch = false;
-        if (km === null || km === undefined) {
-          distMatch = activeDistances.includes('unknown');
-        } else if (km <= 1.0) {
-          distMatch = activeDistances.includes('1');
-        } else if (km <= 3.0) {
-          distMatch = activeDistances.includes('3');
-        } else if (km <= 5.0) {
-          distMatch = activeDistances.includes('5');
-        } else if (km <= 10.0) {
-          distMatch = activeDistances.includes('10');
-        } else {
-          distMatch = activeDistances.includes('far');
-        }
-        if (!distMatch) return false;
-
-        // Match Price Range
-        const spending = s.avg_spending;
-        let priceMatch = false;
-        if (!spending || spending <= 0) {
-          priceMatch = activePrices.includes('free');
-        } else if (spending <= 200) {
-          priceMatch = activePrices.includes('200');
-        } else if (spending <= 500) {
-          priceMatch = activePrices.includes('500');
-        } else if (spending <= 1000) {
-          priceMatch = activePrices.includes('1000');
-        } else {
-          priceMatch = activePrices.includes('expensive');
-        }
-        if (!priceMatch) return false;
-
-        // Match County
-        const county = extractCounty(s.address);
-        if (county) {
-          if (!activeCounties.includes(county)) return false;
-        } else {
-          if (!includeUnknownLoc) return false;
-        }
-
-        // Match Business Hours
-        if (!window.HoursLogic.matchesHoursFilter(s, now, activeHours)) return false;
-
-        return true;
-      });
-
-      // Update counter UI
+      filteredStores = stores.filter(s => LL.storeMatches(s, filters, now));
       const countEl = document.getElementById('matching-count');
       if (filteredStores.length === 0) {
-        countEl.innerHTML = `0 <span style="color: var(--text-secondary); font-size: 0.85rem; font-weight: normal;">(無符合項目，抽籤將從「全部」中隨機抽取)</span>`;
+        countEl.innerHTML = `0 <span style="color:var(--text-secondary);font-size:0.85rem;font-weight:normal;">(無符合，將從全部抽)</span>`;
         document.getElementById('btn-start').disabled = stores.length === 0;
       } else {
-        countEl.innerHTML = `<span class="counter-val">${filteredStores.length}</span>`;
+        countEl.textContent = String(filteredStores.length);
         document.getElementById('btn-start').disabled = false;
+      }
+    }
+
+    // === Step 4: 情境鍵 ===
+    const PRESET_EMOJI = { '智慧推薦': '🎯', '附近': '📍', '沒去過': '🆕', '現在營業': '🍜', '全部隨機': '🎲' };
+    let activePreset = null;
+    let applyingPreset = false;
+
+    function renderPresetBar() {
+      const bar = document.getElementById('preset-bar');
+      // Remove existing chips (keep #custom-flag)
+      bar.querySelectorAll('.preset-chip:not(#custom-flag)').forEach(c => c.remove());
+      LL.PRESET_NAMES.forEach(name => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'preset-chip';
+        chip.dataset.preset = name;
+        chip.textContent = `${PRESET_EMOJI[name] || ''} ${name}`;
+        chip.addEventListener('click', () => applyPreset(name));
+        bar.appendChild(chip);
+      });
+    }
+
+    function setCheckboxes(name, values /* Set|null=all */) {
+      document.querySelectorAll(`input[name="${name}"]`).forEach(b => {
+        b.checked = (values == null) ? true : values.has(b.value);
+      });
+    }
+
+    function applyPreset(name) {
+      applyingPreset = true;
+      const f = LL.resolvePreset(name, window.APP_COVERAGE, window.DATA_COUNTIES);
+      document.querySelector(`input[name="visit-status"][value="${f.visit}"]`).checked = true;
+      setCheckboxes('cuisine', f.cuisines);
+      setCheckboxes('distance', f.distances);
+      setCheckboxes('price', f.prices);
+      setCheckboxes('county', f.counties);
+      setCheckboxes('hours', f.hours);
+      document.getElementById('weight-toggle').checked = f.weightOn;
+      activePreset = name;
+      highlightPreset();
+      updateFilters();
+      applyingPreset = false;
+    }
+
+    function highlightPreset() {
+      document.querySelectorAll('.preset-chip:not(#custom-flag)').forEach(c => {
+        c.classList.toggle('active', c.dataset.preset === activePreset);
+        c.classList.remove('custom');
+      });
+      const customFlag = document.getElementById('custom-flag');
+      if (activePreset) {
+        customFlag.hidden = true;
+      } else {
+        customFlag.hidden = false;
       }
     }
 
@@ -1152,17 +1121,30 @@
       createConfetti();
     }
 
-    // Initialize App Setup
+    // === Step 6: 初始化 ===
     populateCuisineFilters();
     populateCountyFilters();
+    renderPresetBar();
 
-    // Add event listeners to filter elements
-    document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
-      el.addEventListener('change', updateFilters);
+    // 進階面板收合鈕
+    const at = document.getElementById('advanced-toggle');
+    at.addEventListener('click', () => {
+      const panel = document.getElementById('advanced-panel');
+      const open = panel.hasAttribute('hidden');
+      if (open) panel.removeAttribute('hidden'); else panel.setAttribute('hidden', '');
+      at.setAttribute('aria-expanded', String(open));
     });
 
-    // Initial Filter Apply
-    updateFilters();
+    // === Step 5: 手動改動 → 自訂 ===
+    document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
+      el.addEventListener('change', () => {
+        if (!applyingPreset) { activePreset = null; highlightPreset(); }
+        updateFilters();
+      });
+    });
+
+    // 載入即套「智慧推薦」→ 不會空池
+    applyPreset('智慧推薦');
   </script>
 </body>
 </html>
