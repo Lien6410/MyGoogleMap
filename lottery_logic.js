@@ -60,11 +60,47 @@
     return ['open-now', 'unknown'];
   }
 
+  function storeWeight(store, now, weightOn) {
+    if (!weightOn) return 1;
+    var km = store.distance_km, wDist;
+    if (km == null) wDist = 1.0;
+    else if (km <= 1) wDist = 3.0;
+    else if (km <= 3) wDist = 2.0;
+    else if (km <= 5) wDist = 1.3;
+    else if (km <= 10) wDist = 0.8;
+    else wDist = 0.4;
+    var wOpen;
+    if (!store.hours || !store.hours.length) wOpen = 1.0;
+    else if (Hours.isOpenNow(store.hours, now)) wOpen = 1.8;
+    else wOpen = 0.5;
+    return wDist * wOpen;
+  }
+
+  function weightedPick(pool, now, weightOn, rng) {
+    if (!pool || !pool.length) return null;
+    rng = rng || Math.random;
+    if (!weightOn) return pool[Math.floor(rng() * pool.length)];
+    var weights = [], sum = 0;
+    for (var i = 0; i < pool.length; i++) {
+      var w = storeWeight(pool[i], now, true);
+      if (!(w > 0)) w = 0;
+      weights.push(w); sum += w;
+    }
+    if (sum <= 0) return pool[Math.floor(rng() * pool.length)];
+    var r = rng() * sum;
+    for (var j = 0; j < pool.length; j++) {
+      r -= weights[j];
+      if (r < 0) return pool[j];
+    }
+    return pool[pool.length - 1];
+  }
+
   var api = {
     TAIWAN_COUNTIES: TAIWAN_COUNTIES, extractCounty: extractCounty,
     CUISINE_ALIASES: CUISINE_ALIASES, normalizeCuisine: normalizeCuisine,
     distanceBucket: distanceBucket, priceBucket: priceBucket,
-    computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault
+    computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault,
+    storeWeight: storeWeight, weightedPick: weightedPick
   };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

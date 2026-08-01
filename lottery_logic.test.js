@@ -60,3 +60,33 @@ test('adaptiveHoursDefault relaxes when coverage is low', () => {
   assert.deepStrictEqual(L.adaptiveHoursDefault({ hours: 0.5 }).sort(),
     ['open-now', 'unknown'].sort());
 });
+
+function at(day, hh, mm) { return { getDay: () => day, getHours: () => hh, getMinutes: () => mm }; }
+const OPEN_MON_NOON = [{ d: 1, o: '1100', c: '1400' }];
+
+test('storeWeight multiplies distance and open factors', () => {
+  const now = at(1, 12, 0);
+  // 近(≤1km,×3) × 營業中(×1.8) = 5.4
+  assert.ok(Math.abs(L.storeWeight({ distance_km: 0.5, hours: OPEN_MON_NOON }, now, true) - 5.4) < 1e-9);
+  // 遠(>10km,×0.4) × 已打烊(×0.5) = 0.2
+  assert.ok(Math.abs(L.storeWeight({ distance_km: 20, hours: OPEN_MON_NOON }, at(1, 15, 0), true) - 0.2) < 1e-9);
+  // 距離未知(×1.0) × 無hours(×1.0) = 1.0
+  assert.strictEqual(L.storeWeight({ distance_km: null, hours: null }, now, true), 1.0);
+  // 關閉加權 → 一律 1
+  assert.strictEqual(L.storeWeight({ distance_km: 0.5, hours: OPEN_MON_NOON }, now, false), 1);
+});
+
+test('weightedPick honors cumulative weights via injected rng', () => {
+  const now = at(1, 12, 0);
+  const pool = [
+    { title: 'A', distance_km: 0.5, hours: OPEN_MON_NOON }, // weight 5.4
+    { title: 'B', distance_km: 20, hours: null },           // weight 0.4
+  ];
+  // sum = 5.8。rng*sum 落在 [0,5.4) → A；落在 [5.4,5.8) → B。
+  assert.strictEqual(L.weightedPick(pool, now, true, () => 0.0).title, 'A');
+  assert.strictEqual(L.weightedPick(pool, now, true, () => 0.99).title, 'B');
+  // 空池 → null
+  assert.strictEqual(L.weightedPick([], now, true, () => 0.5), null);
+  // 關閉加權 → 等機率索引
+  assert.strictEqual(L.weightedPick(pool, now, false, () => 0.0).title, 'A');
+});
