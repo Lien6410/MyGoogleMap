@@ -1079,19 +1079,23 @@
       const visitBadge = document.getElementById('winner-tag-visit');
       if (winner.visited === '是') {
         visitBadge.innerText = '已去過 (回訪)';
-        visitBadge.style.background = 'rgba(236, 72, 153, 0.15)';
+        visitBadge.style.background = 'rgba(251, 146, 60, 0.15)';
+        visitBadge.style.color = '#fdba74';
+        visitBadge.style.border = '1px solid rgba(251, 146, 60, 0.3)';
       } else {
         visitBadge.innerText = '未去過 (想去)';
-        visitBadge.style.background = 'rgba(148, 163, 184, 0.15)';
+        visitBadge.style.background = 'rgba(168, 131, 107, 0.15)';
+        visitBadge.style.color = '#a8836b';
+        visitBadge.style.border = '1px solid rgba(168, 131, 107, 0.3)';
       }
 
       // Business Hours Badge
       const hoursBadge = document.getElementById('winner-tag-hours');
       if (!winner.hours || winner.hours.length === 0) {
         hoursBadge.innerText = '營業時間未知';
-        hoursBadge.style.background = 'rgba(148, 163, 184, 0.15)';
-        hoursBadge.style.color = '#94a3b8';
-        hoursBadge.style.border = '1px solid rgba(148, 163, 184, 0.3)';
+        hoursBadge.style.background = 'rgba(168, 131, 107, 0.15)';
+        hoursBadge.style.color = '#a8836b';
+        hoursBadge.style.border = '1px solid rgba(168, 131, 107, 0.3)';
       } else if (window.HoursLogic.isOpenNow(winner.hours, new Date())) {
         hoursBadge.innerText = '營業中';
         hoursBadge.style.background = 'rgba(34, 197, 94, 0.15)';
@@ -1099,9 +1103,9 @@
         hoursBadge.style.border = '1px solid rgba(34, 197, 94, 0.3)';
       } else {
         hoursBadge.innerText = '已打烊';
-        hoursBadge.style.background = 'rgba(148, 163, 184, 0.15)';
-        hoursBadge.style.color = '#94a3b8';
-        hoursBadge.style.border = '1px solid rgba(148, 163, 184, 0.3)';
+        hoursBadge.style.background = 'rgba(168, 131, 107, 0.15)';
+        hoursBadge.style.color = '#a8836b';
+        hoursBadge.style.border = '1px solid rgba(168, 131, 107, 0.3)';
       }
       hoursBadge.style.display = 'inline-block';
 
