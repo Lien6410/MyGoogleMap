@@ -34,41 +34,55 @@ def _pending_hours(conn, limit=None):
             for r in rows if extract_cid(r[3] or '')]
 
 
-def _update_hours(conn, place_key, hours, hours_text, address):
+def _update_details(conn, place_key, hours, hours_text, address):
+    """只寫「查到的」欄位：有 hours 才寫 hours（避免把 SQL NULL 變成 jsonb null）；
+    有 address 才寫 address（COALESCE 保留舊值防空）。回傳是否有寫入。"""
+    sets = ["updated_at = now()"]
+    params = []
+    if hours:
+        sets.append("hours = %s")
+        params.append(Json(hours))
+        sets.append("hours_text = %s")
+        params.append(hours_text or '')
+    if address:
+        sets.append("address = COALESCE(NULLIF(%s, ''), address)")
+        params.append(address)
+    if len(sets) == 1:          # 只有 updated_at → 沒查到任何可寫的
+        return False
+    params.append(place_key)
     with conn.cursor() as cur:
-        cur.execute(
-            "UPDATE places SET hours = %s, hours_text = %s, "
-            "address = COALESCE(NULLIF(%s, ''), address), updated_at = now() "
-            "WHERE place_key = %s",
-            (Json(hours), hours_text, address or '', place_key),
-        )
+        cur.execute(f"UPDATE places SET {', '.join(sets)} WHERE place_key = %s", params)
+    return True
 
 
 def backfill_hours(conn, place_details, *, limit=None, request_delay=0, commit_every=25):
-    """對「有 CID 且 hours 空」的店補營業時間。
+    """對「有 CID 且 hours 空」的店，用 Find Place 信心比對後補**地址＋營業時間**。
 
     place_details: 可注入的 (name, address) -> {"address","hours","hours_text"}
-                   （正式用 gapi.make_place_details(maps_key)）。
-    只有查到 hours 才寫入（查無不覆寫、不誤清）。回傳成功補齊的家數。
+                   （正式用 gapi.make_place_details(maps_key)，內含 name_similarity 門檻）。
+    補地址是為了讓抽籤頁的縣市篩選能正確納入新竹本地、排除國外/他縣市店。
+    只寫查到的欄位（查無不覆寫、不誤清）。回傳 (更新家數, 其中補到 hours 的家數)。
     """
     pending = _pending_hours(conn, limit)
     total = len(pending)
-    log.info("補營業時間：候選 %d 家（有 CID 且 hours 空）", total)
+    log.info("補地址＋營業時間：候選 %d 家（有 CID 且 hours 空）", total)
     updated = 0
+    got_hours = 0
     for idx, p in enumerate(pending, 1):
         pd = place_details(p['title'], p['address'] or '')
-        if pd.get('hours'):
-            _update_hours(conn, p['place_key'], pd['hours'],
-                          pd.get('hours_text', ''), pd.get('address', ''))
+        if _update_details(conn, p['place_key'], pd.get('hours'),
+                           pd.get('hours_text', ''), pd.get('address', '')):
             updated += 1
+            if pd.get('hours'):
+                got_hours += 1
         if idx % 25 == 0 or idx == total:
-            log.info("  backfill %d/%d（已補 %d）", idx, total, updated)
+            log.info("  backfill %d/%d（更新 %d，其中 hours %d）", idx, total, updated, got_hours)
         if commit_every and idx % commit_every == 0:
             conn.commit()
         if request_delay:
             time.sleep(request_delay)
     conn.commit()
-    return updated
+    return updated, got_hours
 
 
 def main():
@@ -83,8 +97,9 @@ def main():
     delay = float(env.get('VERIFY_REQUEST_DELAY') or 0)
     conn = db.connect()
     try:
-        n = backfill_hours(conn, gapi.make_place_details(maps_key), request_delay=delay)
-        print(f"[OK] 補了 {n} 家的營業時間。")
+        updated, got_hours = backfill_hours(conn, gapi.make_place_details(maps_key),
+                                            request_delay=delay)
+        print(f"[OK] 更新 {updated} 家（其中補到營業時間 {got_hours} 家）。")
     finally:
         conn.close()
 
