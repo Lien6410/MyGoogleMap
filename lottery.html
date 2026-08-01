@@ -141,7 +141,7 @@
     }
 
     .filter-actions a:hover {
-      color: #818cf8;
+      color: var(--accent-secondary);
       text-decoration: underline;
     }
 
@@ -382,15 +382,15 @@
     }
 
     .badge-cuisine {
-      background: rgba(99, 102, 241, 0.15);
-      color: #818cf8;
-      border: 1px solid rgba(99, 102, 241, 0.3);
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--accent-color);
+      border: 1px solid rgba(249, 115, 22, 0.3);
     }
 
     .badge-distance {
-      background: rgba(56, 189, 248, 0.15);
-      color: #38bdf8;
-      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: rgba(251, 146, 60, 0.15);
+      color: #fb923c;
+      border: 1px solid rgba(251, 146, 60, 0.3);
     }
 
     .badge-price {
@@ -400,9 +400,9 @@
     }
 
     .badge-visit {
-      background: rgba(236, 72, 153, 0.15);
-      color: #f472b6;
-      border: 1px solid rgba(236, 72, 153, 0.3);
+      background: rgba(251, 146, 60, 0.12);
+      color: var(--accent-secondary);
+      border: 1px solid rgba(251, 146, 60, 0.3);
     }
 
     .result-details {
@@ -1037,7 +1037,9 @@
     // Display final winning restaurant on board
     function displayWinner(isFallback) {
       const pool = isFallback ? stores : filteredStores;
-      const winner = pool[Math.floor(Math.random() * pool.length)];
+      const weightOn = document.getElementById('weight-toggle').checked;
+      const winner = LL.weightedPick(pool, new Date(), weightOn, Math.random);
+      if (!winner) return;
       
       document.getElementById('shuffling-text').style.display = 'none';
       document.getElementById('board').classList.remove('spinning');
@@ -1127,6 +1129,17 @@
     populateCuisineFilters();
     populateCountyFilters();
     renderPresetBar();
+
+    // Step 4: 自適應提示——hours 覆蓋率不足時顯示警示
+    if (window.APP_COVERAGE.hours < LL.HOURS_COVERAGE_THRESHOLD) {
+      const chip = document.querySelector('.preset-chip[data-preset="現在營業"]');
+      if (chip) chip.title = '營業時間資料未匯入，此模式已用寬鬆判定';
+      const hint = document.createElement('p');
+      hint.id = 'hours-coverage-hint';
+      hint.style.cssText = 'color:var(--text-secondary);font-size:0.8rem;margin:0.25rem 0.25rem 0;';
+      hint.textContent = 'ℹ️ 營業時間資料尚未匯入，「營業中」相關以寬鬆模式處理。';
+      document.getElementById('preset-bar').after(hint);
+    }
 
     // 進階面板收合鈕
     const at = document.getElementById('advanced-toggle');
