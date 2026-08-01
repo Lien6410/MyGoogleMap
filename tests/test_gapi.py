@@ -1,6 +1,7 @@
+import mygmap.gapi as gapi
 from mygmap.gapi import (heuristic_classify, haversine_distance,
                          name_similarity, extract_json_from_text,
-                         make_place_details, _pick_place_id)
+                         make_place_details, make_find_place)
 
 
 def test_heuristic_classify_detects_japanese():
@@ -36,16 +37,39 @@ def test_extract_json_from_text_handles_wrapping():
 
 def test_make_place_details_no_key_returns_empty():
     pd = make_place_details('')
-    # 新介面：以（店名, 地址）呼叫（內部走 Find Place 取 place_id 再查 details）
+    # 以（店名, 地址）呼叫；無金鑰 → 空結果
     assert pd('某店', '新竹市') == {'address': '', 'hours': None, 'hours_text': ''}
 
 
-def test_pick_place_id_similarity_guard():
-    # 名稱相符 → 取其 place_id
-    match = [{'place_id': 'ChIJ_ok', 'name': '小吳牛肉麵'}]
-    assert _pick_place_id(match, '小吳牛肉麵') == 'ChIJ_ok'
-    # 名稱不符（Find Place 找錯店）→ 回 None，避免補到別家的營業時間
-    wrong = [{'place_id': 'ChIJ_wrong', 'name': '麥當勞'}]
-    assert _pick_place_id(wrong, '小吳牛肉麵') is None
-    # 無候選 → None
-    assert _pick_place_id([], '任何店') is None
+def test_make_find_place_memoizes(monkeypatch):
+    calls = []
+
+    def fake_status(name, address, key):
+        calls.append(name)
+        return {'status': 'OPERATIONAL', 'place_id': 'ChIJ' + name, 'match': 'EXACT'}
+
+    monkeypatch.setattr(gapi, 'find_place_status', fake_status)
+    fp = make_find_place('KEY')
+    fp('A', 'x'); fp('A', 'x'); fp('B', 'y')     # 'A' 呼叫兩次
+    assert calls == ['A', 'B']                    # 但只真的查一次（memoize）
+
+
+def test_make_place_details_shares_find_place(monkeypatch):
+    fp_calls = []
+
+    def fake_find_place(name, address):
+        fp_calls.append((name, address))
+        return {'status': 'OPERATIONAL', 'place_id': 'ChIJx', 'match': 'EXACT'}
+
+    monkeypatch.setattr(gapi, 'place_details',
+                        lambda pid, key: {'address': 'A', 'hours': [{'d': 1, 'o': '0900', 'c': '1700'}],
+                                          'hours_text': 'x'})
+    resolve = make_place_details('KEY', fake_find_place)
+    out = resolve('店', '址')
+    assert out['hours'] and fp_calls == [('店', '址')]   # 用共用 find_place 取 place_id 再查 details
+
+
+def test_make_place_details_no_place_id_returns_empty():
+    # find_place 回無 place_id（相似度不足）→ 不查 details、回空
+    resolve = make_place_details('KEY', lambda n, a: {'status': 'NOT_FOUND', 'place_id': None})
+    assert resolve('店', '址') == {'address': '', 'hours': None, 'hours_text': ''}

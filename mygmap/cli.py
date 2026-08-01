@@ -42,11 +42,14 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
 
     home_lat = home_lng = None
     place_details = None
+    # 一顆記憶化的 find_place，enrich（取 place_id 查營業時間）與 verify（取 status）共用，
+    # 每家店的 Find Place 只打一次網路，省 Maps 額度。
+    find_place = gapi.make_find_place(maps_key)
     if maps_key:
         if home:
             log.info("定位住家地址…")
             home_lat, home_lng = gapi.geocode(home, maps_key)
-        place_details = gapi.make_place_details(maps_key)
+        place_details = gapi.make_place_details(maps_key, find_place)
 
     classify = gapi.make_classifier(api_key, model, home_address=home)
     enriched = enrich_pending(conn, classify, place_details=place_details,
@@ -55,8 +58,7 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
 
     verified = 0
     if maps_key:
-        verified = verify_import(conn, import_id, gapi.make_find_place(maps_key),
-                                 request_delay=verify_delay)
+        verified = verify_import(conn, import_id, find_place, request_delay=verify_delay)
 
     log.info("產生變化報告…")
     report_path = report.write_report(conn, out_dir=out_dir)

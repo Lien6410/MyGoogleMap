@@ -233,51 +233,9 @@ def place_details(place_id, maps_api_key):
     return empty
 
 
-def _pick_place_id(candidates, name, min_similarity=0.4):
-    """從 Find Place 候選中挑第一筆；名稱相似度低於門檻視為找錯店，回 None。
-    純函式（無網路），與 find_place_status 的相似度判斷一致。"""
-    if not candidates:
-        return None
-    top = candidates[0]
-    if name_similarity(name, top.get('name', '')) >= min_similarity:
-        return top.get('place_id')
-    return None
-
-
-def find_place_id(name, address, maps_api_key):
-    """以店名(+地址前 15 字)呼叫 Find Place from Text，解析出正規 place_id（ChIJ…）。
-
-    存在理由：Google Maps URL 內的 hex CID 無法直接查 Place Details（見 place_details），
-    故 enrich 需先用店名+地址換得 place_id 再查營業時間。名稱相似度不足→回 None（避免補錯店）。
-    """
-    if not name or not maps_api_key:
-        return None
-    addr_short = address[:15] if address else ''
-    query = f"{name} {addr_short}".strip()
-    params = urllib.parse.urlencode({
-        'input':     query,
-        'inputtype': 'textquery',
-        'fields':    'place_id,name',
-        'language':  'zh-TW',
-        'key':       maps_api_key,
-    })
-    url = f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?{params}"
-    try:
-        with urllib.request.urlopen(url, timeout=12) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-        if data.get('status') != 'OK':
-            return None
-        return _pick_place_id(data.get('candidates', []), name)
-    except Exception as e:
-        print(f"  [Find Place ID] 查詢失敗: {e}")
-        return None
-
-
 def find_place_status(name, address, maps_api_key):
-    """同 verify_stores.query_find_place（verify_stores.py:122-186），
-    改名為 find_place_status，內容不變。
-
-    以店名 + 地址呼叫 Find Place from Text，取得 business_status / 地址 / 消費等級。
+    """以店名 + 地址呼叫 Find Place from Text，一次取得 verify 需要的 business_status
+    與 enrich 需要的正規 place_id（ChIJ…），供兩者共用（省 Maps 額度）。
 
     回傳 dict：
       status       : 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY'
@@ -287,10 +245,11 @@ def find_place_status(name, address, maps_api_key):
       address      : str
       price_level  : int | None（0-4）
       match        : 'EXACT' | 'FUZZY' | 'NO_MATCH' | 'NO_RESULTS'
+      place_id     : str | None（僅名稱相似度達標的相符店才給，供 Place Details 查營業時間）
     """
     store_name = name
     if not maps_api_key:
-        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP'}
+        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP', 'place_id': None}
 
     # 地址取前 15 字（縣市 + 區 + 路名），避免門牌號碼造成噪音
     addr_short = address[:15] if address else ''
@@ -313,10 +272,10 @@ def find_place_status(name, address, maps_api_key):
         candidates = data.get('candidates', [])
 
         if api_status == 'ZERO_RESULTS' or not candidates:
-            return {'status': 'NOT_FOUND', 'address': '', 'price_level': None, 'match': 'NO_RESULTS'}
+            return {'status': 'NOT_FOUND', 'address': '', 'price_level': None, 'match': 'NO_RESULTS', 'place_id': None}
 
         if api_status != 'OK':
-            return {'status': 'UNKNOWN', 'address': '', 'price_level': None, 'match': 'API_ERROR'}
+            return {'status': 'UNKNOWN', 'address': '', 'price_level': None, 'match': 'API_ERROR', 'place_id': None}
 
         # 取第一候選，計算名稱相似度
         top = candidates[0]
@@ -330,17 +289,18 @@ def find_place_status(name, address, maps_api_key):
                 'address':     top.get('formatted_address', ''),
                 'price_level': top.get('price_level'),
                 'match':       match_type,
+                'place_id':    top.get('place_id'),   # 相符才給，供 enrich 查營業時間
             }
         else:
-            # 返回的店名與原始店名不符 → 此店已從 Google Maps 消失（可能停業）
-            return {'status': 'NOT_FOUND', 'address': '', 'price_level': None, 'match': 'NO_MATCH'}
+            # 返回的店名與原始店名不符 → 此店已從 Google Maps 消失（可能停業）；不給 place_id 以免補錯店
+            return {'status': 'NOT_FOUND', 'address': '', 'price_level': None, 'match': 'NO_MATCH', 'place_id': None}
 
     except urllib.error.HTTPError as e:
         print(f"    [Maps API HTTP {e.code}]")
-        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'HTTP_ERR'}
+        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'HTTP_ERR', 'place_id': None}
     except Exception as e:
         print(f"    [Maps API 錯誤] {e}")
-        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'EXCEPTION'}
+        return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'EXCEPTION', 'place_id': None}
 
 
 def classify_batch(items, home_address, api_key, model_name):
@@ -556,25 +516,39 @@ def make_classifier(api_key, model_name, home_address=''):
 
 
 def make_find_place(maps_api_key):
-    """回傳 verify_import 需要的 find_place(name,address)->dict；無金鑰回傳 ERROR。"""
+    """回傳 verify_import 需要的 find_place(name,address)->dict；無金鑰回傳 ERROR。
+
+    **同一 (name,address) 於單次執行內記憶化（memoize）**：enrich 與 verify 共用同一顆
+    find_place，故每家店的 Find Place 只打一次網路（省 Maps 額度）。回傳含 place_id，
+    supplying 兩者所需（verify 用 status、enrich 用 place_id）。
+    """
+    memo = {}
+
     def find_place(name, address):
         if not maps_api_key:
-            return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP'}
-        return find_place_status(name, address, maps_api_key)
+            return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP', 'place_id': None}
+        key = (name, address)
+        if key not in memo:
+            memo[key] = find_place_status(name, address, maps_api_key)
+        return memo[key]
     return find_place
 
 
-def make_place_details(maps_api_key):
+def make_place_details(maps_api_key, find_place=None):
     """回傳 enrich_pending 需要的 place_details(name, address)->dict。
 
-    先用 find_place_id() 由店名+地址解析正規 place_id（hex CID 不能直接查 details），
-    再呼叫 place_details() 取地址+營業時間。無金鑰、找不到店或相似度不足 → 回空結果。
+    用共用的 find_place（make_find_place 產生、已記憶化）取正規 place_id
+    （hex CID 不能直接查 details），再呼叫 place_details() 取地址+營業時間。
+    無金鑰、未提供 find_place、找不到店或相似度不足 → 回空結果。
     """
+    empty = {'address': '', 'hours': None, 'hours_text': ''}
+
     def _resolve(name, address):
-        if not maps_api_key:
-            return {'address': '', 'hours': None, 'hours_text': ''}
-        pid = find_place_id(name, address, maps_api_key)
+        if not maps_api_key or find_place is None:
+            return dict(empty)
+        fp = find_place(name, address)
+        pid = fp.get('place_id') if fp else None
         if not pid:
-            return {'address': '', 'hours': None, 'hours_text': ''}
+            return dict(empty)
         return place_details(pid, maps_api_key)
     return _resolve

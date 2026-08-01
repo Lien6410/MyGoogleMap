@@ -95,9 +95,10 @@ def main():
         print("[INFO] 無 MAPS/GEMINI 金鑰，無法補營業時間。")
         return
     delay = float(env.get('VERIFY_REQUEST_DELAY') or 0)
+    find_place = gapi.make_find_place(maps_key)
     conn = db.connect()
     try:
-        updated, got_hours = backfill_hours(conn, gapi.make_place_details(maps_key),
+        updated, got_hours = backfill_hours(conn, gapi.make_place_details(maps_key, find_place),
                                             request_delay=delay)
         print(f"[OK] 更新 {updated} 家（其中補到營業時間 {got_hours} 家）。")
     finally:
