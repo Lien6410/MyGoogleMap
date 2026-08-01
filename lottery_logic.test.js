@@ -56,4 +56,7 @@ test('adaptiveHoursDefault relaxes when coverage is low', () => {
   assert.strictEqual(low.length, L.ALL_HOURS.length);   // 全勾
   const high = L.adaptiveHoursDefault({ hours: 0.8 });
   assert.deepStrictEqual(high.sort(), ['open-now', 'unknown'].sort());
+  // 邊界：剛好等於門檻 0.5 → 收緊模式（非放寬）
+  assert.deepStrictEqual(L.adaptiveHoursDefault({ hours: 0.5 }).sort(),
+    ['open-now', 'unknown'].sort());
 });
