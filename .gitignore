@@ -28,3 +28,6 @@ takeout-*/
 *.csv
 # Playwright MCP session artifacts
 .playwright-mcp/
+
+# Superpowers brainstorm/sdd artifacts
+.superpowers/
