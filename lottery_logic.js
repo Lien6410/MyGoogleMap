@@ -42,10 +42,29 @@
     return 'expensive';
   }
 
+  function computeCoverage(stores) {
+    var total = stores.length, h = 0, d = 0;
+    for (var i = 0; i < total; i++) {
+      var s = stores[i];
+      if (s.hours && s.hours.length) h++;
+      if (s.distance_km != null) d++;
+    }
+    return { hours: total ? h / total : 0, distance: total ? d / total : 0, total: total };
+  }
+
+  var HOURS_COVERAGE_THRESHOLD = 0.5;
+  var ALL_HOURS = ['open-now', 'breakfast', 'lunch', 'tea', 'dinner', 'latenight', 'unknown'];
+
+  function adaptiveHoursDefault(coverage) {
+    if (coverage.hours < HOURS_COVERAGE_THRESHOLD) return ALL_HOURS.slice();
+    return ['open-now', 'unknown'];
+  }
+
   var api = {
     TAIWAN_COUNTIES: TAIWAN_COUNTIES, extractCounty: extractCounty,
     CUISINE_ALIASES: CUISINE_ALIASES, normalizeCuisine: normalizeCuisine,
-    distanceBucket: distanceBucket, priceBucket: priceBucket
+    distanceBucket: distanceBucket, priceBucket: priceBucket,
+    computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault
   };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

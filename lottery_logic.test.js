@@ -35,3 +35,25 @@ test('normalizeCuisine maps aliases', () => {
   assert.strictEqual(L.normalizeCuisine('台式'), '中式');
   assert.strictEqual(L.normalizeCuisine('日式'), '日式');
 });
+
+test('computeCoverage counts hours and distance ratios', () => {
+  const stores = [
+    { hours: [{ d: 1, o: '1100', c: '1400' }], distance_km: 1.2 },
+    { hours: null, distance_km: 3.0 },
+    { hours: [], distance_km: null },
+    { hours: null, distance_km: null },
+  ];
+  const c = L.computeCoverage(stores);
+  assert.strictEqual(c.total, 4);
+  assert.strictEqual(c.hours, 0.25);      // 只有第一筆有非空 hours
+  assert.strictEqual(c.distance, 0.5);    // 前兩筆有距離
+  assert.deepStrictEqual(L.computeCoverage([]), { hours: 0, distance: 0, total: 0 });
+});
+
+test('adaptiveHoursDefault relaxes when coverage is low', () => {
+  const low = L.adaptiveHoursDefault({ hours: 0.0 });
+  assert.ok(low.includes('open-now') && low.includes('lunch') && low.includes('unknown'));
+  assert.strictEqual(low.length, L.ALL_HOURS.length);   // 全勾
+  const high = L.adaptiveHoursDefault({ hours: 0.8 });
+  assert.deepStrictEqual(high.sort(), ['open-now', 'unknown'].sort());
+});
