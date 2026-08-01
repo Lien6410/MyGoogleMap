@@ -1,4 +1,5 @@
 import logging
+import time
 
 from . import cache
 
@@ -36,7 +37,7 @@ def _write_closure(conn, import_id, place_key, status, is_closed, source):
 
 
 def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None,
-                  cache_max_age_days=1):
+                  cache_max_age_days=1, request_delay=0):
     max_age = cache_max_age_days * 86400 if cache_max_age_days is not None else None
     places = _places_in_import(conn, import_id, limit)
     total = len(places)
@@ -53,6 +54,8 @@ def verify_import(conn, import_id, find_place, *, gemini_verify=None, limit=None
             source = 'maps'
             if status not in _UNSURE:
                 cache.cache_set(conn, ck, {'status': status, 'source': source})
+            if request_delay:
+                time.sleep(request_delay)   # 只在真的打了 API（cache-miss）後才節流
         is_closed = status in CLOSED_STATUSES
         _write_closure(conn, import_id, p['place_key'], status, is_closed, source)
         written += 1

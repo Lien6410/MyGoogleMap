@@ -1,4 +1,5 @@
 import logging
+import time
 
 from psycopg.types.json import Json
 
@@ -38,7 +39,8 @@ def _update_place(conn, place_key, det, address, lat, lng, hours, hours_text, di
 
 
 def enrich_pending(conn, classify, *, place_details=None,
-                   home_lat=None, home_lng=None, batch_size=20, limit=None, mark_enriched=True):
+                   home_lat=None, home_lng=None, batch_size=20, limit=None,
+                   mark_enriched=True, batch_delay=0):
     pending = _pending_places(conn, limit)
     total = len(pending)
     log.info("enrichment：待補齊 %d 家", total)
@@ -65,5 +67,8 @@ def enrich_pending(conn, classify, *, place_details=None,
             done += 1
         if total:
             log.info("  enrich %d/%d", done, total)
+        if batch_delay and i + batch_size < total:
+            log.info("  節流：等待 %s 秒（避免觸發 API 速率限制）…", batch_delay)
+            time.sleep(batch_delay)
     conn.commit()
     return done

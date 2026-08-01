@@ -81,3 +81,32 @@ def test_verify_reverifies_when_cache_stale(conn):
     iid2 = ingest_entries(conn, [_e('易變店', 'x/data=!1s0xab:0xcd')], source_zip='t2.zip')
     verify_import(conn, iid2, fake_find, cache_max_age_days=0)           # stale -> re-verify
     assert len(calls) == 2
+
+
+def test_verify_throttles_between_live_calls(conn, monkeypatch):
+    import mygmap.verify as verify_mod
+    slept = []
+    monkeypatch.setattr(verify_mod.time, 'sleep', lambda s: slept.append(s))
+    iid = ingest_entries(conn, [_e('甲店', 'x/data=!1s0xa1:0xa1'),
+                                _e('乙店', 'x/data=!1s0xb2:0xb2')], source_zip='t.zip')
+
+    def fake_find(name, address):
+        return {'status': 'OPERATIONAL', 'address': '', 'price_level': None, 'match': 'EXACT'}
+
+    verify_import(conn, iid, fake_find, request_delay=3)
+    assert slept == [3, 3]        # 兩家都 cache-miss（真的打了 API）→ 各節流一次
+
+
+def test_verify_no_throttle_on_cache_hit(conn, monkeypatch):
+    import mygmap.verify as verify_mod
+    slept = []
+    monkeypatch.setattr(verify_mod.time, 'sleep', lambda s: slept.append(s))
+    iid = ingest_entries(conn, [_e('快取節流店', 'x/data=!1s0xcc:0xcc')], source_zip='t.zip')
+
+    def fake_find(name, address):
+        return {'status': 'OPERATIONAL', 'address': '', 'price_level': None, 'match': 'EXACT'}
+
+    verify_import(conn, iid, fake_find, request_delay=3)         # 1st: cache-miss -> sleep once
+    iid2 = ingest_entries(conn, [_e('快取節流店', 'x/data=!1s0xcc:0xcc')], source_zip='t2.zip')
+    verify_import(conn, iid2, fake_find, request_delay=3)        # 2nd: cache-hit -> no api, no sleep
+    assert slept == [3]           # 只有第一次真打 API 才節流

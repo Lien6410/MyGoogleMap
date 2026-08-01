@@ -72,3 +72,23 @@ def test_enrich_logs_progress(conn, caplog):
     msgs = [r.getMessage() for r in caplog.records]
     assert any('待補齊 1' in m for m in msgs)     # header line
     assert any('enrich 1/1' in m for m in msgs)    # per-batch progress
+
+
+def test_enrich_throttles_between_batches(conn, monkeypatch):
+    import mygmap.enrich as enrich_mod
+    slept = []
+    monkeypatch.setattr(enrich_mod.time, 'sleep', lambda s: slept.append(s))
+    ingest_entries(conn, [_e('甲', url='x/data=!1s0x1:0x2'),
+                          _e('乙', url='y/data=!1s0x3:0x4')], source_zip='t.zip')
+    enrich_pending(conn, _fake_classify, batch_size=1, batch_delay=5)
+    assert slept == [5]           # 2 批次 → 僅批次「之間」sleep 一次（最後一批後不 sleep）
+
+
+def test_enrich_no_throttle_by_default(conn, monkeypatch):
+    import mygmap.enrich as enrich_mod
+    slept = []
+    monkeypatch.setattr(enrich_mod.time, 'sleep', lambda s: slept.append(s))
+    ingest_entries(conn, [_e('丙', url='x/data=!1s0x5:0x6'),
+                          _e('丁', url='y/data=!1s0x7:0x8')], source_zip='t.zip')
+    enrich_pending(conn, _fake_classify, batch_size=1)   # batch_delay 預設 0
+    assert slept == []            # 測試不因節流變慢

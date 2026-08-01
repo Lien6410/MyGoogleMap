@@ -33,6 +33,10 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     maps_key = env.get('MAPS_API_KEY', '') or api_key
     model = env.get('GEMINI_MODEL', 'gemini-2.5-flash')
     home = env.get('HOME_ADDRESS', '')
+    # 節流：enrich 每批走一次 Gemini，預設每批間隔 7 秒（≈8.5 req/min，壓在免費層 10 RPM 內）；
+    # 無金鑰走本地啟發式、不需節流。verify 走 Maps（額度高），預設不節流。皆可用 .env 覆寫。
+    batch_delay = float(env.get('ENRICH_BATCH_DELAY') or 7) if api_key else 0
+    verify_delay = float(env.get('VERIFY_REQUEST_DELAY') or 0)
     if not api_key and not maps_key:
         log.info("未偵測到 API 金鑰：enrichment 走本地啟發式、跳過歇業驗證。")
 
@@ -47,11 +51,12 @@ def run(conn, takeout_dir='data/takeout', out_dir='data/output'):
     classify = gapi.make_classifier(api_key, model, home_address=home)
     enriched = enrich_pending(conn, classify, place_details=place_details,
                               home_lat=home_lat, home_lng=home_lng,
-                              mark_enriched=bool(api_key))
+                              mark_enriched=bool(api_key), batch_delay=batch_delay)
 
     verified = 0
     if maps_key:
-        verified = verify_import(conn, import_id, gapi.make_find_place(maps_key))
+        verified = verify_import(conn, import_id, gapi.make_find_place(maps_key),
+                                 request_delay=verify_delay)
 
     log.info("產生變化報告…")
     report_path = report.write_report(conn, out_dir=out_dir)
