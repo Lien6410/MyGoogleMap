@@ -95,12 +95,37 @@
     return pool[pool.length - 1];
   }
 
+  function storeMatches(store, filters, now) {
+    if (filters.visit === 'yes' && store.visited !== '是') return false;
+    if (filters.visit === 'no' && store.visited !== '否') return false;
+
+    if (filters.cuisines) {
+      if (!store.cuisine_type) {
+        if (!filters.cuisines.has('其他')) return false;
+      } else {
+        var cs = store.cuisine_type.split(',').map(function (c) { return normalizeCuisine(c.trim()); });
+        var ok = cs.some(function (c) { return filters.cuisines.has(c); });
+        if (!ok) return false;
+      }
+    }
+
+    if (!filters.distances.has(distanceBucket(store.distance_km))) return false;
+    if (!filters.prices.has(priceBucket(store.avg_spending))) return false;
+
+    var county = extractCounty(store.address);
+    if (county) { if (!filters.counties.has(county)) return false; }
+    else { if (!filters.counties.has('unknown')) return false; }
+
+    if (!Hours.matchesHoursFilter(store, now, filters.hours)) return false;
+    return true;
+  }
+
   var api = {
     TAIWAN_COUNTIES: TAIWAN_COUNTIES, extractCounty: extractCounty,
     CUISINE_ALIASES: CUISINE_ALIASES, normalizeCuisine: normalizeCuisine,
     distanceBucket: distanceBucket, priceBucket: priceBucket,
     computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault,
-    storeWeight: storeWeight, weightedPick: weightedPick
+    storeWeight: storeWeight, weightedPick: weightedPick, storeMatches: storeMatches
   };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

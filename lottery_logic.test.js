@@ -90,3 +90,50 @@ test('weightedPick honors cumulative weights via injected rng', () => {
   // 關閉加權 → 等機率索引
   assert.strictEqual(L.weightedPick(pool, now, false, () => 0.0).title, 'A');
 });
+
+test('storeMatches applies each hard filter', () => {
+  const now = at(1, 12, 0);
+  const base = {
+    visit: 'all', cuisines: null,
+    distances: new Set(['1', '3', '5', '10', 'far', 'unknown']),
+    prices: new Set(['200', '500', '1000', 'expensive', 'free']),
+    counties: new Set(['新竹市', 'unknown']),
+    hours: new Set(L.ALL_HOURS),
+  };
+  const store = {
+    title: 'X', address: '新竹市東區', cuisine_type: '日式',
+    distance_km: 2.0, avg_spending: 300, visited: '否', hours: null,
+  };
+  assert.strictEqual(L.storeMatches(store, base, now), true);
+  // 回訪不合
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { visit: 'yes' }), now), false);
+  // 菜系不含
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { cuisines: new Set(['中式']) }), now), false);
+  // 台式→中式 別名命中
+  assert.strictEqual(L.storeMatches(Object.assign({}, store, { cuisine_type: '台式' }),
+    Object.assign({}, base, { cuisines: new Set(['中式']) }), now), true);
+  // 距離桶不含（2.0→'3'）
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { distances: new Set(['1']) }), now), false);
+  // 價格桶不含（300→'500'）
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { prices: new Set(['200']) }), now), false);
+  // 縣市：非台灣店（county=null）需 counties 含 'unknown'
+  const sg = Object.assign({}, store, { address: 'Singapore' });
+  assert.strictEqual(L.storeMatches(sg, base, now), true);               // base 含 'unknown' → 通過
+  assert.strictEqual(L.storeMatches(sg, Object.assign({}, base, { counties: new Set(['新竹市']) }), now), false); // 不含 unknown → 排除
+  // 無 hours 只經 'unknown'
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { hours: new Set(['open-now']) }), now), false);
+  assert.strictEqual(L.storeMatches(store, Object.assign({}, base, { hours: new Set(['unknown']) }), now), true);
+});
+
+test('storeMatches: no cuisine_type needs 其他 when cuisines is a Set', () => {
+  const now = at(1, 12, 0);
+  const base = {
+    visit: 'all', cuisines: new Set(['日式']),
+    distances: new Set(['unknown']), prices: new Set(['free']),
+    counties: new Set(['unknown']), hours: new Set(['unknown']),
+  };
+  const noCuisine = { address: '', cuisine_type: '', distance_km: null, avg_spending: 0, visited: '是', hours: null };
+  assert.strictEqual(L.storeMatches(noCuisine, base, now), false);
+  assert.strictEqual(L.storeMatches(noCuisine, Object.assign({}, base, { cuisines: new Set(['其他']) }), now), true);
+  assert.strictEqual(L.storeMatches(noCuisine, Object.assign({}, base, { cuisines: null }), now), true);
+});
