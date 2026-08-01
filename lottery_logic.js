@@ -2,6 +2,7 @@
 (function (global) {
   'use strict';
 
+  // Hours：hours_logic.js 的營業判斷；Task 3/4 的 storeWeight/storeMatches 會用到（此處先取得）。
   var Hours = (typeof module !== 'undefined' && module.exports)
     ? require('./hours_logic.js')
     : global.HoursLogic;
