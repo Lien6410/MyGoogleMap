@@ -10,21 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   
   <style>
-    /* CSS Variables for Premium Dark/Glassmorphic Aesthetics */
+    /* CSS Variables for Warm Food Appetite Aesthetics */
     :root {
-      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-      --panel-bg: rgba(30, 41, 59, 0.45);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(255, 255, 255, 0.18);
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --accent-color: #6366f1;
-      --accent-glow: rgba(99, 102, 241, 0.4);
-      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-      --accent-secondary: #ec4899;
-      --card-bg: rgba(15, 23, 42, 0.6);
-      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
-      --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.2);
+      --bg-gradient: linear-gradient(135deg, #1a1210 0%, #2b1a12 100%);
+      --panel-bg: rgba(43, 26, 18, 0.55);
+      --border-color: rgba(255, 237, 213, 0.10);
+      --border-hover: rgba(255, 237, 213, 0.22);
+      --text-primary: #fff7ed;
+      --text-secondary: #a8836b;
+      --accent-color: #f97316;
+      --accent-glow: rgba(249, 115, 22, 0.4);
+      --accent-gradient: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+      --accent-secondary: #fb923c;
+      --card-bg: rgba(26, 18, 16, 0.6);
+      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.4), 0 8px 10px -6px rgba(0,0,0,0.4);
+      --shadow-glow: 0 0 30px rgba(249, 115, 22, 0.2);
     }
 
     * {
@@ -51,12 +51,12 @@
       width: 400px;
       height: 400px;
       border-radius: 50%;
-      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(99,102,241,0) 70%);
+      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(249,115,22,0) 70%);
       z-index: -1;
       filter: blur(40px);
     }
     .orb-1 { top: 10%; left: 5%; }
-    .orb-2 { bottom: 10%; right: 5%; background: radial-gradient(circle, rgba(236,72,153,0.15) 0%, rgba(236,72,153,0) 70%); }
+    .orb-2 { bottom: 10%; right: 5%; background: radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(239,68,68,0) 70%); }
 
     header {
       text-align: center;
@@ -68,7 +68,7 @@
       font-size: 2.5rem;
       font-weight: 800;
       letter-spacing: -0.025em;
-      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      background: linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ef4444 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 0.5rem;
@@ -82,30 +82,32 @@
 
     .main-container {
       width: 100%;
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 350px 1fr;
-      gap: 2rem;
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
       z-index: 10;
     }
 
-    @media (max-width: 900px) {
-      .main-container {
-        grid-template-columns: 1fr;
-      }
-    }
+    /* Preset chip bar */
+    .preset-bar { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.25rem; -webkit-overflow-scrolling: touch; }
+    .preset-chip { white-space: nowrap; padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.9rem;
+      font-weight: 600; cursor: pointer; border: 1px solid var(--border-color);
+      background: rgba(43,26,18,0.5); color: var(--text-secondary); transition: all 0.2s ease; }
+    .preset-chip:hover { color: var(--text-primary); border-color: var(--border-hover); }
+    .preset-chip.active { background: var(--accent-gradient); color: #fff; border-color: transparent;
+      box-shadow: 0 6px 16px -4px var(--accent-glow); }
+    .preset-chip.custom { font-style: italic; }
 
-    /* Glassmorphic Filters Sidebar */
-    .sidebar {
-      background: var(--panel-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 1.75rem;
-      height: fit-content;
-      box-shadow: var(--shadow-lg);
-    }
+    /* Collapsible advanced panel */
+    .advanced-toggle { width: 100%; display: flex; justify-content: space-between; align-items: center;
+      background: var(--panel-bg); border: 1px solid var(--border-color); color: var(--text-primary);
+      border-radius: 12px; padding: 0.85rem 1.1rem; font-size: 1rem; font-weight: 600; cursor: pointer; }
+    .advanced-toggle .chev { transition: transform 0.2s ease; }
+    .advanced-toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
+    .advanced-panel { background: var(--panel-bg); backdrop-filter: blur(12px); border: 1px solid var(--border-color);
+      border-top: none; border-radius: 0 0 16px 16px; padding: 1.5rem; margin-top: -6px; }
+    .advanced-panel[hidden] { display: none; }
 
     .filter-section {
       margin-bottom: 1.75rem;
@@ -233,7 +235,7 @@
 
     /* Counter card */
     .counter-card {
-      background: rgba(30, 41, 59, 0.25);
+      background: rgba(43, 26, 18, 0.25);
       border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 0.75rem 1.25rem;
@@ -245,7 +247,7 @@
 
     .counter-val {
       font-weight: 700;
-      color: #38bdf8;
+      color: var(--accent-secondary);
     }
 
     /* Draw Board */
@@ -267,7 +269,7 @@
     }
 
     .draw-board.spinning {
-      border-color: rgba(99, 102, 241, 0.4);
+      border-color: rgba(249, 115, 22, 0.4);
     }
 
     /* Large Draw Button */
@@ -280,7 +282,7 @@
       font-weight: 700;
       border-radius: 50px;
       cursor: pointer;
-      box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4), 0 0 20px rgba(99, 102, 241, 0.2);
+      box-shadow: 0 10px 20px -5px var(--accent-glow), 0 0 20px rgba(249, 115, 22, 0.2);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
@@ -291,7 +293,7 @@
 
     .btn-draw:hover:not(:disabled) {
       transform: translateY(-3px);
-      box-shadow: 0 15px 25px -5px rgba(99, 102, 241, 0.6), 0 0 30px rgba(99, 102, 241, 0.4);
+      box-shadow: 0 15px 25px -5px rgba(249, 115, 22, 0.6), 0 0 30px rgba(249, 115, 22, 0.4);
     }
 
     .btn-draw:active:not(:disabled) {
@@ -505,167 +507,183 @@
   <div class="bg-orb orb-2"></div>
 
   <header>
-    <h1>Lucky Draw Roulette</h1>
+    <h1>🍜 今天吃什麼</h1>
     <p>篩選並抽出您的下一個美食地標</p>
   </header>
 
   <div class="main-container">
-    
-    <!-- Sidebar Filters -->
-    <aside class="sidebar">
-      
-      <!-- Visited Status Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>回訪狀態</span>
-        </div>
-        <div class="radio-group">
-          <div class="radio-option">
-            <input type="radio" id="visit-all" name="visit-status" value="all" checked>
-            <label for="visit-all">全部</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="visit-yes" name="visit-status" value="yes">
-            <label for="visit-yes">曾去過</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="visit-no" name="visit-status" value="no">
-            <label for="visit-no">未去過</label>
-          </div>
-        </div>
-      </div>
 
-      <!-- Business Hours Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>營業時間</span>
-          <div class="filter-actions">
-            <a onclick="selectAll('hours', true)">全選</a>
-            <span>|</span>
-            <a onclick="selectAll('hours', false)">全不選</a>
+    <!-- 情境快捷列（chips 由 Task 7 JS 填入） -->
+    <div id="preset-bar" class="preset-bar">
+      <!-- chips 由 JS 依 LotteryLogic.PRESET_NAMES 產生；此處僅容器 -->
+    </div>
+
+    <!-- 可收合進階篩選面板 -->
+    <div class="advanced">
+      <button type="button" id="advanced-toggle" class="advanced-toggle" aria-expanded="false"
+        onclick="(function(btn){var panel=document.getElementById('advanced-panel');var expanded=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!expanded));if(expanded){panel.setAttribute('hidden','');}else{panel.removeAttribute('hidden');}})(this)">
+        <span>⚙ 進階篩選</span><span class="chev">▾</span>
+      </button>
+      <div id="advanced-panel" class="advanced-panel" hidden>
+
+        <!-- 加權抽籤開關 -->
+        <label class="checkbox-label" style="margin-bottom:1rem;">
+          <input type="checkbox" id="weight-toggle" checked> ⚡ 加權抽籤（近／營業中優先）
+        </label>
+
+        <!-- Visited Status Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>回訪狀態</span>
+          </div>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="visit-all" name="visit-status" value="all" checked>
+              <label for="visit-all">全部</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="visit-yes" name="visit-status" value="yes">
+              <label for="visit-yes">曾去過</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="visit-no" name="visit-status" value="no">
+              <label for="visit-no">未去過</label>
+            </div>
           </div>
         </div>
-        <div class="checkbox-group">
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="open-now" checked> 營業中（依現在時間）
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="breakfast"> 早餐 (05:00–10:30)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="lunch"> 中餐 (10:30–14:00)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="tea"> 下午茶 (14:00–17:00)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="dinner"> 晚餐 (17:00–21:00)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="latenight"> 消夜 (21:00–05:00)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="hours" value="unknown"> 未知（無營業時間資料）
-          </label>
-        </div>
-      </div>
 
-      <!-- Cuisine Type Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>餐飲類型</span>
-          <div class="filter-actions">
-            <a onclick="selectAll('cuisine', true)">全選</a>
-            <span>|</span>
-            <a onclick="selectAll('cuisine', false)">全不選</a>
+        <!-- Business Hours Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>營業時間</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('hours', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('hours', false)">全不選</a>
+            </div>
+          </div>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="open-now" checked> 營業中（依現在時間）
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="breakfast"> 早餐 (05:00–10:30)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="lunch"> 中餐 (10:30–14:00)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="tea"> 下午茶 (14:00–17:00)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="dinner"> 晚餐 (17:00–21:00)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="latenight"> 消夜 (21:00–05:00)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hours" value="unknown"> 未知（無營業時間資料）
+            </label>
           </div>
         </div>
-        <div class="checkbox-group" id="cuisine-group">
-          <!-- Populated by JS -->
-        </div>
-      </div>
 
-      <!-- Distance Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>距離住家</span>
-          <div class="filter-actions">
-            <a onclick="selectAll('distance', true)">全選</a>
-            <span>|</span>
-            <a onclick="selectAll('distance', false)">全不選</a>
+        <!-- Cuisine Type Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>餐飲類型</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('cuisine', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('cuisine', false)">全不選</a>
+            </div>
+          </div>
+          <div class="checkbox-group" id="cuisine-group">
+            <!-- Populated by JS -->
           </div>
         </div>
-        <div class="checkbox-group">
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="1" checked> 1公里內
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="3" checked> 1~3公里
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="5"> 3~5公里
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="10"> 5~10公里
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="far"> 10公里以上
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="distance" value="unknown"> 未知距離
-          </label>
-        </div>
-      </div>
 
-      <!-- Price Range Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>人均消費</span>
-          <div class="filter-actions">
-            <a onclick="selectAll('price', true)">全選</a>
-            <span>|</span>
-            <a onclick="selectAll('price', false)">全不選</a>
+        <!-- Distance Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>距離住家</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('distance', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('distance', false)">全不選</a>
+            </div>
+          </div>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="1" checked> 1公里內
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="3" checked> 1~3公里
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="5"> 3~5公里
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="10"> 5~10公里
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="far"> 10公里以上
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="distance" value="unknown"> 未知距離
+            </label>
           </div>
         </div>
-        <div class="checkbox-group">
-          <label class="checkbox-label">
-            <input type="checkbox" name="price" value="200" checked> 200元內 (平價)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="price" value="500" checked> 200~500元 (中價位)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="price" value="1000"> 500~1000元 (中高檔)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="price" value="expensive"> 1000元以上 (奢華)
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="price" value="free"> 未知/免費景點
-          </label>
-        </div>
-      </div>
 
-      <!-- County Filter -->
-      <div class="filter-section">
-        <div class="filter-title">
-          <span>縣市</span>
-          <div class="filter-actions">
-            <a onclick="selectAll('county', true)">全選</a>
-            <span>|</span>
-            <a onclick="selectAll('county', false)">全不選</a>
+        <!-- Price Range Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>人均消費</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('price', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('price', false)">全不選</a>
+            </div>
+          </div>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="price" value="200" checked> 200元內 (平價)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="price" value="500" checked> 200~500元 (中價位)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="price" value="1000"> 500~1000元 (中高檔)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="price" value="expensive"> 1000元以上 (奢華)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="price" value="free"> 未知/免費景點
+            </label>
           </div>
         </div>
-        <div class="checkbox-group" id="county-group">
-          <!-- Populated by JS -->
-        </div>
-      </div>
 
-    </aside>
+        <!-- County Filter -->
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>縣市</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('county', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('county', false)">全不選</a>
+            </div>
+          </div>
+          <div class="checkbox-group" id="county-group">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+      </div><!-- /#advanced-panel -->
+    </div><!-- /.advanced -->
 
     <!-- Main Lottery Section -->
     <main class="draw-area">
-      
+
       <!-- Counter Status -->
       <div class="counter-card">
         <span>符合目前篩選條件的店家數量：</span>
@@ -683,7 +701,7 @@
         <!-- Initial Blank State / Draw Button -->
         <div class="empty-state" id="initial-state">
           <h3>今天吃什麼？</h3>
-          <p style="margin-bottom: 2rem;">選擇左側篩選條件，然後點擊下方按鈕開始隨機抽籤</p>
+          <p style="margin-bottom: 2rem;">設定篩選條件或情境，然後點擊下方按鈕開始隨機抽籤</p>
           <button type="button" class="btn-draw" id="btn-start" onclick="drawLottery()">
             <span>✨ 開始抽籤</span>
           </button>
@@ -737,6 +755,9 @@
 
   <!-- 營業時間判斷純函式（供瀏覽器與 Node 共用） -->
   <script src="hours_logic.js"></script>
+
+  <!-- 抽籤邏輯純模組（Task 7 接線） -->
+  <script src="lottery_logic.js"></script>
 
   <script>
     // Fallback in case stores_data.js is not loaded
@@ -971,7 +992,7 @@
 
     // Confetti Effect for Winner
     function createConfetti() {
-      const colors = ['#6366f1', '#a855f7', '#ec4899', '#38bdf8', '#facc15'];
+      const colors = ['#f97316', '#ef4444', '#fb923c', '#fbbf24', '#fde68a'];
       const board = document.getElementById('board');
       for (let i = 0; i < 40; i++) {
         const confetti = document.createElement('div');
