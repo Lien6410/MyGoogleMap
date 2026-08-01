@@ -120,12 +120,45 @@
     return true;
   }
 
+  var PRESET_NAMES = ['智慧推薦', '附近', '沒去過', '現在營業', '全部隨機'];
+
+  function resolvePreset(name, coverage, dataCounties) {
+    dataCounties = dataCounties || [];
+    var homeCounties = ['新竹市', '新竹縣'].filter(function (c) {
+      return dataCounties.indexOf(c) !== -1;
+    });
+    var f = {
+      visit: 'all',
+      cuisines: null,
+      distances: new Set(['1', '3', '5', '10', 'far', 'unknown']),
+      prices: new Set(['200', '500', 'free']),
+      counties: new Set(homeCounties),
+      hours: new Set(adaptiveHoursDefault(coverage)),
+      weightOn: true,
+    };
+    if (name === '附近') {
+      f.distances = new Set(['1', '3', 'unknown']);
+    } else if (name === '沒去過') {
+      f.visit = 'no';
+    } else if (name === '現在營業') {
+      f.hours = new Set(['open-now', 'unknown']);
+    } else if (name === '全部隨機') {
+      f.distances = new Set(['1', '3', '5', '10', 'far', 'unknown']);
+      f.prices = new Set(['200', '500', '1000', 'expensive', 'free']);
+      f.counties = new Set(dataCounties.concat(['unknown']));
+      f.hours = new Set(ALL_HOURS);
+      f.weightOn = false;
+    }
+    return f;
+  }
+
   var api = {
     TAIWAN_COUNTIES: TAIWAN_COUNTIES, extractCounty: extractCounty,
     CUISINE_ALIASES: CUISINE_ALIASES, normalizeCuisine: normalizeCuisine,
     distanceBucket: distanceBucket, priceBucket: priceBucket,
     computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault,
-    storeWeight: storeWeight, weightedPick: weightedPick, storeMatches: storeMatches
+    storeWeight: storeWeight, weightedPick: weightedPick, storeMatches: storeMatches,
+    PRESET_NAMES: PRESET_NAMES, resolvePreset: resolvePreset
   };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

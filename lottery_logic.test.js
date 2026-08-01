@@ -137,3 +137,39 @@ test('storeMatches: no cuisine_type needs 其他 when cuisines is a Set', () => 
   assert.strictEqual(L.storeMatches(noCuisine, Object.assign({}, base, { cuisines: new Set(['其他']) }), now), true);
   assert.strictEqual(L.storeMatches(noCuisine, Object.assign({}, base, { cuisines: null }), now), true);
 });
+
+test('resolvePreset builds 智慧推薦 base with adaptive hours + home counties', () => {
+  const cov = { hours: 0.0, distance: 0.3 };  // hours 覆蓋低 → 全勾
+  const f = L.resolvePreset('智慧推薦', cov, ['新竹市', '台北市']);
+  assert.strictEqual(f.visit, 'all');
+  assert.strictEqual(f.cuisines, null);
+  assert.strictEqual(f.weightOn, true);
+  assert.deepStrictEqual([...f.counties].sort(), ['新竹市'].sort());   // 只取住家縣市中資料存在者
+  assert.ok(f.distances.has('1') && f.distances.has('far') && f.distances.has('unknown'));
+  assert.deepStrictEqual([...f.prices].sort(), ['200', '500', 'free'].sort());
+  assert.strictEqual(f.hours.size, L.ALL_HOURS.length);              // 自適應全勾
+});
+
+test('resolvePreset variants', () => {
+  const cov = { hours: 0.9, distance: 0.9 };  // 高覆蓋 → 自適應 {open-now,unknown}
+  const dc = ['新竹市', '台北市'];
+  // 附近：距離收窄含 unknown
+  assert.deepStrictEqual([...L.resolvePreset('附近', cov, dc).distances].sort(),
+    ['1', '3', 'unknown'].sort());
+  // 沒去過：visit=no
+  assert.strictEqual(L.resolvePreset('沒去過', cov, dc).visit, 'no');
+  // 現在營業：hours={open-now,unknown}
+  assert.deepStrictEqual([...L.resolvePreset('現在營業', cov, dc).hours].sort(),
+    ['open-now', 'unknown'].sort());
+  // 全部隨機：全開、含資料所有縣市+unknown、關加權
+  const rnd = L.resolvePreset('全部隨機', cov, dc);
+  assert.strictEqual(rnd.weightOn, false);
+  assert.ok(rnd.counties.has('新竹市') && rnd.counties.has('台北市') && rnd.counties.has('unknown'));
+  assert.strictEqual(rnd.hours.size, L.ALL_HOURS.length);
+  assert.strictEqual(rnd.cuisines, null);
+});
+
+test('PRESET_NAMES order', () => {
+  assert.deepStrictEqual(L.PRESET_NAMES,
+    ['智慧推薦', '附近', '沒去過', '現在營業', '全部隨機']);
+});
