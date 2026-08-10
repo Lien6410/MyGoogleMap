@@ -26,7 +26,12 @@
       "PowerShell($env:PYTHONIOENCODING='utf-8'; Set-Location \"d:\\\\code\\\\MyGoogleMap\"; python _fix_overlap.py 2>&1)",
       "PowerShell($env:PYTHONIOENCODING='utf-8'; python -c \"import ast; ast.parse\\(open\\('d:/code/MyGoogleMap/export_to_sheets.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax ok'\\)\")",
       "Bash(bash *)",
-      "Bash([ -f \"$WS/progress.md\" ])"
+      "Bash([ -f \"$WS/progress.md\" ])",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{url_effective}\\\\n\" -L https://Lien6410.github.io/MyGoogleMap/lottery.html)",
+      "Bash(PYTHONIOENCODING=utf-8 uv run python -m mygmap.cli)",
+      "Bash(iconv -f utf-8 -t utf-8)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(curl -s https://Lien6410.github.io/MyGoogleMap/data/output/stores_data.js)"
     ]
   }
 }
