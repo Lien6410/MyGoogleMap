@@ -1,92 +1,6 @@
 // 自動產生的店家資料檔，請勿手動修改。
 window.STORES_DATA = [
   {
-    "title": "(戲棚下Under Six Pound炸雞)新竹市北區",
-    "address": "300台灣新竹市北區中山里中央路45號",
-    "url": "https://www.google.com/maps/place/(%E6%88%B2%E6%A3%9A%E4%B8%8BUnder+Six+Pound%E7%82%B8%E9%9B%9E)%E6%96%B0%E7%AB%B9%E5%B8%82%E5%8C%97%E5%8D%80/data=!4m2!3m1!1s0x34683563e9c41885:0xdcf7f89b9786c020",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1400"
-      }
-    ]
-  },
-  {
-    "title": "10 COFFEE BREWERS 大名店",
-    "address": "6-39 Chūōmachi, Beppu, Oita 874-0936日本",
-    "url": "https://www.google.com/maps/place/10+COFFEE+BREWERS+%E5%A4%A7%E5%90%8D%E5%BA%97/data=!4m2!3m1!1s0x3541916ef6cef5ed:0xdda3cd6a5815350f",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
     "title": "2U Gelato 義式手工冰淇淋 新竹店",
     "address": "300台灣新竹市北區中興里北門街91號",
     "url": "https://www.google.com/maps/place/2U+Gelato+%E7%BE%A9%E5%BC%8F%E6%89%8B%E5%B7%A5%E5%86%B0%E6%B7%87%E6%B7%8B+%E6%96%B0%E7%AB%B9%E5%BA%97/data=!4m2!3m1!1s0x346835fdb9623763:0x98e834693d396743",
@@ -126,450 +40,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1230"
-      }
-    ]
-  },
-  {
-    "title": "30 Bencoolen",
-    "address": "新加坡明古连街30号 邮政编码: 189621",
-    "url": "https://www.google.com/maps/place/30+Bencoolen/data=!4m2!3m1!1s0x31da19bca9d5eb6f:0xabbcffcae7e6811c",
-    "cuisine_type": "其他",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 3196.9,
-    "avg_spending": 0,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "30年老店檸檬愛玉 - 叁拾 (老字號 天然手作飲料)",
-    "address": "260台灣宜蘭縣宜蘭市孝廉里中山路三段258號",
-    "url": "https://www.google.com/maps/place/30%E5%B9%B4%E8%80%81%E5%BA%97%E6%AA%B8%E6%AA%AC%E6%84%9B%E7%8E%89+-+%E5%8F%81%E6%8B%BE+(%E8%80%81%E5%AD%97%E8%99%9F+%E5%A4%A9%E7%84%B6%E6%89%8B%E4%BD%9C%E9%A3%B2%E6%96%99)/data=!4m2!3m1!1s0x3467e4cff87c8c47:0xbfc57e5dcd17c566",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "313鵝肉擔（晚上開始營業，中午不休息）",
-    "address": "112台灣臺北市北投區振華里明德路313號",
-    "url": "https://www.google.com/maps/place/313%E9%B5%9D%E8%82%89%E6%93%94%EF%BC%88%E6%99%9A%E4%B8%8A%E9%96%8B%E5%A7%8B%E7%87%9F%E6%A5%AD%EF%BC%8C%E4%B8%AD%E5%8D%88%E4%B8%8D%E4%BC%91%E6%81%AF%EF%BC%89/data=!4m2!3m1!1s0x3442ae8ebb3f4a81:0xe34566d6e2d4e54e",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.32,
-    "avg_spending": 200,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "35甕缸雞紫南宫店",
-    "address": "557台灣南投縣竹山鎮社寮里大公街69號",
-    "url": "https://www.google.com/maps/place/35%E7%94%95%E7%BC%B8%E9%9B%9E%E7%B4%AB%E5%8D%97%E5%AE%AB%E5%BA%97/data=!4m2!3m1!1s0x34692d5211c41287:0xbf6b97167222efc8",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "44Bit四四拍唱片行 無訂位服務/早午餐/DJ教學/活動企劃",
-    "address": "700台灣臺南市中西區府前路一段85巷26號1樓內部",
-    "url": "https://www.google.com/maps/place/44Bit%E5%9B%9B%E5%9B%9B%E6%8B%8D%E5%94%B1%E7%89%87%E8%A1%8C+%E7%84%A1%E8%A8%82%E4%BD%8D%E6%9C%8D%E5%8B%99%2F%E6%97%A9%E5%8D%88%E9%A4%90%2FDJ%E6%95%99%E5%AD%B8%2F%E6%B4%BB%E5%8B%95%E4%BC%81%E5%8A%83/data=!4m2!3m1!1s0x346e772b753bb631:0x51cd263ccc43496b",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "痛風老饕-飲料",
-    "hours": [
-      {
-        "c": "1600",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1600",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1600",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1600",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1600",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "60+ Tea Shop城中店",
-    "address": "700台灣臺南市中西區南美里中正路110號",
-    "url": "https://www.google.com/maps/place/60%2B+Tea+Shop%E5%9F%8E%E4%B8%AD%E5%BA%97/data=!4m2!3m1!1s0x346e77eee3eaf95b:0x5240c2ef2e10aeb0",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "痛風老饕-",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "69年老店麵攤（米粉湯）",
-    "address": "103台灣臺北市大同區建明里華陰街101巷5號",
-    "url": "https://www.google.com/maps/place/69%E5%B9%B4%E8%80%81%E5%BA%97%E9%BA%B5%E6%94%A4%EF%BC%88%E7%B1%B3%E7%B2%89%E6%B9%AF%EF%BC%89/data=!4m2!3m1!1s0x3442a96daf92404f:0x626b0e69dd385bb",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.4,
-    "avg_spending": 100,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "0730"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "0730"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0730"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0730"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0730"
-      }
-    ]
-  },
-  {
-    "title": "8818 Pizza Restaurant 比薩屋",
-    "address": "700台灣臺南市中西區南門里南門路60號",
-    "url": "https://www.google.com/maps/place/8818+Pizza+Restaurant+%E6%AF%94%E8%96%A9%E5%B1%8B/data=!4m2!3m1!1s0x346e768067800ecb:0x58a1c6513ff4abae",
-    "cuisine_type": "義式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 350,
-    "note": "夢多 MondoTV\n志明/炸雞",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "BANCO 窯烤 Pizza 八德門市",
-    "address": "105台灣臺北市松山區吉仁里八德路三段108號",
-    "url": "https://www.google.com/maps/place/BANCO+%E7%AA%AF%E7%83%A4+Pizza+%E5%85%AB%E5%BE%B7%E9%96%80%E5%B8%82/data=!4m2!3m1!1s0x3442abc22f42bd9f:0xe5a345ae0d04f99",
-    "cuisine_type": "義式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 64.65,
-    "avg_spending": 400,
-    "note": "義大利麵、燉飯\n徐海莉",
-    "hours": [
-      {
-        "c": "1530",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1530",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "BOBO PIZZA 法式披薩專賣店",
-    "address": "260台灣宜蘭縣宜蘭市神農里中山路二段426號",
-    "url": "https://www.google.com/maps/place/BOBO+PIZZA+%E6%B3%95%E5%BC%8F%E6%8A%AB%E8%96%A9%E5%B0%88%E8%B3%A3%E5%BA%97/data=!4m2!3m1!1s0x3467e56cd3a97eb9:0xf615c0b25e3773c7",
-    "cuisine_type": "義式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 350,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1130"
       }
     ]
   },
@@ -751,18 +221,6 @@ window.STORES_DATA = [
         "o": "1730"
       }
     ]
-  },
-  {
-    "title": "Café32 |頭份咖啡廳|咖啡|手沖|咖啡廳|易經|寵物友善|店狗|英式鹹派|薄皮披薩|問事咖啡廳",
-    "address": "",
-    "url": "https://www.google.com/maps/place/Caf%C3%A932+%7C%E9%A0%AD%E4%BB%BD%E5%92%96%E5%95%A1%E5%BB%B3%7C%E5%92%96%E5%95%A1%7C%E6%89%8B%E6%B2%96%7C%E5%92%96%E5%95%A1%E5%BB%B3%7C%E6%98%93%E7%B6%93%7C%E5%AF%B5%E7%89%A9%E5%8F%8B%E5%96%84%7C%E5%BA%97%E7%8B%97%7C%E8%8B%B1%E5%BC%8F%E9%B9%B9%E6%B4%BE%7C%E8%96%84%E7%9A%AE%E6%8A%AB%E8%96%A9%7C%E5%95%8F%E4%BA%8B%E5%92%96%E5%95%A1%E5%BB%B3/data=!4m2!3m1!1s0x34684d681bdf72ab:0x575c98a11dbefde",
-    "cuisine_type": "義式",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 350,
-    "note": "",
-    "hours": null
   },
   {
     "title": "Coffee&Egg 竹北分舖",
@@ -952,73 +410,108 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Crazy Pizza",
-    "address": "300台灣新竹市東區仙水里光復路一段391號",
-    "url": "https://www.google.com/maps/place/Crazy+Pizza/data=!4m2!3m1!1s0x3468373ef4791df7:0x1d92ec0351099c0",
+    "title": "Cucina e Alba 晨曦歐義餐桌",
+    "address": "300台灣新竹市東區東園里光復路二段938號",
+    "url": "https://www.google.com/maps/place/Cucina+e+Alba+%E6%99%A8%E6%9B%A6%E6%AD%90%E7%BE%A9%E9%A4%90%E6%A1%8C/data=!4m2!3m1!1s0x346835004d190667:0xd78e5830d7930779",
     "cuisine_type": "義式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 350,
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 5.23,
+    "avg_spending": 400,
     "note": "",
     "hours": [
       {
-        "c": "2030",
+        "c": "1530",
         "d": 0,
         "o": "1100"
       },
       {
         "c": "2030",
-        "d": 1,
-        "o": "1100"
+        "d": 0,
+        "o": "1700"
       },
       {
-        "c": "2030",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
+        "c": "1530",
         "d": 3,
         "o": "1100"
       },
       {
         "c": "2030",
+        "d": 3,
+        "o": "1700"
+      },
+      {
+        "c": "1530",
         "d": 4,
         "o": "1100"
       },
       {
         "c": "2030",
+        "d": 4,
+        "o": "1700"
+      },
+      {
+        "c": "1530",
         "d": 5,
         "o": "1100"
       },
       {
         "c": "2030",
+        "d": 5,
+        "o": "1700"
+      },
+      {
+        "c": "1530",
         "d": 6,
         "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 6,
+        "o": "1700"
       }
     ]
   },
   {
-    "title": "DAIMYOぶたまぶし",
-    "address": "日本〒810-0041 Fukuoka, Chuo Ward, Daimyō, 2-chōme−1−３０ Ａ・Ｉビル 2階",
-    "url": "https://www.google.com/maps/place/DAIMYO%E3%81%B6%E3%81%9F%E3%81%BE%E3%81%B6%E3%81%97/data=!4m2!3m1!1s0x35419160f31921e1:0x4e69e57af99f8612",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
+    "title": "Daily Ping 平日",
+    "address": "300台灣新竹市東區文華里民權路269號",
+    "url": "https://www.google.com/maps/place/Daily+Ping+%E5%B9%B3%E6%97%A5/data=!4m2!3m1!1s0x346835186e33060b:0xf1f0bc773f4ee9f3",
+    "cuisine_type": "義式,其他",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.78,
+    "avg_spending": 350,
     "note": "",
     "hours": [
       {
-        "c": "1330",
+        "c": "1800",
         "d": 0,
-        "o": "1145"
+        "o": "0930"
       },
       {
-        "c": "1330",
+        "c": "1800",
+        "d": 2,
+        "o": "0930"
+      },
+      {
+        "c": "2100",
+        "d": 3,
+        "o": "0930"
+      },
+      {
+        "c": "2100",
+        "d": 4,
+        "o": "0930"
+      },
+      {
+        "c": "2100",
+        "d": 5,
+        "o": "0930"
+      },
+      {
+        "c": "2100",
         "d": 6,
-        "o": "1145"
+        "o": "0930"
       }
     ]
   },
@@ -1265,212 +758,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "GG 季吉韓國美食餐飲房",
-    "address": "105台灣臺北市松山區中華里敦化北路145巷9號",
-    "url": "https://www.google.com/maps/place/GG+%E5%AD%A3%E5%90%89%E9%9F%93%E5%9C%8B%E7%BE%8E%E9%A3%9F%E9%A4%90%E9%A3%B2%E6%88%BF/data=!4m2!3m1!1s0x3442abe8f6ab1537:0x59624775029f1279",
-    "cuisine_type": "韓式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.4,
-    "avg_spending": 400,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "GG吉季韓國美食餐飲房",
-    "address": "105台灣臺北市松山區民有里民生東路三段113巷6弄13號",
-    "url": "https://www.google.com/maps/place/GG%E5%90%89%E5%AD%A3%E9%9F%93%E5%9C%8B%E7%BE%8E%E9%A3%9F%E9%A4%90%E9%A3%B2%E6%88%BF/data=!4m2!3m1!1s0x3442abe44a9e3321:0x71940b5a60df59da",
-    "cuisine_type": "韓式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.4,
-    "avg_spending": 400,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "Ganso Hakata Mentaiju Nishinakasu",
-    "address": "",
-    "url": "https://www.google.com/maps/place/Ganso+Hakata+Mentaiju+Nishinakasu/data=!4m2!3m1!1s0x35419193dbe0b793:0xde0bd15c9081b8fc",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": null
-  },
-  {
-    "title": "Gyukatsu Motomura Fukuoka Tenjin Nishi Dori Branch",
-    "address": "1-chōme-14-5 Daimyō, Chuo Ward, Fukuoka, 810-0041日本",
-    "url": "https://www.google.com/maps/place/Gyukatsu+Motomura+Fukuoka+Tenjin+Nishi+Dori+Branch/data=!4m2!3m1!1s0x35419185c5b81855:0x192298f2b40408e8",
-    "cuisine_type": "其他",
-    "source_list": "YTer, 2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "Gyutan no Lemon",
     "address": "日本〒111-0032 Tokyo, Taito City, Asakusa, 2-chōme−9−１３ TACT浅草 2F",
     "url": "https://www.google.com/maps/place/Gyutan+no+Lemon/data=!4m2!3m1!1s0x60188f002ad0ce1b:0x39927de3d98ec013",
@@ -1550,49 +837,6 @@ window.STORES_DATA = [
         "c": "2130",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "H.YEN",
-    "address": "433台灣臺中市沙鹿區鹿峰里錦衣街143號",
-    "url": "https://www.google.com/maps/place/H.YEN/data=!4m2!3m1!1s0x3469151c2962160f:0x36f0ee1b398ad3da",
-    "cuisine_type": "其他",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1200"
       }
     ]
   },
@@ -1693,54 +937,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "JACK IN THE DONUTS 福岡天神店",
-    "address": "2-chōme-1-44 Daimyō, Chuo Ward, Fukuoka, 810-0041日本",
-    "url": "https://www.google.com/maps/place/JACK+IN+THE+DONUTS+%E7%A6%8F%E5%B2%A1%E5%A4%A9%E7%A5%9E%E5%BA%97/data=!4m2!3m1!1s0x3541910068b27c97:0x9783b8a1477dd65d",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "JE German Cuisine 德國美食",
     "address": "302台灣新竹縣竹北市斗崙里縣政二路9號",
     "url": "https://www.google.com/maps/place/JE+German+Cuisine+%E5%BE%B7%E5%9C%8B%E7%BE%8E%E9%A3%9F/data=!4m2!3m1!1s0x346837213cab3f75:0x4bbbc4e8b4035c3",
@@ -1780,54 +976,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "JUMBO Seafood - The Riverwalk",
-    "address": "20 Upper Circular Rd, #B1-48 The Riverwalk, 新加坡 058416",
-    "url": "https://www.google.com/maps/place/JUMBO+Seafood+-+The+Riverwalk/data=!4m2!3m1!1s0x31da191274589dc3:0xf962c5d2cc46aea1",
-    "cuisine_type": "東南亞式,海鮮",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 3198.06,
-    "avg_spending": 1200,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1130"
       }
     ]
   },
@@ -1951,18 +1099,6 @@ window.STORES_DATA = [
         "o": "1000"
       }
     ]
-  },
-  {
-    "title": "Kisekinotebasaki Sararimanyokochodaimyouten",
-    "address": "",
-    "url": "https://www.google.com/maps/place/Kisekinotebasaki+Sararimanyokochodaimyouten/data=!4m2!3m1!1s0x354191869e1b1895:0xd8dc18632ecb9acf",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": null
   },
   {
     "title": "Kobe Beef HAKATANOOUKA honten",
@@ -2129,104 +1265,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Louisiana Famous Fried Chicken",
-    "address": "300台灣新竹市東區軍功里光復路二段350號",
-    "url": "https://www.google.com/maps/place/Louisiana+Famous+Fried+Chicken/data=!4m2!3m1!1s0x3468379341a1726d:0xa0d57d7031b9bac8",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "MINIMAL",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "Mel Coffee Roasters",
-    "address": "1-chōme-20-4 Shinmachi, Nishi Ward, Osaka, 550-0013日本",
-    "url": "https://www.google.com/maps/place/Mel+Coffee+Roasters/data=!4m2!3m1!1s0x6000e704a2e2719f:0x64504cba1ee4b720",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "騏哥蛇丸",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "NS cucina（BISTRO by Nelson）",
     "address": "302台灣新竹縣竹北市文化里吳濁流路83號",
     "url": "https://www.google.com/maps/place/NS+cucina%EF%BC%88BISTRO+by+Nelson%EF%BC%89/data=!4m2!3m1!1s0x346836eb957b3305:0xb1f79a6ea26ba667",
@@ -2291,89 +1329,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "Naniwa Omuraisu",
-    "address": "3-chōme-11-27 Minamisenba, Chuo Ward, Osaka, 542-0081日本",
-    "url": "https://www.google.com/maps/place/Naniwa+Omuraisu/data=!4m2!3m1!1s0x6000e71a23415555:0x60b3835c1d9a8a5d",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "騏哥蛇丸",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1800"
-      },
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1800"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1800"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1800"
-      },
-      {
-        "c": "1600",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1800"
-      },
-      {
-        "c": "1600",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1800"
-      },
-      {
-        "c": "1600",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1800"
       }
     ]
   },
@@ -2447,74 +1402,6 @@ window.STORES_DATA = [
         "c": "0030",
         "d": 6,
         "o": "1800"
-      }
-    ]
-  },
-  {
-    "title": "Noroshi",
-    "address": "1-chōme-8-18 Nishi, Naha, Okinawa 900-0036日本",
-    "url": "https://www.google.com/maps/place/Noroshi/data=!4m2!3m1!1s0x35453d64aeae7b69:0xac4205aeee52f7a2",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1415",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1415",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1415",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1415",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1415",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -2832,54 +1719,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Ryukyusushi Tsukijiaozorasandaime Makishishitamachiyataimura",
-    "address": "日本〒900-0013 Okinawa, Naha, Makishi, 3-chōme−2−４８−４ 下町屋台村",
-    "url": "https://www.google.com/maps/place/Ryukyusushi+Tsukijiaozorasandaime+Makishishitamachiyataimura/data=!4m2!3m1!1s0x34e5690014c62069:0x1216b11b9cbd52a0",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "館長",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
     "title": "Sandro pizza",
     "address": "310台灣新竹縣竹東鎮竹東里三民街63號",
     "url": "https://www.google.com/maps/place/Sandro+pizza/data=!4m2!3m1!1s0x346847e455555555:0x2eba591822ce32e2",
@@ -2933,102 +1772,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Seed Bakery 麵包籽 新竹光埔店",
-    "address": "300台灣新竹市東區埔頂里慈濟路193號",
-    "url": "https://www.google.com/maps/place/Seed+Bakery+%E9%BA%B5%E5%8C%85%E7%B1%BD+%E6%96%B0%E7%AB%B9%E5%85%89%E5%9F%94%E5%BA%97/data=!4m2!3m1!1s0x3468372d38e83579:0xc4cc424f29bed38",
-    "cuisine_type": "中式",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "智明\n海鹽奶油卷",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
-    "title": "Shake Shack VivoCity",
-    "address": "1 HarbourFront Walk, #01-163/164 怡豐城新加坡 098585",
-    "url": "https://www.google.com/maps/place/Shake+Shack+VivoCity/data=!4m2!3m1!1s0x31da19860e0c3721:0x61fc7803e0d8ffd3",
-    "cuisine_type": "美式,速食,漢堡",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 3201.87,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "Smoker煙燻",
     "address": "",
     "url": "https://www.google.com/maps/place/Smoker%E7%85%99%E7%87%BB/data=!4m2!3m1!1s0x34693d9fd853d585:0xe8bda14b167d7c0d",
@@ -3039,102 +1782,6 @@ window.STORES_DATA = [
     "avg_spending": 150,
     "note": "thread",
     "hours": null
-  },
-  {
-    "title": "Sojibō, Shinshu Soba Restaurant",
-    "address": "日本〒549-0011 Osaka, Sennan District, Tajiri, Senshūkūkōnaka, １ 関西国際空港旅客ターミナルビル 2F",
-    "url": "https://www.google.com/maps/place/Sojib%C5%8D,+Shinshu+Soba+Restaurant/data=!4m2!3m1!1s0x6000b9fb834803f9:0x7822775a98d5d1d0",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "騏哥蛇丸",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "Sports Depo Ameku",
-    "address": "1-chōme-2-1 Ameku, Naha, Okinawa 900-0005日本",
-    "url": "https://www.google.com/maps/place/Sports+Depo+Ameku/data=!4m2!3m1!1s0x34e56bd1272f5da3:0xc2cf61dc3d9a4c49",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "館長",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
   },
   {
     "title": "Sushi Yuraku",
@@ -3447,157 +2094,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "The Slice Shop",
-    "address": "106台灣臺北市大安區通安里安和路二段69巷18號一樓",
-    "url": "https://www.google.com/maps/place/The+Slice+Shop/data=!4m2!3m1!1s0x3442abb3780b3cb5:0xf382cf0081d3e981",
-    "cuisine_type": "義式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 63.61,
-    "avg_spending": 350,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "Toriboshi Daimyo",
-    "address": "日本〒810-0041 Fukuoka, Chuo Ward, Daimyō, 1-chōme−9−１８ 越智ビル",
-    "url": "https://www.google.com/maps/place/Toriboshi+Daimyo/data=!4m2!3m1!1s0x354191c9ae40bab1:0xa46729835a44bbb1",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "U.I.J Hotel & Hostel - 友愛街旅館",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "Victor's Kitchen (Sunshine Plaza)",
-    "address": "91 Bencoolen St, #01-49 Sunshine Plaza, 新加坡 189652",
-    "url": "https://www.google.com/maps/place/Victor's+Kitchen+(Sunshine+Plaza)/data=!4m2!3m1!1s0x31da19bb7c052e5b:0x16a00f69ebb604e9",
-    "cuisine_type": "中式,港式,點心",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 3196.88,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
     "title": "Wooli印先生韓式料理",
     "address": "351台灣苗栗縣頭份市中興里信東路373號",
     "url": "https://www.google.com/maps/place/Wooli%E5%8D%B0%E5%85%88%E7%94%9F%E9%9F%93%E5%BC%8F%E6%96%99%E7%90%86/data=!4m2!3m1!1s0x34684d06732d37bf:0x777f4b687aae0ec0",
@@ -3671,42 +2167,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Ya Kun Kaya Toast",
-    "address": "100台北市中正區忠孝西路一段36號",
-    "url": "https://www.google.com/maps/place/Ya+Kun+Kaya+Toast/data=!4m2!3m1!1s0x31da1be2677c3765:0x796546c6f1f48792",
-    "cuisine_type": "東南亞式,咖啡廳,早餐,輕食",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 60.51,
-    "avg_spending": 200,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "Ya Kun Kaya Toast",
-    "address": "100台北市中正區忠孝西路一段36號",
-    "url": "https://www.google.com/maps/place/Ya+Kun+Kaya+Toast/data=!4m2!3m1!1s0x31da19588f876865:0xd03857ac1ca44bb7",
-    "cuisine_type": "東南亞式,咖啡廳,早餐,輕食",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 60.51,
-    "avg_spending": 200,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "Yagura",
-    "address": "2-chōme-9-28 Hakata Ekimae, Hakata Ward, Fukuoka, 812-0011日本",
-    "url": "https://www.google.com/maps/place/Yagura/data=!4m2!3m1!1s0x354191c09efc8041:0x28225e7c546db9cd",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "蛇丸 豬排丼飯 烏龍麵",
-    "hours": null
-  },
-  {
     "title": "Yakiniku KITAN Minamisenba main store",
     "address": "日本〒542-0081 Osaka, Chuo Ward, Minamisenba, 4-chōme−11−２２ B1FYOCビル 4-11-22-B1F Minamisenba, Chuo-ku, Osaka",
     "url": "https://www.google.com/maps/place/Yakiniku+KITAN+Minamisenba+main+store/data=!4m2!3m1!1s0x6000e78ec59711a1:0xbf4353e0044fd101",
@@ -3755,219 +2215,50 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "Yumeya",
-    "address": "20150泰國春武里府挽臘茫郡芭達雅",
-    "url": "https://www.google.com/maps/place/Yumeya/data=!4m2!3m1!1s0x354191923ddd2b8f:0xf508cbfd23c37138",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "Zhong Yu Yuan Wei Wanton Noodle (忠于原味雲吞麵)",
-    "address": "30 Seng Poh Rd, #02-30, 新加坡 168898",
-    "url": "https://www.google.com/maps/place/Zhong+Yu+Yuan+Wei+Wanton+Noodle+(%E5%BF%A0%E4%BA%8E%E5%8E%9F%E5%91%B3%E9%9B%B2%E5%90%9E%E9%BA%B5)/data=!4m2!3m1!1s0x31da1979f748487b:0x6d2be6403b6a0943",
-    "cuisine_type": "東南亞式,中式",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 3193.28,
-    "avg_spending": 180,
-    "note": "",
-    "hours": [
-      {
-        "c": "1300",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "ago義大利麵",
-    "address": "300台灣新竹市北區潛園里西大路469-1號",
-    "url": "https://www.google.com/maps/place/ago%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5/data=!4m2!3m1!1s0x3468357b5f98cd41:0xf830dd095177f647",
-    "cuisine_type": "義式",
+    "title": "woosa洋食パンケーキ 屋莎洋食鬆餅屋 新竹巨城店",
+    "address": "300台灣新竹市東區復中里中央路239號2樓",
+    "url": "https://www.google.com/maps/place/woosa%E6%B4%8B%E9%A3%9F%E3%83%91%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD+%E5%B1%8B%E8%8E%8E%E6%B4%8B%E9%A3%9F%E9%AC%86%E9%A4%85%E5%B1%8B+%E6%96%B0%E7%AB%B9%E5%B7%A8%E5%9F%8E%E5%BA%97/data=!4m2!3m1!1s0x3468357463600ff9:0x2aca25a5f0a96f0c",
+    "cuisine_type": "日式,義式",
     "source_list": "想去的地點",
     "visited": "否",
-    "distance_km": 1.08,
-    "avg_spending": 250,
+    "distance_km": 0.75,
+    "avg_spending": 400,
     "note": "",
     "hours": [
       {
-        "c": "1330",
+        "c": "2130",
         "d": 0,
         "o": "1100"
       },
       {
-        "c": "2000",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "1330",
+        "c": "2130",
         "d": 1,
         "o": "1100"
       },
       {
-        "c": "2000",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1330",
+        "c": "2130",
         "d": 2,
         "o": "1100"
       },
       {
-        "c": "2000",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1630"
-      }
-    ]
-  },
-  {
-    "title": "【腹響圓上海食府】亞太十大名廚｜頂級江浙料理｜上海名菜 (推薦 公館商圈 台大附近 捷運站美食 餐廳)",
-    "address": "106台灣臺北市大安區大學里新生南路三段86巷6號",
-    "url": "https://www.google.com/maps/place/%E3%80%90%E8%85%B9%E9%9F%BF%E5%9C%93%E4%B8%8A%E6%B5%B7%E9%A3%9F%E5%BA%9C%E3%80%91%E4%BA%9E%E5%A4%AA%E5%8D%81%E5%A4%A7%E5%90%8D%E5%BB%9A%EF%BD%9C%E9%A0%82%E7%B4%9A%E6%B1%9F%E6%B5%99%E6%96%99%E7%90%86%EF%BD%9C%E4%B8%8A%E6%B5%B7%E5%90%8D%E8%8F%9C+(%E6%8E%A8%E8%96%A6+%E5%85%AC%E9%A4%A8%E5%95%86%E5%9C%88+%E5%8F%B0%E5%A4%A7%E9%99%84%E8%BF%91+%E6%8D%B7%E9%81%8B%E7%AB%99%E7%BE%8E%E9%A3%9F+%E9%A4%90%E5%BB%B3)/data=!4m2!3m1!1s0x3442a96c759596f1:0x84ee3c6e79fd8f83",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.1,
-    "avg_spending": 1200,
-    "note": "東坡肉\n徐海莉",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
+        "c": "2130",
         "d": 3,
         "o": "1100"
       },
       {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
+        "c": "2130",
         "d": 4,
         "o": "1100"
       },
       {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
+        "c": "2200",
         "d": 5,
         "o": "1100"
       },
       {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
+        "c": "2200",
         "d": 6,
         "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -3982,102 +2273,6 @@ window.STORES_DATA = [
     "avg_spending": 120,
     "note": "",
     "hours": null
-  },
-  {
-    "title": "まぐろ屋みーかがん 道の駅いとまん店",
-    "address": "4-chōme-19-1 Nishizakichō, Itoman, Okinawa 901-0306日本",
-    "url": "https://www.google.com/maps/place/%E3%81%BE%E3%81%90%E3%82%8D%E5%B1%8B%E3%81%BF%E3%83%BC%E3%81%8B%E3%81%8C%E3%82%93+%E9%81%93%E3%81%AE%E9%A7%85%E3%81%84%E3%81%A8%E3%81%BE%E3%82%93%E5%BA%97/data=!4m2!3m1!1s0x34e567ef6e492943:0x3bb19ce8a46b64e2",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "館長",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "もつ焼き狼煙(のろし)博多上川端本陣1・2F",
-    "address": "4-233 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026日本",
-    "url": "https://www.google.com/maps/place/%E3%82%82%E3%81%A4%E7%84%BC%E3%81%8D%E7%8B%BC%E7%85%99(%E3%81%AE%E3%82%8D%E3%81%97)%E5%8D%9A%E5%A4%9A%E4%B8%8A%E5%B7%9D%E7%AB%AF%E6%9C%AC%E9%99%A31%E3%83%BB2F/data=!4m2!3m1!1s0x354191ecc57306eb:0xf2f40821d15b9d0a",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
   },
   {
     "title": "ㄚ川水煎包",
@@ -4119,49 +2314,6 @@ window.STORES_DATA = [
         "c": "2200",
         "d": 6,
         "o": "1400"
-      }
-    ]
-  },
-  {
-    "title": "一甲子餐飲",
-    "address": "108台灣臺北市萬華區新起里康定路79號",
-    "url": "https://www.google.com/maps/place/%E4%B8%80%E7%94%B2%E5%AD%90%E9%A4%90%E9%A3%B2/data=!4m2!3m1!1s0x3442a9a8056bcd4f:0x8f4c4821513d97e8",
-    "cuisine_type": "中式",
-    "source_list": "DenQ",
-    "visited": "是",
-    "distance_km": 58.82,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -4214,102 +2366,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "一穗禾心製麵",
-    "address": "403台灣臺中市西區忠誠里精誠三街1號",
-    "url": "https://www.google.com/maps/place/%E4%B8%80%E7%A9%97%E7%A6%BE%E5%BF%83%E8%A3%BD%E9%BA%B5/data=!4m2!3m1!1s0x34693dc699c031af:0xfaf30723805ca934",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "滷排伴麵/炸餛飩/紫薯薄撐/鮮肉生煎包\n蛇丸",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "一香飲食店 麻醬麵",
-    "address": "260台灣宜兰县宜兰市新民里康樂路137巷7號",
-    "url": "https://www.google.com/maps/place/%E4%B8%80%E9%A6%99%E9%A3%B2%E9%A3%9F%E5%BA%97+%E9%BA%BB%E9%86%AC%E9%BA%B5/data=!4m2!3m1!1s0x3467e4c4d7259d77:0x9a737ef8f9a39e61",
-    "cuisine_type": "中式",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1630",
-        "d": 0,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 1,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 2,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 3,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 4,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 5,
-        "o": "0630"
-      },
-      {
-        "c": "1630",
-        "d": 6,
-        "o": "0630"
-      }
-    ]
-  },
-  {
     "title": "七先生早午餐",
     "address": "300台灣新竹市北區磐石里竹光路221號",
     "url": "https://www.google.com/maps/place/%E4%B8%83%E5%85%88%E7%94%9F%E6%97%A9%E5%8D%88%E9%A4%90/data=!4m2!3m1!1s0x346835462e7fd419:0xcbb6fd6944467e79",
@@ -4356,18 +2412,6 @@ window.STORES_DATA = [
         "o": "0000"
       }
     ]
-  },
-  {
-    "title": "七誠米粿",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "三億小吃店",
@@ -4492,54 +2536,6 @@ window.STORES_DATA = [
         "c": "2130",
         "d": 6,
         "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "三元號魯肉飯",
-    "address": "103台灣臺北市大同區星明里重慶北路二段11號",
-    "url": "https://www.google.com/maps/place/%E4%B8%89%E5%85%83%E8%99%9F%E9%AD%AF%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442a96b53d1c9b5:0x6942d152898b5419",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.46,
-    "avg_spending": 120,
-    "note": "Fred",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -4945,69 +2941,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "三牛牛肉麵",
-    "address": "813台灣高雄市左營區埤東里勝利路85號",
-    "url": "https://www.google.com/maps/place/%E4%B8%89%E7%89%9B%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x346e05a140bf1e6b:0x22fbf7e032da9bc1",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "三盛｜刺身 • 握壽司 • 壽司",
     "address": "300台灣新竹市東區育賢里民族路33之2號",
     "url": "https://www.google.com/maps/place/%E4%B8%89%E7%9B%9B%EF%BD%9C%E5%88%BA%E8%BA%AB+%E2%80%A2+%E6%8F%A1%E5%A3%BD%E5%8F%B8+%E2%80%A2+%E5%A3%BD%E5%8F%B8/data=!4m2!3m1!1s0x346835002c6af6d7:0xd746fa3ffe3ea3eb",
@@ -5091,18 +3024,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "三禾米粉湯",
-    "address": "台北市松山區民生東路五段208號",
-    "url": "https://www.google.com/maps/place/%E4%B8%89%E7%A6%BE%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9771d878b1f:0x44b618c0a48b20e8",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 64.67,
-    "avg_spending": 100,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "三輪車小吃",
     "address": "300台灣新竹市東區關東里關東路40號",
     "url": "https://www.google.com/maps/place/%E4%B8%89%E8%BC%AA%E8%BB%8A%E5%B0%8F%E5%90%83/data=!4m2!3m1!1s0x34684a9d9e908409:0x34dc4c87f633ce14",
@@ -5167,54 +3088,6 @@ window.STORES_DATA = [
         "c": "1900",
         "d": 6,
         "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "三重 正土味傳統手工豆花（勿電話訂餐，請加line@554htoih 線上點餐",
-    "address": "241台灣新北市三重區福民里環河南路221巷25號",
-    "url": "https://www.google.com/maps/place/%E4%B8%89%E9%87%8D+%E6%AD%A3%E5%9C%9F%E5%91%B3%E5%82%B3%E7%B5%B1%E6%89%8B%E5%B7%A5%E8%B1%86%E8%8A%B1%EF%BC%88%E5%8B%BF%E9%9B%BB%E8%A9%B1%E8%A8%82%E9%A4%90%EF%BC%8C%E8%AB%8B%E5%8A%A0line@554htoih+%E7%B7%9A%E4%B8%8A%E9%BB%9E%E9%A4%90/data=!4m2!3m1!1s0x3442a9029fe911fb:0x125184e8f1d3b9ff",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 58.77,
-    "avg_spending": 100,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2230",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 6,
-        "o": "1130"
       }
     ]
   },
@@ -5290,54 +3163,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "上山喝咖啡",
-    "address": "312台灣新竹縣橫山鄉南昌村1-20號",
-    "url": "https://www.google.com/maps/place/%E4%B8%8A%E5%B1%B1%E5%96%9D%E5%92%96%E5%95%A1/data=!4m2!3m1!1s0x3468479202c86355:0x76cf7dd18cb8e1ff",
-    "cuisine_type": "其他",
-    "source_list": "新竹泡溫泉",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
     "title": "下呂溫泉 懷石旅館 水鳳園",
     "address": "2519-1 Mori, Gero, Gifu 509-2202日本",
     "url": "https://www.google.com/maps/place/%E4%B8%8B%E5%91%82%E6%BA%AB%E6%B3%89+%E6%87%B7%E7%9F%B3%E6%97%85%E9%A4%A8+%E6%B0%B4%E9%B3%B3%E5%9C%92/data=!4m2!3m1!1s0x6002dbb5e6ff18bb:0xd3353d1087ca7ce5",
@@ -5386,61 +3211,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "下大道蘭米糕",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "中華菜包",
-    "address": "306台灣新竹縣關西鎮中豐新路",
-    "url": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E8%8F%9C%E5%8C%85/data=!4m2!3m1!1s0x34683eb8caa0caf9:0x9480f250b3f147e7",
-    "cuisine_type": "中式",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
     "title": "丸合生魚號",
     "address": "台北市大安區臨江街95號",
     "url": "https://www.google.com/maps/place/%E4%B8%B8%E5%90%88%E7%94%9F%E9%AD%9A%E8%99%9F/data=!4m2!3m1!1s0x3442a9a8aeefb3df:0x2cbff4a6a6eb4c2",
@@ -5451,54 +3221,6 @@ window.STORES_DATA = [
     "avg_spending": 400,
     "note": "口貝",
     "hours": null
-  },
-  {
-    "title": "久味大姐手工麻糬中山店",
-    "address": "542台灣南投縣草屯鎮中山里中山街201號",
-    "url": "https://www.google.com/maps/place/%E4%B9%85%E5%91%B3%E5%A4%A7%E5%A7%90%E6%89%8B%E5%B7%A5%E9%BA%BB%E7%B3%AC%E4%B8%AD%E5%B1%B1%E5%BA%97/data=!4m2!3m1!1s0x3469306e7e4cbd15:0x61a5f258e69ab5ac",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0530"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0530"
-      }
-    ]
   },
   {
     "title": "久食渡食堂",
@@ -5630,18 +3352,6 @@ window.STORES_DATA = [
         "o": "1700"
       }
     ]
-  },
-  {
-    "title": "二の丸安兵衛",
-    "address": "",
-    "url": "https://www.google.com/maps/place/%E4%BA%8C%E3%81%AE%E4%B8%B8%E5%AE%89%E5%85%B5%E8%A1%9B/data=!4m2!3m1!1s0x6000e7c068cb8db3:0xbf295b7009e37caa",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "騏哥蛇丸",
-    "hours": null
   },
   {
     "title": "亞廬義大利窯烤吃到飽餐廳",
@@ -5818,137 +3528,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "京鼎小館",
-    "address": "10491台灣臺北市中山區中山里長春路47號",
-    "url": "https://www.google.com/maps/place/%E4%BA%AC%E9%BC%8E%E5%B0%8F%E9%A4%A8/data=!4m2!3m1!1s0x3442abe8e5383533:0x7e7a83a63541962c",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 61.75,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2245",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2245",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2245",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2245",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2245",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "今年貴焿左營大路店",
-    "address": "813台灣高雄市左營區埤西里左營大路63號",
-    "url": "https://www.google.com/maps/place/%E4%BB%8A%E5%B9%B4%E8%B2%B4%E7%84%BF%E5%B7%A6%E7%87%9F%E5%A4%A7%E8%B7%AF%E5%BA%97/data=!4m2!3m1!1s0x346e05a2e6679a3d:0xcb9acce8253148be",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "0555"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "0555"
-      }
-    ]
-  },
-  {
     "title": "以利泡泡冰-士林總店",
     "address": "111台灣臺北市士林區福佳里華榮街4號",
     "url": "https://www.google.com/maps/place/%E4%BB%A5%E5%88%A9%E6%B3%A1%E6%B3%A1%E5%86%B0-%E5%A3%AB%E6%9E%97%E7%B8%BD%E5%BA%97/data=!4m2!3m1!1s0x3442aeb1c01ca653:0x1bccc6cbffd72f4b",
@@ -6045,265 +3624,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "伴 Life partner（下午時段只供應甜點及飲品）",
-    "address": "350台灣苗栗縣竹南鎮大埔里科專二路291號",
-    "url": "https://www.google.com/maps/place/%E4%BC%B4+Life+partner%EF%BC%88%E4%B8%8B%E5%8D%88%E6%99%82%E6%AE%B5%E5%8F%AA%E4%BE%9B%E6%87%89%E7%94%9C%E9%BB%9E%E5%8F%8A%E9%A3%B2%E5%93%81%EF%BC%89/data=!4m2!3m1!1s0x34684bd093bdd717:0x33b674a36b4c83f4",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "波妞 提拉米蘇",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "佐佐ぎょうざ日式煎餃專賣店(無訂位）",
-    "address": "350台灣苗栗縣竹南鎮山下里科專八路300號",
-    "url": "https://www.google.com/maps/place/%E4%BD%90%E4%BD%90%E3%81%8E%E3%82%87%E3%81%86%E3%81%96%E6%97%A5%E5%BC%8F%E7%85%8E%E9%A4%83%E5%B0%88%E8%B3%A3%E5%BA%97(%E7%84%A1%E8%A8%82%E4%BD%8D%EF%BC%89/data=!4m2!3m1!1s0x34684dadd67d8db9:0x632301e1bb33945b",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "波妞",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "佐佧義式窯烤披薩屋",
-    "address": "106台灣臺北市大安區通安里安和路二段69巷3號",
-    "url": "https://www.google.com/maps/place/%E4%BD%90%E4%BD%A7%E7%BE%A9%E5%BC%8F%E7%AA%AF%E7%83%A4%E6%8A%AB%E8%96%A9%E5%B1%8B/data=!4m2!3m1!1s0x3442abcc96586839:0x698b2a2e01a24f4b",
-    "cuisine_type": "義式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 62.8,
-    "avg_spending": 450,
-    "note": "純正義式薄皮",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1800"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1800"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1800"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1800"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "余足古早味豆花",
-    "address": "813台灣高雄市左營區西陵街140號",
-    "url": "https://www.google.com/maps/place/%E4%BD%99%E8%B6%B3%E5%8F%A4%E6%97%A9%E5%91%B3%E8%B1%86%E8%8A%B1/data=!4m2!3m1!1s0x346e059c0574df29:0x39d4e0676acf0cf5",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "佰九海產粥",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "來來牛家莊",
     "address": "328台灣桃園市觀音區廣興里成功路二段1538號",
     "url": "https://www.google.com/maps/place/%E4%BE%86%E4%BE%86%E7%89%9B%E5%AE%B6%E8%8E%8A/data=!4m2!3m1!1s0x3468264c7b8cb0b9:0x8207f951945a87cd",
@@ -6343,89 +3663,6 @@ window.STORES_DATA = [
         "c": "1830",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "來福海鮮餐廳",
-    "address": "880台灣澎湖縣馬公市光復里新村路43號",
-    "url": "https://www.google.com/maps/place/%E4%BE%86%E7%A6%8F%E6%B5%B7%E9%AE%AE%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x346c5aee0f72a46b:0x125bde65d011541d",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -6474,137 +3711,6 @@ window.STORES_DATA = [
         "c": "1700",
         "d": 6,
         "o": "1400"
-      }
-    ]
-  },
-  {
-    "title": "倆伯羊肉",
-    "address": "830台灣高雄市鳳山區新興里光遠路304號",
-    "url": "https://www.google.com/maps/place/%E5%80%86%E4%BC%AF%E7%BE%8A%E8%82%89/data=!4m2!3m1!1s0x346e1b3f4d149013:0x320a9fa3c0a0d16a",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸\n三杯排骨/羊肉湯/沙茶羊肉/涼拌牛雜",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "傑理歐法小館 since2004 ｜營業中不方便接聽電話｜不是親子餐廳｜請善用LINE和線上預約系統｜",
-    "address": "433台灣臺中市沙鹿區北勢里北勢二街134號",
-    "url": "https://www.google.com/maps/place/%E5%82%91%E7%90%86%E6%AD%90%E6%B3%95%E5%B0%8F%E9%A4%A8+since2004+%EF%BD%9C%E7%87%9F%E6%A5%AD%E4%B8%AD%E4%B8%8D%E6%96%B9%E4%BE%BF%E6%8E%A5%E8%81%BD%E9%9B%BB%E8%A9%B1%EF%BD%9C%E4%B8%8D%E6%98%AF%E8%A6%AA%E5%AD%90%E9%A4%90%E5%BB%B3%EF%BD%9C%E8%AB%8B%E5%96%84%E7%94%A8LINE%E5%92%8C%E7%B7%9A%E4%B8%8A%E9%A0%90%E7%B4%84%E7%B3%BB%E7%B5%B1%EF%BD%9C/data=!4m2!3m1!1s0x346915024217940d:0x8f3754b8a7965660",
-    "cuisine_type": "其他",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1730"
       }
     ]
   },
@@ -6668,44 +3774,6 @@ window.STORES_DATA = [
         "c": "2000",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "價值設計 VALUE DESIGN",
-    "address": "403台灣臺中市西區公平里大業北路11號",
-    "url": "https://www.google.com/maps/place/%E5%83%B9%E5%80%BC%E8%A8%AD%E8%A8%88+VALUE+DESIGN/data=!4m2!3m1!1s0x34693d0dd6117f99:0xe420452c2efaf0e1",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "超認真少年",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1130"
       }
     ]
   },
@@ -6784,188 +3852,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "元祖 牛腸鍋 樂天地天神 今泉總本店",
-    "address": "日本〒810-0021 Fukuoka, Chuo Ward, Imaizumi, 1-chōme−19−１８ 楽天地ビル ２階",
-    "url": "https://www.google.com/maps/place/%E5%85%83%E7%A5%96+%E7%89%9B%E8%85%B8%E9%8D%8B+%E6%A8%82%E5%A4%A9%E5%9C%B0%E5%A4%A9%E7%A5%9E+%E4%BB%8A%E6%B3%89%E7%B8%BD%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x354191844ef1e58b:0xa6e4ac1a473fdd95",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "元祖拉麵 長濱家",
-    "address": "10-242 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026日本",
-    "url": "https://www.google.com/maps/place/%E5%85%83%E7%A5%96%E6%8B%89%E9%BA%B5+%E9%95%B7%E6%BF%B1%E5%AE%B6/data=!4m2!3m1!1s0x35419195285fb90b:0xb73e55b3559bab18",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 250,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0230",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "0230",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "0230",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "0330",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "0030",
-        "d": 5,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "元祖牛腸鍋 樂天地 天神本店",
-    "address": "日本〒810-0001 Fukuoka, Chuo Ward, Tenjin, 1-chōme−1−１ アクロス福岡 地下2階",
-    "url": "https://www.google.com/maps/place/%E5%85%83%E7%A5%96%E7%89%9B%E8%85%B8%E9%8D%8B+%E6%A8%82%E5%A4%A9%E5%9C%B0+%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x3541918e1ffcffff:0x8d3e042ac022eb2e",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "元祖番茄拉麵 三味 博多車站東店",
-    "address": "日本〒812-0013 Fukuoka, Hakata Ward, Hakataekihigashi, 2-chōme−9−６ 1F",
-    "url": "https://www.google.com/maps/place/%E5%85%83%E7%A5%96%E7%95%AA%E8%8C%84%E6%8B%89%E9%BA%B5+%E4%B8%89%E5%91%B3+%E5%8D%9A%E5%A4%9A%E8%BB%8A%E7%AB%99%E6%9D%B1%E5%BA%97/data=!4m2!3m1!1s0x354191909d9a387d:0x65a3200fc323f276",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2400",
-        "d": 0,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 1,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 2,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 3,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 5,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 6,
-        "o": "0000"
       }
     ]
   },
@@ -7057,102 +3943,6 @@ window.STORES_DATA = [
         "c": "2330",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "內湖 碧山巖",
-    "address": "114台灣臺北市內湖區碧山里碧山路24號",
-    "url": "https://www.google.com/maps/place/%E5%85%A7%E6%B9%96+%E7%A2%A7%E5%B1%B1%E5%B7%96/data=!4m2!3m1!1s0x3442acf97b3f740b:0x1309b487db374c80",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 70.57,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
-    "title": "內灣圓樓人文客家餐廳",
-    "address": "312003台灣新竹縣橫山鄉內灣村大同路99號",
-    "url": "https://www.google.com/maps/place/%E5%85%A7%E7%81%A3%E5%9C%93%E6%A8%93%E4%BA%BA%E6%96%87%E5%AE%A2%E5%AE%B6%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x3468418ed6c005ab:0x9a9ec9229786979b",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "賴爸",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1100"
       }
     ]
   },
@@ -7361,54 +4151,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "八吃蝦-台中流水蝦吃到飽餐廳",
-    "address": "40760台灣臺中市西屯區西墩里漢翔路326號",
-    "url": "https://www.google.com/maps/place/%E5%85%AB%E5%90%83%E8%9D%A6-%E5%8F%B0%E4%B8%AD%E6%B5%81%E6%B0%B4%E8%9D%A6%E5%90%83%E5%88%B0%E9%A3%BD%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x3469176bb85c3047:0xc29da6abb45d197b",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蝦土豆",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "八旗皇族香酥鴨",
     "address": "700台灣臺南市中西區南廠里金華路三段22號",
     "url": "https://www.google.com/maps/place/%E5%85%AB%E6%97%97%E7%9A%87%E6%97%8F%E9%A6%99%E9%85%A5%E9%B4%A8/data=!4m2!3m1!1s0x346e764458b4a04f:0x97b5c2b3fb2bbc88",
@@ -7417,30 +4159,6 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": null,
     "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "八曜和茶 台中精誠門市",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "八棟圓仔湯",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
     "note": "",
     "hours": null
   },
@@ -7577,66 +4295,6 @@ window.STORES_DATA = [
         "c": "0730",
         "d": 5,
         "o": "0330"
-      }
-    ]
-  },
-  {
-    "title": "冠魚蛋小屋 士林基河路分店（麻辣魚蛋）",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "冬山河親水公園",
-    "address": "268台灣宜蘭縣五結鄉協和村親河路二段2號",
-    "url": "https://www.google.com/maps/place/%E5%86%AC%E5%B1%B1%E6%B2%B3%E8%A6%AA%E6%B0%B4%E5%85%AC%E5%9C%92/data=!4m2!3m1!1s0x3467ef554a116ed3:0x475d5189ca48fbf7",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0800"
       }
     ]
   },
@@ -7840,54 +4498,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "切仔麵攤車",
-    "address": "300台灣新竹市北區潛園里西大路507號",
-    "url": "https://www.google.com/maps/place/%E5%88%87%E4%BB%94%E9%BA%B5%E6%94%A4%E8%BB%8A/data=!4m2!3m1!1s0x346835bfb82616bf:0x68b20674380eef59",
-    "cuisine_type": "中式",
-    "source_list": "消夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "0030",
-        "d": 0,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 1,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 2,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 3,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 4,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 5,
-        "o": "2030"
-      },
-      {
-        "c": "0030",
-        "d": 6,
-        "o": "2030"
-      }
-    ]
-  },
-  {
     "title": "劉媽媽涼麵",
     "address": "105台灣臺北市松山區復盛里市民大道五段37號",
     "url": "https://www.google.com/maps/place/%E5%8A%89%E5%AA%BD%E5%AA%BD%E6%B6%BC%E9%BA%B5/data=!4m2!3m1!1s0x3442abc07f95ce05:0x51e201b6a237e242",
@@ -7969,156 +4579,6 @@ window.STORES_DATA = [
         "o": "2130"
       }
     ]
-  },
-  {
-    "title": "劉家莊燜雞",
-    "address": "305台灣新竹縣新埔鎮照門里九芎湖六鄰十六之二號",
-    "url": "https://www.google.com/maps/place/%E5%8A%89%E5%AE%B6%E8%8E%8A%E7%87%9C%E9%9B%9E/data=!4m2!3m1!1s0x34683a407d359755:0x130a8bb00df1c4a0",
-    "cuisine_type": "其他",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "助仔牛肉湯",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "助壽司丼 (原文山店團隊)",
-    "address": "807台灣高雄市三民區本和里明誠一路377號",
-    "url": "https://www.google.com/maps/place/%E5%8A%A9%E5%A3%BD%E5%8F%B8%E4%B8%BC+(%E5%8E%9F%E6%96%87%E5%B1%B1%E5%BA%97%E5%9C%98%E9%9A%8A)/data=!4m2!3m1!1s0x346e05d5a0d45001:0x8c548925a35758ac",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "ricky&nina 平價",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "北北車魯肉飯",
-    "address": "100台灣臺北市中正區黎明里公園路20巷21號",
-    "url": "https://www.google.com/maps/place/%E5%8C%97%E5%8C%97%E8%BB%8A%E9%AD%AF%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442a9731b2c95bf:0x654fb183da334e33",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.51,
-    "avg_spending": 100,
-    "note": "痛風老饕",
-    "hours": null
   },
   {
     "title": "北投本土味明泉紅茶",
@@ -8449,54 +4909,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "十鼓文創園區",
-    "address": "71755台灣臺南市仁德區成功里文華路二段326號",
-    "url": "https://www.google.com/maps/place/%E5%8D%81%E9%BC%93%E6%96%87%E5%89%B5%E5%9C%92%E5%8D%80/data=!4m2!3m1!1s0x346e74697afd4303:0xe76eda38e5955400",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1750",
-        "d": 0,
-        "o": "0930"
-      },
-      {
-        "c": "1720",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1720",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1720",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1720",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1720",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1750",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
     "title": "南寮『老吃雞』鹹水雞",
     "address": "300台灣新竹市北區南寮里東大路三段612號",
     "url": "https://www.google.com/maps/place/%E5%8D%97%E5%AF%AE%E3%80%8E%E8%80%81%E5%90%83%E9%9B%9E%E3%80%8F%E9%B9%B9%E6%B0%B4%E9%9B%9E/data=!4m2!3m1!1s0x346835acfea2a043:0xada92a57f26c9c10",
@@ -8536,54 +4948,6 @@ window.STORES_DATA = [
         "c": "2200",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "南方澳眼鏡．生魚片活海鮮",
-    "address": "270台灣宜蘭縣蘇澳鎮南寧里漁港路32-2號",
-    "url": "https://www.google.com/maps/place/%E5%8D%97%E6%96%B9%E6%BE%B3%E7%9C%BC%E9%8F%A1%EF%BC%8E%E7%94%9F%E9%AD%9A%E7%89%87%E6%B4%BB%E6%B5%B7%E9%AE%AE/data=!4m2!3m1!1s0x3467e9ad7061d489:0x4131fd307a89abf4",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "阿達ADA",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0800"
       }
     ]
   },
@@ -8667,61 +5031,6 @@ window.STORES_DATA = [
         "c": "1900",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "博仁堂(PO-JEN STORE)",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "博多名代 吉塚鰻魚屋",
-    "address": "2-chōme-8-27 Nakasu, Hakata Ward, Fukuoka, 810-0801日本",
-    "url": "https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E5%90%8D%E4%BB%A3+%E5%90%89%E5%A1%9A%E9%B0%BB%E9%AD%9A%E5%B1%8B/data=!4m2!3m1!1s0x35419195186bd411:0xfde6a1ce650943d4",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 600,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2015",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2015",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2015",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2015",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2015",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2015",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -9014,18 +5323,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "双生綠豆沙牛奶 Shuànsên beverages （無預訂、無外送、售完會提早休息，最新資訊、休假請依IG、FB為主）",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "口福鵝肉店",
     "address": "369台灣苗栗縣卓蘭鎮新榮里中山路65號",
     "url": "https://www.google.com/maps/place/%E5%8F%A3%E7%A6%8F%E9%B5%9D%E8%82%89%E5%BA%97/data=!4m2!3m1!1s0x34690337e87b0935:0xd6fd68cc7dcb5acf",
@@ -9147,18 +5444,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "台中鳳凰酒店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "台北東一排骨總店",
     "address": "100台灣臺北市中正區光復里延平南路61號2樓",
     "url": "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E6%9D%B1%E4%B8%80%E6%8E%92%E9%AA%A8%E7%B8%BD%E5%BA%97/data=!4m2!3m1!1s0x3442a9727e33867f:0x1d4371b37ee7bd96",
@@ -9200,30 +5485,6 @@ window.STORES_DATA = [
         "o": "1100"
       }
     ]
-  },
-  {
-    "title": "台南‧林家白糖粿 Since 1960",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "台南一味品碗粿魚羹",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
   },
   {
     "title": "台南市牛家莊牛肉湯",
@@ -9289,61 +5550,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "台南晶英酒店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "台南武廟肉圓",
-    "address": "700台灣臺南市中西區永福路二段225號",
-    "url": "https://www.google.com/maps/place/%E5%8F%B0%E5%8D%97%E6%AD%A6%E5%BB%9F%E8%82%89%E5%9C%93/data=!4m2!3m1!1s0x346e7663d5b3bac9:0x992fea426d702df0",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
     "title": "台南福生小食店",
     "address": "700台灣臺南市中西區南廠里海安路一段100號",
     "url": "https://www.google.com/maps/place/%E5%8F%B0%E5%8D%97%E7%A6%8F%E7%94%9F%E5%B0%8F%E9%A3%9F%E5%BA%97/data=!4m2!3m1!1s0x346e767a58c7b235:0x20b4544152ebca6b",
@@ -9390,91 +5596,6 @@ window.STORES_DATA = [
         "o": "0630"
       }
     ]
-  },
-  {
-    "title": "台東老林記滷味麵食館",
-    "address": "403台灣臺中市西區忠誠里精誠路3-2號",
-    "url": "https://www.google.com/maps/place/%E5%8F%B0%E6%9D%B1%E8%80%81%E6%9E%97%E8%A8%98%E6%BB%B7%E5%91%B3%E9%BA%B5%E9%A3%9F%E9%A4%A8/data=!4m2!3m1!1s0x34693d9ad94cc0c9:0x884350086af1220b",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1420",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1420",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1420",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1420",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1420",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1420",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "台灣番薯丸-手作地瓜球",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "台發切仔麵",
@@ -9623,18 +5744,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "台糖長榮酒店 台南",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "合榭HOSIC精緻鐵板料理-忠孝店",
     "address": "40248台灣臺中市南區忠孝路187號",
     "url": "https://www.google.com/maps/place/%E5%90%88%E6%A6%ADHOSIC%E7%B2%BE%E7%B7%BB%E9%90%B5%E6%9D%BF%E6%96%99%E7%90%86-%E5%BF%A0%E5%AD%9D%E5%BA%97/data=!4m2!3m1!1s0x34693d17563e28d9:0xdbba881b71dabc5b",
@@ -9718,89 +5827,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "合苑餐廳（人氣餐廳、澎湖必吃美食、在地人推薦、特色料理）",
-    "address": "880台灣澎湖縣馬公市重慶里海埔路15號",
-    "url": "https://www.google.com/maps/place/%E5%90%88%E8%8B%91%E9%A4%90%E5%BB%B3%EF%BC%88%E4%BA%BA%E6%B0%A3%E9%A4%90%E5%BB%B3%E3%80%81%E6%BE%8E%E6%B9%96%E5%BF%85%E5%90%83%E7%BE%8E%E9%A3%9F%E3%80%81%E5%9C%A8%E5%9C%B0%E4%BA%BA%E6%8E%A8%E8%96%A6%E3%80%81%E7%89%B9%E8%89%B2%E6%96%99%E7%90%86%EF%BC%89/data=!4m2!3m1!1s0x346c5aed61f5ac3f:0xd861331323472948",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "吉瓦黑輪 tsi̍t uánn oden (無提供洗手間)忙碌時無接聽電話",
     "address": "300台灣新竹市東區西大路185號1樓",
     "url": "https://www.google.com/maps/place/%E5%90%89%E7%93%A6%E9%BB%91%E8%BC%AA+tsi%CC%8Dt+u%C3%A1nn+oden+(%E7%84%A1%E6%8F%90%E4%BE%9B%E6%B4%97%E6%89%8B%E9%96%93)%E5%BF%99%E7%A2%8C%E6%99%82%E7%84%A1%E6%8E%A5%E8%81%BD%E9%9B%BB%E8%A9%B1/data=!4m2!3m1!1s0x346835007d014085:0xb859cbd994546689",
@@ -9850,49 +5876,6 @@ window.STORES_DATA = [
         "c": "2030",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "吳家甜不辣麵線",
-    "address": "300台灣新竹市東區仙水里光復路一段531巷70號",
-    "url": "https://www.google.com/maps/place/%E5%90%B3%E5%AE%B6%E7%94%9C%E4%B8%8D%E8%BE%A3%E9%BA%B5%E7%B7%9A/data=!4m2!3m1!1s0x346837a2150a51ff:0x72772f476a61631f",
-    "cuisine_type": "中式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -10185,66 +6168,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "味留 熟成魚專門",
-    "address": "",
-    "url": "https://www.google.com/maps/place/%E5%91%B3%E7%95%99+%E7%86%9F%E6%88%90%E9%AD%9A%E5%B0%88%E9%96%80/data=!4m2!3m1!1s0x345d536997d0a889:0x262dc6bf6333745e",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "打魚翔哥",
-    "hours": null
-  },
-  {
-    "title": "呷七碗宜蘭傳藝店",
-    "address": "26841台灣宜蘭縣五結鄉季新村五濱路二段201號",
-    "url": "https://www.google.com/maps/place/%E5%91%B7%E4%B8%83%E7%A2%97%E5%AE%9C%E8%98%AD%E5%82%B3%E8%97%9D%E5%BA%97/data=!4m2!3m1!1s0x3467ef430eb7fda1:0x93088ee8b3354011",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "和味清粥",
     "address": "300台灣新竹市北區中興里長安街36號",
     "url": "https://www.google.com/maps/place/%E5%92%8C%E5%91%B3%E6%B8%85%E7%B2%A5/data=!4m2!3m1!1s0x346835c07b3dcf2d:0xec9b3ee9fb2b3d76",
@@ -10519,50 +6442,50 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "品鱻海鮮熱炒店",
-    "address": "106台灣臺北市大安區全安里樂利路68號",
-    "url": "https://www.google.com/maps/place/%E5%93%81%E9%B1%BB%E6%B5%B7%E9%AE%AE%E7%86%B1%E7%82%92%E5%BA%97/data=!4m2!3m1!1s0x3442aa33ae3cb6d9:0xb00ebcdd06ec7fa4",
+    "title": "品豐冰室港式茶餐廳",
+    "address": "300台灣新竹市北區崇禮里中山路274號",
+    "url": "https://www.google.com/maps/place/%E5%93%81%E8%B1%90%E5%86%B0%E5%AE%A4%E6%B8%AF%E5%BC%8F%E8%8C%B6%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x346835bfd92a07a1:0x234f0c7e42e368c7",
     "cuisine_type": "中式",
-    "source_list": "黃仁勳來台",
+    "source_list": "回訪",
     "visited": "是",
-    "distance_km": 63.17,
-    "avg_spending": 400,
+    "distance_km": 1.82,
+    "avg_spending": 200,
     "note": "",
     "hours": [
       {
-        "c": "0100",
+        "c": "2100",
         "d": 0,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 1,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 2,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 3,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 4,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 5,
-        "o": "1700"
+        "o": "1300"
       },
       {
-        "c": "0100",
+        "c": "2100",
         "d": 6,
-        "o": "1700"
+        "o": "1300"
       }
     ]
   },
@@ -10619,8 +6542,8 @@ window.STORES_DATA = [
     "address": "300台灣新竹市北區光華里光華北街63之2號一樓",
     "url": "https://www.google.com/maps/place/%E5%93%88%E5%A0%A1%E5%A0%A1%E8%BC%95%E9%A3%9F%E6%97%A9%E5%8D%88%E9%A4%90%E6%96%B0%E7%AB%B9%E5%85%89%E8%8F%AF%E5%BA%97/data=!4m2!3m1!1s0x3468350078e4faaf:0xb26ac6f692dfb0ec",
     "cuisine_type": "美式,其他",
-    "source_list": "想去的地點",
-    "visited": "否",
+    "source_list": "常用早餐",
+    "visited": "是",
     "distance_km": 1.02,
     "avg_spending": 150,
     "note": "",
@@ -10663,45 +6586,40 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "哈柔廚房 早午餐",
-    "address": "112台灣臺北市北投區中庸里雙全街38號1樓",
-    "url": "https://www.google.com/maps/place/%E5%93%88%E6%9F%94%E5%BB%9A%E6%88%BF+%E6%97%A9%E5%8D%88%E9%A4%90/data=!4m2!3m1!1s0x3442af252ccae04f:0x3bcda74bbe8bbd63",
-    "cuisine_type": "美式,其他",
-    "source_list": "北投羅傑",
-    "visited": "是",
-    "distance_km": 62.84,
-    "avg_spending": 250,
+    "title": "員林（江）爌肉飯",
+    "address": "300台灣新竹市東區南大里西大路122號",
+    "url": "https://www.google.com/maps/place/%E5%93%A1%E6%9E%97%EF%BC%88%E6%B1%9F%EF%BC%89%E7%88%8C%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x346835eea8325ae3:0xab800def7b2c8f85",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 103.61,
+    "avg_spending": 100,
     "note": "",
     "hours": [
       {
-        "c": "1400",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1400",
+        "c": "1200",
         "d": 1,
-        "o": "0700"
+        "o": "0500"
       },
       {
-        "c": "1400",
+        "c": "1200",
+        "d": 2,
+        "o": "0500"
+      },
+      {
+        "c": "1200",
         "d": 3,
-        "o": "0700"
+        "o": "0500"
       },
       {
-        "c": "1400",
+        "c": "1200",
         "d": 4,
-        "o": "0700"
+        "o": "0500"
       },
       {
-        "c": "1400",
+        "c": "1200",
         "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0700"
+        "o": "0500"
       }
     ]
   },
@@ -11028,49 +6946,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "嗨嗨雞蛋糕｜人生嗨嗨（提早售完即打烊）",
-    "address": "302台灣新竹縣竹北市文化里吳濁流路83號",
-    "url": "https://www.google.com/maps/place/%E5%97%A8%E5%97%A8%E9%9B%9E%E8%9B%8B%E7%B3%95%EF%BD%9C%E4%BA%BA%E7%94%9F%E5%97%A8%E5%97%A8%EF%BC%88%E6%8F%90%E6%97%A9%E5%94%AE%E5%AE%8C%E5%8D%B3%E6%89%93%E7%83%8A%EF%BC%89/data=!4m2!3m1!1s0x3468377d4d807ecf:0x4916f2f0925a2f7d",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "ig",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1300"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "1300"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "1300"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1300"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1300"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1300"
-      }
-    ]
-  },
-  {
     "title": "嗨蝦蝦",
     "address": "302台灣新竹縣竹北市十興里光明一路165號2 樓",
     "url": "https://www.google.com/maps/place/%E5%97%A8%E8%9D%A6%E8%9D%A6/data=!4m2!3m1!1s0x34683700521b3083:0x3d289c471834588a",
@@ -11197,79 +7072,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "嘉福食堂",
-    "address": "300台灣新竹市北區南寮里南寮街207號",
-    "url": "https://www.google.com/maps/place/%E5%98%89%E7%A6%8F%E9%A3%9F%E5%A0%82/data=!4m2!3m1!1s0x346835e49b887f6d:0x88594d3d605c72b8",
-    "cuisine_type": "中式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "噴火美式炭烤牛排",
     "address": "300台灣新竹市東區食品路51號",
     "url": "https://www.google.com/maps/place/%E5%99%B4%E7%81%AB%E7%BE%8E%E5%BC%8F%E7%82%AD%E7%83%A4%E7%89%9B%E6%8E%92/data=!4m2!3m1!1s0x346835bb02abb1d9:0xd417d09e4380bd1b",
@@ -11316,164 +7118,6 @@ window.STORES_DATA = [
         "o": "1600"
       }
     ]
-  },
-  {
-    "title": "四方鮮乳牧場",
-    "address": "350台灣苗栗縣竹南鎮9-6號崎頂里12鄰",
-    "url": "https://www.google.com/maps/place/%E5%9B%9B%E6%96%B9%E9%AE%AE%E4%B9%B3%E7%89%A7%E5%A0%B4/data=!4m2!3m1!1s0x3469b4adcbb86b39:0x1b7792ecdf8522ea",
-    "cuisine_type": "其他",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "四海居小吃部",
-    "address": "260台灣宜兰县宜兰市新民里康樂路137巷9號",
-    "url": "https://www.google.com/maps/place/%E5%9B%9B%E6%B5%B7%E5%B1%85%E5%B0%8F%E5%90%83%E9%83%A8/data=!4m2!3m1!1s0x3467e4c4d0d2a189:0x31523d52d964ebcc",
-    "cuisine_type": "中式",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "黑白切",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "0930"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "0930"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "0930"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "0930"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "0930"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
-    "title": "四草綠色隧道",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "圓環龍鳳滷肉飯",
-    "address": "103台灣臺北市大同區星明里重慶北路二段17號",
-    "url": "https://www.google.com/maps/place/%E5%9C%93%E7%92%B0%E9%BE%8D%E9%B3%B3%E6%BB%B7%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442a88864f5679b:0xeb022c0ac28cd256",
-    "cuisine_type": "中式,小吃",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.92,
-    "avg_spending": 100,
-    "note": "Fred",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "0930"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "0930"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "0930"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "0930"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "0930"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
-    "title": "圓環龍鳳號",
-    "address": "台北市大同區寧夏路47號",
-    "url": "https://www.google.com/maps/place/%E5%9C%93%E7%92%B0%E9%BE%8D%E9%B3%B3%E8%99%9F/data=!4m2!3m1!1s0x3442a8c84eea6445:0x6677fe7a2791f4d7",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.9,
-    "avg_spending": 200,
-    "note": "Fred",
-    "hours": null
   },
   {
     "title": "地坊餐廳",
@@ -11620,54 +7264,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "士林廟口阿輝麵線",
-    "address": "111台灣臺北市士林區仁勇里大南路38號",
-    "url": "https://www.google.com/maps/place/%E5%A3%AB%E6%9E%97%E5%BB%9F%E5%8F%A3%E9%98%BF%E8%BC%9D%E9%BA%B5%E7%B7%9A/data=!4m2!3m1!1s0x3442aebaa4c8e1ed:0xbccb5fce7599bf03",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.39,
-    "avg_spending": 100,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "2333",
-        "d": 0,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 1,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 2,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 3,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 4,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 5,
-        "o": "1633"
-      },
-      {
-        "c": "2333",
-        "d": 6,
-        "o": "1633"
-      }
-    ]
-  },
-  {
     "title": "壹吉炸豬排專門店（不定休，請參閱IG、FB)",
     "address": "300台灣新竹市東區中正里大同路86號東門市場1105壹吉炸豬排",
     "url": "https://www.google.com/maps/place/%E5%A3%B9%E5%90%89%E7%82%B8%E8%B1%AC%E6%8E%92%E5%B0%88%E9%96%80%E5%BA%97%EF%BC%88%E4%B8%8D%E5%AE%9A%E4%BC%91%EF%BC%8C%E8%AB%8B%E5%8F%83%E9%96%B1IG%E3%80%81FB)/data=!4m2!3m1!1s0x3468352dda57339b:0xc5e67bbaeb0bc058",
@@ -11722,102 +7318,6 @@ window.STORES_DATA = [
         "c": "2030",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "壺茶車 Pot Tea King",
-    "address": "114台灣臺北市內湖區港富里內湖路一段737巷39號",
-    "url": "https://www.google.com/maps/place/%E5%A3%BA%E8%8C%B6%E8%BB%8A+Pot+Tea+King/data=!4m2!3m1!1s0x3442ac63c72b17dd:0xbf356255b03abecd",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 59.54,
-    "avg_spending": 70,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2359",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2359",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "夏樹甜品",
-    "address": "103台灣臺北市大同區迪化街一段240號",
-    "url": "https://www.google.com/maps/place/%E5%A4%8F%E6%A8%B9%E7%94%9C%E5%93%81/data=!4m2!3m1!1s0x3442abbbd49806b5:0x6505e784294c8e13",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.28,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "1030"
       }
     ]
   },
@@ -11904,54 +7404,6 @@ window.STORES_DATA = [
         "c": "0200",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "大安米粉湯",
-    "address": "106台灣臺北市大安區龍淵里復興南路二段316號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E5%AE%89%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442ab0004d737b3:0xf2139dfbccdce738",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 63.06,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "0300",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "0300",
-        "d": 6,
-        "o": "1030"
       }
     ]
   },
@@ -12072,54 +7524,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "大東文化藝術中心",
-    "address": "83057台灣高雄市鳳山區三民里光遠路161號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E6%9D%B1%E6%96%87%E5%8C%96%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%83/data=!4m2!3m1!1s0x346e1b3f790e2ff3:0xb81edd0b0258dc0a",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
     "title": "大橋頭米糕",
     "address": "103台灣臺北市大同區隆和里延平北路三段41號",
     "url": "https://www.google.com/maps/place/%E5%A4%A7%E6%A9%8B%E9%A0%AD%E7%B1%B3%E7%B3%95/data=!4m2!3m1!1s0x3442a93ed634cd47:0x3a4001a982bec955",
@@ -12159,29 +7563,6 @@ window.STORES_DATA = [
         "c": "1600",
         "d": 6,
         "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "大橋頭胡椒餅",
-    "address": "103台灣臺北市大同區南芳里延平北路二段272巷口號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E6%A9%8B%E9%A0%AD%E8%83%A1%E6%A4%92%E9%A4%85/data=!4m2!3m1!1s0x3442a93e529d2fe9:0x97b098936bc7baf2",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.75,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1600",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1600",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -12278,223 +7659,6 @@ window.STORES_DATA = [
         "c": "2030",
         "d": 6,
         "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "大狗麵線（石牌店）",
-    "address": "112台灣臺北市北投區振華里石牌路二段62號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%8B%97%E9%BA%B5%E7%B7%9A%EF%BC%88%E7%9F%B3%E7%89%8C%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x3442af054308f6d3:0xfe251322e90b7662",
-    "cuisine_type": "中式",
-    "source_list": "DenQ",
-    "visited": "是",
-    "distance_km": 64.69,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "2400",
-        "d": 0,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 1,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 2,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 3,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 5,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 6,
-        "o": "0000"
-      }
-    ]
-  },
-  {
-    "title": "大狗麵線（芝山店）",
-    "address": "111台灣臺北市士林區德行里福華路162-2號1樓",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%8B%97%E9%BA%B5%E7%B7%9A%EF%BC%88%E8%8A%9D%E5%B1%B1%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x3442af6826976b51:0x76a362ae1bbdc090",
-    "cuisine_type": "中式",
-    "source_list": "DenQ",
-    "visited": "是",
-    "distance_km": 64.34,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "大王茶迷竹科店《推薦手搖》鮮奶茶專賣店｜茶飲推薦｜手搖外送｜團購飲料｜人氣手搖｜檸檬冰沙專賣店｜冰淇淋專賣店",
-    "address": "300台灣新竹市東區金山里光復路一段193號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%8E%8B%E8%8C%B6%E8%BF%B7%E7%AB%B9%E7%A7%91%E5%BA%97%E3%80%8A%E6%8E%A8%E8%96%A6%E6%89%8B%E6%90%96%E3%80%8B%E9%AE%AE%E5%A5%B6%E8%8C%B6%E5%B0%88%E8%B3%A3%E5%BA%97%EF%BD%9C%E8%8C%B6%E9%A3%B2%E6%8E%A8%E8%96%A6%EF%BD%9C%E6%89%8B%E6%90%96%E5%A4%96%E9%80%81%EF%BD%9C%E5%9C%98%E8%B3%BC%E9%A3%B2%E6%96%99%EF%BD%9C%E4%BA%BA%E6%B0%A3%E6%89%8B%E6%90%96%EF%BD%9C%E6%AA%B8%E6%AA%AC%E5%86%B0%E6%B2%99%E5%B0%88%E8%B3%A3%E5%BA%97%EF%BD%9C%E5%86%B0%E6%B7%87%E6%B7%8B%E5%B0%88%E8%B3%A3%E5%BA%97/data=!4m2!3m1!1s0x346837006b923b1f:0x76512cbbb44842e4",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": 3.7,
-    "avg_spending": 70,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "大直小館",
-    "address": "10491台灣臺北市中山區大直里北安路535號之 1 號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%9B%B4%E5%B0%8F%E9%A4%A8/data=!4m2!3m1!1s0x3442ac05971371f5:0xda64e7b130009573",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 65.61,
-    "avg_spending": 400,
-    "note": "貝姬 蘿蔔糕",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -12620,49 +7784,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "大稻埕米粉湯 （每日定量｜售完為止）",
-    "address": "103台灣臺北市大同區建功里重慶北路一段26巷15號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%A8%BB%E5%9F%95%E7%B1%B3%E7%B2%89%E6%B9%AF+%EF%BC%88%E6%AF%8F%E6%97%A5%E5%AE%9A%E9%87%8F%EF%BD%9C%E5%94%AE%E5%AE%8C%E7%82%BA%E6%AD%A2%EF%BC%89/data=!4m2!3m1!1s0x3442a912c6a83993:0xd09cf07bddcbeb2a",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 60.61,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "0830"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "0830"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "0830"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "0830"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "0830"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "0830"
-      }
-    ]
-  },
-  {
     "title": "大稻埕魯肉飯",
     "address": "103台灣臺北市大同區建明里長安西路220巷17號",
     "url": "https://www.google.com/maps/place/%E5%A4%A7%E7%A8%BB%E5%9F%95%E9%AD%AF%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442a96d2ecfd72b:0x21c4c5b2853cd189",
@@ -12711,66 +7832,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "大茗本位製茶堂-新竹金山店",
-    "address": "300台灣新竹市東區金山里金山十三街1號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E8%8C%97%E6%9C%AC%E4%BD%8D%E8%A3%BD%E8%8C%B6%E5%A0%82-%E6%96%B0%E7%AB%B9%E9%87%91%E5%B1%B1%E5%BA%97/data=!4m2!3m1!1s0x346837007a71cd3d:0x5a95d541d36393f2",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": 3.7,
-    "avg_spending": 70,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "大華豬肉粿條麵",
-    "address": "108台北市萬華區莒光路292號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E8%8F%AF%E8%B1%AC%E8%82%89%E7%B2%BF%E6%A2%9D%E9%BA%B5/data=!4m2!3m1!1s0x31da19b42ad981b9:0x99e64da5de0603b8",
-    "cuisine_type": "中式,小吃,麵食",
-    "source_list": "2024-新加坡",
-    "visited": "是",
-    "distance_km": 58.5,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "大里海堤海鮮",
     "address": "261台灣宜蘭縣頭城鎮大里路78號",
     "url": "https://www.google.com/maps/place/%E5%A4%A7%E9%87%8C%E6%B5%B7%E5%A0%A4%E6%B5%B7%E9%AE%AE/data=!4m2!3m1!1s0x345d5ff9859a3d7b:0xbe874fae253f7f5d",
@@ -12814,91 +7875,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "大阪難波凱悅嘉薈酒店",
-    "address": "2-7-5 Nipponbashi, Chuo Ward, Osaka, 542-0073日本",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E9%98%AA%E9%9B%A3%E6%B3%A2%E5%87%B1%E6%82%85%E5%98%89%E8%96%88%E9%85%92%E5%BA%97/data=!4m2!3m1!1s0x6000e774747c83e9:0xe765c48d38776c3a",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "騏哥蛇丸",
-    "hours": null
-  },
-  {
-    "title": "大陳記古早味麵店",
-    "address": "114台灣臺北市內湖區港富里內湖路一段737巷18號",
-    "url": "https://www.google.com/maps/place/%E5%A4%A7%E9%99%B3%E8%A8%98%E5%8F%A4%E6%97%A9%E5%91%B3%E9%BA%B5%E5%BA%97/data=!4m2!3m1!1s0x3442ac63bd91ff93:0x1927755fe916fe20",
-    "cuisine_type": "中式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 62.05,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "0900"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "天下第一窯烤雞",
     "address": "262台灣宜蘭縣礁溪鄉三民村礁溪路三段42號",
     "url": "https://www.google.com/maps/place/%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E7%AA%AF%E7%83%A4%E9%9B%9E/data=!4m2!3m1!1s0x3467fafd8f4b493d:0x20e5f904d64c7296",
@@ -12938,54 +7914,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "天久琉貿樂市",
-    "address": "日本〒900-0005 Okinawa, Naha, Ameku, 1-chōme−2−１ りうぼう楽市店内 １階",
-    "url": "https://www.google.com/maps/place/%E5%A4%A9%E4%B9%85%E7%90%89%E8%B2%BF%E6%A8%82%E5%B8%82/data=!4m2!3m1!1s0x34e56bd0dab11e8d:0x6d3bff0ebc417127",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "館長",
-    "hours": [
-      {
-        "c": "2400",
-        "d": 0,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 1,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 2,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 3,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 5,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 6,
-        "o": "0000"
       }
     ]
   },
@@ -13132,54 +8060,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "天麩羅処ひらお 大名店",
-    "address": "2-chōme-6-20 Daimyō, Chuo Ward, Fukuoka, 810-0041日本",
-    "url": "https://www.google.com/maps/place/%E5%A4%A9%E9%BA%A9%E7%BE%85%E5%87%A6%E3%81%B2%E3%82%89%E3%81%8A+%E5%A4%A7%E5%90%8D%E5%BA%97/data=!4m2!3m1!1s0x3541918640345837:0xff3f78d25372271e",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1030"
       }
     ]
   },
@@ -13358,54 +8238,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "奉家 方糰本舖｜園區下午茶外送｜團體大量訂單｜活動餐盒客製",
-    "address": "30073台灣新竹市東區新莊里新莊街161號",
-    "url": "https://www.google.com/maps/place/%E5%A5%89%E5%AE%B6+%E6%96%B9%E7%B3%B0%E6%9C%AC%E8%88%96%EF%BD%9C%E5%9C%92%E5%8D%80%E4%B8%8B%E5%8D%88%E8%8C%B6%E5%A4%96%E9%80%81%EF%BD%9C%E5%9C%98%E9%AB%94%E5%A4%A7%E9%87%8F%E8%A8%82%E5%96%AE%EF%BD%9C%E6%B4%BB%E5%8B%95%E9%A4%90%E7%9B%92%E5%AE%A2%E8%A3%BD/data=!4m2!3m1!1s0x34683738fe2ab141:0x23ddcf4ae6a8411c",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
     "title": "好小子擔仔麵",
     "address": "407台灣臺中市西屯區何成里大墩路971號",
     "url": "https://www.google.com/maps/place/%E5%A5%BD%E5%B0%8F%E5%AD%90%E6%93%94%E4%BB%94%E9%BA%B5/data=!4m2!3m1!1s0x34693d8fcf71d869:0xb491b43caeb0cea3",
@@ -13445,145 +8277,6 @@ window.STORES_DATA = [
         "c": "2330",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "好日紫日式咖哩",
-    "address": "300台灣新竹市東區北大路35號1F",
-    "url": "https://www.google.com/maps/place/%E5%A5%BD%E6%97%A5%E7%B4%AB%E6%97%A5%E5%BC%8F%E5%92%96%E5%93%A9/data=!4m2!3m1!1s0x3468357f639e354b:0x27a600d11400474a",
-    "cuisine_type": "日式",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": 1.32,
-    "avg_spending": 220,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
-    "title": "好朋友涼麵",
-    "address": "111台灣臺北市士林區仁勇里大南路31號",
-    "url": "https://www.google.com/maps/place/%E5%A5%BD%E6%9C%8B%E5%8F%8B%E6%B6%BC%E9%BA%B5/data=!4m2!3m1!1s0x3442aebaad30b26b:0xb081e0513ba8b0c1",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.19,
-    "avg_spending": 100,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
-    "title": "好款姨米粉湯",
-    "address": "108台灣臺北市萬華區青山里青山里華西街30巷10弄",
-    "url": "https://www.google.com/maps/place/%E5%A5%BD%E6%AC%BE%E5%A7%A8%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9a9447409fd:0xfc35379ade834209",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 60.09,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1200"
       }
     ]
   },
@@ -13641,235 +8334,6 @@ window.STORES_DATA = [
     "avg_spending": 120,
     "note": "",
     "hours": null
-  },
-  {
-    "title": "姚德和 青草號",
-    "address": "103台灣臺北市大同區永樂里民樂街55號57號",
-    "url": "https://www.google.com/maps/place/%E5%A7%9A%E5%BE%B7%E5%92%8C+%E9%9D%92%E8%8D%89%E8%99%9F/data=!4m2!3m1!1s0x3442a9147ee9d47f:0x94e41e5cf24bfbe2",
-    "cuisine_type": "其他",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.55,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 1,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 2,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 3,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "0830"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "0830"
-      }
-    ]
-  },
-  {
-    "title": "娥嬤炖鰻 （原昌吉紅燒鰻）",
-    "address": "103台灣臺北市大同區斯文里昌吉街51號",
-    "url": "https://www.google.com/maps/place/%E5%A8%A5%E5%AC%A4%E7%82%96%E9%B0%BB+%EF%BC%88%E5%8E%9F%E6%98%8C%E5%90%89%E7%B4%85%E7%87%92%E9%B0%BB%EF%BC%89/data=!4m2!3m1!1s0x3442a94710ed14b5:0xbbcc94aa5968e53a",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.48,
-    "avg_spending": 250,
-    "note": "Fred",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "孔雀咖啡 PEACOCKS COFFEE",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "季吉GG韓國餐館",
-    "address": "105台灣臺北市松山區精忠里民生東路四段56巷3弄16號",
-    "url": "https://www.google.com/maps/place/%E5%AD%A3%E5%90%89GG%E9%9F%93%E5%9C%8B%E9%A4%90%E9%A4%A8/data=!4m2!3m1!1s0x3442abeeea8a6a51:0xf33add11c1c9eb45",
-    "cuisine_type": "韓式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.4,
-    "avg_spending": 400,
-    "note": "三家GG姊妹店/石鍋拌飯\n徐海莉",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "孫太太。私料。慢火鍋",
-    "address": "302台灣新竹縣竹北市新國里華興街358號",
-    "url": "https://www.google.com/maps/place/%E5%AD%AB%E5%A4%AA%E5%A4%AA%E3%80%82%E7%A7%81%E6%96%99%E3%80%82%E6%85%A2%E7%81%AB%E9%8D%8B/data=!4m2!3m1!1s0x3468370dc47607e9:0x5200971c5769bf34",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "jack",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
   },
   {
     "title": "安利麵線",
@@ -13973,135 +8437,50 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "安平薛家擔仔麵",
-    "address": "708台灣臺南市安平區天妃里安北路84號",
-    "url": "https://www.google.com/maps/place/%E5%AE%89%E5%B9%B3%E8%96%9B%E5%AE%B6%E6%93%94%E4%BB%94%E9%BA%B5/data=!4m2!3m1!1s0x346e761cb3e6bf37:0x1a0bc418666af6f0",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "痛風老饕-",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "安平路65號鍋燒意麵",
-    "address": "708台灣臺南市安平區安平國小旁",
-    "url": "https://www.google.com/maps/place/%E5%AE%89%E5%B9%B3%E8%B7%AF65%E8%99%9F%E9%8D%8B%E7%87%92%E6%84%8F%E9%BA%B5/data=!4m2!3m1!1s0x346e761b470a599d:0x8c05a32a240e0d40",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "痛風老饕-",
-    "hours": null
-  },
-  {
-    "title": "宜蘭傳藝園區",
-    "address": "268台灣宜蘭縣五結鄉季新村五濱路二段201號",
-    "url": "https://www.google.com/maps/place/%E5%AE%9C%E8%98%AD%E5%82%B3%E8%97%9D%E5%9C%92%E5%8D%80/data=!4m2!3m1!1s0x3467ef431a84178d:0x5ab3468b86b2c5ff",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
+    "title": "安咖哩",
+    "address": "300台灣新竹市東區南市里林森路119號",
+    "url": "https://www.google.com/maps/place/%E5%AE%89%E5%92%96%E5%93%A9/data=!4m2!3m1!1s0x346835cc4a11f31f:0xddea4106aac6118b",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.46,
+    "avg_spending": 200,
     "note": "",
     "hours": [
       {
-        "c": "1800",
+        "c": "2100",
         "d": 0,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 1,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 2,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 3,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 4,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 5,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "1800",
+        "c": "2100",
         "d": 6,
-        "o": "0900"
+        "o": "1100"
       }
     ]
   },
@@ -14167,18 +8546,6 @@ window.STORES_DATA = [
         "o": "1630"
       }
     ]
-  },
-  {
-    "title": "宣福居",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "家味園-新竹美食 新竹小吃 新竹雞肉飯 東區美食 東區小吃 清大美食",
@@ -14264,50 +8631,85 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "家鄉碳烤香雞排 士林店",
-    "address": "111台灣臺北市士林區義信里基河路1號",
-    "url": "https://www.google.com/maps/place/%E5%AE%B6%E9%84%89%E7%A2%B3%E7%83%A4%E9%A6%99%E9%9B%9E%E6%8E%92+%E5%A3%AB%E6%9E%97%E5%BA%97/data=!4m2!3m1!1s0x3442aeb0156aa64d:0x9ea7e1921b439c8f",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.23,
-    "avg_spending": 90,
-    "note": "拿拿摳",
+    "title": "家本肉屋丼飯",
+    "address": "302台灣新竹縣竹北市北崙里縣政十一街122號",
+    "url": "https://www.google.com/maps/place/%E5%AE%B6%E6%9C%AC%E8%82%89%E5%B1%8B%E4%B8%BC%E9%A3%AF/data=!4m2!3m1!1s0x346837001089e6d5:0x4384ac32c1b41ce9",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 6.52,
+    "avg_spending": 250,
+    "note": "",
     "hours": [
       {
-        "c": "0000",
+        "c": "1500",
         "d": 0,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 0,
+        "o": "1630"
+      },
+      {
+        "c": "1400",
         "d": 1,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 1,
+        "o": "1630"
+      },
+      {
+        "c": "1400",
         "d": 2,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 2,
+        "o": "1630"
+      },
+      {
+        "c": "1400",
         "d": 3,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 3,
+        "o": "1630"
+      },
+      {
+        "c": "1400",
         "d": 4,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 4,
+        "o": "1630"
+      },
+      {
+        "c": "1400",
         "d": 5,
-        "o": "1600"
+        "o": "1130"
       },
       {
-        "c": "0000",
+        "c": "2000",
+        "d": 5,
+        "o": "1630"
+      },
+      {
+        "c": "1500",
         "d": 6,
-        "o": "1600"
+        "o": "1130"
+      },
+      {
+        "c": "2000",
+        "d": 6,
+        "o": "1630"
       }
     ]
   },
@@ -14419,54 +8821,6 @@ window.STORES_DATA = [
         "c": "2030",
         "d": 6,
         "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "富宏牛肉麵",
-    "address": "108台灣臺北市萬華區福星里洛陽街67號",
-    "url": "https://www.google.com/maps/place/%E5%AF%8C%E5%AE%8F%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x3442a90e87e6d60b:0x2a5448854fda3233",
-    "cuisine_type": "中式",
-    "source_list": "台北牛肉麵",
-    "visited": "是",
-    "distance_km": 59.79,
-    "avg_spending": 200,
-    "note": "紅燒牛肉麵",
-    "hours": [
-      {
-        "c": "2400",
-        "d": 0,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 1,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 2,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 3,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 5,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 6,
-        "o": "0000"
       }
     ]
   },
@@ -14681,162 +9035,6 @@ window.STORES_DATA = [
         "c": "2000",
         "d": 6,
         "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "富鼎旺豬腳-中正店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "寶地花生醬 新竹伴手禮 冬季限量湯圓上市",
-    "address": "300台灣新竹市北區北門里城北街16號",
-    "url": "https://www.google.com/maps/place/%E5%AF%B6%E5%9C%B0%E8%8A%B1%E7%94%9F%E9%86%AC+%E6%96%B0%E7%AB%B9%E4%BC%B4%E6%89%8B%E7%A6%AE+%E5%86%AC%E5%AD%A3%E9%99%90%E9%87%8F%E6%B9%AF%E5%9C%93%E4%B8%8A%E5%B8%82/data=!4m2!3m1!1s0x346835971918cdef:0xe2bdc4db63d74fdd",
-    "cuisine_type": "中式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "小南門福州傻瓜乾麵 延平總店",
-    "address": "100台灣臺北市中正區南門里延平南路153號",
-    "url": "https://www.google.com/maps/place/%E5%B0%8F%E5%8D%97%E9%96%80%E7%A6%8F%E5%B7%9E%E5%82%BB%E7%93%9C%E4%B9%BE%E9%BA%B5+%E5%BB%B6%E5%B9%B3%E7%B8%BD%E5%BA%97/data=!4m2!3m1!1s0x3442a9a6b7668e21:0x8b5fcd648b9a5f9",
-    "cuisine_type": "中式",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": 59.45,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "小吳牛肉麵",
-    "address": "108台灣臺北市萬華區福星里洛陽街45-11號",
-    "url": "https://www.google.com/maps/place/%E5%B0%8F%E5%90%B3%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x3442a90e8737b2f7:0x6b6ee112e9e7c58b",
-    "cuisine_type": "中式",
-    "source_list": "台北牛肉麵",
-    "visited": "是",
-    "distance_km": 59.85,
-    "avg_spending": 180,
-    "note": "",
-    "hours": [
-      {
-        "c": "2400",
-        "d": 0,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 1,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 2,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 3,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 5,
-        "o": "0000"
-      },
-      {
-        "c": "2400",
-        "d": 6,
-        "o": "0000"
       }
     ]
   },
@@ -15192,44 +9390,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "小赫霜淇淋",
-    "address": "號 No, No. 15中興街清水區臺中市台灣 436",
-    "url": "https://www.google.com/maps/place/%E5%B0%8F%E8%B5%AB%E9%9C%9C%E6%B7%87%E6%B7%8B/data=!4m2!3m1!1s0x3469147f00d4cc6d:0xe2ddbb16bd680073",
-    "cuisine_type": "其他",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "小里子海鮮",
     "address": "台北市松山區民生東路五段208-1號",
     "url": "https://www.google.com/maps/place/%E5%B0%8F%E9%87%8C%E5%AD%90%E6%B5%B7%E9%AE%AE/data=!4m2!3m1!1s0x3442a949c4c78fe1:0x448b414b7582b95e",
@@ -15238,18 +9398,6 @@ window.STORES_DATA = [
     "visited": "否",
     "distance_km": 65.02,
     "avg_spending": 600,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "小金魚奶茶咖啡館",
-    "address": "台北市南港區興中路18號",
-    "url": "https://www.google.com/maps/place/%E5%B0%8F%E9%87%91%E9%AD%9A%E5%A5%B6%E8%8C%B6%E5%92%96%E5%95%A1%E9%A4%A8/data=!4m2!3m1!1s0x3442ae507e263c3d:0xdc7771c6938a0cf8",
-    "cuisine_type": "其他",
-    "source_list": "北投羅傑",
-    "visited": "是",
-    "distance_km": 68.06,
-    "avg_spending": 200,
     "note": "",
     "hours": null
   },
@@ -15361,54 +9509,6 @@ window.STORES_DATA = [
         "c": "2000",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "居和熹湯包",
-    "address": "114台灣臺北市內湖區港富里內湖路一段737巷71號",
-    "url": "https://www.google.com/maps/place/%E5%B1%85%E5%92%8C%E7%86%B9%E6%B9%AF%E5%8C%85/data=!4m2!3m1!1s0x3442ac617c454577:0x7d1ad4f0afe9aaad",
-    "cuisine_type": "中式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 69.28,
-    "avg_spending": 250,
-    "note": "",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1130"
       }
     ]
   },
@@ -15632,89 +9732,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "山西刀削麵 （大直店）",
-    "address": "104237台灣臺北市中山區大直里北安路563號",
-    "url": "https://www.google.com/maps/place/%E5%B1%B1%E8%A5%BF%E5%88%80%E5%89%8A%E9%BA%B5+%EF%BC%88%E5%A4%A7%E7%9B%B4%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x3442adab8c980a9b:0xc8ddf366daef8942",
-    "cuisine_type": "中式",
-    "source_list": "台北牛肉麵",
-    "visited": "是",
-    "distance_km": 65.56,
-    "avg_spending": 150,
-    "note": "紅燒牛肉麵",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "島牛燒肉",
     "address": "2-chōme-4-15 Matsuyama, Naha, Okinawa 900-0032日本",
     "url": "https://www.google.com/maps/place/%E5%B3%B6%E7%89%9B%E7%87%92%E8%82%89/data=!4m2!3m1!1s0x34e5697896ac9231:0x9aafb42507f9b3cf",
@@ -15899,54 +9916,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "巧宴蒜香肉羹",
-    "address": "260台灣宜蘭縣宜蘭市孝廉里中山路三段214號",
-    "url": "https://www.google.com/maps/place/%E5%B7%A7%E5%AE%B4%E8%92%9C%E9%A6%99%E8%82%89%E7%BE%B9/data=!4m2!3m1!1s0x3467e4cfdefdc6d5:0x90c8a60cc5e67945",
-    "cuisine_type": "中式",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
     "title": "巷仔內小卷米粉",
     "address": "700台灣臺南市中西區五條港里國華街三段251號",
     "url": "https://www.google.com/maps/place/%E5%B7%B7%E4%BB%94%E5%85%A7%E5%B0%8F%E5%8D%B7%E7%B1%B3%E7%B2%89/data=!4m2!3m1!1s0x345d4fc224a0f41d:0x56cc07de47e6f63a",
@@ -15986,54 +9955,6 @@ window.STORES_DATA = [
         "c": "1700",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "巷仔內米粉湯",
-    "address": "116台灣臺北市文山區景行里景美街80號",
-    "url": "https://www.google.com/maps/place/%E5%B7%B7%E4%BB%94%E5%85%A7%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442aa00a29523fd:0x5deb005525eb3722",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 64.16,
-    "avg_spending": 80,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -16092,303 +10013,6 @@ window.STORES_DATA = [
         "c": "2300",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "希ラーメン拉麵",
-    "address": "813台灣高雄市左營區廟東里蓮潭路121號",
-    "url": "https://www.google.com/maps/place/%E5%B8%8C%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E6%8B%89%E9%BA%B5/data=!4m2!3m1!1s0x346e059e682c6089:0x51b20dab3021bda5",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 250,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "幻覺博物館-台中",
-    "address": "403台灣臺中市西區忠誠里精誠路66號",
-    "url": "https://www.google.com/maps/place/%E5%B9%BB%E8%A6%BA%E5%8D%9A%E7%89%A9%E9%A4%A8-%E5%8F%B0%E4%B8%AD/data=!4m2!3m1!1s0x34693d5fda791845:0xfd6609c779e1a346",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "廖記米粉湯（無固定公休日，請來電確認）",
-    "address": "401台灣臺中市東區振興里大智路81號",
-    "url": "https://www.google.com/maps/place/%E5%BB%96%E8%A8%98%E7%B1%B3%E7%B2%89%E6%B9%AF%EF%BC%88%E7%84%A1%E5%9B%BA%E5%AE%9A%E5%85%AC%E4%BC%91%E6%97%A5%EF%BC%8C%E8%AB%8B%E4%BE%86%E9%9B%BB%E7%A2%BA%E8%AA%8D%EF%BC%89/data=!4m2!3m1!1s0x34693d4aabb08b51:0xf22c170f68f1e713",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "廚房客家美食",
-    "address": "105台灣臺北市松山區中正里敦化北路120巷20號",
-    "url": "https://www.google.com/maps/place/%E5%BB%9A%E6%88%BF%E5%AE%A2%E5%AE%B6%E7%BE%8E%E9%A3%9F/data=!4m2!3m1!1s0x3442abe7cc65d1c3:0x8545435398ef633c",
-    "cuisine_type": "中式",
-    "source_list": "黃仁勳來台",
-    "visited": "是",
-    "distance_km": 61.47,
-    "avg_spending": 300,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "廣州街夜市營養三明治",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "廣招英溫州餛飩 鳳山店",
-    "address": "830台灣高雄市鳳山區新興里維新路155號",
-    "url": "https://www.google.com/maps/place/%E5%BB%A3%E6%8B%9B%E8%8B%B1%E6%BA%AB%E5%B7%9E%E9%A4%9B%E9%A3%A9+%E9%B3%B3%E5%B1%B1%E5%BA%97/data=!4m2!3m1!1s0x346e1b3f5a71d879:0xbf22a2db2af10c1",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸\n餛飩湯/木瓜牛奶/肉圓",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -16774,188 +10398,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "德記土地公黑糖糕",
-    "address": "557台灣南投縣竹山鎮社寮里紫南宮第三停車場旁",
-    "url": "https://www.google.com/maps/place/%E5%BE%B7%E8%A8%98%E5%9C%9F%E5%9C%B0%E5%85%AC%E9%BB%91%E7%B3%96%E7%B3%95/data=!4m2!3m1!1s0x34692d5224e92fcd:0xae9e9bc0e7e2e516",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "忠義廟口清粥小菜",
-    "address": "320台灣桃園市中壢區興國里中豐路127號",
-    "url": "https://www.google.com/maps/place/%E5%BF%A0%E7%BE%A9%E5%BB%9F%E5%8F%A3%E6%B8%85%E7%B2%A5%E5%B0%8F%E8%8F%9C/data=!4m2!3m1!1s0x3442a970a8b4aa93:0x5e590f7ab063cfe6",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 31.07,
-    "avg_spending": 150,
-    "note": "蛇丸\n討論區推薦",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
-    "title": "忠貞新村文化園區",
-    "address": "324台灣桃園市平鎮區中山路70號",
-    "url": "https://www.google.com/maps/place/%E5%BF%A0%E8%B2%9E%E6%96%B0%E6%9D%91%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80/data=!4m2!3m1!1s0x3468237973bcbd61:0x71ce769cf6b50f0",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "思茶MissingTea手作飲品 新竹新莊店",
-    "address": "300台灣新竹市東區新莊里新莊街139號",
-    "url": "https://www.google.com/maps/place/%E6%80%9D%E8%8C%B6MissingTea%E6%89%8B%E4%BD%9C%E9%A3%B2%E5%93%81+%E6%96%B0%E7%AB%B9%E6%96%B0%E8%8E%8A%E5%BA%97/data=!4m2!3m1!1s0x346837d3c1d08929:0x5f8e9316a1f8a28f",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2050",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2050",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
     "title": "怪獸披薩 MONSTER PIZZA (Slice N’ Dice)",
     "address": "402台灣臺中市南區城隍里忠孝路183號",
     "url": "https://www.google.com/maps/place/%E6%80%AA%E7%8D%B8%E6%8A%AB%E8%96%A9+MONSTER+PIZZA+(Slice+N%E2%80%99+Dice)/data=!4m2!3m1!1s0x34693d19fc4d203b:0xef7eb469eaf6a96",
@@ -17004,63 +10446,15 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "怪獸起司火雞烤冷麵",
-    "address": "111台灣臺北市士林區義信里基河路1號",
-    "url": "https://www.google.com/maps/place/%E6%80%AA%E7%8D%B8%E8%B5%B7%E5%8F%B8%E7%81%AB%E9%9B%9E%E7%83%A4%E5%86%B7%E9%BA%B5/data=!4m2!3m1!1s0x3442af78612138df:0x3f96c9125a8f3a74",
-    "cuisine_type": "中式,其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.2,
-    "avg_spending": 100,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1650"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "恆星咖啡 EDS Coffee Roaster",
     "address": "300台灣新竹市北區新民里民富街140號",
     "url": "https://www.google.com/maps/place/%E6%81%86%E6%98%9F%E5%92%96%E5%95%A1+EDS+Coffee+Roaster/data=!4m2!3m1!1s0x34683500261db165:0x892235f69fffc816",
     "cuisine_type": "其他",
-    "source_list": "想去的地點",
-    "visited": "否",
+    "source_list": "常用早餐",
+    "visited": "是",
     "distance_km": null,
     "avg_spending": 150,
-    "note": "早餐",
+    "note": "",
     "hours": [
       {
         "c": "1700",
@@ -17259,49 +10653,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "慧昭牛舌餅",
-    "address": "112台灣臺北市北投區永明里石牌路二段185號",
-    "url": "https://www.google.com/maps/place/%E6%85%A7%E6%98%AD%E7%89%9B%E8%88%8C%E9%A4%85/data=!4m2!3m1!1s0x3442ae8bb849de47:0xf7a7d3d23616a297",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 79.76,
-    "avg_spending": 80,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "0930"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "0930"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "0930"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "0930"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "0930"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
     "title": "慶咖哩",
     "address": "300台灣新竹市東區復中里民生路212號",
     "url": "https://www.google.com/maps/place/%E6%85%B6%E5%92%96%E5%93%A9/data=!4m2!3m1!1s0x3468350065c33605:0xc56e2c0f6a7dab5f",
@@ -17385,16 +10736,47 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "懷舊中卷麵線",
-    "address": "200基隆市仁愛區愛三路49巷",
-    "url": "https://www.google.com/maps/place/%E6%87%B7%E8%88%8A%E4%B8%AD%E5%8D%B7%E9%BA%B5%E7%B7%9A/data=!4m2!3m1!1s0x3442a7d80725d609:0x5c28ba69a8a26dab",
-    "cuisine_type": "中式,小吃",
-    "source_list": "DenQ",
-    "visited": "是",
-    "distance_km": 84.72,
-    "avg_spending": 100,
+    "title": "慶記佛跳牆",
+    "address": "475號, 三民路福德里竹北市新竹縣台灣 302",
+    "url": "https://www.google.com/maps/place/%E6%85%B6%E8%A8%98%E4%BD%9B%E8%B7%B3%E7%89%86/data=!4m2!3m1!1s0x346837c07149afb3:0xf8f3d8d273ed4489",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 78.93,
+    "avg_spending": 250,
     "note": "",
-    "hours": null
+    "hours": [
+      {
+        "c": "0000",
+        "d": 0,
+        "o": "1630"
+      },
+      {
+        "c": "0000",
+        "d": 1,
+        "o": "1630"
+      },
+      {
+        "c": "0000",
+        "d": 2,
+        "o": "1630"
+      },
+      {
+        "c": "0000",
+        "d": 3,
+        "o": "1630"
+      },
+      {
+        "c": "0000",
+        "d": 4,
+        "o": "1630"
+      },
+      {
+        "c": "0000",
+        "d": 5,
+        "o": "1630"
+      }
+    ]
   },
   {
     "title": "成大器烤肉飯 北大店",
@@ -17518,97 +10900,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "手工漢堡排 牛丸 大名店",
-    "address": "日本〒810-0041 Fukuoka, Chuo Ward, Daimyō, 2-chōme−1−３１ 赤坂門ＡＩビル 1F",
-    "url": "https://www.google.com/maps/place/%E6%89%8B%E5%B7%A5%E6%BC%A2%E5%A0%A1%E6%8E%92+%E7%89%9B%E4%B8%B8+%E5%A4%A7%E5%90%8D%E5%BA%97/data=!4m2!3m1!1s0x354191865aed585f:0xb308de0555f12ac0",
-    "cuisine_type": "美式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 400,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "打鋼貴倪 創意食堂",
-    "address": "300台灣新竹市東區育賢里民族路33-32號",
-    "url": "https://www.google.com/maps/place/%E6%89%93%E9%8B%BC%E8%B2%B4%E5%80%AA+%E5%89%B5%E6%84%8F%E9%A3%9F%E5%A0%82/data=!4m2!3m1!1s0x346835b288b1445b:0x7629b4da846ce808",
-    "cuisine_type": "中式",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "智明\n三杯雞義大利麵",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "拉麵家 長安店",
     "address": "300台灣新竹市北區仁德里長安街41之1號",
     "url": "https://www.google.com/maps/place/%E6%8B%89%E9%BA%B5%E5%AE%B6+%E9%95%B7%E5%AE%89%E5%BA%97/data=!4m2!3m1!1s0x3468356f48fb7c03:0xc492f45610d7f88c",
@@ -17619,172 +10910,6 @@ window.STORES_DATA = [
     "avg_spending": 280,
     "note": "",
     "hours": null
-  },
-  {
-    "title": "拾松辦桌小吃_礁溪",
-    "address": "262003台灣宜蘭縣礁溪鄉大忠村奇峰街36號",
-    "url": "https://www.google.com/maps/place/%E6%8B%BE%E6%9D%BE%E8%BE%A6%E6%A1%8C%E5%B0%8F%E5%90%83_%E7%A4%81%E6%BA%AA/data=!4m2!3m1!1s0x3467fb972c87a18f:0x8c0f957f8e35702f",
-    "cuisine_type": "中式",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "拾貳鮮 鮮魚湯專賣店",
-    "address": "880台灣澎湖縣馬公市重慶里民權路48號",
-    "url": "https://www.google.com/maps/place/%E6%8B%BE%E8%B2%B3%E9%AE%AE+%E9%AE%AE%E9%AD%9A%E6%B9%AF%E5%B0%88%E8%B3%A3%E5%BA%97/data=!4m2!3m1!1s0x346c5bdb13004287:0x149df2c23533ea12",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
   },
   {
     "title": "挑嘴貓早午餐（最後點餐時間14:00，每週四固定公休）",
@@ -17976,54 +11101,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "揪享食（炒飯麵熱炒）",
-    "address": "351台灣苗栗縣頭份市信義里仁愛路47號七鄰",
-    "url": "https://www.google.com/maps/place/%E6%8F%AA%E4%BA%AB%E9%A3%9F%EF%BC%88%E7%82%92%E9%A3%AF%E9%BA%B5%E7%86%B1%E7%82%92%EF%BC%89/data=!4m2!3m1!1s0x34684ddb1616a75b:0x741b962b3cb9f169",
-    "cuisine_type": "中式",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
     "title": "文化城牛肉麵",
     "address": "302台灣新竹縣竹北市文化里光明一路486號",
     "url": "https://www.google.com/maps/place/%E6%96%87%E5%8C%96%E5%9F%8E%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x34683694b6c239eb:0xd7e006dc7d5c3031",
@@ -18083,56 +11160,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "文章牛肉湯 安平總店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "文賢米糕肉燥飯",
-    "address": "704台灣臺南市北區文成里文賢路478號",
-    "url": "https://www.google.com/maps/place/%E6%96%87%E8%B3%A2%E7%B1%B3%E7%B3%95%E8%82%89%E7%87%A5%E9%A3%AF/data=!4m2!3m1!1s0x346e765cd55c1eef:0xd09387207cc38f08",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "痛風老饕-",
-    "hours": [
-      {
-        "c": "2230",
-        "d": 1,
-        "o": "1615"
-      },
-      {
-        "c": "2230",
-        "d": 2,
-        "o": "1615"
-      },
-      {
-        "c": "2230",
-        "d": 3,
-        "o": "1615"
-      },
-      {
-        "c": "2230",
-        "d": 4,
-        "o": "1615"
-      },
-      {
-        "c": "2230",
-        "d": 5,
-        "o": "1615"
       }
     ]
   },
@@ -18381,144 +11408,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "新宿焼肉 牛たんの檸檬大阪本店",
-    "address": "日本〒542-0074 Osaka, Chuo Ward, Sennichimae, 2-chōme−5−２ 日本一歯科センタービル 1F",
-    "url": "https://www.google.com/maps/place/%E6%96%B0%E5%AE%BF%E7%84%BC%E8%82%89+%E7%89%9B%E3%81%9F%E3%82%93%E3%81%AE%E6%AA%B8%E6%AA%AC%E5%A4%A7%E9%98%AA%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x6000e794d34c011d:0x86caa4374bc449e8",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "黑木太太",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "新宿燒肉 牛舌の檸檬",
-    "address": "",
-    "url": "https://www.google.com/maps/place/%E6%96%B0%E5%AE%BF%E7%87%92%E8%82%89+%E7%89%9B%E8%88%8C%E3%81%AE%E6%AA%B8%E6%AA%AC/data=!4m2!3m1!1s0x60188d29c40e3255:0x148f6cd600a5a08",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "黑木太太",
-    "hours": null
-  },
-  {
-    "title": "新泰路米苔目",
-    "address": "242台灣新北市新莊區景德路197號",
-    "url": "https://www.google.com/maps/place/%E6%96%B0%E6%B3%B0%E8%B7%AF%E7%B1%B3%E8%8B%94%E7%9B%AE/data=!4m2!3m1!1s0x3442a874ecbf9ba7:0x55f2244fcd2ef5b7",
-    "cuisine_type": "中式,小吃",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": 54.4,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
     "title": "新竹利利號 肉鬆/肉乾",
     "address": "300台灣新竹市東區中正里中正路96巷6號",
     "url": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%88%A9%E5%88%A9%E8%99%9F+%E8%82%89%E9%AC%86%2F%E8%82%89%E4%B9%BE/data=!4m2!3m1!1s0x346835c178ef976b:0x1d80d39d4e7f3c1d",
@@ -18759,87 +11648,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "日禾六一四",
-    "address": "306台灣新竹縣關西鎮南雄里中正路111號",
-    "url": "https://www.google.com/maps/place/%E6%97%A5%E7%A6%BE%E5%85%AD%E4%B8%80%E5%9B%9B/data=!4m2!3m1!1s0x34683fa2b3637035:0x5c61c31de03fb3b8",
-    "cuisine_type": "其他",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "客家菜、客家麻糬",
-    "hours": [
-      {
-        "c": "1600",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1600",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "早安勇士(最後點餐16點整前、假日無訂位)",
-    "address": "112台灣臺北市北投區長安里育仁路147號",
-    "url": "https://www.google.com/maps/place/%E6%97%A9%E5%AE%89%E5%8B%87%E5%A3%AB(%E6%9C%80%E5%BE%8C%E9%BB%9E%E9%A4%9016%E9%BB%9E%E6%95%B4%E5%89%8D%E3%80%81%E5%81%87%E6%97%A5%E7%84%A1%E8%A8%82%E4%BD%8D)/data=!4m2!3m1!1s0x3442ae5025c7c6f7:0x3234425c69047c25",
-    "cuisine_type": "其他",
-    "source_list": "北投羅傑",
-    "visited": "是",
-    "distance_km": 67.21,
-    "avg_spending": 300,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
     "title": "早安美芝城新竹光華概念店",
     "address": "300台灣新竹市北區光華里光華街102-2號1樓",
     "url": "https://www.google.com/maps/place/%E6%97%A9%E5%AE%89%E7%BE%8E%E8%8A%9D%E5%9F%8E%E6%96%B0%E7%AB%B9%E5%85%89%E8%8F%AF%E6%A6%82%E5%BF%B5%E5%BA%97/data=!4m2!3m1!1s0x3468355f89fd2461:0xce36cb2b9fb0339a",
@@ -19052,235 +11860,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "曾氏福建炒麵-中正東店｜十年老字號｜臺灣第一福建炒麵品牌｜竹北中正東路美食｜快炒｜熱炒｜小吃｜炒飯",
-    "address": "302台灣新竹縣竹北市竹仁里中正東路60號",
-    "url": "https://www.google.com/maps/place/%E6%9B%BE%E6%B0%8F%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5-%E4%B8%AD%E6%AD%A3%E6%9D%B1%E5%BA%97%EF%BD%9C%E5%8D%81%E5%B9%B4%E8%80%81%E5%AD%97%E8%99%9F%EF%BD%9C%E8%87%BA%E7%81%A3%E7%AC%AC%E4%B8%80%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5%E5%93%81%E7%89%8C%EF%BD%9C%E7%AB%B9%E5%8C%97%E4%B8%AD%E6%AD%A3%E6%9D%B1%E8%B7%AF%E7%BE%8E%E9%A3%9F%EF%BD%9C%E5%BF%AB%E7%82%92%EF%BD%9C%E7%86%B1%E7%82%92%EF%BD%9C%E5%B0%8F%E5%90%83%EF%BD%9C%E7%82%92%E9%A3%AF/data=!4m2!3m1!1s0x346837c95056d2fb:0x67f7efe359ce2b09",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1030"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "曾氏福建炒麵-關新店｜十年老字號｜臺灣第一福建炒麵品牌｜新竹快炒｜光復路美食｜熱炒｜竹科美食｜新竹美食｜炒飯",
-    "address": "302台灣新竹縣竹北市竹仁里中正東路60號",
-    "url": "https://www.google.com/maps/place/%E6%9B%BE%E6%B0%8F%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5-%E9%97%9C%E6%96%B0%E5%BA%97%EF%BD%9C%E5%8D%81%E5%B9%B4%E8%80%81%E5%AD%97%E8%99%9F%EF%BD%9C%E8%87%BA%E7%81%A3%E7%AC%AC%E4%B8%80%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5%E5%93%81%E7%89%8C%EF%BD%9C%E6%96%B0%E7%AB%B9%E5%BF%AB%E7%82%92%EF%BD%9C%E5%85%89%E5%BE%A9%E8%B7%AF%E7%BE%8E%E9%A3%9F%EF%BD%9C%E7%86%B1%E7%82%92%EF%BD%9C%E7%AB%B9%E7%A7%91%E7%BE%8E%E9%A3%9F%EF%BD%9C%E6%96%B0%E7%AB%B9%E7%BE%8E%E9%A3%9F%EF%BD%9C%E7%82%92%E9%A3%AF/data=!4m2!3m1!1s0x34683743ca8e7bdb:0x6d6a7c1cbe2409eb",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1030"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "曾氏福建炒麵-鳳山店｜十年老字號｜臺灣第一福建炒麵品牌｜中山路美食｜鳳山美食｜小吃｜麵店",
-    "address": "830台灣高雄市鳳山區興仁里五甲一路16號",
-    "url": "https://www.google.com/maps/place/%E6%9B%BE%E6%B0%8F%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5-%E9%B3%B3%E5%B1%B1%E5%BA%97%EF%BD%9C%E5%8D%81%E5%B9%B4%E8%80%81%E5%AD%97%E8%99%9F%EF%BD%9C%E8%87%BA%E7%81%A3%E7%AC%AC%E4%B8%80%E7%A6%8F%E5%BB%BA%E7%82%92%E9%BA%B5%E5%93%81%E7%89%8C%EF%BD%9C%E4%B8%AD%E5%B1%B1%E8%B7%AF%E7%BE%8E%E9%A3%9F%EF%BD%9C%E9%B3%B3%E5%B1%B1%E7%BE%8E%E9%A3%9F%EF%BD%9C%E5%B0%8F%E5%90%83%EF%BD%9C%E9%BA%B5%E5%BA%97/data=!4m2!3m1!1s0x346e1bc49645ed41:0x6193d63759b2caa7",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "曾記餡餅",
     "address": "300台灣新竹市北區文華里光華街88號",
     "url": "https://www.google.com/maps/place/%E6%9B%BE%E8%A8%98%E9%A4%A1%E9%A4%85/data=!4m2!3m1!1s0x346835c8ffffffff:0xc9d5b14f69126067",
@@ -19363,127 +11942,6 @@ window.STORES_DATA = [
         "c": "1900",
         "d": 6,
         "o": "1400"
-      }
-    ]
-  },
-  {
-    "title": "會來尖石溫泉渡假村",
-    "address": "313台灣新竹縣尖石鄉義興村46號",
-    "url": "https://www.google.com/maps/place/%E6%9C%83%E4%BE%86%E5%B0%96%E7%9F%B3%E6%BA%AB%E6%B3%89%E6%B8%A1%E5%81%87%E6%9D%91/data=!4m2!3m1!1s0x346840ecedeaaaab:0xc1fc37dfb033fb83",
-    "cuisine_type": "其他",
-    "source_list": "新竹泡溫泉",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "0830"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "0830"
-      }
-    ]
-  },
-  {
-    "title": "月夜岩 蟹懷石",
-    "address": "10461台灣臺北市中山區雙城街25巷9號1樓",
-    "url": "https://www.google.com/maps/place/%E6%9C%88%E5%A4%9C%E5%B2%A9+%E8%9F%B9%E6%87%B7%E7%9F%B3/data=!4m2!3m1!1s0x3442a9aae4e8de3f:0xc3cd70bd8cf8769c",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 62.04,
-    "avg_spending": 1500,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1800"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1800"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1800"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1800"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1800"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1800"
       }
     ]
   },
@@ -19576,6 +12034,89 @@ window.STORES_DATA = [
     ]
   },
   {
+    "title": "朝寢坊の咖哩 新竹店",
+    "address": "No. 77號, No. 77南門街關帝里東區新竹市台灣 300",
+    "url": "https://www.google.com/maps/place/%E6%9C%9D%E5%AF%A2%E5%9D%8A%E3%81%AE%E5%92%96%E5%93%A9+%E6%96%B0%E7%AB%B9%E5%BA%97/data=!4m2!3m1!1s0x3468350065a426ff:0xad017972bdd10cff",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.66,
+    "avg_spending": 280,
+    "note": "",
+    "hours": [
+      {
+        "c": "1430",
+        "d": 0,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 0,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 1,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 1,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 2,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 2,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 3,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 3,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 4,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 4,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 5,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 5,
+        "o": "1730"
+      },
+      {
+        "c": "1430",
+        "d": 6,
+        "o": "1130"
+      },
+      {
+        "c": "2100",
+        "d": 6,
+        "o": "1730"
+      }
+    ]
+  },
+  {
     "title": "木木食堂 新竹店",
     "address": "300台灣新竹市東區三民里三民路86號",
     "url": "https://www.google.com/maps/place/%E6%9C%A8%E6%9C%A8%E9%A3%9F%E5%A0%82+%E6%96%B0%E7%AB%B9%E5%BA%97/data=!4m2!3m1!1s0x346835004a364a63:0x4a10ce7ec1697bd4",
@@ -19649,89 +12190,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "未然 日風鐵板料理",
-    "address": "302台灣新竹縣竹北市東平里嘉豐十一路二段127巷49號",
-    "url": "https://www.google.com/maps/place/%E6%9C%AA%E7%84%B6+%E6%97%A5%E9%A2%A8%E9%90%B5%E6%9D%BF%E6%96%99%E7%90%86/data=!4m2!3m1!1s0x3468370053dc8bbf:0xf40cf8f015d587f3",
-    "cuisine_type": "日式",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 4.67,
-    "avg_spending": 1500,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "李克承博士故居 a-moom(新竹市)",
     "address": "300台灣新竹市北區興南里勝利路199號",
     "url": "https://www.google.com/maps/place/%E6%9D%8E%E5%85%8B%E6%89%BF%E5%8D%9A%E5%A3%AB%E6%95%85%E5%B1%85+a-moom(%E6%96%B0%E7%AB%B9%E5%B8%82)/data=!4m2!3m1!1s0x34683594d7ea1f11:0xb5d2f1367289dcb7",
@@ -19775,18 +12233,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "李掌伯（原里長伯麻辣臭豆腐鴨血蚵仔麵線）",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "李美樂鹹水雞專賣店-新竹鹹水雞首選|巨城/湳雅/光華商圈鹹水雞專賣店|街邊美食|外帶美食|鹹水雞推薦|舒肥餐|必吃鹹水雞|人氣鹹水雞",
     "address": "300台灣新竹市北區光華里湳雅街38號",
     "url": "https://www.google.com/maps/place/%E6%9D%8E%E7%BE%8E%E6%A8%82%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97-%E6%96%B0%E7%AB%B9%E9%B9%B9%E6%B0%B4%E9%9B%9E%E9%A6%96%E9%81%B8%7C%E5%B7%A8%E5%9F%8E%2F%E6%B9%B3%E9%9B%85%2F%E5%85%89%E8%8F%AF%E5%95%86%E5%9C%88%E9%B9%B9%E6%B0%B4%E9%9B%9E%E5%B0%88%E8%B3%A3%E5%BA%97%7C%E8%A1%97%E9%82%8A%E7%BE%8E%E9%A3%9F%7C%E5%A4%96%E5%B8%B6%E7%BE%8E%E9%A3%9F%7C%E9%B9%B9%E6%B0%B4%E9%9B%9E%E6%8E%A8%E8%96%A6%7C%E8%88%92%E8%82%A5%E9%A4%90%7C%E5%BF%85%E5%90%83%E9%B9%B9%E6%B0%B4%E9%9B%9E%7C%E4%BA%BA%E6%B0%A3%E9%B9%B9%E6%B0%B4%E9%9B%9E/data=!4m2!3m1!1s0x346835d110904d83:0xeae875ba81915bcd",
@@ -19828,18 +12274,6 @@ window.STORES_DATA = [
         "o": "1700"
       }
     ]
-  },
-  {
-    "title": "李記紅茶冰 台南永樂店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "村 日式料理",
@@ -20155,49 +12589,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "林合發油飯店",
-    "address": "103台灣臺北市大同區永樂里迪化街一段21號",
-    "url": "https://www.google.com/maps/place/%E6%9E%97%E5%90%88%E7%99%BC%E6%B2%B9%E9%A3%AF%E5%BA%97/data=!4m2!3m1!1s0x3442a913890b7179:0x3de26de9acb7f42d",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.21,
-    "avg_spending": 200,
-    "note": "",
-    "hours": [
-      {
-        "c": "1200",
-        "d": 0,
-        "o": "0730"
-      },
-      {
-        "c": "1200",
-        "d": 2,
-        "o": "0730"
-      },
-      {
-        "c": "1200",
-        "d": 3,
-        "o": "0730"
-      },
-      {
-        "c": "1200",
-        "d": 4,
-        "o": "0730"
-      },
-      {
-        "c": "1200",
-        "d": 5,
-        "o": "0730"
-      },
-      {
-        "c": "1200",
-        "d": 6,
-        "o": "0730"
-      }
-    ]
-  },
-  {
     "title": "林家乾麵",
     "address": "100台灣臺北市中正區龍光里泉州街11號",
     "url": "https://www.google.com/maps/place/%E6%9E%97%E5%AE%B6%E4%B9%BE%E9%BA%B5/data=!4m2!3m1!1s0x3442a9a28000332b:0x511b4817fbd2276",
@@ -20322,56 +12713,6 @@ window.STORES_DATA = [
         "o": "1700"
       }
     ]
-  },
-  {
-    "title": "果子家 | 煎餅果子（新竹園區店）點餐請用下面系統點餐",
-    "address": "300台灣新竹市東區金山里光復路一段89巷67號",
-    "url": "https://www.google.com/maps/place/%E6%9E%9C%E5%AD%90%E5%AE%B6+%7C+%E7%85%8E%E9%A4%85%E6%9E%9C%E5%AD%90%EF%BC%88%E6%96%B0%E7%AB%B9%E5%9C%92%E5%8D%80%E5%BA%97%EF%BC%89%E9%BB%9E%E9%A4%90%E8%AB%8B%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%B3%BB%E7%B5%B1%E9%BB%9E%E9%A4%90/data=!4m2!3m1!1s0x34683700209f23f9:0x7f9a4304a2a90fb2",
-    "cuisine_type": "中式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": 3.66,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "果果香",
-    "address": "台北市中山區吉林路243號",
-    "url": "https://www.google.com/maps/place/%E6%9E%9C%E6%9E%9C%E9%A6%99/data=!4m2!3m1!1s0x3442a9733f97838b:0x152398e3702dc196",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 62.34,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
   },
   {
     "title": "柒伍無煙燒肉",
@@ -20567,54 +12908,6 @@ window.STORES_DATA = [
       },
       {
         "c": "1500",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "桐聚 鍋物 TUNG JU．SHABU",
-    "address": "313台灣新竹縣尖石鄉嘉樂村177之1號",
-    "url": "https://www.google.com/maps/place/%E6%A1%90%E8%81%9A+%E9%8D%8B%E7%89%A9+TUNG+JU%EF%BC%8ESHABU/data=!4m2!3m1!1s0x346841684a6b5b11:0xca1764648a33a1f",
-    "cuisine_type": "其他",
-    "source_list": "新竹泡溫泉",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2030",
         "d": 6,
         "o": "1100"
       }
@@ -20840,89 +13133,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "榕樹下煎餅",
-    "address": "510台灣彰化縣員林市萬年里員水路二段133號",
-    "url": "https://www.google.com/maps/place/%E6%A6%95%E6%A8%B9%E4%B8%8B%E7%85%8E%E9%A4%85/data=!4m2!3m1!1s0x34693743aabb3c03:0x3386925bda50a207",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1100",
-        "d": 0,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 1,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 2,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 3,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 4,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 5,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1330"
-      },
-      {
-        "c": "1100",
-        "d": 6,
-        "o": "0630"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1330"
-      }
-    ]
-  },
-  {
     "title": "樂客Rock’s Cooking(店休11/12-13",
     "address": "300台灣新竹市東區東園里鐵道路一段51號",
     "url": "https://www.google.com/maps/place/%E6%A8%82%E5%AE%A2Rock%E2%80%99s+Cooking(%E5%BA%97%E4%BC%9111%2F12-13/data=!4m2!3m1!1s0x346835092d60cae3:0x594271d19ef2699b",
@@ -21069,64 +13279,87 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "樂法Le Phare - 大東店",
-    "address": "830台灣高雄市鳳山區三民里光遠路165號",
-    "url": "https://www.google.com/maps/place/%E6%A8%82%E6%B3%95Le+Phare+-+%E5%A4%A7%E6%9D%B1%E5%BA%97/data=!4m2!3m1!1s0x346e1b00612a62bf:0x983c325bdcd3390b",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸\n蘋果柳橙(老饕三倍蘋果)",
+    "title": "樂饗砂鍋粥",
+    "address": "302台灣新竹縣竹北市東興里東興路一段71號",
+    "url": "https://www.google.com/maps/place/%E6%A8%82%E9%A5%97%E7%A0%82%E9%8D%8B%E7%B2%A5/data=!4m2!3m1!1s0x346837018199a87d:0x6b94856171b71b0",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.77,
+    "avg_spending": 400,
+    "note": "",
     "hours": [
       {
-        "c": "2000",
+        "c": "1400",
         "d": 0,
-        "o": "1000"
+        "o": "1100"
       },
       {
-        "c": "2030",
+        "c": "2200",
+        "d": 0,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 1,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "2100",
+        "c": "2200",
+        "d": 1,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 2,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "2100",
+        "c": "2200",
+        "d": 2,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 3,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "2030",
+        "c": "2200",
+        "d": 3,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 4,
-        "o": "0900"
+        "o": "1100"
       },
       {
-        "c": "2100",
+        "c": "2200",
+        "d": 4,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 5,
-        "o": "1000"
+        "o": "1100"
       },
       {
-        "c": "2100",
+        "c": "2200",
+        "d": 5,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
         "d": 6,
-        "o": "1000"
+        "o": "1100"
+      },
+      {
+        "c": "2200",
+        "d": 6,
+        "o": "1700"
       }
     ]
-  },
-  {
-    "title": "標題",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭, 2024-12-14 台中兩天一夜, 2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "樹也Villa",
@@ -21180,44 +13413,6 @@ window.STORES_DATA = [
         "c": "1300",
         "d": 6,
         "o": "0400"
-      }
-    ]
-  },
-  {
-    "title": "樺林乾麵",
-    "address": "100台灣臺北市中正區建國里中華路一段91巷15號",
-    "url": "https://www.google.com/maps/place/%E6%A8%BA%E6%9E%97%E4%B9%BE%E9%BA%B5/data=!4m2!3m1!1s0x3442a9a731467967:0xf251188d2d91cc6b",
-    "cuisine_type": "中式",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": 59.69,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "0730"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "0730"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "0730"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "0730"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "0730"
       }
     ]
   },
@@ -21305,64 +13500,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "橫油條創意美食-鳳山美食推薦|素食小吃|銅板小吃|創意料理|鮮奶麻糬|特色小吃|小吃推薦|首創料理",
-    "address": "830台灣高雄市鳳山區中正路87號",
-    "url": "https://www.google.com/maps/place/%E6%A9%AB%E6%B2%B9%E6%A2%9D%E5%89%B5%E6%84%8F%E7%BE%8E%E9%A3%9F-%E9%B3%B3%E5%B1%B1%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6%7C%E7%B4%A0%E9%A3%9F%E5%B0%8F%E5%90%83%7C%E9%8A%85%E6%9D%BF%E5%B0%8F%E5%90%83%7C%E5%89%B5%E6%84%8F%E6%96%99%E7%90%86%7C%E9%AE%AE%E5%A5%B6%E9%BA%BB%E7%B3%AC%7C%E7%89%B9%E8%89%B2%E5%B0%8F%E5%90%83%7C%E5%B0%8F%E5%90%83%E6%8E%A8%E8%96%A6%7C%E9%A6%96%E5%89%B5%E6%96%99%E7%90%86/data=!4m2!3m1!1s0x346e1b7c8dbe1601:0x618990a1b5ad1999",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1030",
-        "d": 0,
-        "o": "0730"
-      },
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1300"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1300"
-      },
-      {
-        "c": "1030",
-        "d": 6,
-        "o": "0730"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1300"
-      }
-    ]
-  },
-  {
     "title": "權域物理治療所",
     "address": "300台灣新竹市東區東勢里東光路47號1樓",
     "url": "https://www.google.com/maps/place/%E6%AC%8A%E5%9F%9F%E7%89%A9%E7%90%86%E6%B2%BB%E7%99%82%E6%89%80/data=!4m2!3m1!1s0x34683550201e91fb:0x3359997dd3e17dd4",
@@ -21397,49 +13534,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 5,
         "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "欣園客家美食坊-客家菜包 （欣客園客家菜包）",
-    "address": "306台灣新竹縣關西鎮東安里中豐新路135號",
-    "url": "https://www.google.com/maps/place/%E6%AC%A3%E5%9C%92%E5%AE%A2%E5%AE%B6%E7%BE%8E%E9%A3%9F%E5%9D%8A-%E5%AE%A2%E5%AE%B6%E8%8F%9C%E5%8C%85+%EF%BC%88%E6%AC%A3%E5%AE%A2%E5%9C%92%E5%AE%A2%E5%AE%B6%E8%8F%9C%E5%8C%85%EF%BC%89/data=!4m2!3m1!1s0x34683ec66d9b4b11:0x27fb43a41bd66ba",
-    "cuisine_type": "中式",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "菜包",
-    "hours": [
-      {
-        "c": "1300",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "0600"
       }
     ]
   },
@@ -21517,190 +13611,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "正好鮮肉小籠包-礁溪店",
-    "address": "262台灣宜蘭縣礁溪鄉大忠村仁愛路122號",
-    "url": "https://www.google.com/maps/place/%E6%AD%A3%E5%A5%BD%E9%AE%AE%E8%82%89%E5%B0%8F%E7%B1%A0%E5%8C%85-%E7%A4%81%E6%BA%AA%E5%BA%97/data=!4m2!3m1!1s0x3467fb38e9634667:0x168c64343ebe4097",
-    "cuisine_type": "中式",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
-    "title": "正樽當歸鴨",
-    "address": "710台灣臺南市永康區崑山里大仁街24號",
-    "url": "https://www.google.com/maps/place/%E6%AD%A3%E6%A8%BD%E7%95%B6%E6%AD%B8%E9%B4%A8/data=!4m2!3m1!1s0x346e71320193e709:0x4cb417bb97a4e288",
-    "cuisine_type": "中式",
-    "source_list": "常用晚餐",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "正義台灣牛肉",
-    "address": "241台灣新北市三重區龍門里龍門路144號",
-    "url": "https://www.google.com/maps/place/%E6%AD%A3%E7%BE%A9%E5%8F%B0%E7%81%A3%E7%89%9B%E8%82%89/data=!4m2!3m1!1s0x3442a925f2c915df:0x3b131a8ed2233ea5",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.51,
-    "avg_spending": 600,
-    "note": "蛇丸\n番茄炒牛肉/牛雜湯",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "正老牌臭豆腐麵線糊",
     "address": "402台灣臺中市南區城隍里合作街70之2號",
     "url": "https://www.google.com/maps/place/%E6%AD%A3%E8%80%81%E7%89%8C%E8%87%AD%E8%B1%86%E8%85%90%E9%BA%B5%E7%B7%9A%E7%B3%8A/data=!4m2!3m1!1s0x34693d1a69e1e18d:0xb011f7f9b9f7764",
@@ -21745,69 +13655,6 @@ window.STORES_DATA = [
         "c": "2330",
         "d": 6,
         "o": "1500"
-      }
-    ]
-  },
-  {
-    "title": "武廟 碳烤三明治",
-    "address": "700台灣臺南市中西區天后里永福路二段223號",
-    "url": "https://www.google.com/maps/place/%E6%AD%A6%E5%BB%9F+%E7%A2%B3%E7%83%A4%E4%B8%89%E6%98%8E%E6%B2%BB/data=!4m2!3m1!1s0x346e7663d5a343f5:0xe1bc9f88c35fba",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1200",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1530",
-        "d": 0,
-        "o": "1330"
-      },
-      {
-        "c": "1200",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1530",
-        "d": 3,
-        "o": "1330"
-      },
-      {
-        "c": "1200",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1331"
-      },
-      {
-        "c": "1200",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1530",
-        "d": 5,
-        "o": "1330"
-      },
-      {
-        "c": "1200",
-        "d": 6,
-        "o": "0700"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1400"
       }
     ]
   },
@@ -21898,18 +13745,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "水仙宮粽葉米糕",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "水哥笠禾",
     "address": "300台灣新竹市東區三民里民主路64號",
     "url": "https://www.google.com/maps/place/%E6%B0%B4%E5%93%A5%E7%AC%A0%E7%A6%BE/data=!4m2!3m1!1s0x346835dac2ba3635:0x246fa0693668ec38",
@@ -21944,64 +13779,6 @@ window.STORES_DATA = [
         "c": "1100",
         "d": 6,
         "o": "0600"
-      }
-    ]
-  },
-  {
-    "title": "水炊料亭 博多華味鳥 天神店",
-    "address": "日本〒810-0021 Fukuoka, Chuo Ward, Imaizumi, 1-chōme−20−２ 天神MENTビル B1",
-    "url": "https://www.google.com/maps/place/%E6%B0%B4%E7%82%8A%E6%96%99%E4%BA%AD+%E5%8D%9A%E5%A4%9A%E8%8F%AF%E5%91%B3%E9%B3%A5+%E5%A4%A9%E7%A5%9E%E5%BA%97/data=!4m2!3m1!1s0x354191850547b631:0xe851eb643ae80d01",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -22089,87 +13866,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "永晝手工義大利麵",
-    "address": "之一，1樓, No. 65號光復路一段525巷 East District, 東區新竹市台灣 300",
-    "url": "https://www.google.com/maps/place/%E6%B0%B8%E6%99%9D%E6%89%8B%E5%B7%A5%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5/data=!4m2!3m1!1s0x34683766d881cfbf:0x91dfd6e77bfeeb8e",
-    "cuisine_type": "義式",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 350,
-    "note": "",
-    "hours": [
-      {
-        "c": "2030",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "永樂車輪餅 | 古早味車輪餅",
-    "address": "103台灣臺北市大同區大有里迪化街一段146號騎樓號",
-    "url": "https://www.google.com/maps/place/%E6%B0%B8%E6%A8%82%E8%BB%8A%E8%BC%AA%E9%A4%85+%7C+%E5%8F%A4%E6%97%A9%E5%91%B3%E8%BB%8A%E8%BC%AA%E9%A4%85/data=!4m2!3m1!1s0x3442a913880d53b5:0xd286ca4f37b73753",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.21,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1300"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1300"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1300"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1300"
-      }
-    ]
-  },
-  {
     "title": "永豐活海鮮餐廳-宜蘭 人氣美食 平價特色生猛海鮮餐廳 必吃中式料理 公司家庭聚餐 團體合菜 桌菜 活物料理 喜慶宴會 春酒尾牙場地 雜誌熱門首選推薦",
     "address": "270台灣宜蘭縣蘇澳鎮蘇東里蘇東北路1-7號",
     "url": "https://www.google.com/maps/place/%E6%B0%B8%E8%B1%90%E6%B4%BB%E6%B5%B7%E9%AE%AE%E9%A4%90%E5%BB%B3-%E5%AE%9C%E8%98%AD+%E4%BA%BA%E6%B0%A3%E7%BE%8E%E9%A3%9F+%E5%B9%B3%E5%83%B9%E7%89%B9%E8%89%B2%E7%94%9F%E7%8C%9B%E6%B5%B7%E9%AE%AE%E9%A4%90%E5%BB%B3+%E5%BF%85%E5%90%83%E4%B8%AD%E5%BC%8F%E6%96%99%E7%90%86+%E5%85%AC%E5%8F%B8%E5%AE%B6%E5%BA%AD%E8%81%9A%E9%A4%90+%E5%9C%98%E9%AB%94%E5%90%88%E8%8F%9C+%E6%A1%8C%E8%8F%9C+%E6%B4%BB%E7%89%A9%E6%96%99%E7%90%86+%E5%96%9C%E6%85%B6%E5%AE%B4%E6%9C%83+%E6%98%A5%E9%85%92%E5%B0%BE%E7%89%99%E5%A0%B4%E5%9C%B0+%E9%9B%9C%E8%AA%8C%E7%86%B1%E9%96%80%E9%A6%96%E9%81%B8%E6%8E%A8%E8%96%A6/data=!4m2!3m1!1s0x3467e83554930b3d:0x9a927f387c288482",
@@ -22247,135 +13943,6 @@ window.STORES_DATA = [
         "c": "1800",
         "d": 6,
         "o": "1200"
-      }
-    ]
-  },
-  {
-    "title": "江蘇老趙刀切麵",
-    "address": "106台灣臺北市大安區住安里信義路四段60之60號",
-    "url": "https://www.google.com/maps/place/%E6%B1%9F%E8%98%87%E8%80%81%E8%B6%99%E5%88%80%E5%88%87%E9%BA%B5/data=!4m2!3m1!1s0x3442abd2e34bdfe3:0xc6af47184dcb5410",
-    "cuisine_type": "中式",
-    "source_list": "台北牛肉麵",
-    "visited": "是",
-    "distance_km": 61.24,
-    "avg_spending": 180,
-    "note": "紅燒牛肉麵",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "汪家魚丸湯、包餡魚丸零售",
-    "address": "300台灣新竹市北區客雅里延平路一段261巷8弄15號",
-    "url": "https://www.google.com/maps/place/%E6%B1%AA%E5%AE%B6%E9%AD%9A%E4%B8%B8%E6%B9%AF%E3%80%81%E5%8C%85%E9%A4%A1%E9%AD%9A%E4%B8%B8%E9%9B%B6%E5%94%AE/data=!4m2!3m1!1s0x34683599bc5821f9:0x2535cec9801f8028",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "波妞",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "0730"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "0730"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "0730"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "0730"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "0730"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "0730"
-      }
-    ]
-  },
-  {
-    "title": "汾陽餛飩",
-    "address": "813台灣高雄市左營區埤西里左營大路84號",
-    "url": "https://www.google.com/maps/place/%E6%B1%BE%E9%99%BD%E9%A4%9B%E9%A3%A9/data=!4m2!3m1!1s0x346e05a28cf64d31:0x78379da41a30631b",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "0630"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "0630"
       }
     ]
   },
@@ -22459,66 +14026,6 @@ window.STORES_DATA = [
         "c": "2200",
         "d": 6,
         "o": "1730"
-      }
-    ]
-  },
-  {
-    "title": "法大炸雞 Fukdup Fried Chicken - 精誠總店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "法大炸雞 Fukdup Fried Chicken - 精誠總店",
-    "address": "40360台灣臺中市西區忠誠里精誠路11-3號",
-    "url": "https://www.google.com/maps/place/%E6%B3%95%E5%A4%A7%E7%82%B8%E9%9B%9E+Fukdup+Fried+Chicken+-+%E7%B2%BE%E8%AA%A0%E7%B8%BD%E5%BA%97/data=!4m2!3m1!1s0x34693d55db05d155:0x9b9b31a2c9a308f3",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1100"
       }
     ]
   },
@@ -22639,30 +14146,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "泰市場 Spice Market",
-    "address": "台北市信義區松壽路11號6樓",
-    "url": "https://www.google.com/maps/place/%E6%B3%B0%E5%B8%82%E5%A0%B4+Spice+Market/data=!4m2!3m1!1s0x3442abbbd49807b9:0x5bea25cbb9ae71ae",
-    "cuisine_type": "東南亞式",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 64.55,
-    "avg_spending": 900,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "泰成水果店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "泰蝦小棧活蝦料理（售完會提早打烊，建議來電詢問）",
     "address": "300台灣新竹市東區東山里東山街56號",
     "url": "https://www.google.com/maps/place/%E6%B3%B0%E8%9D%A6%E5%B0%8F%E6%A3%A7%E6%B4%BB%E8%9D%A6%E6%96%99%E7%90%86%EF%BC%88%E5%94%AE%E5%AE%8C%E6%9C%83%E6%8F%90%E6%97%A9%E6%89%93%E7%83%8A%EF%BC%8C%E5%BB%BA%E8%AD%B0%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F%EF%BC%89/data=!4m2!3m1!1s0x346835005e927763:0x60101e03a724a0f2",
@@ -22761,79 +14244,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "洋石岩燒牛排 忠孝店",
-    "address": "106台灣臺北市大安區車層里忠孝東路四段223巷10弄4號",
-    "url": "https://www.google.com/maps/place/%E6%B4%8B%E7%9F%B3%E5%B2%A9%E7%87%92%E7%89%9B%E6%8E%92+%E5%BF%A0%E5%AD%9D%E5%BA%97/data=!4m2!3m1!1s0x3442ab43ed58331d:0x4efe10a987ba2996",
-    "cuisine_type": "美式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.55,
-    "avg_spending": 600,
-    "note": "國棟",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2230",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2230",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
     "title": "洪記上海生煎包",
     "address": "111台灣台北市士林区士林區文林路101巷10號1樓",
     "url": "https://www.google.com/maps/place/%E6%B4%AA%E8%A8%98%E4%B8%8A%E6%B5%B7%E7%94%9F%E7%85%8E%E5%8C%85/data=!4m2!3m1!1s0x3442ae8c93692865:0x31ad896e40e87b9a",
@@ -22882,6 +14292,54 @@ window.STORES_DATA = [
     ]
   },
   {
+    "title": "浪人鐵板燒中山店/城隍廟美食/平價鐵板燒/新竹美食/美食推薦",
+    "address": "300台灣新竹市北區崇禮里中山路262號",
+    "url": "https://www.google.com/maps/place/%E6%B5%AA%E4%BA%BA%E9%90%B5%E6%9D%BF%E7%87%92%E4%B8%AD%E5%B1%B1%E5%BA%97%2F%E5%9F%8E%E9%9A%8D%E5%BB%9F%E7%BE%8E%E9%A3%9F%2F%E5%B9%B3%E5%83%B9%E9%90%B5%E6%9D%BF%E7%87%92%2F%E6%96%B0%E7%AB%B9%E7%BE%8E%E9%A3%9F%2F%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6/data=!4m2!3m1!1s0x346835c8a21c2dd3:0x677917d4c663bafb",
+    "cuisine_type": "中式,日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.71,
+    "avg_spending": 220,
+    "note": "",
+    "hours": [
+      {
+        "c": "2230",
+        "d": 0,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 1,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 2,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 3,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 4,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 5,
+        "o": "1100"
+      },
+      {
+        "c": "2230",
+        "d": 6,
+        "o": "1100"
+      }
+    ]
+  },
+  {
     "title": "海味-海鮮鍋燒海鮮粥",
     "address": "805台灣高雄市旗津區北汕里旗津三路300號",
     "url": "https://www.google.com/maps/place/%E6%B5%B7%E5%91%B3-%E6%B5%B7%E9%AE%AE%E9%8D%8B%E7%87%92%E6%B5%B7%E9%AE%AE%E7%B2%A5/data=!4m2!3m1!1s0x346e0300a5c50587:0x93ef1d0d7b87a1d8",
@@ -22914,135 +14372,6 @@ window.STORES_DATA = [
       },
       {
         "c": "1930",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "海味羹",
-    "address": "35041台灣苗栗縣竹南鎮竹南里民族街90號",
-    "url": "https://www.google.com/maps/place/%E6%B5%B7%E5%91%B3%E7%BE%B9/data=!4m2!3m1!1s0x3469b3629871aeb7:0xe201c674a220eea2",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "波妞",
-    "hours": [
-      {
-        "c": "1930",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "涼州街無名涼麵",
-    "address": "103台灣臺北市大同區民權里民權西路144巷15之1號",
-    "url": "https://www.google.com/maps/place/%E6%B6%BC%E5%B7%9E%E8%A1%97%E7%84%A1%E5%90%8D%E6%B6%BC%E9%BA%B5/data=!4m2!3m1!1s0x3442a94075a5d1d9:0xc788b9d88ee1ba5a",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 60.9,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "0530"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "0530"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "0530"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "0530"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "0530"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0530"
-      }
-    ]
-  },
-  {
-    "title": "淑芬小吃豆皮包鹹菜",
-    "address": "557台灣南投縣竹山鎮竹山里下橫街59-1號",
-    "url": "https://www.google.com/maps/place/%E6%B7%91%E8%8A%AC%E5%B0%8F%E5%90%83%E8%B1%86%E7%9A%AE%E5%8C%85%E9%B9%B9%E8%8F%9C/data=!4m2!3m1!1s0x346ecdbf4a9a6121:0x24670a06ee2e9ceb",
-    "cuisine_type": "中式",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1700",
         "d": 6,
         "o": "1100"
       }
@@ -23179,54 +14508,6 @@ window.STORES_DATA = [
         "c": "2330",
         "d": 6,
         "o": "1400"
-      }
-    ]
-  },
-  {
-    "title": "清水白燒炸粿",
-    "address": "436台灣臺中市清水區南寧里清水街49-1號隔壁",
-    "url": "https://www.google.com/maps/place/%E6%B8%85%E6%B0%B4%E7%99%BD%E7%87%92%E7%82%B8%E7%B2%BF/data=!4m2!3m1!1s0x3469157db1515755:0xb55f572deb8e851b",
-    "cuisine_type": "其他",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1930",
-        "d": 0,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 1,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "1430"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "1430"
       }
     ]
   },
@@ -23438,54 +14719,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "源式仙草",
-    "address": "306台灣新竹縣關西鎮北斗里南京路20號",
-    "url": "https://www.google.com/maps/place/%E6%BA%90%E5%BC%8F%E4%BB%99%E8%8D%89/data=!4m2!3m1!1s0x34683ecc1a99e48f:0xa62aab1c513401c9",
-    "cuisine_type": "其他",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "溢香園 天母店",
     "address": "111台灣臺北市士林區天山里天母東路41號",
     "url": "https://www.google.com/maps/place/%E6%BA%A2%E9%A6%99%E5%9C%92+%E5%A4%A9%E6%AF%8D%E5%BA%97/data=!4m2!3m1!1s0x3442ae80a4a48849:0x8ad7584679e8ea5",
@@ -23612,91 +14845,43 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "滋養和菓子",
-    "address": "10347台灣臺北市大同區大有里迪化街一段247號",
-    "url": "https://www.google.com/maps/place/%E6%BB%8B%E9%A4%8A%E5%92%8C%E8%8F%93%E5%AD%90/data=!4m2!3m1!1s0x3442a96c7f213745:0xf87b55be5f35131f",
-    "cuisine_type": "日式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.77,
-    "avg_spending": 300,
-    "note": "草莓大福",
+    "title": "漁香甜不辣",
+    "address": "300台灣新竹市北區中正里大同路86號新竹東門市場2樓2010號",
+    "url": "https://www.google.com/maps/place/%E6%BC%81%E9%A6%99%E7%94%9C%E4%B8%8D%E8%BE%A3/data=!4m2!3m1!1s0x346835c1afb31ffd:0xc8ea3a4ca91a9d02",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.43,
+    "avg_spending": 100,
+    "note": "",
     "hours": [
       {
-        "c": "1800",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
+        "c": "1700",
         "d": 1,
-        "o": "0900"
+        "o": "1030"
       },
       {
-        "c": "1800",
+        "c": "1700",
         "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "漁郎生魚片",
-    "address": "928台灣屏東縣東港鎮朝隆路39號東港漁港漁產品直銷中心（華僑市場）331號攤 華僑市場356攤",
-    "url": "https://www.google.com/maps/place/%E6%BC%81%E9%83%8E%E7%94%9F%E9%AD%9A%E7%89%87/data=!4m2!3m1!1s0x3471e185863ce389:0xea08ec7b1dfa864b",
-    "cuisine_type": "日式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 300,
-    "note": "賴爸",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
         "o": "1030"
       },
       {
-        "c": "1830",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "1830",
+        "c": "1700",
         "d": 3,
         "o": "1030"
       },
       {
-        "c": "1830",
+        "c": "1700",
         "d": 4,
         "o": "1030"
       },
       {
-        "c": "1830",
+        "c": "1700",
         "d": 5,
         "o": "1030"
       },
       {
-        "c": "1900",
+        "c": "1700",
         "d": 6,
         "o": "1030"
       }
@@ -23786,54 +14971,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "漢王薑母鴨 新竹東大店",
-    "address": "300台灣新竹市北區福林里東大路二段261號",
-    "url": "https://www.google.com/maps/place/%E6%BC%A2%E7%8E%8B%E8%96%91%E6%AF%8D%E9%B4%A8+%E6%96%B0%E7%AB%B9%E6%9D%B1%E5%A4%A7%E5%BA%97/data=!4m2!3m1!1s0x3468356f88c34ce9:0xade61e20697c5c6",
-    "cuisine_type": "中式",
-    "source_list": "冬季限定",
-    "visited": "是",
-    "distance_km": 1.05,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
     "title": "漢王薑母鴨 新竹林森路（九尾雞.薑母雞.菜脯雞）",
     "address": "300台灣新竹市北區林森路272號",
     "url": "https://www.google.com/maps/place/%E6%BC%A2%E7%8E%8B%E8%96%91%E6%AF%8D%E9%B4%A8+%E6%96%B0%E7%AB%B9%E6%9E%97%E6%A3%AE%E8%B7%AF%EF%BC%88%E4%B9%9D%E5%B0%BE%E9%9B%9E.%E8%96%91%E6%AF%8D%E9%9B%9E.%E8%8F%9C%E8%84%AF%E9%9B%9E%EF%BC%89/data=!4m2!3m1!1s0x346835e07dc2a68f:0x873c71c3647e3d8f",
@@ -23873,102 +15010,6 @@ window.STORES_DATA = [
         "c": "0100",
         "d": 6,
         "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "澎湖三哥雞排三多店",
-    "address": "880台灣澎湖縣馬公市朝陽里三多路75-2號",
-    "url": "https://www.google.com/maps/place/%E6%BE%8E%E6%B9%96%E4%B8%89%E5%93%A5%E9%9B%9E%E6%8E%92%E4%B8%89%E5%A4%9A%E5%BA%97/data=!4m2!3m1!1s0x346c5af33b2cae41:0xf43fe89df7099d7e",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 1,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 2,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 3,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "1500"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "1500"
-      }
-    ]
-  },
-  {
-    "title": "激旨燒鳥 美村加盟店",
-    "address": "403台灣臺中市西區忠明里美村路一段86號",
-    "url": "https://www.google.com/maps/place/%E6%BF%80%E6%97%A8%E7%87%92%E9%B3%A5+%E7%BE%8E%E6%9D%91%E5%8A%A0%E7%9B%9F%E5%BA%97/data=!4m2!3m1!1s0x34693d9c165a0739:0x3cef33239b1f894e",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0030",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "0100",
-        "d": 1,
-        "o": "1800"
-      },
-      {
-        "c": "0100",
-        "d": 2,
-        "o": "1800"
-      },
-      {
-        "c": "0100",
-        "d": 3,
-        "o": "1800"
-      },
-      {
-        "c": "0100",
-        "d": 4,
-        "o": "1800"
-      },
-      {
-        "c": "0100",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "0100",
-        "d": 6,
-        "o": "1730"
       }
     ]
   },
@@ -24026,54 +15067,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "火鍋世家新竹光華東店",
-    "address": "300台灣新竹市東區文華里光華東街5號",
-    "url": "https://www.google.com/maps/place/%E7%81%AB%E9%8D%8B%E4%B8%96%E5%AE%B6%E6%96%B0%E7%AB%B9%E5%85%89%E8%8F%AF%E6%9D%B1%E5%BA%97/data=!4m2!3m1!1s0x346835cfae0ab6cf:0x2c4ce117c4b882ba",
-    "cuisine_type": "中式",
-    "source_list": "冬季限定",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "炎伯紅茶冰",
     "address": "402台灣臺中市南區城隍里忠孝路196-4號",
     "url": "https://www.google.com/maps/place/%E7%82%8E%E4%BC%AF%E7%B4%85%E8%8C%B6%E5%86%B0/data=!4m2!3m1!1s0x34693d19f9a52299:0xb190529191f36019",
@@ -24122,91 +15115,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "炯炯特炙牛排",
-    "address": "433台灣臺中市沙鹿區洛泉里鎮政路31號",
-    "url": "https://www.google.com/maps/place/%E7%82%AF%E7%82%AF%E7%89%B9%E7%82%99%E7%89%9B%E6%8E%92/data=!4m2!3m1!1s0x34691531e8c345b7:0xcae39e0bc5e52fb1",
-    "cuisine_type": "美式",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "烘牛炭燒大牛排.現炒",
-    "address": "",
-    "url": "",
-    "cuisine_type": "美式",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 400,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "無名早餐飯糰攤",
     "address": "300台灣新竹市北區育英里中山路283號",
     "url": "https://www.google.com/maps/place/%E7%84%A1%E5%90%8D%E6%97%A9%E9%A4%90%E9%A3%AF%E7%B3%B0%E6%94%A4/data=!4m2!3m1!1s0x346835fe6a1c963d:0x7ff2cafa8e142471",
@@ -24253,18 +15161,6 @@ window.STORES_DATA = [
         "o": "0600"
       }
     ]
-  },
-  {
-    "title": "無名麵線糊豆花",
-    "address": "新竹市東區東南街129號",
-    "url": "https://www.google.com/maps/place/%E7%84%A1%E5%90%8D%E9%BA%B5%E7%B7%9A%E7%B3%8A%E8%B1%86%E8%8A%B1/data=!4m2!3m1!1s0x346836c26fc44681:0xbd5b1a01ddf242d4",
-    "cuisine_type": "中式",
-    "source_list": "IG",
-    "visited": "是",
-    "distance_km": 1.58,
-    "avg_spending": 100,
-    "note": "智明",
-    "hours": null
   },
   {
     "title": "熊越岳",
@@ -24441,49 +15337,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "燒烤杏鮑菇",
-    "address": "111台灣臺北市士林區義信里大南路101-71號",
-    "url": "https://www.google.com/maps/place/%E7%87%92%E7%83%A4%E6%9D%8F%E9%AE%91%E8%8F%87/data=!4m2!3m1!1s0x3442aebabd5a33cd:0x9638b326968530a1",
-    "cuisine_type": "中式,其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.35,
-    "avg_spending": 100,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1630"
-      }
-    ]
-  },
-  {
     "title": "燒肉 琉球の牛 恩納店",
     "address": "",
     "url": "https://www.google.com/maps/place/%E7%87%92%E8%82%89+%E7%90%89%E7%90%83%E3%81%AE%E7%89%9B+%E6%81%A9%E7%B4%8D%E5%BA%97/data=!4m2!3m1!1s0x34e51aca5afb013f:0xc95a3ce3a65b341e",
@@ -24494,6 +15347,49 @@ window.STORES_DATA = [
     "avg_spending": 150,
     "note": "",
     "hours": null
+  },
+  {
+    "title": "燒肉九州魂",
+    "address": "10491台灣臺北市中山區正得里中山北路一段83巷16號之3號",
+    "url": "https://www.google.com/maps/place/%E7%87%92%E8%82%89%E4%B9%9D%E5%B7%9E%E9%AD%82/data=!4m2!3m1!1s0x3442a97d6dc7cb89:0x4aef5403293a5c0e",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 4.28,
+    "avg_spending": 750,
+    "note": "",
+    "hours": [
+      {
+        "c": "0000",
+        "d": 0,
+        "o": "1730"
+      },
+      {
+        "c": "0000",
+        "d": 2,
+        "o": "1730"
+      },
+      {
+        "c": "0000",
+        "d": 3,
+        "o": "1730"
+      },
+      {
+        "c": "0000",
+        "d": 4,
+        "o": "1730"
+      },
+      {
+        "c": "0000",
+        "d": 5,
+        "o": "1730"
+      },
+      {
+        "c": "0000",
+        "d": 6,
+        "o": "1730"
+      }
+    ]
   },
   {
     "title": "燒肉吉室",
@@ -24575,54 +15471,6 @@ window.STORES_DATA = [
         "c": "2200",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "爆Q美式炸雞（新竹中華店）",
-    "address": "30060台灣新竹市東區三民里中華路二段212號",
-    "url": "https://www.google.com/maps/place/%E7%88%86Q%E7%BE%8E%E5%BC%8F%E7%82%B8%E9%9B%9E%EF%BC%88%E6%96%B0%E7%AB%B9%E4%B8%AD%E8%8F%AF%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x346835dcbb3c6385:0x1761d9858ae55576",
-    "cuisine_type": "美式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 400,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1200"
       }
     ]
   },
@@ -24767,316 +15615,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "牛老大涮牛肉-高雄總店 /高雄必吃美食/火鍋/必比登推介",
-    "address": "801台灣高雄市前金區自強二路18號",
-    "url": "https://www.google.com/maps/place/%E7%89%9B%E8%80%81%E5%A4%A7%E6%B6%AE%E7%89%9B%E8%82%89-%E9%AB%98%E9%9B%84%E7%B8%BD%E5%BA%97+%2F%E9%AB%98%E9%9B%84%E5%BF%85%E5%90%83%E7%BE%8E%E9%A3%9F%2F%E7%81%AB%E9%8D%8B%2F%E5%BF%85%E6%AF%94%E7%99%BB%E6%8E%A8%E4%BB%8B/data=!4m2!3m1!1s0x346e047de299933d:0xa11b81fdb3980b6e",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "ricky&nina 要預訂牛舌",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "牛耳精緻麵館",
-    "address": "114台灣臺北市內湖區西湖里內湖路一段323巷16弄2號",
-    "url": "https://www.google.com/maps/place/%E7%89%9B%E8%80%B3%E7%B2%BE%E7%B7%BB%E9%BA%B5%E9%A4%A8/data=!4m2!3m1!1s0x3442ac6ed1ee09a1:0xb74bbe9d296cafa4",
-    "cuisine_type": "中式",
-    "source_list": "黃仁勳來台, 台北牛肉麵",
-    "visited": "是",
-    "distance_km": 69.31,
-    "avg_spending": 180,
-    "note": "",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "1930",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "牧志下町屋台村",
-    "address": "日本〒900-0013 Okinawa, Naha, Makishi, 3-chōme−2−４８ 4号",
-    "url": "https://www.google.com/maps/place/%E7%89%A7%E5%BF%97%E4%B8%8B%E7%94%BA%E5%B1%8B%E5%8F%B0%E6%9D%91/data=!4m2!3m1!1s0x34e5699d261e67d9:0xbb3a59536b299581",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "館長 11號青空三代目",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
-    "title": "特 ‧ 好喝 toptiertea 特好喝 林口一號店",
-    "address": "333台灣桃園市龜山區文化里復興北路50號",
-    "url": "https://www.google.com/maps/place/%E7%89%B9+%E2%80%A7+%E5%A5%BD%E5%96%9D+toptiertea+%E7%89%B9%E5%A5%BD%E5%96%9D+%E6%9E%97%E5%8F%A3%E4%B8%80%E8%99%9F%E5%BA%97/data=!4m2!3m1!1s0x3442a79ab4596a37:0xebb2d69f5eac2a7d",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 49.9,
-    "avg_spending": 70,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "犂園湯包館",
-    "address": "10550台灣臺北市松山區中正里南京東路三段256巷24號",
-    "url": "https://www.google.com/maps/place/%E7%8A%82%E5%9C%92%E6%B9%AF%E5%8C%85%E9%A4%A8/data=!4m2!3m1!1s0x3442abddbaccd7d5:0x1f6ac074ca937074",
-    "cuisine_type": "中式",
-    "source_list": "黃仁勳來台",
-    "visited": "是",
-    "distance_km": 61.56,
-    "avg_spending": 350,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1630"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1630"
       }
     ]
   },
@@ -25371,150 +15909,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "玉林佶饗宴雞腿大王",
-    "address": "108台灣臺北市萬華區萬壽里中華路一段114巷9號",
-    "url": "https://www.google.com/maps/place/%E7%8E%89%E6%9E%97%E4%BD%B6%E9%A5%97%E5%AE%B4%E9%9B%9E%E8%85%BF%E5%A4%A7%E7%8E%8B/data=!4m2!3m1!1s0x3442a9095bff7177:0xe415d63d8809c468",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.7,
-    "avg_spending": 180,
-    "note": "九面",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "王塔米糕店",
-    "address": "436台灣臺中市清水區中興里中興街30-1號",
-    "url": "https://www.google.com/maps/place/%E7%8E%8B%E5%A1%94%E7%B1%B3%E7%B3%95%E5%BA%97/data=!4m2!3m1!1s0x3469147f78bbdb95:0x7c36b08a6b2f3bf3",
-    "cuisine_type": "中式",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "0940"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "0940"
-      }
-    ]
-  },
-  {
-    "title": "王子起司馬鈴薯",
-    "address": "111台灣臺北市士林區義信里基河路1號",
-    "url": "https://www.google.com/maps/place/%E7%8E%8B%E5%AD%90%E8%B5%B7%E5%8F%B8%E9%A6%AC%E9%88%B4%E8%96%AF/data=!4m2!3m1!1s0x3442aeaff8686545:0xa23c4c90d4ce1cec",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.27,
-    "avg_spending": 90,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "0030",
-        "d": 0,
-        "o": "1540"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "0100",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "0100",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
     "title": "王記排骨酥湯",
     "address": "100台灣臺北市中正區螢圃里汀州路二段81號1F",
     "url": "https://www.google.com/maps/place/%E7%8E%8B%E8%A8%98%E6%8E%92%E9%AA%A8%E9%85%A5%E6%B9%AF/data=!4m2!3m1!1s0x3442a99774c55c13:0xe6e9b86314c89638",
@@ -25657,18 +16051,6 @@ window.STORES_DATA = [
         "o": "1100"
       }
     ]
-  },
-  {
-    "title": "珍豐大骨手工湯包",
-    "address": "",
-    "url": "https://www.google.com/maps/place/%E7%8F%8D%E8%B1%90%E5%A4%A7%E9%AA%A8%E6%89%8B%E5%B7%A5%E6%B9%AF%E5%8C%85/data=!4m2!3m1!1s0x3468370c2e2f885b:0x7c51f45ce770d42f",
-    "cuisine_type": "中式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
   },
   {
     "title": "現炸脆皮肉圓",
@@ -26062,97 +16444,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "甲鳥園",
-    "address": "262台灣宜蘭縣礁溪鄉吳沙村開蘭路209號",
-    "url": "https://www.google.com/maps/place/%E7%94%B2%E9%B3%A5%E5%9C%92/data=!4m2!3m1!1s0x3467fb3d911d5647:0xd6317b4f3cac42c7",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "男子漢雞排（竹東店）",
-    "address": "310台灣新竹縣竹東鎮竹東里竹榮街25號",
-    "url": "https://www.google.com/maps/place/%E7%94%B7%E5%AD%90%E6%BC%A2%E9%9B%9E%E6%8E%92%EF%BC%88%E7%AB%B9%E6%9D%B1%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x346847004623cc55:0xd4c175903966f826",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1530"
-      }
-    ]
-  },
-  {
     "title": "瘋蝦吃到飽",
     "address": "403台灣臺中市西區吉龍里五權西三街105-1號",
     "url": "https://www.google.com/maps/place/%E7%98%8B%E8%9D%A6%E5%90%83%E5%88%B0%E9%A3%BD/data=!4m2!3m1!1s0x34693da88827b0ef:0x7e561dec6b753fcd",
@@ -26274,125 +16565,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "白水豆花",
-    "address": "262台灣宜蘭縣礁溪鄉德陽村仁愛路23號",
-    "url": "https://www.google.com/maps/place/%E7%99%BD%E6%B0%B4%E8%B1%86%E8%8A%B1/data=!4m2!3m1!1s0x3467fb5a026a56e5:0x674dd60d8e807d24",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1200"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "2030",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
-    "title": "百年廟口肉圓-竹山鎮",
-    "address": "557台灣南投縣竹山鎮竹山里竹山路79號",
-    "url": "https://www.google.com/maps/place/%E7%99%BE%E5%B9%B4%E5%BB%9F%E5%8F%A3%E8%82%89%E5%9C%93-%E7%AB%B9%E5%B1%B1%E9%8E%AE/data=!4m2!3m1!1s0x346ecdbf629d3fa7:0x44755dce1ac07b1e",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 1,
-        "o": "0930"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "0930"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "0930"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "0930"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
-    "title": "皇阿瑪臭豆腐(竹科店)",
-    "address": "310台灣新竹縣竹東鎮柯湖里中興路四段985號",
-    "url": "https://www.google.com/maps/place/%E7%9A%87%E9%98%BF%E7%91%AA%E8%87%AD%E8%B1%86%E8%85%90(%E7%AB%B9%E7%A7%91%E5%BA%97)/data=!4m2!3m1!1s0x3468378cb9ae950b:0xb22391abccd0ec0a",
-    "cuisine_type": "中式",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "皿富器食 minfood",
     "address": "300台灣新竹市東區復中里錦華街18巷22號",
     "url": "https://www.google.com/maps/place/%E7%9A%BF%E5%AF%8C%E5%99%A8%E9%A3%9F+minfood/data=!4m2!3m1!1s0x346835bd3587d5a5:0x3511f4090f4076a8",
@@ -26474,6 +16646,18 @@ window.STORES_DATA = [
         "o": "1700"
       }
     ]
+  },
+  {
+    "title": "相演無煙燒肉（中正店）",
+    "address": "330台灣桃園市桃園區永興里中正路317號",
+    "url": "https://www.google.com/maps/place/%E7%9B%B8%E6%BC%94%E7%84%A1%E7%85%99%E7%87%92%E8%82%89%EF%BC%88%E4%B8%AD%E6%AD%A3%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x34681efe2f619f23:0x824c230f88e24697",
+    "cuisine_type": "其他",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": null,
+    "avg_spending": 150,
+    "note": "",
+    "hours": null
   },
   {
     "title": "相演無煙燒肉（大興店）",
@@ -26650,56 +16834,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "矮仔成蝦仁飯",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "矮仔財滷肉飯",
-    "address": "112台灣臺北市北投區清江里磺港路33號D419",
-    "url": "https://www.google.com/maps/place/%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442ae50be428121:0x815cab5b3c3bfb8",
-    "cuisine_type": "中式",
-    "source_list": "北投羅傑",
-    "visited": "是",
-    "distance_km": 63.98,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1300",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
     "title": "石家魚丸",
     "address": "300台灣新竹市东区兴学街27號2９號",
     "url": "https://www.google.com/maps/place/%E7%9F%B3%E5%AE%B6%E9%AD%9A%E4%B8%B8/data=!4m2!3m1!1s0x346835ec841dcc8b:0x3151f3c44b4407fb",
@@ -26743,78 +16877,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "碧山巖藝文休閒中心",
-    "address": "114台灣臺北市內湖區碧山里碧山路24號",
-    "url": "https://www.google.com/maps/place/%E7%A2%A7%E5%B1%B1%E5%B7%96%E8%97%9D%E6%96%87%E4%BC%91%E9%96%92%E4%B8%AD%E5%BF%83/data=!4m2!3m1!1s0x3442ad8c71d8cb2d:0x7be5c4285489790a",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 70.64,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "礁溪站",
-    "address": "262台灣宜蘭縣礁溪鄉德陽村溫泉路1號",
-    "url": "https://www.google.com/maps/place/%E7%A4%81%E6%BA%AA%E7%AB%99/data=!4m2!3m1!1s0x3467fa4814f5e7a3:0x9751b6276a7133d7",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "礁溪麒麟酒店 Kilin Hotel, JiaoXi",
-    "address": "262台灣宜蘭縣礁溪鄉德陽村礁溪路五段116號",
-    "url": "https://www.google.com/maps/place/%E7%A4%81%E6%BA%AA%E9%BA%92%E9%BA%9F%E9%85%92%E5%BA%97+Kilin+Hotel,+JiaoXi/data=!4m2!3m1!1s0x3467fa4995ebec93:0x3205697887a0e3b3",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "祥賀芒果牛奶冰",
     "address": "350台灣苗栗縣竹南鎮公義里公義路2452號",
     "url": "https://www.google.com/maps/place/%E7%A5%A5%E8%B3%80%E8%8A%92%E6%9E%9C%E7%89%9B%E5%A5%B6%E5%86%B0/data=!4m2!3m1!1s0x34684b3096cfe8f5:0xb163143f750bc46e",
@@ -26849,49 +16911,6 @@ window.STORES_DATA = [
         "c": "1900",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "福伯黃金雞",
-    "address": "557台灣南投縣竹山鎮山崇里集山路一段1835號",
-    "url": "https://www.google.com/maps/place/%E7%A6%8F%E4%BC%AF%E9%BB%83%E9%87%91%E9%9B%9E/data=!4m2!3m1!1s0x346ed2ad51d217ff:0x22e583f0f794316e",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -27056,44 +17075,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "福州乾拌麵",
-    "address": "103台灣臺北市大同區鄰江里重慶北路三段236巷44弄2號",
-    "url": "https://www.google.com/maps/place/%E7%A6%8F%E5%B7%9E%E4%B9%BE%E6%8B%8C%E9%BA%B5/data=!4m2!3m1!1s0x3442a934a9a3e25f:0x2e969f59f5fc9b3a",
-    "cuisine_type": "中式",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": 60.43,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1120",
-        "d": 0,
-        "o": "0530"
-      },
-      {
-        "c": "1120",
-        "d": 3,
-        "o": "0530"
-      },
-      {
-        "c": "1120",
-        "d": 4,
-        "o": "0530"
-      },
-      {
-        "c": "1120",
-        "d": 5,
-        "o": "0530"
-      },
-      {
-        "c": "1120",
-        "d": 6,
-        "o": "0530"
       }
     ]
   },
@@ -27433,64 +17414,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "稚加榮 福岡店",
-    "address": "2-chōme-2-17 Daimyō, Chuo Ward, Fukuoka, 810-0041日本",
-    "url": "https://www.google.com/maps/place/%E7%A8%9A%E5%8A%A0%E6%A6%AE+%E7%A6%8F%E5%B2%A1%E5%BA%97/data=!4m2!3m1!1s0x3541918713dabcc7:0xc1e91a5c0e1cdb9e",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "穆記牛肉麵",
     "address": "110台灣臺北市信義區三張里吳興街239號",
     "url": "https://www.google.com/maps/place/%E7%A9%86%E8%A8%98%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x3442abb4c4c123cb:0xa8b0a144b809e6c4",
@@ -27597,44 +17520,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "竹南福州包",
-    "address": "350台灣苗栗縣竹南鎮竹南里民權街36號",
-    "url": "https://www.google.com/maps/place/%E7%AB%B9%E5%8D%97%E7%A6%8F%E5%B7%9E%E5%8C%85/data=!4m2!3m1!1s0x3469b33ca7236bc9:0x435f7856cb5f0759",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "波妞",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 1,
-        "o": "1430"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1430"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1430"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1430"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1430"
-      }
-    ]
-  },
-  {
     "title": "竹圍土雞(東三水市場)",
     "address": "108台灣臺北市萬華區福音里三水街73號",
     "url": "https://www.google.com/maps/place/%E7%AB%B9%E5%9C%8D%E5%9C%9F%E9%9B%9E(%E6%9D%B1%E4%B8%89%E6%B0%B4%E5%B8%82%E5%A0%B4)/data=!4m2!3m1!1s0x3442a9a8b4327c3f:0x4af147a563719f63",
@@ -27731,92 +17616,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "竹山三十年代蕃薯竹筍包",
-    "address": "557台灣南投縣竹山鎮雲林里大明路582號",
-    "url": "https://www.google.com/maps/place/%E7%AB%B9%E5%B1%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E4%BB%A3%E8%95%83%E8%96%AF%E7%AB%B9%E7%AD%8D%E5%8C%85/data=!4m2!3m1!1s0x346ecdb80ada870b:0x506858303ecf812e",
-    "cuisine_type": "中式",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1930",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1930",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "竹山煎餃",
-    "address": "557台灣南投縣竹山鎮竹山里橫街106-4號",
-    "url": "https://www.google.com/maps/place/%E7%AB%B9%E5%B1%B1%E7%85%8E%E9%A4%83/data=!4m2!3m1!1s0x346ecdb8afcdfe9b:0x95d81a91e527e6fa",
-    "cuisine_type": "中式",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1300",
-        "d": 0,
-        "o": "0500"
-      },
-      {
-        "c": "1300",
-        "d": 1,
-        "o": "0500"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "0500"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "0500"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "0500"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "0500"
-      }
-    ]
-  },
-  {
     "title": "竹東阿英鮮肉湯包（本店全年無休）",
     "address": "310台灣新竹縣竹東鎮榮樂里東林路67號",
     "url": "https://www.google.com/maps/place/%E7%AB%B9%E6%9D%B1%E9%98%BF%E8%8B%B1%E9%AE%AE%E8%82%89%E6%B9%AF%E5%8C%85%EF%BC%88%E6%9C%AC%E5%BA%97%E5%85%A8%E5%B9%B4%E7%84%A1%E4%BC%91%EF%BC%89/data=!4m2!3m1!1s0x346847e61d56c36b:0xd0967e199cd822f",
@@ -27861,6 +17660,89 @@ window.STORES_DATA = [
         "c": "0000",
         "d": 6,
         "o": "1530"
+      }
+    ]
+  },
+  {
+    "title": "竹美港式茶餐廳 學府店(沒有訂位服務)",
+    "address": "300台灣新竹市東區東山里學府路73號",
+    "url": "https://www.google.com/maps/place/%E7%AB%B9%E7%BE%8E%E6%B8%AF%E5%BC%8F%E8%8C%B6%E9%A4%90%E5%BB%B3+%E5%AD%B8%E5%BA%9C%E5%BA%97(%E6%B2%92%E6%9C%89%E8%A8%82%E4%BD%8D%E6%9C%8D%E5%8B%99)/data=!4m2!3m1!1s0x346835048682eef5:0x3f9f29c37e0e6e7f",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 2.27,
+    "avg_spending": 350,
+    "note": "",
+    "hours": [
+      {
+        "c": "1430",
+        "d": 0,
+        "o": "1100"
+      },
+      {
+        "c": "2000",
+        "d": 0,
+        "o": "1700"
+      },
+      {
+        "c": "1330",
+        "d": 1,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 1,
+        "o": "1700"
+      },
+      {
+        "c": "1330",
+        "d": 2,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 2,
+        "o": "1700"
+      },
+      {
+        "c": "1330",
+        "d": 3,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 3,
+        "o": "1700"
+      },
+      {
+        "c": "1330",
+        "d": 4,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 4,
+        "o": "1700"
+      },
+      {
+        "c": "1330",
+        "d": 5,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 5,
+        "o": "1700"
+      },
+      {
+        "c": "1430",
+        "d": 6,
+        "o": "1100"
+      },
+      {
+        "c": "2030",
+        "d": 6,
+        "o": "1700"
       }
     ]
   },
@@ -28029,6 +17911,89 @@ window.STORES_DATA = [
     ]
   },
   {
+    "title": "筷煮鍋（光華店）丨小火鍋丨Hot Pot",
+    "address": "300台灣新竹市北區金華里光華二街58-1號1樓",
+    "url": "https://www.google.com/maps/place/%E7%AD%B7%E7%85%AE%E9%8D%8B%EF%BC%88%E5%85%89%E8%8F%AF%E5%BA%97%EF%BC%89%E4%B8%A8%E5%B0%8F%E7%81%AB%E9%8D%8B%E4%B8%A8Hot+Pot/data=!4m2!3m1!1s0x346835ea64ca0c1b:0xda2d32d720b50bb",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.26,
+    "avg_spending": 220,
+    "note": "",
+    "hours": [
+      {
+        "c": "1400",
+        "d": 0,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 0,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 1,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 1,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 2,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 2,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 3,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 3,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 4,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 4,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 5,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 5,
+        "o": "1700"
+      },
+      {
+        "c": "1400",
+        "d": 6,
+        "o": "1200"
+      },
+      {
+        "c": "2200",
+        "d": 6,
+        "o": "1700"
+      }
+    ]
+  },
+  {
     "title": "築路 JULU",
     "address": "300台灣新竹市東區光復里忠孝路27巷11號",
     "url": "https://www.google.com/maps/place/%E7%AF%89%E8%B7%AF+JULU/data=!4m2!3m1!1s0x346837f7cc22665f:0xd33210559796cc8a",
@@ -28092,97 +18057,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "簡家大龍峒肉圓",
-    "address": "103台灣臺北市大同區至聖里大龍街188號1樓",
-    "url": "https://www.google.com/maps/place/%E7%B0%A1%E5%AE%B6%E5%A4%A7%E9%BE%8D%E5%B3%92%E8%82%89%E5%9C%93/data=!4m2!3m1!1s0x3442a947dcd32999:0x14f72d848cf5ffc6",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.68,
-    "avg_spending": 80,
-    "note": "Fred",
-    "hours": [
-      {
-        "c": "2020",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2020",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2020",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2020",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2020",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2020",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "簡記木瓜牛奶",
-    "address": "111台灣臺北市士林區義信里大南路84號號",
-    "url": "https://www.google.com/maps/place/%E7%B0%A1%E8%A8%98%E6%9C%A8%E7%93%9C%E7%89%9B%E5%A5%B6/data=!4m2!3m1!1s0x3442aebabcbdcf19:0xac312329e09023dd",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.19,
-    "avg_spending": 80,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1430"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1430"
-      }
-    ]
-  },
-  {
     "title": "粟家牛肉麵 總店",
     "address": "112台灣臺北市北投區中庸里永興路一段2號",
     "url": "https://www.google.com/maps/place/%E7%B2%9F%E5%AE%B6%E7%89%9B%E8%82%89%E9%BA%B5+%E7%B8%BD%E5%BA%97/data=!4m2!3m1!1s0x3442ae518a600afb:0xd646fcc1f6a07149",
@@ -28231,54 +18105,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "紅昌吉豬血湯",
-    "address": "103台灣臺北市大同區蓬萊里昌吉街46號",
-    "url": "https://www.google.com/maps/place/%E7%B4%85%E6%98%8C%E5%90%89%E8%B1%AC%E8%A1%80%E6%B9%AF/data=!4m2!3m1!1s0x3442a9471c3a485d:0xb48de9febd757320",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.46,
-    "avg_spending": 100,
-    "note": "Fred",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "紅茶屋",
     "address": "103台灣臺北市大同區保安里重慶北路三段335巷56之1號",
     "url": "https://www.google.com/maps/place/%E7%B4%85%E8%8C%B6%E5%B1%8B/data=!4m2!3m1!1s0x3442a949f2d167d9:0xcbda0ae540ab01ce",
@@ -28320,18 +18146,6 @@ window.STORES_DATA = [
         "o": "0630"
       }
     ]
-  },
-  {
-    "title": "紫南宮阿玲蕃薯店（老店）",
-    "address": "557台灣南投縣竹山鎮社寮里大公街57號",
-    "url": "https://www.google.com/maps/place/%E7%B4%AB%E5%8D%97%E5%AE%AE%E9%98%BF%E7%8E%B2%E8%95%83%E8%96%AF%E5%BA%97%EF%BC%88%E8%80%81%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x34692d7db6b37db5:0x17dd26de27a79bf3",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "紫米飯糰",
@@ -28425,79 +18239,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "羅家美食",
-    "address": "600台灣嘉義市西區中央里蘭井街289-1號",
-    "url": "https://www.google.com/maps/place/%E7%BE%85%E5%AE%B6%E7%BE%8E%E9%A3%9F/data=!4m2!3m1!1s0x34692d523e06bba7:0x5f23fbb17497cd25",
-    "cuisine_type": "其他",
-    "source_list": "2025年 南投指南宮走春一日",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "羅記牛肉貓耳麵",
     "address": "300台灣新竹市東區光明里水源街62號",
     "url": "https://www.google.com/maps/place/%E7%BE%85%E8%A8%98%E7%89%9B%E8%82%89%E8%B2%93%E8%80%B3%E9%BA%B5/data=!4m2!3m1!1s0x346837c14be60025:0x299d7edaeb7a2ad",
@@ -28532,61 +18273,6 @@ window.STORES_DATA = [
         "c": "1400",
         "d": 5,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "羊城小食店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "美村路魚市米糕",
-    "address": "403台灣臺中市西區忠明里美村路一段52巷6號",
-    "url": "https://www.google.com/maps/place/%E7%BE%8E%E6%9D%91%E8%B7%AF%E9%AD%9A%E5%B8%82%E7%B1%B3%E7%B3%95/data=!4m2!3m1!1s0x34693d9c68ba0a8d:0x26f326c77439caa1",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "米糕/小腸豬血湯\n蛇丸",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1700"
       }
     ]
   },
@@ -28682,54 +18368,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "義大利米蘭手工窯烤披薩 台北中山店",
-    "address": "10491台灣臺北市中山區中央里四平街55號2樓",
-    "url": "https://www.google.com/maps/place/%E7%BE%A9%E5%A4%A7%E5%88%A9%E7%B1%B3%E8%98%AD%E6%89%8B%E5%B7%A5%E7%AA%AF%E7%83%A4%E6%8A%AB%E8%96%A9+%E5%8F%B0%E5%8C%97%E4%B8%AD%E5%B1%B1%E5%BA%97/data=!4m2!3m1!1s0x3442a9608d96d6fd:0xd1786f188d71b6d3",
-    "cuisine_type": "義式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.65,
-    "avg_spending": 450,
-    "note": "Ken\n披薩、炸雞",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
     "title": "義樂蒂義式麵坊",
     "address": "300台灣新竹市北區水田里水田街20之1號",
     "url": "https://www.google.com/maps/place/%E7%BE%A9%E6%A8%82%E8%92%82%E7%BE%A9%E5%BC%8F%E9%BA%B5%E5%9D%8A/data=!4m2!3m1!1s0x346835c77709f465:0x79bcbad7fde13614",
@@ -28803,54 +18441,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "義豐阿川冬瓜茶",
-    "address": "700台灣臺南市中西區南美里永福路二段190號",
-    "url": "https://www.google.com/maps/place/%E7%BE%A9%E8%B1%90%E9%98%BF%E5%B7%9D%E5%86%AC%E7%93%9C%E8%8C%B6/data=!4m2!3m1!1s0x346e76618109e70d:0x1361ef9f81330c2e",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
     "title": "老四川麵食館",
     "address": "300台灣新竹市東區埔頂里埔頂路99巷41號",
     "url": "https://www.google.com/maps/place/%E8%80%81%E5%9B%9B%E5%B7%9D%E9%BA%B5%E9%A3%9F%E9%A4%A8/data=!4m2!3m1!1s0x3468366b15d28db1:0x2f3195d44821951e",
@@ -28885,92 +18475,6 @@ window.STORES_DATA = [
         "c": "2000",
         "d": 5,
         "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "老士官擀麵",
-    "address": "436台灣臺中市清水區南寧里鎮南街81之12號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E5%A3%AB%E5%AE%98%E6%93%80%E9%BA%B5/data=!4m2!3m1!1s0x34691480c88c07db:0x5103e675c9e93074",
-    "cuisine_type": "中式",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "老家餡餅 內湖737店",
-    "address": "114台灣臺北市內湖區港富里內湖路一段737巷12號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E5%AE%B6%E9%A4%A1%E9%A4%85+%E5%85%A7%E6%B9%96737%E5%BA%97/data=!4m2!3m1!1s0x3442ac63bbf119d5:0x2daea7ed80ed7bb6",
-    "cuisine_type": "中式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 67.99,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1600"
       }
     ]
   },
@@ -29019,140 +18523,6 @@ window.STORES_DATA = [
         "c": "2130",
         "d": 6,
         "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "老巷小館",
-    "address": "320台灣桃園市中壢區中榮里中正路243號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E5%B7%B7%E5%B0%8F%E9%A4%A8/data=!4m2!3m1!1s0x3468224ba9bd69a3:0x77a25ef921d3835d",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "老店薑母雞 八德旗艦店 全臺首創薑母雞-推薦在地必吃平價美食 火鍋(新竹東區)夜間宵夜 露營必備美食菜單 薑母鴨 薑母雞 狀元雞 首烏雞 淮蔘雞 \n烏骨雞肉 溫體雞 火鍋 中藥燉煮 PTT",
-    "address": "300台灣新竹市東區東園里八德路160號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E5%BA%97%E8%96%91%E6%AF%8D%E9%9B%9E+%E5%85%AB%E5%BE%B7%E6%97%97%E8%89%A6%E5%BA%97+%E5%85%A8%E8%87%BA%E9%A6%96%E5%89%B5%E8%96%91%E6%AF%8D%E9%9B%9E-%E6%8E%A8%E8%96%A6%E5%9C%A8%E5%9C%B0%E5%BF%85%E5%90%83%E5%B9%B3%E5%83%B9%E7%BE%8E%E9%A3%9F+%E7%81%AB%E9%8D%8B(%E6%96%B0%E7%AB%B9%E6%9D%B1%E5%8D%80)%E5%A4%9C%E9%96%93%E5%AE%B5%E5%A4%9C+%E9%9C%B2%E7%87%9F%E5%BF%85%E5%82%99%E7%BE%8E%E9%A3%9F%E8%8F%9C%E5%96%AE+%E8%96%91%E6%AF%8D%E9%B4%A8+%E8%96%91%E6%AF%8D%E9%9B%9E+%E7%8B%80%E5%85%83%E9%9B%9E+%E9%A6%96%E7%83%8F%E9%9B%9E+%E6%B7%AE%E8%94%98%E9%9B%9E+%0A%E7%83%8F%E9%AA%A8%E9%9B%9E%E8%82%89+%E6%BA%AB%E9%AB%94%E9%9B%9E+%E7%81%AB%E9%8D%8B+%E4%B8%AD%E8%97%A5%E7%87%89%E7%85%AE+PTT/data=!4m2!3m1!1s0x346835fb54b8be3d:0x7666b272680c3d2e",
-    "cuisine_type": "中式",
-    "source_list": "冬季限定",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1500"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1500"
-      }
-    ]
-  },
-  {
-    "title": "老張愛玉冰",
-    "address": "830台灣高雄市鳳山區鎮西里信義街11號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E5%BC%B5%E6%84%9B%E7%8E%89%E5%86%B0/data=!4m2!3m1!1s0x346e1b3816523d8d:0xf30f1533703a67b6",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2330",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "2330",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2330",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2330",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2330",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2330",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -29307,228 +18677,6 @@ window.STORES_DATA = [
         "c": "0000",
         "d": 6,
         "o": "1600"
-      }
-    ]
-  },
-  {
-    "title": "老瀋陽酸菜白肉鍋",
-    "address": "300台灣新竹市東區復興里三民路125號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E7%80%8B%E9%99%BD%E9%85%B8%E8%8F%9C%E7%99%BD%E8%82%89%E9%8D%8B/data=!4m2!3m1!1s0x346835daf212fbb3:0x65325cf40ffe9b00",
-    "cuisine_type": "其他",
-    "source_list": "冬季限定",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "老牌牛乳大王",
-    "address": "813台灣高雄市左營區頂西里左營大路332號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E7%89%8C%E7%89%9B%E4%B9%B3%E5%A4%A7%E7%8E%8B/data=!4m2!3m1!1s0x346e059eb6a0f4c7:0x28c429445c827e8",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "0100",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "0100",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "0100",
-        "d": 4,
-        "o": "0000"
-      },
-      {
-        "c": "0100",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "0100",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "0100",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "老竹子三發包子",
-    "address": "103台灣臺北市大同區永樂里迪化街一段21號1樓",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E7%AB%B9%E5%AD%90%E4%B8%89%E7%99%BC%E5%8C%85%E5%AD%90/data=!4m2!3m1!1s0x3442a913880d53b5:0x2889d540101195ec",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.49,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "老豆花 プリプリ 建中店",
-    "address": "300台灣新竹市東區豐功里建中路132號",
-    "url": "https://www.google.com/maps/place/%E8%80%81%E8%B1%86%E8%8A%B1+%E3%83%97%E3%83%AA%E3%83%97%E3%83%AA+%E5%BB%BA%E4%B8%AD%E5%BA%97/data=!4m2!3m1!1s0x346837f6ee1a22fd:0xb69100052880c99b",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
       }
     ]
   },
@@ -29849,104 +18997,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "臺北流行音樂中心文化館",
-    "address": "11561台灣臺北市南港區新光里忠孝東路七段99號",
-    "url": "https://www.google.com/maps/place/%E8%87%BA%E5%8C%97%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82%E4%B8%AD%E5%BF%83%E6%96%87%E5%8C%96%E9%A4%A8/data=!4m2!3m1!1s0x3442abe922e0b88d:0x7307251b3351acd4",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 69.06,
-    "avg_spending": 0,
-    "note": "常設展",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "舊城傳統美食",
-    "address": "813台灣高雄市左營區城南里店仔頂路3號",
-    "url": "https://www.google.com/maps/place/%E8%88%8A%E5%9F%8E%E5%82%B3%E7%B5%B1%E7%BE%8E%E9%A3%9F/data=!4m2!3m1!1s0x346e05a2090e9edb:0x5fbd783fc2f91161",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "舊是經典",
-    "address": "300台灣新竹市東區豐功里建美路5號",
-    "url": "https://www.google.com/maps/place/%E8%88%8A%E6%98%AF%E7%B6%93%E5%85%B8/data=!4m2!3m1!1s0x34683671f3de4c2f:0x4b243d344dda703f",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "船艙せんしつ《無菜單料理》北屯區懷石料理｜高級｜高檔｜頂級｜創意日料｜板前料理｜約會餐廳",
     "address": "406台灣臺中市北屯區水景里松竹五路一段65號",
     "url": "https://www.google.com/maps/place/%E8%88%B9%E8%89%99%E3%81%9B%E3%82%93%E3%81%97%E3%81%A4%E3%80%8A%E7%84%A1%E8%8F%9C%E5%96%AE%E6%96%99%E7%90%86%E3%80%8B%E5%8C%97%E5%B1%AF%E5%8D%80%E6%87%B7%E7%9F%B3%E6%96%99%E7%90%86%EF%BD%9C%E9%AB%98%E7%B4%9A%EF%BD%9C%E9%AB%98%E6%AA%94%EF%BD%9C%E9%A0%82%E7%B4%9A%EF%BD%9C%E5%89%B5%E6%84%8F%E6%97%A5%E6%96%99%EF%BD%9C%E6%9D%BF%E5%89%8D%E6%96%99%E7%90%86%EF%BD%9C%E7%B4%84%E6%9C%83%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x34691700107b6343:0x65a7f4efb855097a",
@@ -30052,8 +19102,8 @@ window.STORES_DATA = [
     "address": "10491台灣臺北市中山區復興北路172號。",
     "url": "https://www.google.com/maps/place/%E8%8A%B1%E5%A8%98%E5%B0%8F%E9%A4%A8%EF%BC%88%E5%89%B5%E5%A7%8B%E5%BA%97%EF%BC%89/data=!4m2!3m1!1s0x3442abe8ddd3e03d:0xf6bdacdb8740a0b9",
     "cuisine_type": "中式",
-    "source_list": "黃仁勳來台, 想去的地點",
-    "visited": "是",
+    "source_list": "想去的地點",
+    "visited": "否",
     "distance_km": 60.97,
     "avg_spending": 250,
     "note": "黃仁勳",
@@ -30175,97 +19225,6 @@ window.STORES_DATA = [
         "c": "2300",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "花藏雪 手作雪氷",
-    "address": "111台灣臺北市士林區仁勇里大北路27號",
-    "url": "https://www.google.com/maps/place/%E8%8A%B1%E8%97%8F%E9%9B%AA+%E6%89%8B%E4%BD%9C%E9%9B%AA%E6%B0%B7/data=!4m2!3m1!1s0x3442aea537f6a5a3:0x70f0141713344a6c",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.22,
-    "avg_spending": 150,
-    "note": "拿拿摳",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1300"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1330"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1330"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1330"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1400"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1330"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1300"
-      }
-    ]
-  },
-  {
-    "title": "芳苑燈塔",
-    "address": "528台灣彰化縣芳苑鄉王功村漁港七路146號",
-    "url": "https://www.google.com/maps/place/%E8%8A%B3%E8%8B%91%E7%87%88%E5%A1%94/data=!4m2!3m1!1s0x3469521703395c99:0x3b575e93fb291dd9",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -30425,288 +19384,6 @@ window.STORES_DATA = [
         "c": "2050",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "莉莉水果店 (外帶自取請用LINE點餐)",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "莓圃草莓園",
-    "address": "114台灣臺北市內湖區碧山里碧山路38-2號",
-    "url": "https://www.google.com/maps/place/%E8%8E%93%E5%9C%83%E8%8D%89%E8%8E%93%E5%9C%92/data=!4m2!3m1!1s0x3442acfc2becb07b:0xd96b3b24aa42b4c9",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": 70.94,
-    "avg_spending": 250,
-    "note": "冬天採草莓/偷偷醬/酸辣甜草莓醬\n草莓冰沙/草莓披薩",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1200"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "菓糖 糖葫蘆",
-    "address": "300台灣新竹市東區三民里民族路211號",
-    "url": "https://www.google.com/maps/place/%E8%8F%93%E7%B3%96+%E7%B3%96%E8%91%AB%E8%98%86/data=!4m2!3m1!1s0x346835ddefbe82e9:0xd1b2621aa498cae5",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1400"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1400"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1400"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1400"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1400"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "菜園上海餐廳",
-    "address": "300台灣新竹市東區錦華里東大路一段136號",
-    "url": "https://www.google.com/maps/place/%E8%8F%9C%E5%9C%92%E4%B8%8A%E6%B5%B7%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x346835c46b204f45:0x5ee9cd90836774b4",
-    "cuisine_type": "其他",
-    "source_list": "走著走著",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2130",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "華得來(清水店)",
-    "address": "436台灣臺中市清水區南寧里中山路207號",
-    "url": "https://www.google.com/maps/place/%E8%8F%AF%E5%BE%97%E4%BE%86(%E6%B8%85%E6%B0%B4%E5%BA%97)/data=!4m2!3m1!1s0x3469147e10cad041:0x11a6da11bcc8c076",
-    "cuisine_type": "其他",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0930"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0930"
-      }
-    ]
-  },
-  {
-    "title": "華榮街市場米粉湯",
-    "address": "111台灣臺北市士林區福佳里福佳里美崙街21號",
-    "url": "https://www.google.com/maps/place/%E8%8F%AF%E6%A6%AE%E8%A1%97%E5%B8%82%E5%A0%B4%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442aebd02e52353:0x3e7fa821f3804e97",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 62.77,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1555",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1555",
-        "d": 6,
-        "o": "0800"
       }
     ]
   },
@@ -30931,134 +19608,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "葉隱烏龍麵",
-    "address": "2-chōme-3-32 Hakataekiminami, Hakata Ward, Fukuoka, 812-0016日本",
-    "url": "https://www.google.com/maps/place/%E8%91%89%E9%9A%B1%E7%83%8F%E9%BE%8D%E9%BA%B5/data=!4m2!3m1!1s0x354191b6c660c81f:0x3a06517eb6968b8f",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "蒸好吃佛跳牆",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "蔡 迪化街古早味蚵嗲",
-    "address": "103台灣臺北市大同區永樂里民生西路362巷40號",
-    "url": "https://www.google.com/maps/place/%E8%94%A1+%E8%BF%AA%E5%8C%96%E8%A1%97%E5%8F%A4%E6%97%A9%E5%91%B3%E8%9A%B5%E5%97%B2/data=!4m2!3m1!1s0x3442a91391ac8be7:0xae44a2cf44fa5da5",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.63,
-    "avg_spending": 100,
-    "note": "",
-    "hours": [
-      {
-        "c": "1730",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1730",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1730",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1730",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1730",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1730",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "蔡三毛豬血攤",
     "address": "700台灣臺南市中西區南美里永福路二段206號",
     "url": "https://www.google.com/maps/place/%E8%94%A1%E4%B8%89%E6%AF%9B%E8%B1%AC%E8%A1%80%E6%94%A4/data=!4m2!3m1!1s0x346e766183dbda91:0x51dc80df1f151903",
@@ -31193,66 +19742,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "蔥仔寮體驗農場",
-    "address": "266台灣宜蘭縣三星鄉天福村東興路13-2號",
-    "url": "https://www.google.com/maps/place/%E8%94%A5%E4%BB%94%E5%AF%AE%E9%AB%94%E9%A9%97%E8%BE%B2%E5%A0%B4/data=!4m2!3m1!1s0x34680a8103a4e1b5:0x39fc2ab37557a8e6",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "蕃薯厝肉粿仔",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
     "title": "蕭記大餛飩",
     "address": "112台灣臺北市北投區振華里裕民一路40巷21號",
     "url": "https://www.google.com/maps/place/%E8%95%AD%E8%A8%98%E5%A4%A7%E9%A4%9B%E9%A3%A9/data=!4m2!3m1!1s0x3442ae8c68f65b5b:0x3a729a2bd323b0f2",
@@ -31325,168 +19814,6 @@ window.STORES_DATA = [
         "c": "1730",
         "d": 6,
         "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "藏甜手作坊",
-    "address": "263台灣宜蘭縣壯圍鄉古亭村永美路二段17巷1號",
-    "url": "https://www.google.com/maps/place/%E8%97%8F%E7%94%9C%E6%89%8B%E4%BD%9C%E5%9D%8A/data=!4m2!3m1!1s0x3467fb6638f45ef9:0xf18ac46bb7179acc",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1300"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1300"
-      }
-    ]
-  },
-  {
-    "title": "蘆洲忠義廟",
-    "address": "247台灣新北市蘆洲區長安街106號",
-    "url": "https://www.google.com/maps/place/%E8%98%86%E6%B4%B2%E5%BF%A0%E7%BE%A9%E5%BB%9F/data=!4m2!3m1!1s0x3442a8ba6918ff8d:0x7134f0baf8467aae",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 58.31,
-    "avg_spending": 0,
-    "note": "蛇丸\n晚上熱炒店",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
-    "title": "蘆竹湳古厝 | 團體(旅行社)參觀請預約❗❗",
-    "address": "351台灣苗栗縣頭份市蘆竹里蘆竹里15鄰191號",
-    "url": "https://www.google.com/maps/place/%E8%98%86%E7%AB%B9%E6%B9%B3%E5%8F%A4%E5%8E%9D+%7C+%E5%9C%98%E9%AB%94(%E6%97%85%E8%A1%8C%E7%A4%BE)%E5%8F%83%E8%A7%80%E8%AB%8B%E9%A0%90%E7%B4%84%E2%9D%97%E2%9D%97/data=!4m2!3m1!1s0x3469b3292a484371:0x6be3329a3865fe4d",
-    "cuisine_type": "其他",
-    "source_list": "民眾台8線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1700",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1700",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "蘇澳冷泉公園",
-    "address": "270台灣宜蘭縣蘇澳鎮蘇北里冷泉路6之4號",
-    "url": "https://www.google.com/maps/place/%E8%98%87%E6%BE%B3%E5%86%B7%E6%B3%89%E5%85%AC%E5%9C%92/data=!4m2!3m1!1s0x3467e835e0848e97:0x2313262636b0e482",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 0,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -31673,54 +20000,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "蝦老爹美式海鮮",
-    "address": "106台灣臺北市大安區華聲里光復南路180巷11號",
-    "url": "https://www.google.com/maps/place/%E8%9D%A6%E8%80%81%E7%88%B9%E7%BE%8E%E5%BC%8F%E6%B5%B7%E9%AE%AE/data=!4m2!3m1!1s0x3442abc6e3b30fef:0x1314ab0bce79752a",
-    "cuisine_type": "美式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 62.99,
-    "avg_spending": 650,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1130"
-      }
-    ]
-  },
-  {
     "title": "蝸居 (日式/居酒屋/串燒/食堂)",
     "address": "300台灣新竹市北區新民里愛文街3號",
     "url": "https://www.google.com/maps/place/%E8%9D%B8%E5%B1%85+(%E6%97%A5%E5%BC%8F%2F%E5%B1%85%E9%85%92%E5%B1%8B%2F%E4%B8%B2%E7%87%92%2F%E9%A3%9F%E5%A0%82)/data=!4m2!3m1!1s0x34683578ee505681:0x4e13274a182c364c",
@@ -31807,177 +20086,50 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "西安街涼麵臭豆腐",
-    "address": "112台灣臺北市北投區榮光里西安街一段279號",
-    "url": "https://www.google.com/maps/place/%E8%A5%BF%E5%AE%89%E8%A1%97%E6%B6%BC%E9%BA%B5%E8%87%AD%E8%B1%86%E8%85%90/data=!4m2!3m1!1s0x3442ae8d7e2cc53f:0x8b6c67745e571827",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 64.49,
-    "avg_spending": 100,
-    "note": "痛風老饕：蛋捲臭豆腐",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "西海峽灣",
-    "address": "528台灣彰化縣芳苑鄉芳中村博愛路12號",
-    "url": "https://www.google.com/maps/place/%E8%A5%BF%E6%B5%B7%E5%B3%BD%E7%81%A3/data=!4m2!3m1!1s0x346952ebe7bd937d:0x28da801109ad93f1",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
+    "title": "角都酒場｜Highball 專門店",
+    "address": "300台灣新竹市北區金華里光華東街49-3號1樓",
+    "url": "https://www.google.com/maps/place/%E8%A7%92%E9%83%BD%E9%85%92%E5%A0%B4%EF%BD%9CHighball+%E5%B0%88%E9%96%80%E5%BA%97/data=!4m2!3m1!1s0x346835005dbd2fdb:0x4858f98cd22d59f9",
+    "cuisine_type": "日式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.68,
+    "avg_spending": 500,
     "note": "",
     "hours": [
       {
-        "c": "2200",
+        "c": "0200",
         "d": 0,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 1,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 2,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 3,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 4,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 5,
-        "o": "0900"
+        "o": "1900"
       },
       {
-        "c": "2200",
+        "c": "0200",
         "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "西羅殿牛肉湯",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "許 天橋下當歸鴨",
-    "address": "台北市大同區民生西路31巷18號",
-    "url": "https://www.google.com/maps/place/%E8%A8%B1+%E5%A4%A9%E6%A9%8B%E4%B8%8B%E7%95%B6%E6%AD%B8%E9%B4%A8/data=!4m2!3m1!1s0x3442a921a0035587:0x5d31ed59ead258b0",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.66,
-    "avg_spending": 200,
-    "note": "蛇丸",
-    "hours": null
-  },
-  {
-    "title": "誠江號麵線",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "豆花莊",
-    "address": "103台灣臺北市大同區雙連里寧夏路49號",
-    "url": "https://www.google.com/maps/place/%E8%B1%86%E8%8A%B1%E8%8E%8A/data=!4m2!3m1!1s0x3442a96ac201a925:0x60c17d7623069c74",
-    "cuisine_type": "中式",
-    "source_list": "黃仁勳來台",
-    "visited": "是",
-    "distance_km": 61.06,
-    "avg_spending": 90,
-    "note": "",
-    "hours": [
-      {
-        "c": "0100",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "0100",
-        "d": 6,
-        "o": "1000"
+        "o": "1900"
       }
     ]
   },
@@ -32038,6 +20190,54 @@ window.STORES_DATA = [
         "c": "2300",
         "d": 6,
         "o": "1100"
+      }
+    ]
+  },
+  {
+    "title": "豐谷油飯",
+    "address": "300台灣新竹市東區寺前里竹蓮街172號",
+    "url": "https://www.google.com/maps/place/%E8%B1%90%E8%B0%B7%E6%B2%B9%E9%A3%AF/data=!4m2!3m1!1s0x346835e9e722325d:0xc6ca146a3d2f15dd",
+    "cuisine_type": "中式",
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 1.77,
+    "avg_spending": 100,
+    "note": "",
+    "hours": [
+      {
+        "c": "1700",
+        "d": 0,
+        "o": "0700"
+      },
+      {
+        "c": "1830",
+        "d": 1,
+        "o": "0700"
+      },
+      {
+        "c": "1830",
+        "d": 2,
+        "o": "0700"
+      },
+      {
+        "c": "1830",
+        "d": 3,
+        "o": "0700"
+      },
+      {
+        "c": "1830",
+        "d": 4,
+        "o": "0700"
+      },
+      {
+        "c": "1830",
+        "d": 5,
+        "o": "0700"
+      },
+      {
+        "c": "1700",
+        "d": 6,
+        "o": "0700"
       }
     ]
   },
@@ -32194,54 +20394,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "豪記東山鴨頭",
-    "address": "251台灣新北市淡水區幸福里水源街一段122巷39號",
-    "url": "https://www.google.com/maps/place/%E8%B1%AA%E8%A8%98%E6%9D%B1%E5%B1%B1%E9%B4%A8%E9%A0%AD/data=!4m2!3m1!1s0x3442ae8c86703d67:0x4ae2d92f2c28c9fa",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.23,
-    "avg_spending": 120,
-    "note": "痛風老饕：雞皮/鴨皮",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1600"
       }
     ]
   },
@@ -32462,117 +20614,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "賣麵炎仔",
-    "address": "103台灣臺北市大同區南芳里安西街106號",
-    "url": "https://www.google.com/maps/place/%E8%B3%A3%E9%BA%B5%E7%82%8E%E4%BB%94/data=!4m2!3m1!1s0x3442a93e17f677f7:0x436a32785a5bfc9b",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.34,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1430",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 1,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1430",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "超人鱸魚",
-    "address": "231台灣新北市新店區北新路一段349號",
-    "url": "https://www.google.com/maps/place/%E8%B6%85%E4%BA%BA%E9%B1%B8%E9%AD%9A/data=!4m2!3m1!1s0x346801f6205f6f85:0x23b160dd8e2473a4",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1100"
-      },
-      {
-        "c": "1930",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
     "title": "越好飯館｜越式料理｜道地越南美食｜牛肉河粉｜生春捲炸春捲｜法國麵包",
     "address": "300台灣新竹市北區民富街25號",
     "url": "https://www.google.com/maps/place/%E8%B6%8A%E5%A5%BD%E9%A3%AF%E9%A4%A8%EF%BD%9C%E8%B6%8A%E5%BC%8F%E6%96%99%E7%90%86%EF%BD%9C%E9%81%93%E5%9C%B0%E8%B6%8A%E5%8D%97%E7%BE%8E%E9%A3%9F%EF%BD%9C%E7%89%9B%E8%82%89%E6%B2%B3%E7%B2%89%EF%BD%9C%E7%94%9F%E6%98%A5%E6%8D%B2%E7%82%B8%E6%98%A5%E6%8D%B2%EF%BD%9C%E6%B3%95%E5%9C%8B%E9%BA%B5%E5%8C%85/data=!4m2!3m1!1s0x346835c758dcb5c5:0x2c320e0d983b2fd5",
@@ -32664,109 +20705,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "軒韻茶飲新竹店",
-    "address": "300台灣新竹市東區金山里金山九街58號",
-    "url": "https://www.google.com/maps/place/%E8%BB%92%E9%9F%BB%E8%8C%B6%E9%A3%B2%E6%96%B0%E7%AB%B9%E5%BA%97/data=!4m2!3m1!1s0x3468363994ae7eb5:0x82f64177bf216c6a",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
-    "title": "輝哥本產牛肉爐",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "迷客夏Milksha 宜蘭礁溪店",
-    "address": "262008台灣宜蘭縣礁溪鄉德陽村德陽路17號",
-    "url": "https://www.google.com/maps/place/%E8%BF%B7%E5%AE%A2%E5%A4%8FMilksha+%E5%AE%9C%E8%98%AD%E7%A4%81%E6%BA%AA%E5%BA%97/data=!4m2!3m1!1s0x3467fbea1443b143:0x8086761cd8bbcb67",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 0,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1030"
-      }
-    ]
-  },
-  {
     "title": "邱家鴨肉麵",
     "address": "300台灣新竹市東區中山里中央路66號",
     "url": "https://www.google.com/maps/place/%E9%82%B1%E5%AE%B6%E9%B4%A8%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x346835c48cb59b67:0x79680709a4837abd",
@@ -32815,89 +20753,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "郭鵝肉海產店",
-    "address": "327台灣桃園市新屋區永安里中山西路三段960號",
-    "url": "https://www.google.com/maps/place/%E9%83%AD%E9%B5%9D%E8%82%89%E6%B5%B7%E7%94%A2%E5%BA%97/data=!4m2!3m1!1s0x34682efa002de207:0x6c51e0d86a6c768",
-    "cuisine_type": "中式",
-    "source_list": "2024說走就走-永安",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1600"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1030"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
     "title": "醇萃咖啡",
     "address": "300台灣新竹市東區自由路16巷12號",
     "url": "https://www.google.com/maps/place/%E9%86%87%E8%90%83%E5%92%96%E5%95%A1/data=!4m2!3m1!1s0x346835094a63332b:0xe4390191185c9d38",
@@ -32942,54 +20797,6 @@ window.STORES_DATA = [
         "c": "1200",
         "d": 6,
         "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "采宏牛肉麵-原建宏牛肉麵",
-    "address": "108台灣臺北市萬華區福星里洛陽街45之6號",
-    "url": "https://www.google.com/maps/place/%E9%87%87%E5%AE%8F%E7%89%9B%E8%82%89%E9%BA%B5-%E5%8E%9F%E5%BB%BA%E5%AE%8F%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x3442a90e656a081f:0x713c3942e872dca2",
-    "cuisine_type": "中式",
-    "source_list": "台北牛肉麵",
-    "visited": "是",
-    "distance_km": 59.89,
-    "avg_spending": 200,
-    "note": "",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "0800"
       }
     ]
   },
@@ -33322,79 +21129,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "銘師父餐廳",
-    "address": "973台灣花蓮縣吉安鄉太昌村明義六街38巷22號",
-    "url": "https://www.google.com/maps/place/%E9%8A%98%E5%B8%AB%E7%88%B6%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x34689f9ea966570d:0x48717f4c2db48308",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "賴爸/台式套餐",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
-  },
-  {
     "title": "鎖睡時間～零重力按摩舒眠館",
     "address": "105台灣臺北市松山區復勢里光復北路120巷30號1樓",
     "url": "https://www.google.com/maps/place/%E9%8E%96%E7%9D%A1%E6%99%82%E9%96%93%EF%BD%9E%E9%9B%B6%E9%87%8D%E5%8A%9B%E6%8C%89%E6%91%A9%E8%88%92%E7%9C%A0%E9%A4%A8/data=!4m2!3m1!1s0x3442ab44487a8369:0xaf8a6d8342d3765c",
@@ -33475,178 +21209,6 @@ window.STORES_DATA = [
       },
       {
         "c": "2150",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "關西囍冰室（公休請搜尋臉書）",
-    "address": "306台灣新竹縣關西鎮東興里中山路27號",
-    "url": "https://www.google.com/maps/place/%E9%97%9C%E8%A5%BF%E5%9B%8D%E5%86%B0%E5%AE%A4%EF%BC%88%E5%85%AC%E4%BC%91%E8%AB%8B%E6%90%9C%E5%B0%8B%E8%87%89%E6%9B%B8%EF%BC%89/data=!4m2!3m1!1s0x34683ecea17eef57:0xc4be44b2a692b69c",
-    "cuisine_type": "其他",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "仙草凍",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "關西楊媽媽客家美食",
-    "address": "306台灣新竹縣關西鎮東興里大同路30號",
-    "url": "https://www.google.com/maps/place/%E9%97%9C%E8%A5%BF%E6%A5%8A%E5%AA%BD%E5%AA%BD%E5%AE%A2%E5%AE%B6%E7%BE%8E%E9%A3%9F/data=!4m2!3m1!1s0x34683f01d39a0659:0xf85d95a113189a6f",
-    "cuisine_type": "其他",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "蘿蔔糕",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "關西無名麵攤",
-    "address": "306台灣新竹縣關西鎮惠愛路一號",
-    "url": "https://www.google.com/maps/place/%E9%97%9C%E8%A5%BF%E7%84%A1%E5%90%8D%E9%BA%B5%E6%94%A4/data=!4m2!3m1!1s0x34683f48c887dc2f:0x9e69e532d019863a",
-    "cuisine_type": "中式",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "紅油餛飩",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
-    "title": "關西牛肉捲餅",
-    "address": "306台灣新竹縣關西鎮北斗里南京路10號",
-    "url": "https://www.google.com/maps/place/%E9%97%9C%E8%A5%BF%E7%89%9B%E8%82%89%E6%8D%B2%E9%A4%85/data=!4m2!3m1!1s0x34683ecea8f97635:0x50c0563eb417f0d9",
-    "cuisine_type": "其他",
-    "source_list": "關西-波妞",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "牛肉捲餅",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1330"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1330"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1330"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1330"
-      },
-      {
-        "c": "1800",
         "d": 6,
         "o": "1100"
       }
@@ -33862,54 +21424,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "阿城鵝肉",
-    "address": "104台灣臺北市中山區中吉里吉林路105號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E5%9F%8E%E9%B5%9D%E8%82%89/data=!4m2!3m1!1s0x3442a95dec299d8f:0x9a3740ecab3f2e0",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 61.88,
-    "avg_spending": 400,
-    "note": "貝姬",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1120"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1120"
-      }
-    ]
-  },
-  {
     "title": "阿婆早餐麵店",
     "address": "300台灣新竹市東區東山里東山街6號",
     "url": "https://www.google.com/maps/place/%E9%98%BF%E5%A9%86%E6%97%A9%E9%A4%90%E9%BA%B5%E5%BA%97/data=!4m2!3m1!1s0x346835e6a2b58643:0x938c4a93ab25e3a",
@@ -33957,18 +21471,6 @@ window.STORES_DATA = [
     "distance_km": 84.65,
     "avg_spending": 80,
     "note": "口貝",
-    "hours": null
-  },
-  {
-    "title": "阿嬤的米粉湯",
-    "address": "115台灣臺北市南港區聯成里東新街81號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E5%AC%A4%E7%9A%84%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442ab73f9a78123:0x2f3059a28cab0ed3",
-    "cuisine_type": "中式",
-    "source_list": "想去的地點",
-    "visited": "否",
-    "distance_km": 69.29,
-    "avg_spending": 120,
-    "note": "",
     "hours": null
   },
   {
@@ -34106,56 +21608,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "阿枝烤肉",
-    "address": "350台灣苗栗縣竹南鎮正南里中正路183號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E6%9E%9D%E7%83%A4%E8%82%89/data=!4m2!3m1!1s0x3469b322f1b45d1d:0x2de06e89e0b2d906",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "波妞 雞腿排",
-    "hours": [
-      {
-        "c": "2130",
-        "d": 1,
-        "o": "1500"
-      },
-      {
-        "c": "2130",
-        "d": 2,
-        "o": "1500"
-      },
-      {
-        "c": "2130",
-        "d": 3,
-        "o": "1500"
-      },
-      {
-        "c": "2130",
-        "d": 4,
-        "o": "1500"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1500"
-      }
-    ]
-  },
-  {
-    "title": "阿枝米粉湯",
-    "address": "200台灣基隆市仁愛區博愛里愛三路21號2號樓A55",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E6%9E%9D%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442aa00bd111c53:0x19ca2810f9165d",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 84.83,
-    "avg_spending": 80,
-    "note": "痛風老饕",
-    "hours": null
-  },
-  {
     "title": "阿桐阿寶四神湯",
     "address": "103台灣臺北市大同區雙連里民生西路153號",
     "url": "https://www.google.com/maps/place/%E9%98%BF%E6%A1%90%E9%98%BF%E5%AF%B6%E5%9B%9B%E7%A5%9E%E6%B9%AF/data=!4m2!3m1!1s0x3442a96a67c9be13:0xba1ef70fcd5a52bc",
@@ -34204,16 +21656,52 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "阿棠牛肉湯",
-    "address": "",
-    "url": "",
+    "title": "阿母ヘ粽",
+    "address": "300台灣新竹市東區南門里林森路105號",
+    "url": "https://www.google.com/maps/place/%E9%98%BF%E6%AF%8D%E3%83%98%E7%B2%BD/data=!4m2!3m1!1s0x346835eb02636c41:0x7a04488254ad867b",
     "cuisine_type": "中式",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
+    "source_list": "想去的地點",
+    "visited": "否",
+    "distance_km": 0.25,
+    "avg_spending": 80,
     "note": "",
-    "hours": null
+    "hours": [
+      {
+        "c": "2000",
+        "d": 0,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 1,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 2,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 3,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 4,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 5,
+        "o": "1200"
+      },
+      {
+        "c": "2000",
+        "d": 6,
+        "o": "1200"
+      }
+    ]
   },
   {
     "title": "阿水飯店",
@@ -34299,92 +21787,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "阿瑩斤餅專門店",
-    "address": "350台灣苗栗縣竹南鎮大埔里大埔七街128號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E7%91%A9%E6%96%A4%E9%A4%85%E5%B0%88%E9%96%80%E5%BA%97/data=!4m2!3m1!1s0x34684d02de8e8b1f:0x55b5980a7e262a3c",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "波妞",
-    "hours": [
-      {
-        "c": "1830",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1830",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1830",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "阿男的店牛雜湯",
-    "address": "88142台灣澎湖縣西嶼鄉1725號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E7%94%B7%E7%9A%84%E5%BA%97%E7%89%9B%E9%9B%9C%E6%B9%AF/data=!4m2!3m1!1s0x346c59d6c4f3d279:0x337ae58e6ea397aa",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1300",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "1300",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
     "title": "阿男麻油雞",
     "address": "100台灣臺北市中正區忠勤里中華路二段311巷34號",
     "url": "https://www.google.com/maps/place/%E9%98%BF%E7%94%B7%E9%BA%BB%E6%B2%B9%E9%9B%9E/data=!4m2!3m1!1s0x3442a9bb3aa961e7:0xd3b7b58a43d64245",
@@ -34424,425 +21826,6 @@ window.STORES_DATA = [
         "c": "2300",
         "d": 6,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "阿美米干 中壢店",
-    "address": "320台灣桃園市中壢區舊明里中正路370號1樓",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E7%BE%8E%E7%B1%B3%E5%B9%B2+%E4%B8%AD%E5%A3%A2%E5%BA%97/data=!4m2!3m1!1s0x3468230034e58693:0xbc79f5ed70770f3f",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
-    "title": "阿美米干 旗艦店",
-    "address": "324台灣桃園市平鎮區中山路142號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E7%BE%8E%E7%B1%B3%E5%B9%B2+%E6%97%97%E8%89%A6%E5%BA%97/data=!4m2!3m1!1s0x3468228740b8e437:0x57afddcfc79e7127",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "0600"
-      }
-    ]
-  },
-  {
-    "title": "阿美綠豆湯",
-    "address": "700台灣臺南市中西區五條港里西門路二段395號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E7%BE%8E%E7%B6%A0%E8%B1%86%E6%B9%AF/data=!4m2!3m1!1s0x346e76959f4ce97d:0x26698cb03b68afd3",
-    "cuisine_type": "中式",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "0830"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "0830"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "0830"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "0830"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "0830"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "0830"
-      }
-    ]
-  },
-  {
-    "title": "阿興虱目魚",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "阿興虱目魚",
-    "address": "704台灣臺南市北區文賢里文賢路311號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%88%88%E8%99%B1%E7%9B%AE%E9%AD%9A/data=!4m2!3m1!1s0x346e765d484e12bb:0x90d05828f2160ca6",
-    "cuisine_type": "其他",
-    "source_list": "民眾台八線",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "0730"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0730"
-      }
-    ]
-  },
-  {
-    "title": "阿華漁村海鮮料理",
-    "address": "880台灣澎湖縣馬公市啟明里仁愛路25號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%8F%AF%E6%BC%81%E6%9D%91%E6%B5%B7%E9%AE%AE%E6%96%99%E7%90%86/data=!4m2!3m1!1s0x346c5af2c99a9f43:0x4b123e317b4a00a",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 450,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "阿萬意麵",
-    "address": "807台灣高雄市三民區鳳南里三民街184號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%90%AC%E6%84%8F%E9%BA%B5/data=!4m2!3m1!1s0x346e04613499d847:0xc56b9d44e78d3b7d",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "天菜娘娘-鹽水意麵",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1530"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1530"
-      }
-    ]
-  },
-  {
-    "title": "阿角紅燒肉劉美麗",
-    "address": "103台灣臺北市大同區南芳里延平北路二段247巷2號目前只賣燒肉麵攤休息",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%A7%92%E7%B4%85%E7%87%92%E8%82%89%E5%8A%89%E7%BE%8E%E9%BA%97/data=!4m2!3m1!1s0x3442a93fac43e0dd:0x390fb8e4044ff5b0",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 60.46,
-    "avg_spending": 200,
-    "note": "",
-    "hours": [
-      {
-        "c": "1130",
-        "d": 0,
-        "o": "0800"
-      },
-      {
-        "c": "1130",
-        "d": 2,
-        "o": "0800"
-      },
-      {
-        "c": "1130",
-        "d": 3,
-        "o": "0800"
-      },
-      {
-        "c": "1130",
-        "d": 4,
-        "o": "0800"
-      },
-      {
-        "c": "1130",
-        "d": 5,
-        "o": "0800"
-      },
-      {
-        "c": "1130",
-        "d": 6,
-        "o": "0800"
-      }
-    ]
-  },
-  {
-    "title": "阿財米糕店",
-    "address": "436台灣臺中市清水區西寧里西寧路105號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%B2%A1%E7%B1%B3%E7%B3%95%E5%BA%97/data=!4m2!3m1!1s0x3469147ff4525f9b:0x56afc8da156c9f9c",
-    "cuisine_type": "中式",
-    "source_list": "台中清水",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "1900",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "1900",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "阿輝伯蘿蔔絲餅",
-    "address": "112台灣臺北市北投區中央里光明路72巷65號",
-    "url": "https://www.google.com/maps/place/%E9%98%BF%E8%BC%9D%E4%BC%AF%E8%98%BF%E8%94%94%E7%B5%B2%E9%A4%85/data=!4m2!3m1!1s0x3442ae50c74c90c9:0xbc41c3e59821fb60",
-    "cuisine_type": "中式",
-    "source_list": "北投羅傑",
-    "visited": "是",
-    "distance_km": 58.48,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1100",
-        "d": 0,
-        "o": "0600"
-      },
-      {
-        "c": "1100",
-        "d": 2,
-        "o": "0600"
-      },
-      {
-        "c": "1100",
-        "d": 3,
-        "o": "0600"
-      },
-      {
-        "c": "1100",
-        "d": 4,
-        "o": "0600"
-      },
-      {
-        "c": "1100",
-        "d": 5,
-        "o": "0600"
-      },
-      {
-        "c": "1100",
-        "d": 6,
-        "o": "0600"
       }
     ]
   },
@@ -34968,102 +21951,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "陳季炸雞 石牌店",
-    "address": "112台灣臺北市北投區振華里裕民一路12號",
-    "url": "https://www.google.com/maps/place/%E9%99%B3%E5%AD%A3%E7%82%B8%E9%9B%9E+%E7%9F%B3%E7%89%8C%E5%BA%97/data=!4m2!3m1!1s0x3442ae8c85ba5a93:0x51d2902a96f94c9",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 63.81,
-    "avg_spending": 100,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "0000",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "0000",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
-    "title": "陳家糧舍",
-    "address": "103台灣臺北市大同區大有里迪化街一段217號",
-    "url": "https://www.google.com/maps/place/%E9%99%B3%E5%AE%B6%E7%B3%A7%E8%88%8D/data=!4m2!3m1!1s0x3442a90bfdf48b2b:0x34c8d5f4a49b0e67",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 59.76,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "陳記台南碗粿",
     "address": "350台灣苗栗縣竹南鎮照南里自由街64號350",
     "url": "https://www.google.com/maps/place/%E9%99%B3%E8%A8%98%E5%8F%B0%E5%8D%97%E7%A2%97%E7%B2%BF/data=!4m2!3m1!1s0x3469b33c882811eb:0x1bef8e87def3797c",
@@ -35148,18 +22035,6 @@ window.STORES_DATA = [
         "o": "1700"
       }
     ]
-  },
-  {
-    "title": "雄記蔥抓餅",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "雅室牛排 仁愛圓環店",
@@ -35477,54 +22352,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "雞雞叫脆皮雞排",
-    "address": "30071台灣新竹市東區建新路29號",
-    "url": "https://www.google.com/maps/place/%E9%9B%9E%E9%9B%9E%E5%8F%AB%E8%84%86%E7%9A%AE%E9%9B%9E%E6%8E%92/data=!4m2!3m1!1s0x34683672f3d0e161:0x9b889ed03b0adfb3",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1530"
-      },
-      {
-        "c": "2200",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "2200",
-        "d": 2,
-        "o": "1400"
-      },
-      {
-        "c": "2200",
-        "d": 3,
-        "o": "1400"
-      },
-      {
-        "c": "2200",
-        "d": 4,
-        "o": "1400"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1400"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1600"
-      }
-    ]
-  },
-  {
     "title": "靜岡勝政日式豬排-新竹巨城店",
     "address": "300台灣新竹市東區復中里中央路229號5樓",
     "url": "https://www.google.com/maps/place/%E9%9D%9C%E5%B2%A1%E5%8B%9D%E6%94%BF%E6%97%A5%E5%BC%8F%E8%B1%AC%E6%8E%92-%E6%96%B0%E7%AB%B9%E5%B7%A8%E5%9F%8E%E5%BA%97/data=!4m2!3m1!1s0x346835003633a62f:0x3585ef85785848a3",
@@ -35685,69 +22512,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1200"
-      }
-    ]
-  },
-  {
-    "title": "餓菱居",
-    "address": "106台灣臺北市大安區群英里四維路170巷26號",
-    "url": "https://www.google.com/maps/place/%E9%A4%93%E8%8F%B1%E5%B1%85/data=!4m2!3m1!1s0x3442abc8eed38787:0xa07ad8a807ac0c36",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 57.01,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "1950",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "1950",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "1950",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "1950",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "1950",
-        "d": 5,
-        "o": "1700"
       }
     ]
   },
@@ -35994,54 +22758,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "高家肉粥",
-    "address": "103台灣臺北市大同區延平里保安街49巷17號",
-    "url": "https://www.google.com/maps/place/%E9%AB%98%E5%AE%B6%E8%82%89%E7%B2%A5/data=!4m2!3m1!1s0x3442a9e0311989cb:0x2a2353eb301f8361",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.6,
-    "avg_spending": 80,
-    "note": "蛇丸",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "0900"
-      }
-    ]
-  },
-  {
     "title": "高家莊米苔目",
     "address": "104台灣臺北市中山區中山里林森北路279號",
     "url": "https://www.google.com/maps/place/%E9%AB%98%E5%AE%B6%E8%8E%8A%E7%B1%B3%E8%8B%94%E7%9B%AE/data=!4m2!3m1!1s0x3442a967dff20577:0x68c4d8dc6313a844",
@@ -36177,44 +22893,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 6,
         "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "鬆餅巷（營業時間以FB公告為主）",
-    "address": "300台灣新竹市東區豐功里建美路29號",
-    "url": "https://www.google.com/maps/place/%E9%AC%86%E9%A4%85%E5%B7%B7%EF%BC%88%E7%87%9F%E6%A5%AD%E6%99%82%E9%96%93%E4%BB%A5FB%E5%85%AC%E5%91%8A%E7%82%BA%E4%B8%BB%EF%BC%89/data=!4m2!3m1!1s0x34683672206425d7:0x57c0bd295ba9b787",
-    "cuisine_type": "其他",
-    "source_list": "下午茶",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "1730",
-        "d": 2,
-        "o": "0900"
-      },
-      {
-        "c": "1730",
-        "d": 3,
-        "o": "0900"
-      },
-      {
-        "c": "1730",
-        "d": 4,
-        "o": "0900"
-      },
-      {
-        "c": "1730",
-        "d": 5,
-        "o": "0900"
-      },
-      {
-        "c": "1600",
-        "d": 6,
-        "o": "0900"
       }
     ]
   },
@@ -36365,91 +23043,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "魏祥記純糖麻糬",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "鰻のエイト キャナルシティ博多店",
-    "address": "日本〒812-0018 Fukuoka, Hakata Ward, Sumiyoshi, 1-chōme−2 グランドビル B1",
-    "url": "https://www.google.com/maps/place/%E9%B0%BB%E3%81%AE%E3%82%A8%E3%82%A4%E3%83%88+%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97/data=!4m2!3m1!1s0x354191e058763ad5:0xaef99c3f302565de",
-    "cuisine_type": "其他",
-    "source_list": "2026福岡行程",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2300",
-        "d": 0,
-        "o": "1100"
-      },
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "1100"
-      },
-      {
-        "c": "2300",
-        "d": 1,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "1100"
-      },
-      {
-        "c": "2300",
-        "d": 2,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "1100"
-      },
-      {
-        "c": "2300",
-        "d": 3,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "1100"
-      },
-      {
-        "c": "2300",
-        "d": 4,
-        "o": "1700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "1100"
-      },
-      {
-        "c": "2300",
-        "d": 5,
-        "o": "1700"
-      },
-      {
-        "c": "2300",
-        "d": 6,
-        "o": "1100"
-      }
-    ]
-  },
-  {
     "title": "鰻丼作（公休日請見臉書動態）寵物友善餐廳",
     "address": "",
     "url": "https://www.google.com/maps/place/%E9%B0%BB%E4%B8%BC%E4%BD%9C%EF%BC%88%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E8%A6%8B%E8%87%89%E6%9B%B8%E5%8B%95%E6%85%8B%EF%BC%89%E5%AF%B5%E7%89%A9%E5%8F%8B%E5%96%84%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x346e767cbabb6291:0xd667be72f2238988",
@@ -36535,61 +23128,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "鳳凰食號",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024-12-14 台中兩天一夜",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "鳳山中山路港都牛肉麵",
-    "address": "830台灣高雄市鳳山區和興里中山路90號",
-    "url": "https://www.google.com/maps/place/%E9%B3%B3%E5%B1%B1%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%B8%AF%E9%83%BD%E7%89%9B%E8%82%89%E9%BA%B5/data=!4m2!3m1!1s0x346e1b46e431c211:0x16e6e20f21668d13",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "蛇丸\n半筋半肉",
-    "hours": [
-      {
-        "c": "0200",
-        "d": 0,
-        "o": "1800"
-      },
-      {
-        "c": "0200",
-        "d": 1,
-        "o": "1800"
-      },
-      {
-        "c": "0200",
-        "d": 3,
-        "o": "1800"
-      },
-      {
-        "c": "0200",
-        "d": 4,
-        "o": "1800"
-      },
-      {
-        "c": "0200",
-        "d": 5,
-        "o": "1800"
-      },
-      {
-        "c": "0200",
-        "d": 6,
-        "o": "1800"
-      }
-    ]
-  },
-  {
     "title": "鳳荷三鮮",
     "address": "300台灣新竹市東區立功里光復路二段298巷2號",
     "url": "https://www.google.com/maps/place/%E9%B3%B3%E8%8D%B7%E4%B8%89%E9%AE%AE/data=!4m2!3m1!1s0x3468370d87114421:0x3d42d837a04ce12",
@@ -36624,49 +23162,6 @@ window.STORES_DATA = [
         "c": "2100",
         "d": 4,
         "o": "1700"
-      }
-    ]
-  },
-  {
-    "title": "鴨肉和",
-    "address": "807台灣高雄市三民區鳳南里建國三路395-1號",
-    "url": "https://www.google.com/maps/place/%E9%B4%A8%E8%82%89%E5%92%8C/data=!4m2!3m1!1s0x346e0461296541b3:0x1e664bd8c86a857d",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": [
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1000"
       }
     ]
   },
@@ -36712,30 +23207,6 @@ window.STORES_DATA = [
         "o": "1100"
       }
     ]
-  },
-  {
-    "title": "鴻公公越南河粉專賣店",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "鴻記鐵板燒蔥餅捲",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "鵝肉擔",
@@ -36902,66 +23373,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "麵鄉 安徽淮南牛肉湯",
-    "address": "",
-    "url": "",
-    "cuisine_type": "中式",
-    "source_list": "2024台北夜市打牙祭",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 120,
-    "note": "",
-    "hours": null
-  },
-  {
-    "title": "麻古茶坊 宜蘭礁溪店",
-    "address": "262台灣宜蘭縣礁溪鄉德陽村礁溪路五段56號",
-    "url": "https://www.google.com/maps/place/%E9%BA%BB%E5%8F%A4%E8%8C%B6%E5%9D%8A+%E5%AE%9C%E8%98%AD%E7%A4%81%E6%BA%AA%E5%BA%97/data=!4m2!3m1!1s0x3467fbe593af0aa5:0xed9b4ea5165644d1",
-    "cuisine_type": "其他",
-    "source_list": "2025 宜蘭快閃之旅",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": [
-      {
-        "c": "2200",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2145",
-        "d": 1,
-        "o": "1000"
-      },
-      {
-        "c": "2145",
-        "d": 2,
-        "o": "1000"
-      },
-      {
-        "c": "2145",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2145",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2200",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2200",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
     "title": "黃家香腸",
     "address": "100台灣臺北市中正區永功里泉州街32之3號",
     "url": "https://www.google.com/maps/place/%E9%BB%83%E5%AE%B6%E9%A6%99%E8%85%B8/data=!4m2!3m1!1s0x3442a9bd6f8a8175:0xebcb6e980dcb3bcb",
@@ -37005,54 +23416,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "黃胖妞豬心",
-    "address": "700台灣臺南市中西區開山里大同路一段40號",
-    "url": "https://www.google.com/maps/place/%E9%BB%83%E8%83%96%E5%A6%9E%E8%B1%AC%E5%BF%83/data=!4m2!3m1!1s0x346e774f1d09cbc1:0x54759898bd10bf89",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "痛風老饕-",
-    "hours": [
-      {
-        "c": "1800",
-        "d": 0,
-        "o": "1200"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1600"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1600"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1600"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1600"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1600"
-      },
-      {
-        "c": "1800",
-        "d": 6,
-        "o": "1200"
-      }
-    ]
-  },
-  {
     "title": "黃記魯肉飯",
     "address": "104台灣臺北市中山區恆安里中山北路二段183巷28號",
     "url": "https://www.google.com/maps/place/%E9%BB%83%E8%A8%98%E9%AD%AF%E8%82%89%E9%A3%AF/data=!4m2!3m1!1s0x3442a944dc7cf511:0xa66c2a3f83f5f9de",
@@ -37087,87 +23450,6 @@ window.STORES_DATA = [
         "c": "2000",
         "d": 6,
         "o": "1130"
-      }
-    ]
-  },
-  {
-    "title": "黄龍莊",
-    "address": "100台灣臺北市中正區牯嶺街43號",
-    "url": "https://www.google.com/maps/place/%E9%BB%84%E9%BE%8D%E8%8E%8A/data=!4m2!3m1!1s0x3442a998fbe65f61:0xd9b06c0c092ed225",
-    "cuisine_type": "中式",
-    "source_list": "徐海莉",
-    "visited": "是",
-    "distance_km": 63.79,
-    "avg_spending": 500,
-    "note": "",
-    "hours": [
-      {
-        "c": "2000",
-        "d": 0,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 3,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 4,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 5,
-        "o": "1000"
-      },
-      {
-        "c": "2000",
-        "d": 6,
-        "o": "1000"
-      }
-    ]
-  },
-  {
-    "title": "黑點雞肉",
-    "address": "103台灣臺北市大同區朝陽里華亭街38號",
-    "url": "https://www.google.com/maps/place/%E9%BB%91%E9%BB%9E%E9%9B%9E%E8%82%89/data=!4m2!3m1!1s0x3442a9132699e471:0x3bd3af4cd015fd89",
-    "cuisine_type": "中式",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": 60.68,
-    "avg_spending": 400,
-    "note": "痛風老饕",
-    "hours": [
-      {
-        "c": "1500",
-        "d": 1,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 4,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1500",
-        "d": 6,
-        "o": "0700"
       }
     ]
   },
@@ -37328,44 +23610,6 @@ window.STORES_DATA = [
     ]
   },
   {
-    "title": "龍口米苔目米粉湯",
-    "address": "100台灣臺北市中正區永昌里汀州路一段224號",
-    "url": "https://www.google.com/maps/place/%E9%BE%8D%E5%8F%A3%E7%B1%B3%E8%8B%94%E7%9B%AE%E7%B1%B3%E7%B2%89%E6%B9%AF/data=!4m2!3m1!1s0x3442a9bcbf5b49c5:0x566a8ddad8c0e2b2",
-    "cuisine_type": "中式",
-    "source_list": "米粉湯",
-    "visited": "是",
-    "distance_km": 58.36,
-    "avg_spending": 80,
-    "note": "",
-    "hours": [
-      {
-        "c": "1330",
-        "d": 0,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 2,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 3,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 5,
-        "o": "0700"
-      },
-      {
-        "c": "1330",
-        "d": 6,
-        "o": "0700"
-      }
-    ]
-  },
-  {
     "title": "龍抄手涼麵",
     "address": "108台北市萬華區昆明街145號",
     "url": "https://www.google.com/maps/place/%E9%BE%8D%E6%8A%84%E6%89%8B%E6%B6%BC%E9%BA%B5/data=!4m2!3m1!1s0x3442a6e6f9de0ad7:0x89492a347d15d74",
@@ -37376,89 +23620,6 @@ window.STORES_DATA = [
     "avg_spending": 100,
     "note": "",
     "hours": null
-  },
-  {
-    "title": "龍星餐廳",
-    "address": "880台灣澎湖縣馬公市中興里治平路15-6號",
-    "url": "https://www.google.com/maps/place/%E9%BE%8D%E6%98%9F%E9%A4%90%E5%BB%B3/data=!4m2!3m1!1s0x346c5af21b23bb35:0x53ff1fa84fef2ebe",
-    "cuisine_type": "其他",
-    "source_list": "YTer",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "丁特",
-    "hours": [
-      {
-        "c": "1400",
-        "d": 0,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 0,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 1,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 1,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 2,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 2,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 3,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 3,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 4,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 4,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 5,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 5,
-        "o": "1730"
-      },
-      {
-        "c": "1400",
-        "d": 6,
-        "o": "1130"
-      },
-      {
-        "c": "2100",
-        "d": 6,
-        "o": "1730"
-      }
-    ]
   },
   {
     "title": "龍都冰菓專業家",
@@ -37502,18 +23663,6 @@ window.STORES_DATA = [
         "o": "1130"
       }
     ]
-  },
-  {
-    "title": "（原上牛村）四季溫體牛肉鍋",
-    "address": "",
-    "url": "",
-    "cuisine_type": "其他",
-    "source_list": "2022府城黃金周",
-    "visited": "是",
-    "distance_km": null,
-    "avg_spending": 150,
-    "note": "",
-    "hours": null
   },
   {
     "title": "（葉）蘆洲手工小籠包",
