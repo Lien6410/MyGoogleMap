@@ -80,6 +80,10 @@ WHERE p.place_key IN (
 
 - **從 DB 產出 `stores_data.js`**：`uv run python -m mygmap.cli` 末端會由最新匯入的 `places`/`list_memberships`/`closure_checks` 產生 `data/output/stores_data.js`（保留 `lottery.html` 的 `window.STORES_DATA` 契約）與 `MyGoogleMap_Stores_active.csv` / `_closed.csv`。**DB 已成為抽籤資料的唯一來源。**
   - Active 定義：在最新匯入存在、且該匯入 `closure_checks.status` 不在 `CLOSED_PERMANENTLY`/`CLOSED`（`CLOSED_TEMPORARILY`/`NOT_FOUND`/未驗證 一律保留）。
+  - **抽籤池白名單**：`active_stores()` 只取 `mygmap.export.POOL_LISTS` 四個清單（想去的地點／回訪／常用早餐／常用晚餐）；`是否曾去過` 只由 `VISITED_LISTS`（回訪／常用早餐／常用晚餐）決定。`source_list` 只列這四個，`note` 仍可從任一清單 fallback。
+    - 過濾只在**產出層**，匯入與變化報告仍涵蓋全部清單——DB 的歷史完整性不受影響。
+    - `_closed.csv` **不套白名單**（涵蓋全清單，供手動清理 Google Maps），因此 active 與 closed 兩份 CSV 並非互補。
+    - 設計文件：[specs/2026-08-10-lottery-pool-whitelist-design.md](superpowers/specs/2026-08-10-lottery-pool-whitelist-design.md)
   - gh-pages 部署沿用既有流程（`git add -f data/output/stores_data.js` → commit → push），差別只在**來源檔改由 DB 產生**。
 - **archive backfill**：`mygmap.backfill.backfill_archive(conn, 'data/archive')` 會把 `data/archive/` 內每個 `已儲存/` 快照依序回填為較早的匯入，讓歷史更完整。
   - ⚠️ **請在乾淨的 DB、於任何真實匯入之前執行 backfill。** 目前「最新匯入」以 `imports.id`（= 匯入先後順序）判定，不是以 Takeout 匯出日期。若在已有真實匯入之後才 backfill，較舊的 archive 快照會被當成「最新」，導致 `stores_data.js` 與報告誤用舊資料。

@@ -3,6 +3,11 @@ import json
 import os
 
 _PERM_CLOSED = ('CLOSED_PERMANENTLY', 'CLOSED')
+
+# 抽籤池只取這四個清單：「想去的地點」＝沒去過，其餘三個＝去過。
+# 其他清單（YTer、旅遊清單等）仍完整存在 DB 與變化報告中，只是不進抽籤池。
+POOL_LISTS = ('想去的地點', '回訪', '常用早餐', '常用晚餐')
+VISITED_LISTS = ('回訪', '常用早餐', '常用晚餐')
 _FIELD_ORDER = ['title', 'address', 'url', 'cuisine_type', 'source_list',
                 'visited', 'distance_km', 'avg_spending', 'note', 'hours']
 
@@ -39,7 +44,7 @@ def active_stores(conn, import_id=None):
             """
             SELECT m.place_key, p.title, p.address, p.url, p.cuisine_type,
                    p.avg_spending, p.distance_km, p.hours,
-                   m.is_visited, m.list_name, m.note
+                   m.list_name, m.note
             FROM list_memberships m JOIN places p ON p.place_key = m.place_key
             WHERE m.import_id = %s
             ORDER BY p.title, m.list_name
@@ -50,7 +55,7 @@ def active_stores(conn, import_id=None):
 
     grouped = {}
     for (pk, title, address, url, cuisine, avg, dist, hours,
-         is_visited, list_name, note) in rows:
+         list_name, note) in rows:
         if pk in closed:
             continue
         g = grouped.get(pk)
@@ -61,13 +66,17 @@ def active_stores(conn, import_id=None):
                  'distance_km': dist, 'hours': hours,
                  '_visited': False, '_lists': set(), '_note': ''}
             grouped[pk] = g
-        g['_visited'] = g['_visited'] or bool(is_visited)
-        g['_lists'].add(list_name)
+        g['_visited'] = g['_visited'] or list_name in VISITED_LISTS
+        if list_name in POOL_LISTS:
+            g['_lists'].add(list_name)
+        # 備註可來自任一清單（含非池清單），避免遺失只寫在別處的筆記
         if not g['_note'] and note:
             g['_note'] = note
 
     stores = []
     for g in grouped.values():
+        if not g['_lists']:      # 不屬於任何抽籤池清單
+            continue
         stores.append({
             'title':        g['title'],
             'address':      g['address'],

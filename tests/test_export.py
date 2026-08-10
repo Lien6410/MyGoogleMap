@@ -23,6 +23,10 @@ def _seed(conn):
         _e('營業店', '想去的地點', url='x/data=!1s0x1:0x1'),      # same place, 2 lists
         _e('只想去店', '想去的地點', url='x/data=!1s0x2:0x2', visited=False),
         _e('歇業店', '台北牛肉麵', url='x/data=!1s0x3:0x3'),
+        _e('晚餐店', '常用晚餐', url='x/data=!1s0x4:0x4'),
+        _e('回訪店', '想去的地點', url='x/data=!1s0x5:0x5', visited=False),
+        _e('回訪店', '回訪', url='x/data=!1s0x5:0x5'),            # 想去 + 回訪 → 去過
+        _e('池外店', 'YTer', url='x/data=!1s0x6:0x6'),            # 非白名單清單
     ], source_zip='t.zip')
     enrich_pending(conn, _fake_classify, home_lat=24.80, home_lng=120.97)
 
@@ -38,14 +42,18 @@ def test_active_stores_fields_and_rules(conn):
     _seed(conn)
     stores = {s['title']: s for s in export.active_stores(conn)}
     assert '歇業店' not in stores                      # CLOSED_PERMANENTLY excluded
-    assert set(stores) == {'營業店', '只想去店'}
+    assert '池外店' not in stores                      # 只屬於非白名單清單
+    assert set(stores) == {'營業店', '只想去店', '晚餐店', '回訪店'}
     a = stores['營業店']
-    assert a['visited'] == '是'                         # in a non-想去 list
-    assert a['source_list'] == '想去的地點, 台北牛肉麵'   # sorted, comma-joined
-    assert a['note'] == '紅燒'                          # first non-empty note
+    assert a['visited'] == '否'                         # 台北牛肉麵 不算去過
+    assert a['source_list'] == '想去的地點'              # 非白名單清單不列入
+    assert a['note'] == '紅燒'                          # 備註仍可來自非白名單清單
     assert a['cuisine_type'] == '日式' and a['avg_spending'] == 250
     assert a['distance_km'] == 0.0
     assert stores['只想去店']['visited'] == '否'         # only in 想去的地點
+    assert stores['晚餐店']['visited'] == '是'           # 常用晚餐 → 去過
+    assert stores['回訪店']['visited'] == '是'           # 想去 + 回訪 → 去過
+    assert stores['回訪店']['source_list'] == '想去的地點, 回訪'
 
 
 def test_write_stores_js_matches_contract(conn, tmp_path):
@@ -71,7 +79,7 @@ def test_write_stores_csv_active_and_closed(conn, tmp_path):
     with open(cp, encoding='utf-8-sig', newline='') as f:
         closed = list(csv.DictReader(f))
     active_names = {r['店名'] for r in active}
-    assert active_names == {'營業店', '只想去店'}
+    assert active_names == {'營業店', '只想去店', '晚餐店', '回訪店'}
     assert active[0].__contains__('餐飲類型') and active[0].__contains__('是否曾去過')
     assert {r['店名'] for r in closed} == {'歇業店'}
     assert closed[0]['停業狀態'] == 'CLOSED_PERMANENTLY'

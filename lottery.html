@@ -763,7 +763,7 @@
     // Fallback in case stores_data.js is not loaded
     if (typeof window.STORES_DATA === 'undefined') {
       window.STORES_DATA = [];
-      alert("警告：未偵測到 'stores_data.js' 資料庫檔案！請先執行 'export_to_sheets.py' 以產生店家資料庫。");
+      alert("警告：未偵測到 'stores_data.js' 資料庫檔案！請先執行 'uv run python -m mygmap.cli' 以產生店家資料庫。");
     }
 
     const stores = window.STORES_DATA;
