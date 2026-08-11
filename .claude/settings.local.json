@@ -31,7 +31,15 @@
       "Bash(PYTHONIOENCODING=utf-8 uv run python -m mygmap.cli)",
       "Bash(iconv -f utf-8 -t utf-8)",
       "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
-      "Bash(curl -s https://Lien6410.github.io/MyGoogleMap/data/output/stores_data.js)"
+      "Bash(curl -s https://Lien6410.github.io/MyGoogleMap/data/output/stores_data.js)",
+      "Bash(PYTHONIOENCODING=utf-8 uv run python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 uv run python -m mygmap.backfill_hours)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "Bash(curl -s https://Lien6410.github.io/MyGoogleMap/lottery.html)"
     ]
   }
 }
