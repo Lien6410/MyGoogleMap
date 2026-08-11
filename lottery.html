@@ -194,38 +194,6 @@
       font-weight: bold;
     }
 
-    /* Visited Select Radio Options */
-    .radio-group {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      background: rgba(15, 23, 42, 0.4);
-      padding: 0.25rem;
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-    }
-
-    .radio-option input[type="radio"] {
-      display: none;
-    }
-
-    .radio-option label {
-      display: block;
-      text-align: center;
-      padding: 0.5rem;
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .radio-option input[type="radio"]:checked + label {
-      background: var(--accent-color);
-      color: #fff;
-      font-weight: 500;
-    }
-
     /* Main Lottery Area */
     .draw-area {
       display: flex;
@@ -248,6 +216,110 @@
     .counter-val {
       font-weight: 700;
       color: var(--accent-secondary);
+    }
+
+    /* 來源清單：勾選框列右側掛一個 solo 連結 */
+    .list-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+    }
+
+    .list-row .checkbox-label {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .solo-link {
+      flex: none;
+      font-size: 0.78rem;
+      color: var(--accent-color);
+      cursor: pointer;
+      opacity: 0.75;
+      white-space: nowrap;
+    }
+
+    .solo-link:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    /* 候選名單展開/收納 */
+    .counter-main {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .candidate-toggle {
+      background: none;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: var(--accent-color);
+      font-size: 0.85rem;
+      font-family: inherit;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .candidate-toggle:hover {
+      background: rgba(251, 146, 60, 0.12);
+      color: var(--accent-secondary);
+    }
+
+    .candidate-panel {
+      margin-top: 0.6rem;
+      background: rgba(43, 26, 18, 0.25);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      max-height: 45vh;
+      overflow-y: auto;
+    }
+
+    .candidate-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .candidate-row:last-child {
+      border-bottom: none;
+    }
+
+    .candidate-row:hover {
+      background: rgba(251, 146, 60, 0.1);
+      color: var(--text-primary);
+    }
+
+    .candidate-name {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .candidate-meta {
+      flex: none;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      opacity: 0.85;
+    }
+
+    .candidate-open {
+      color: #4ade80;
+    }
+
+    .candidate-closed {
+      opacity: 0.6;
     }
 
     /* Draw Board */
@@ -531,24 +603,22 @@
           <input type="checkbox" id="weight-toggle" checked> ⚡ 加權抽籤（近／營業中優先）
         </label>
 
-        <!-- Visited Status Filter -->
+        <!-- Source List Filter -->
         <div class="filter-section">
           <div class="filter-title">
-            <span>回訪狀態</span>
+            <span>來源清單</span>
+            <div class="filter-actions">
+              <a onclick="selectAll('list', true)">全選</a>
+              <span>|</span>
+              <a onclick="selectAll('list', false)">全不選</a>
+              <span>|</span>
+              <a onclick="selectVisitedLists(true)">曾去過</a>
+              <span>|</span>
+              <a onclick="selectVisitedLists(false)">未去過</a>
+            </div>
           </div>
-          <div class="radio-group">
-            <div class="radio-option">
-              <input type="radio" id="visit-all" name="visit-status" value="all" checked>
-              <label for="visit-all">全部</label>
-            </div>
-            <div class="radio-option">
-              <input type="radio" id="visit-yes" name="visit-status" value="yes">
-              <label for="visit-yes">曾去過</label>
-            </div>
-            <div class="radio-option">
-              <input type="radio" id="visit-no" name="visit-status" value="no">
-              <label for="visit-no">未去過</label>
-            </div>
+          <div class="checkbox-group" id="list-group">
+            <!-- Populated by JS -->
           </div>
         </div>
 
@@ -686,9 +756,17 @@
 
       <!-- Counter Status -->
       <div class="counter-card">
-        <span>符合目前篩選條件的店家數量：</span>
-        <span class="counter-val" id="matching-count">0</span>
+        <div class="counter-main">
+          <span>符合目前篩選條件的店家數量：</span>
+          <span class="counter-val" id="matching-count">0</span>
+        </div>
+        <button type="button" class="candidate-toggle" id="candidate-toggle"
+                aria-expanded="false" aria-controls="candidate-panel"
+                onclick="toggleCandidateList()">▾ 展開名單</button>
       </div>
+
+      <!-- 候選名單（預設收合） -->
+      <div class="candidate-panel" id="candidate-panel" hidden></div>
 
       <!-- Draw Board Container -->
       <div class="draw-board" id="board">
@@ -810,6 +888,57 @@
       container.appendChild(labelUnknown);
     }
 
+    function populateListFilters() {
+      // 四個抽籤池清單，家數由目前資料現算（不寫死）
+      const counts = {};
+      stores.forEach(s => LL.storeLists(s).forEach(l => { counts[l] = (counts[l] || 0) + 1; }));
+      const container = document.getElementById('list-group');
+      container.innerHTML = '';
+
+      LL.POOL_LISTS.forEach(name => {
+        const row = document.createElement('div');
+        row.className = 'list-row';
+
+        const label = document.createElement('label');
+        label.className = 'checkbox-label';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.name = 'list';
+        cb.value = name;
+        cb.checked = true;                       // 預設四個全開
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(` ${name} (${counts[name] || 0})`));
+
+        const solo = document.createElement('a');
+        solo.className = 'solo-link';
+        solo.textContent = '只抽這個';
+        solo.addEventListener('click', () => soloList(name));
+
+        row.appendChild(label);
+        row.appendChild(solo);
+        container.appendChild(row);
+      });
+    }
+
+    function soloList(name) {
+      setCheckboxes('list', new Set([name]));
+      activePreset = null;
+      highlightPreset();
+      updateFilters();
+    }
+
+    function selectVisitedLists(visited) {
+      // 曾去過＝回訪+常用早餐+常用晚餐；未去過＝想去的地點。
+      // 兩者只是幫忙勾勾選框的快捷，篩選狀態始終只有「哪幾個清單被勾」一個維度。
+      const target = visited
+        ? new Set(LL.VISITED_LISTS)
+        : new Set(LL.POOL_LISTS.filter(l => LL.VISITED_LISTS.indexOf(l) === -1));
+      setCheckboxes('list', target);
+      activePreset = null;
+      highlightPreset();
+      updateFilters();
+    }
+
     // Detect unique cuisines from stores database
     function getCuisineTypes() {
       const cuisineSet = new Set();
@@ -866,7 +995,6 @@
 
     // === Step 2: getCurrentFilters ===
     function getCurrentFilters() {
-      const visit = document.querySelector('input[name="visit-status"]:checked').value;
       const cuisineBoxes = Array.from(document.querySelectorAll('input[name="cuisine"]'));
       const allCuisineChecked = cuisineBoxes.every(b => b.checked);
       const cuisines = allCuisineChecked ? null
@@ -874,7 +1002,7 @@
       const setOf = name => new Set(
         Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(b => b.value));
       return {
-        visit,
+        lists: setOf('list'),
         cuisines,
         distances: setOf('distance'),
         prices: setOf('price'),
@@ -896,6 +1024,75 @@
         countEl.textContent = String(filteredStores.length);
         document.getElementById('btn-start').disabled = false;
       }
+      renderCandidateList();
+    }
+
+    // === 候選名單展開/收納 ===
+    let candidateListOpen = false;
+
+    function toggleCandidateList() {
+      candidateListOpen = !candidateListOpen;
+      renderCandidateList();
+    }
+
+    function renderCandidateList() {
+      const toggle = document.getElementById('candidate-toggle');
+      const panel = document.getElementById('candidate-panel');
+      if (!toggle || !panel) return;
+
+      const n = filteredStores.length;
+      // 0 家時沒有名單可看，收起並隱藏切換鈕（counter 已顯示「將從全部抽」）
+      toggle.hidden = (n === 0);
+      if (n === 0) candidateListOpen = false;
+
+      toggle.textContent = candidateListOpen ? '▴ 收起名單' : `▾ 展開名單 (${n})`;
+      toggle.setAttribute('aria-expanded', String(candidateListOpen));
+      panel.hidden = !candidateListOpen;
+      if (!candidateListOpen) {
+        panel.innerHTML = '';        // 收合時清空，避免留著過期名單
+        return;
+      }
+
+      const now = new Date();
+      const frag = document.createDocumentFragment();
+      LL.sortCandidates(filteredStores).forEach(s => {
+        const row = document.createElement('a');
+        row.className = 'candidate-row';
+        row.href = s.url || '#';
+        if (s.url) { row.target = '_blank'; row.rel = 'noopener'; }
+
+        const name = document.createElement('span');
+        name.className = 'candidate-name';
+        name.textContent = s.title;
+
+        const dist = document.createElement('span');
+        dist.className = 'candidate-meta';
+        dist.textContent = (s.distance_km == null) ? '距離未知' : `${s.distance_km.toFixed(1)} km`;
+
+        const price = document.createElement('span');
+        price.className = 'candidate-meta';
+        price.textContent = s.avg_spending ? `均消 ${s.avg_spending}` : '均消未知';
+
+        const state = document.createElement('span');
+        state.className = 'candidate-meta';
+        if (!s.hours || !s.hours.length) {
+          state.textContent = '時間未知';
+        } else if (window.HoursLogic.isOpenNow(s.hours, now)) {
+          state.textContent = '營業中';
+          state.classList.add('candidate-open');
+        } else {
+          state.textContent = '休息中';
+          state.classList.add('candidate-closed');
+        }
+
+        row.appendChild(name);
+        row.appendChild(dist);
+        row.appendChild(price);
+        row.appendChild(state);
+        frag.appendChild(row);
+      });
+      panel.innerHTML = '';
+      panel.appendChild(frag);
     }
 
     // === Step 4: 情境鍵 ===
@@ -927,7 +1124,7 @@
     function applyPreset(name) {
       applyingPreset = true;
       const f = LL.resolvePreset(name, window.APP_COVERAGE, window.DATA_COUNTIES);
-      document.querySelector(`input[name="visit-status"][value="${f.visit}"]`).checked = true;
+      setCheckboxes('list', f.lists);
       setCheckboxes('cuisine', f.cuisines);
       setCheckboxes('distance', f.distances);
       setCheckboxes('price', f.prices);
@@ -1132,6 +1329,7 @@
     // === Step 6: 初始化 ===
     populateCuisineFilters();
     populateCountyFilters();
+    populateListFilters();
     renderPresetBar();
 
     // Step 4: 自適應提示——hours 覆蓋率不足時顯示警示

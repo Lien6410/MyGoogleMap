@@ -25,6 +25,17 @@
   var CUISINE_ALIASES = { '台式': '中式' };
   function normalizeCuisine(raw) { return CUISINE_ALIASES[raw] || raw; }
 
+  // 與 mygmap/export.py 的 POOL_LISTS / VISITED_LISTS 對應：抽籤池就是這四個清單，
+  // 「想去的地點」＝沒去過，其餘三個＝去過。
+  var POOL_LISTS = ['想去的地點', '回訪', '常用早餐', '常用晚餐'];
+  var VISITED_LISTS = ['回訪', '常用早餐', '常用晚餐'];
+
+  function storeLists(store) {
+    var raw = (store && store.source_list) || '';
+    if (!raw) return [];
+    return raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+  }
+
   function distanceBucket(km) {
     if (km == null) return 'unknown';
     if (km <= 1.0) return '1';
@@ -96,8 +107,13 @@
   }
 
   function storeMatches(store, filters, now) {
-    if (filters.visit === 'yes' && store.visited !== '是') return false;
-    if (filters.visit === 'no' && store.visited !== '否') return false;
+    // 來源清單：任一清單被勾就通過。全不勾（或未提供）視同全勾——
+    // 手滑清空不該變成解不開的空池。
+    if (filters.lists && filters.lists.size) {
+      var ls = storeLists(store);
+      var hit = ls.some(function (l) { return filters.lists.has(l); });
+      if (!hit) return false;
+    }
 
     if (filters.cuisines) {
       if (!store.cuisine_type) {
@@ -120,6 +136,17 @@
     return true;
   }
 
+  function sortCandidates(stores) {
+    // 近的排前面，距離未知的排最後，同距離按店名。回傳新陣列，不動原陣列。
+    return (stores || []).slice().sort(function (a, b) {
+      var da = a.distance_km, db = b.distance_km;
+      if (da == null && db != null) return 1;
+      if (da != null && db == null) return -1;
+      if (da != null && db != null && da !== db) return da - db;
+      return String(a.title || '').localeCompare(String(b.title || ''), 'zh-Hant');
+    });
+  }
+
   var PRESET_NAMES = ['智慧推薦', '附近', '沒去過', '現在營業', '全部隨機'];
 
   function resolvePreset(name, coverage, dataCounties) {
@@ -128,7 +155,7 @@
       return dataCounties.indexOf(c) !== -1;
     });
     var f = {
-      visit: 'all',
+      lists: new Set(POOL_LISTS),
       cuisines: null,
       distances: new Set(['1', '3', '5', '10', 'far', 'unknown']),
       prices: new Set(['200', '500', 'free']),
@@ -139,7 +166,7 @@
     if (name === '附近') {
       f.distances = new Set(['1', '3', 'unknown']);
     } else if (name === '沒去過') {
-      f.visit = 'no';
+      f.lists = new Set(['想去的地點']);
     } else if (name === '現在營業') {
       f.hours = new Set(['open-now', 'unknown']);
     } else if (name === '全部隨機') {
@@ -155,6 +182,8 @@
   var api = {
     TAIWAN_COUNTIES: TAIWAN_COUNTIES, extractCounty: extractCounty,
     CUISINE_ALIASES: CUISINE_ALIASES, normalizeCuisine: normalizeCuisine,
+    POOL_LISTS: POOL_LISTS, VISITED_LISTS: VISITED_LISTS, storeLists: storeLists,
+    sortCandidates: sortCandidates,
     distanceBucket: distanceBucket, priceBucket: priceBucket,
     computeCoverage: computeCoverage, HOURS_COVERAGE_THRESHOLD: HOURS_COVERAGE_THRESHOLD, ALL_HOURS: ALL_HOURS, adaptiveHoursDefault: adaptiveHoursDefault,
     storeWeight: storeWeight, weightedPick: weightedPick, storeMatches: storeMatches,
