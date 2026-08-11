@@ -24,6 +24,17 @@ class NormalizeOpeningHours(unittest.TestCase):
             [{"d": 1, "o": "1100", "c": "1430"}, {"d": 1, "o": "1700", "c": "2100"}],
         )
 
+    def test_single_day_open_24h_is_kept(self):
+        # Google 以「該日有 open、無 close」表示這天 24 小時營業；不能整天丟掉
+        periods = [
+            {"open": {"day": 1, "time": "0000"}},
+            {"open": {"day": 2, "time": "1100"}, "close": {"day": 2, "time": "2100"}},
+        ]
+        self.assertEqual(
+            normalize_opening_hours(periods),
+            [{"d": 1, "o": "0000", "c": "2400"}, {"d": 2, "o": "1100", "c": "2100"}],
+        )
+
     def test_cross_midnight_keeps_close_time(self):
         periods = [{"open": {"day": 5, "time": "1800"}, "close": {"day": 6, "time": "0200"}}]
         self.assertEqual(normalize_opening_hours(periods), [{"d": 5, "o": "1800", "c": "0200"}])

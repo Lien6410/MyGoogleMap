@@ -13,10 +13,21 @@ _ZIP_TS_RE = re.compile(r'(\d{8})T(\d{6})Z')
 
 
 def find_latest_zip(takeout_dir='data/takeout'):
+    """挑「最新」的 Takeout zip：優先看檔名裡的匯出時間戳，其次才看 mtime。
+
+    只看 mtime 的話，重新下載／複製一顆舊 zip 就會被當成最新，
+    連帶讓變化報告與 stores_data.js 退回舊資料。
+    """
     zips = glob.glob(os.path.join(takeout_dir, '*.zip'))
     if not zips:
         return None
-    return max(zips, key=os.path.getmtime)
+
+    def sort_key(path):
+        exported = parse_export_time(os.path.basename(path))
+        # 有時間戳的一律勝過沒有的（檔名解析得出來才是真的 Takeout 匯出檔）
+        return (1, exported.timestamp()) if exported else (0, os.path.getmtime(path))
+
+    return max(zips, key=sort_key)
 
 
 def parse_export_time(zip_name):

@@ -19,19 +19,16 @@ log = logging.getLogger(__name__)
 
 
 def _pending_hours(conn, limit=None):
-    sql = ("SELECT place_key, title, address, url FROM places "
-           "WHERE hours IS NULL AND url IS NOT NULL AND url <> '' "
-           "ORDER BY place_key")
-    params = ()
-    if limit is not None:
-        sql += " LIMIT %s"
-        params = (int(limit),)
     with conn.cursor() as cur:
-        cur.execute(sql, params)
+        cur.execute("SELECT place_key, title, address, url FROM places "
+                    "WHERE hours IS NULL AND url IS NOT NULL AND url <> '' "
+                    "ORDER BY place_key")
         rows = cur.fetchall()
-    # 只留真有 CID 者（＝真實 GMaps 店），與 enrich 的閘門一致
-    return [{'place_key': r[0], 'title': r[1], 'address': r[2], 'url': r[3]}
-            for r in rows if extract_cid(r[3] or '')]
+    # 只留真有 CID 者（＝真實 GMaps 店），與 enrich 的閘門一致。
+    # limit 必須在這道過濾「之後」才套用，否則 SQL LIMIT N 可能整批都沒 CID → 試跑等於空轉。
+    out = [{'place_key': r[0], 'title': r[1], 'address': r[2], 'url': r[3]}
+           for r in rows if extract_cid(r[3] or '')]
+    return out[:int(limit)] if limit is not None else out
 
 
 def _update_details(conn, place_key, hours, hours_text, address):

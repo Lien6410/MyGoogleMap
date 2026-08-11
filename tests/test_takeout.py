@@ -1,6 +1,6 @@
 import os
 
-from mygmap.takeout import read_all_from_dir, parse_export_time
+from mygmap.takeout import read_all_from_dir, parse_export_time, find_latest_zip
 
 FIX = os.path.join(os.path.dirname(__file__), 'fixtures', 'saved')
 
@@ -31,3 +31,26 @@ def test_parse_export_time_from_zip_name():
 
 def test_parse_export_time_none_on_unparseable():
     assert parse_export_time('random.zip') is None
+
+
+def test_find_latest_zip_prefers_filename_timestamp_over_mtime(tmp_path):
+    """重新複製一顆舊 zip 會讓它的 mtime 最新，但它不該被當成最新匯出。"""
+    old = tmp_path / 'takeout-20260101T000000Z-1-001.zip'
+    new = tmp_path / 'takeout-20260810T105338Z-1-001.zip'
+    new.write_bytes(b'x')
+    old.write_bytes(b'x')                       # 後寫入 → mtime 較新
+    os.utime(new, (1, 1))                       # 明確把新匯出檔的 mtime 壓到最舊
+    assert find_latest_zip(str(tmp_path)) == str(new)
+
+
+def test_find_latest_zip_falls_back_to_mtime_without_timestamp(tmp_path):
+    a = tmp_path / 'manual-a.zip'
+    b = tmp_path / 'manual-b.zip'
+    a.write_bytes(b'x')
+    b.write_bytes(b'x')
+    os.utime(a, (1, 1))
+    assert find_latest_zip(str(tmp_path)) == str(b)
+
+
+def test_find_latest_zip_none_when_empty(tmp_path):
+    assert find_latest_zip(str(tmp_path)) is None

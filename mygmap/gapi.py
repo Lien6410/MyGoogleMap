@@ -126,6 +126,10 @@ def name_similarity(orig, returned):
 
     計算原始店名與 Find Place 返回店名的相似度（0~1）。
     去除括號、空格、特殊符號後，以字元重疊率判斷。
+
+    ⚠️ 已知限制：這是**單向**包含率，短店名容易虛高——「小林」對「小林眼鏡」得 1.0。
+    加長度懲罰會誤殺「安咖哩」→「安咖哩 新竹店」這類正當的分店展開（本資料集很常見），
+    故改由 county_agrees() 用縣市把關；同縣市的同前綴異店仍無法只靠字元區分。
     """
     def clean(s):
         return re.sub(r'[（）()\s/,、\-．·　【】『』「」{}｛｝\[\]]', '', s)
@@ -135,6 +139,25 @@ def name_similarity(orig, returned):
         return 0.0
     matched = sum(1 for c in a if c in b)
     return matched / len(a)
+
+
+_COUNTY_RE = re.compile(r'[一-鿿]{2}[縣市]')
+
+
+def extract_county(address):
+    """從地址取出「◯◯縣/市」，取不到回 None（外國地址、空地址）。"""
+    m = _COUNTY_RE.search(address or '')
+    return m.group(0) if m else None
+
+
+def county_agrees(ours, returned):
+    """我方地址與 Find Place 回傳地址的縣市是否相容。
+
+    任一方取不到縣市（地址空、外國地址）→ 視為相容，退回只看店名的舊行為。
+    兩邊都有且不同 → 不是同一家店，擋掉以免把別家的狀態／地址／營業時間寫進來。
+    """
+    a, b = extract_county(ours), extract_county(returned)
+    return not (a and b) or a == b
 
 
 def extract_json_from_text(text):
@@ -282,7 +305,7 @@ def find_place_status(name, address, maps_api_key):
         returned_name = top.get('name', '')
         similarity = name_similarity(store_name, returned_name)
 
-        if similarity >= 0.4:
+        if similarity >= 0.4 and county_agrees(address, top.get('formatted_address', '')):
             match_type = 'EXACT' if similarity >= 0.7 else 'FUZZY'
             return {
                 'status':      top.get('business_status', 'UNKNOWN'),
@@ -292,7 +315,8 @@ def find_place_status(name, address, maps_api_key):
                 'place_id':    top.get('place_id'),   # 相符才給，供 enrich 查營業時間
             }
         else:
-            # 返回的店名與原始店名不符 → 此店已從 Google Maps 消失（可能停業）；不給 place_id 以免補錯店
+            # 店名不符或縣市不符 → 不是同一家；不給 place_id 以免補錯店。
+            # NOT_FOUND 不在 export 的永久歇業名單內，誤判只會少補資料、不會把店踢出抽籤池。
             return {'status': 'NOT_FOUND', 'address': '', 'price_level': None, 'match': 'NO_MATCH', 'place_id': None}
 
     except urllib.error.HTTPError as e:
@@ -523,14 +547,28 @@ def make_find_place(maps_api_key):
     supplying 兩者所需（verify 用 status、enrich 用 place_id）。
     """
     memo = {}
+    transient = {'ERROR', 'UNKNOWN'}
 
     def find_place(name, address):
         if not maps_api_key:
             return {'status': 'ERROR', 'address': '', 'price_level': None, 'match': 'SKIP', 'place_id': None}
         key = (name, address)
         if key not in memo:
-            memo[key] = find_place_status(name, address, maps_api_key)
+            res = find_place_status(name, address, maps_api_key)
+            if res.get('status') in transient:
+                return res      # 逾時／API 暫時性錯誤不記憶，否則一次失敗會毒害這家店整輪
+            memo[key] = res
         return memo[key]
+
+    def remember(name, address, result):
+        """替同一家店的另一組 (name,address) 登記同一筆結果。
+
+        enrich 會把地址換成 Google 版並存回 DB，稍後 verify 以新地址查詢就會 memo miss、
+        白打第二次 Find Place。登記別名即可讓每家店維持只打一次網路。
+        """
+        memo.setdefault((name, address), result)
+
+    find_place.remember = remember
     return find_place
 
 
@@ -550,5 +588,13 @@ def make_place_details(maps_api_key, find_place=None):
         pid = fp.get('place_id') if fp else None
         if not pid:
             return dict(empty)
-        return place_details(pid, maps_api_key)
+        det = place_details(pid, maps_api_key)
+        new_address = det.get('address') or ''
+        if new_address and new_address != address:
+            # 呼叫端（enrich）會把地址換成這個 Google 版本並寫回 DB，
+            # 先登記別名，稍後 verify 用新地址查同一家店才不會再打一次 Find Place。
+            remember = getattr(find_place, 'remember', None)
+            if remember:
+                remember(name, new_address, fp)
+        return det
     return _resolve

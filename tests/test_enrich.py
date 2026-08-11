@@ -49,6 +49,48 @@ def test_enrich_uses_place_details_for_address_and_hours(conn):
     assert hours == [{'d': 1, 'o': '1100', 'c': '1400'}]
 
 
+def test_enrich_does_not_wipe_existing_hours_when_lookup_fails(conn):
+    """Find Place 這次沒查到 → 不能把 backfill_hours 補好的營業時間洗成 NULL。"""
+    ingest_entries(conn, [_e('保住時間店', url='x/data=!1s0xc1:0xc2')], source_zip='t.zip')
+    with conn.cursor() as cur:
+        cur.execute("UPDATE places SET hours='[{\"d\":1,\"o\":\"0900\",\"c\":\"1700\"}]'::jsonb, "
+                    "hours_text='週一 9-17' WHERE title='保住時間店'")
+
+    def empty_details(name, address):
+        return {'address': '', 'hours': None, 'hours_text': ''}
+
+    enrich_pending(conn, _fake_classify, place_details=empty_details)
+    with conn.cursor() as cur:
+        cur.execute("SELECT hours, hours_text, cuisine_type FROM places WHERE title='保住時間店'")
+        hours, htext, cuisine = cur.fetchone()
+    assert hours == [{'d': 1, 'o': '0900', 'c': '1700'}]   # 保留
+    assert htext == '週一 9-17'
+    assert cuisine == '日式'                                # 分類照樣更新
+
+
+def test_enrich_keeps_progress_when_a_later_batch_raises(conn):
+    """API 已計費，中途炸掉不該讓前面幾批的成果一起回滾。"""
+    ingest_entries(conn, [_e('先成功店', url='x/data=!1s0xd1:0xd2'),
+                          _e('後爆炸店', url='y/data=!1s0xd3:0xd4')], source_zip='t.zip')
+    calls = []
+
+    def flaky_classify(items):
+        calls.append(items)
+        if len(calls) == 2:
+            raise RuntimeError('REQUEST_DENIED')
+        return _fake_classify(items)
+
+    try:
+        enrich_pending(conn, flaky_classify, batch_size=1)
+    except RuntimeError:
+        pass
+    else:
+        raise AssertionError('應該把例外往上拋')
+    with conn.cursor() as cur:
+        cur.execute("SELECT cuisine_type FROM places WHERE title='先成功店'")
+        assert cur.fetchone()[0] == '日式'      # 第一批已 commit，沒被回滾
+
+
 def test_enrich_heuristic_run_does_not_mark_enriched(conn):
     ingest_entries(conn, [_e('待補店', url='x/data=!1s0xe:0xf')], source_zip='t.zip')
     # heuristic/no-key run: fills fields but leaves enriched_at NULL

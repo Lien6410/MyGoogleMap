@@ -9,6 +9,7 @@ def normalize_opening_hours(periods):
 
     回傳 [{"d":int,"o":"HHMM","c":"HHMM"}, ...] 或 None（未知）。
     - 24 小時營業（單一 period、無 close、open 為 0000）→ 展開為 7 天全日。
+    - 個別日 24 小時營業（該日 period 有 open、無 close）→ 該日展開為 0000-2400。
     - 跨午夜的時段保留原始 open/close 時間（前端以 c<=o 判定跨天）。
     - 格式不完整的 period 略過；全部略過則回傳 None。
     """
@@ -29,7 +30,12 @@ def normalize_opening_hours(periods):
         day = op.get("day")
         o = op.get("time")
         c = cl.get("time")
-        if day is None or o is None or c is None:
+        if day is None or o is None:
+            continue
+        if c is None:
+            # Google 以「該日有 open、無 close」表示這天 24 小時營業，
+            # 直接略過會讓整天憑空消失。
+            out.append({"d": day, "o": "0000", "c": "2400"})
             continue
         out.append({"d": day, "o": o, "c": c})
     return out or None
